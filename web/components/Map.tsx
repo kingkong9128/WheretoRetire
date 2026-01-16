@@ -41,16 +41,44 @@ const Map = ({ places }: MapProps) => {
             {places.map((place) => (
                 <Marker key={place.id} position={[place.lat, place.lng]} icon={customIcon}>
                     <Popup>
-                        <div style={{ fontFamily: 'sans-serif', minWidth: '200px' }}>
-                            <h3 style={{ margin: '0 0 5px 0', fontSize: '16px' }}>{place.name}, {place.state}</h3>
-                            <p style={{ margin: 0, color: '#555', fontSize: '14px' }}>{place.description}</p>
+                        <div style={{ fontFamily: 'sans-serif', minWidth: '220px' }}>
+                            <h3 style={{ margin: '0 0 5px 0', fontSize: '18px', color: '#333' }}>{place.name}, {place.state}</h3>
+                            <p style={{ margin: 0, color: '#666', fontSize: '13px', fontStyle: 'italic', marginBottom: '8px' }}>{place.description}</p>
+
                             <hr style={{ margin: '8px 0', border: 'none', borderTop: '1px solid #eee' }} />
-                            <div style={{ fontSize: '13px', lineHeight: '1.4' }}>
-                                <div><strong>Summer Temp:</strong> {place.climate.averageTempSummer}°C</div>
-                                <div><strong>Humidity:</strong> {place.climate.humidity}</div>
-                                <div><strong>Healthcare Score:</strong> {place.healthcare.score}/10</div>
-                                <div><strong>Ranked Hospitals:</strong> ~{place.healthcare.hospitalCount}</div>
-                                <div><strong>Cost of Living:</strong> {place.costOfLiving}</div>
+
+                            <div style={{ fontSize: '13px', lineHeight: '1.5', display: 'grid', gridTemplateColumns: '1fr', gap: '4px' }}>
+                                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                    <strong>Temp Range:</strong>
+                                    <span>{place.climate.temperatureRange}</span>
+                                </div>
+                                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                    <strong>Rainfall:</strong>
+                                    <span>{place.climate.annualRainfall} mm</span>
+                                </div>
+                                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                    <strong>AQI (Avg):</strong>
+                                    <span style={{
+                                        color: place.aqi <= 50 ? '#10b981' : place.aqi <= 100 ? '#f59e0b' : '#ef4444',
+                                        fontWeight: 'bold'
+                                    }}>{place.aqi}</span>
+                                </div>
+                                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                    <strong>Health Score:</strong>
+                                    <span style={{ color: '#2563eb', fontWeight: 'bold' }}>{place.healthcare.score}/10</span>
+                                </div>
+                                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                    <strong>Cost of Living:</strong>
+                                    <span>{place.costOfLiving}</span>
+                                </div>
+
+                                <hr style={{ margin: '6px 0', border: 'none', borderTop: '1px dashed #eee' }} />
+
+                                <div style={{ fontSize: '12px' }}>
+                                    <strong>✈️ Nearest Airport:</strong><br />
+                                    {place.nearestAirport.name} ({place.nearestAirport.distance} km)
+                                    <span style={{ display: 'block', color: '#888', fontSize: '11px' }}>{place.nearestAirport.type}</span>
+                                </div>
                             </div>
                         </div>
                     </Popup>

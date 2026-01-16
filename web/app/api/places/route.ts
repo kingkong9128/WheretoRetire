@@ -7,6 +7,7 @@ export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
     const maxTemp = searchParams.get('maxTemp');
     const minHospitalScore = searchParams.get('minHospitalScore');
+    const maxAqi = searchParams.get('maxAqi');
 
     // Read data from JSON file
     const jsonDirectory = path.join(process.cwd(), 'data');
@@ -22,6 +23,11 @@ export async function GET(request: Request) {
     if (minHospitalScore) {
         const scoreLimit = parseFloat(minHospitalScore);
         cities = cities.filter(city => city.healthcare.score >= scoreLimit);
+    }
+
+    if (maxAqi) {
+        const aqiLimit = parseFloat(maxAqi);
+        cities = cities.filter(city => city.aqi <= aqiLimit);
     }
 
     return NextResponse.json(cities);

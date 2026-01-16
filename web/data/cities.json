@@ -1,272 +1,1302 @@
 [
-    {
-        "id": 1,
-        "name": "Coimbatore",
-        "state": "Tamil Nadu",
-        "lat": 11.0168,
-        "lng": 76.9558,
-        "description": "Known as the Manchester of South India, excellent healthcare and mild climate.",
-        "climate": {
-            "averageTempSummer": 35,
-            "averageTempWinter": 20,
-            "humidity": "Moderate"
-        },
-        "healthcare": {
-            "hospitalCount": 50,
-            "score": 9.5
-        },
-        "costOfLiving": "Medium"
+  {
+    "id": 1,
+    "name": "Bangalore",
+    "state": "Karnataka",
+    "lat": 12.9716,
+    "lng": 77.5946,
+    "description": "IT hub with pleasant climate.",
+    "climate": {
+      "averageTempSummer": 34,
+      "averageTempWinter": 16,
+      "temperatureRange": "16-34\u00b0C",
+      "humidity": "Moderate",
+      "annualRainfall": 970
     },
-    {
-        "id": 2,
-        "name": "Pune",
-        "state": "Maharashtra",
-        "lat": 18.5204,
-        "lng": 73.8567,
-        "description": "Cultural capital of Maharashtra, vibrant lifestyle with moderate weather.",
-        "climate": {
-            "averageTempSummer": 37,
-            "averageTempWinter": 12,
-            "humidity": "Moderate"
-        },
-        "healthcare": {
-            "hospitalCount": 80,
-            "score": 9.0
-        },
-        "costOfLiving": "High"
+    "aqi": 90,
+    "healthcare": {
+      "hospitalCount": 180,
+      "score": 9.5
     },
-    {
-        "id": 3,
-        "name": "Chandigarh",
-        "state": "Chandigarh",
-        "lat": 30.7333,
-        "lng": 76.7794,
-        "description": "India's first planned city, known for architecture and urban design.",
-        "climate": {
-            "averageTempSummer": 39,
-            "averageTempWinter": 7,
-            "humidity": "Low"
-        },
-        "healthcare": {
-            "hospitalCount": 45,
-            "score": 8.8
-        },
-        "costOfLiving": "High"
-    },
-    {
-        "id": 4,
-        "name": "Dehradun",
-        "state": "Uttarakhand",
-        "lat": 30.3165,
-        "lng": 78.0322,
-        "description": "Nestled in the foothills of the Himalayas, scenic and peaceful.",
-        "climate": {
-            "averageTempSummer": 30,
-            "averageTempWinter": 5,
-            "humidity": "Moderate"
-        },
-        "healthcare": {
-            "hospitalCount": 30,
-            "score": 8.5
-        },
-        "costOfLiving": "Medium"
-    },
-    {
-        "id": 5,
-        "name": "Mysore",
-        "state": "Karnataka",
-        "lat": 12.2958,
-        "lng": 76.6394,
-        "description": "Heritage city with a slow pace of life and clean environment.",
-        "climate": {
-            "averageTempSummer": 34,
-            "averageTempWinter": 17,
-            "humidity": "Moderate"
-        },
-        "healthcare": {
-            "hospitalCount": 25,
-            "score": 8.0
-        },
-        "costOfLiving": "Low"
-    },
-    {
-        "id": 6,
-        "name": "Kochi",
-        "state": "Kerala",
-        "lat": 9.9312,
-        "lng": 76.2673,
-        "description": "Queen of the Arabian Sea, excellent healthcare and tropical vibes.",
-        "climate": {
-            "averageTempSummer": 33,
-            "averageTempWinter": 24,
-            "humidity": "High"
-        },
-        "healthcare": {
-            "hospitalCount": 60,
-            "score": 9.2
-        },
-        "costOfLiving": "Medium"
-    },
-    {
-        "id": 7,
-        "name": "Bangalore",
-        "state": "Karnataka",
-        "lat": 12.9716,
-        "lng": 77.5946,
-        "description": "IT Capital with cosmopolitan culture and pleasant year-round weather.",
-        "climate": {
-            "averageTempSummer": 34,
-            "averageTempWinter": 16,
-            "humidity": "Moderate"
-        },
-        "healthcare": {
-            "hospitalCount": 100,
-            "score": 9.8
-        },
-        "costOfLiving": "High"
-    },
-    {
-        "id": 8,
-        "name": "Goa",
-        "state": "Goa",
-        "lat": 15.2993,
-        "lng": 74.1240,
-        "description": "Relaxed beach lifestyle with good community for seniors.",
-        "climate": {
-            "averageTempSummer": 33,
-            "averageTempWinter": 20,
-            "humidity": "High"
-        },
-        "healthcare": {
-            "hospitalCount": 20,
-            "score": 8.0
-        },
-        "costOfLiving": "High"
-    },
-    {
-        "id": 9,
-        "name": "Jaipur",
-        "state": "Rajasthan",
-        "lat": 26.9124,
-        "lng": 75.7873,
-        "description": "The Pink City, rich in history and culture.",
-        "climate": {
-            "averageTempSummer": 40,
-            "averageTempWinter": 9,
-            "humidity": "Low"
-        },
-        "healthcare": {
-            "hospitalCount": 40,
-            "score": 8.5
-        },
-        "costOfLiving": "Low"
-    },
-    {
-        "id": 10,
-        "name": "Bhubaneswar",
-        "state": "Odisha",
-        "lat": 20.2961,
-        "lng": 85.8245,
-        "description": "Temple City of India, emerging as a smart city.",
-        "climate": {
-            "averageTempSummer": 37,
-            "averageTempWinter": 16,
-            "humidity": "High"
-        },
-        "healthcare": {
-            "hospitalCount": 35,
-            "score": 8.3
-        },
-        "costOfLiving": "Low"
-    },
-    {
-        "id": 11,
-        "name": "Visakhapatnam",
-        "state": "Andhra Pradesh",
-        "lat": 17.6868,
-        "lng": 83.2185,
-        "description": "Coastal city with scenic hills and clean beaches.",
-        "climate": {
-            "averageTempSummer": 34,
-            "averageTempWinter": 20,
-            "humidity": "High"
-        },
-        "healthcare": {
-            "hospitalCount": 30,
-            "score": 8.2
-        },
-        "costOfLiving": "Low"
-    },
-    {
-        "id": 12,
-        "name": "Nashik",
-        "state": "Maharashtra",
-        "lat": 19.9975,
-        "lng": 73.7898,
-        "description": "Wine capital, pleasant climate, and spiritual significance.",
-        "climate": {
-            "averageTempSummer": 36,
-            "averageTempWinter": 10,
-            "humidity": "Low"
-        },
-        "healthcare": {
-            "hospitalCount": 25,
-            "score": 8.0
-        },
-        "costOfLiving": "Low"
-    },
-    {
-        "id": 13,
-        "name": "Trivandrum",
-        "state": "Kerala",
-        "lat": 8.5241,
-        "lng": 76.9366,
-        "description": "Capital of Kerala, peaceful with high social infrastructure.",
-        "climate": {
-            "averageTempSummer": 34,
-            "averageTempWinter": 23,
-            "humidity": "High"
-        },
-        "healthcare": {
-            "hospitalCount": 40,
-            "score": 9.3
-        },
-        "costOfLiving": "Medium"
-    },
-    {
-        "id": 14,
-        "name": "Lucknow",
-        "state": "Uttar Pradesh",
-        "lat": 26.8467,
-        "lng": 80.9462,
-        "description": "City of Nawabs, known for its culture and food.",
-        "climate": {
-            "averageTempSummer": 41,
-            "averageTempWinter": 8,
-            "humidity": "Low"
-        },
-        "healthcare": {
-            "hospitalCount": 45,
-            "score": 8.4
-        },
-        "costOfLiving": "Low"
-    },
-    {
-        "id": 15,
-        "name": "Pondicherry",
-        "state": "Puducherry",
-        "lat": 11.9416,
-        "lng": 79.8083,
-        "description": "Riviera of the East, French colonial influence.",
-        "climate": {
-            "averageTempSummer": 36,
-            "averageTempWinter": 21,
-            "humidity": "High"
-        },
-        "healthcare": {
-            "hospitalCount": 15,
-            "score": 8.1
-        },
-        "costOfLiving": "Medium"
+    "costOfLiving": "High",
+    "nearestAirport": {
+      "name": "Kempegowda International",
+      "distance": 40,
+      "type": "International"
     }
+  },
+  {
+    "id": 2,
+    "name": "Pune",
+    "state": "Maharashtra",
+    "lat": 18.5204,
+    "lng": 73.8567,
+    "description": "Cultural capital, student hub.",
+    "climate": {
+      "averageTempSummer": 37,
+      "averageTempWinter": 12,
+      "temperatureRange": "12-37\u00b0C",
+      "humidity": "Moderate",
+      "annualRainfall": 722
+    },
+    "aqi": 110,
+    "healthcare": {
+      "hospitalCount": 150,
+      "score": 9.2
+    },
+    "costOfLiving": "High",
+    "nearestAirport": {
+      "name": "Pune International",
+      "distance": 10,
+      "type": "International"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Hyderabad",
+    "state": "Telangana",
+    "lat": 17.385,
+    "lng": 78.4867,
+    "description": "City of Pearls, burgeoning IT.",
+    "climate": {
+      "averageTempSummer": 39,
+      "averageTempWinter": 15,
+      "temperatureRange": "15-39\u00b0C",
+      "humidity": "Low",
+      "annualRainfall": 810
+    },
+    "aqi": 100,
+    "healthcare": {
+      "hospitalCount": 160,
+      "score": 9.3
+    },
+    "costOfLiving": "Medium",
+    "nearestAirport": {
+      "name": "Rajiv Gandhi International",
+      "distance": 24,
+      "type": "International"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Mumbai",
+    "state": "Maharashtra",
+    "lat": 19.076,
+    "lng": 72.8777,
+    "description": "Financial capital, fast-paced.",
+    "climate": {
+      "averageTempSummer": 33,
+      "averageTempWinter": 19,
+      "temperatureRange": "19-33\u00b0C",
+      "humidity": "High",
+      "annualRainfall": 2400
+    },
+    "aqi": 140,
+    "healthcare": {
+      "hospitalCount": 250,
+      "score": 9.8
+    },
+    "costOfLiving": "High",
+    "nearestAirport": {
+      "name": "Chhatrapati Shivaji Maharaj",
+      "distance": 0,
+      "type": "International"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chennai",
+    "state": "Tamil Nadu",
+    "lat": 13.0827,
+    "lng": 80.2707,
+    "description": "Healthcare capital.",
+    "climate": {
+      "averageTempSummer": 38,
+      "averageTempWinter": 21,
+      "temperatureRange": "21-38\u00b0C",
+      "humidity": "High",
+      "annualRainfall": 1400
+    },
+    "aqi": 80,
+    "healthcare": {
+      "hospitalCount": 200,
+      "score": 9.7
+    },
+    "costOfLiving": "Medium",
+    "nearestAirport": {
+      "name": "Chennai International",
+      "distance": 21,
+      "type": "International"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Delhi",
+    "state": "Delhi",
+    "lat": 28.6139,
+    "lng": 77.209,
+    "description": "National Capital.",
+    "climate": {
+      "averageTempSummer": 45,
+      "averageTempWinter": 5,
+      "temperatureRange": "5-45\u00b0C",
+      "humidity": "Low",
+      "annualRainfall": 700
+    },
+    "aqi": 250,
+    "healthcare": {
+      "hospitalCount": 300,
+      "score": 9.8
+    },
+    "costOfLiving": "High",
+    "nearestAirport": {
+      "name": "Indira Gandhi International",
+      "distance": 16,
+      "type": "International"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kolkata",
+    "state": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "description": "Cultural capital.",
+    "climate": {
+      "averageTempSummer": 36,
+      "averageTempWinter": 12,
+      "temperatureRange": "12-36\u00b0C",
+      "humidity": "High",
+      "annualRainfall": 1600
+    },
+    "aqi": 160,
+    "healthcare": {
+      "hospitalCount": 140,
+      "score": 8.5
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Netaji Subhas Chandra Bose",
+      "distance": 17,
+      "type": "International"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Ahmedabad",
+    "state": "Gujarat",
+    "lat": 23.0225,
+    "lng": 72.5714,
+    "description": "Textile hub.",
+    "climate": {
+      "averageTempSummer": 42,
+      "averageTempWinter": 12,
+      "temperatureRange": "12-42\u00b0C",
+      "humidity": "Low",
+      "annualRainfall": 750
+    },
+    "aqi": 120,
+    "healthcare": {
+      "hospitalCount": 120,
+      "score": 8.8
+    },
+    "costOfLiving": "Medium",
+    "nearestAirport": {
+      "name": "Sardar Vallabhbhai Patel",
+      "distance": 9,
+      "type": "International"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Coimbatore",
+    "state": "Tamil Nadu",
+    "lat": 11.0168,
+    "lng": 76.9558,
+    "description": "Manchester of South India.",
+    "climate": {
+      "averageTempSummer": 35,
+      "averageTempWinter": 20,
+      "temperatureRange": "20-35\u00b0C",
+      "humidity": "Moderate",
+      "annualRainfall": 600
+    },
+    "aqi": 60,
+    "healthcare": {
+      "hospitalCount": 80,
+      "score": 9.4
+    },
+    "costOfLiving": "Medium",
+    "nearestAirport": {
+      "name": "Coimbatore International",
+      "distance": 15,
+      "type": "International"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Dehradun",
+    "state": "Uttarakhand",
+    "lat": 30.3165,
+    "lng": 78.0322,
+    "description": "Himalayan foothills.",
+    "climate": {
+      "averageTempSummer": 30,
+      "averageTempWinter": 5,
+      "temperatureRange": "5-30\u00b0C",
+      "humidity": "Moderate",
+      "annualRainfall": 2000
+    },
+    "aqi": 55,
+    "healthcare": {
+      "hospitalCount": 45,
+      "score": 8.4
+    },
+    "costOfLiving": "Medium",
+    "nearestAirport": {
+      "name": "Jolly Grant",
+      "distance": 25,
+      "type": "Domestic"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Mysore",
+    "state": "Karnataka",
+    "lat": 12.2958,
+    "lng": 76.6394,
+    "description": "Heritage city.",
+    "climate": {
+      "averageTempSummer": 34,
+      "averageTempWinter": 17,
+      "temperatureRange": "17-34\u00b0C",
+      "humidity": "Moderate",
+      "annualRainfall": 800
+    },
+    "aqi": 50,
+    "healthcare": {
+      "hospitalCount": 35,
+      "score": 8.1
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Mysore Airport",
+      "distance": 10,
+      "type": "Domestic"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Kochi",
+    "state": "Kerala",
+    "lat": 9.9312,
+    "lng": 76.2673,
+    "description": "Queen of Arabian Sea.",
+    "climate": {
+      "averageTempSummer": 33,
+      "averageTempWinter": 24,
+      "temperatureRange": "24-33\u00b0C",
+      "humidity": "High",
+      "annualRainfall": 3000
+    },
+    "aqi": 45,
+    "healthcare": {
+      "hospitalCount": 90,
+      "score": 9.2
+    },
+    "costOfLiving": "Medium",
+    "nearestAirport": {
+      "name": "Cochin International",
+      "distance": 25,
+      "type": "International"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Chandigarh",
+    "state": "Chandigarh",
+    "lat": 30.7333,
+    "lng": 76.7794,
+    "description": "Planned city.",
+    "climate": {
+      "averageTempSummer": 39,
+      "averageTempWinter": 7,
+      "temperatureRange": "7-39\u00b0C",
+      "humidity": "Low",
+      "annualRainfall": 1100
+    },
+    "aqi": 105,
+    "healthcare": {
+      "hospitalCount": 60,
+      "score": 9.0
+    },
+    "costOfLiving": "High",
+    "nearestAirport": {
+      "name": "Chandigarh International",
+      "distance": 12,
+      "type": "International"
+    }
+  },
+  {
+    "id": 14,
+    "name": "Goa (Panaji)",
+    "state": "Goa",
+    "lat": 15.4909,
+    "lng": 73.8278,
+    "description": "Beach paradise.",
+    "climate": {
+      "averageTempSummer": 33,
+      "averageTempWinter": 20,
+      "temperatureRange": "20-33\u00b0C",
+      "humidity": "High",
+      "annualRainfall": 2900
+    },
+    "aqi": 40,
+    "healthcare": {
+      "hospitalCount": 25,
+      "score": 8.0
+    },
+    "costOfLiving": "High",
+    "nearestAirport": {
+      "name": "Dabolim",
+      "distance": 30,
+      "type": "International"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Pondicherry",
+    "state": "Puducherry",
+    "lat": 11.9416,
+    "lng": 79.8083,
+    "description": "French riviera of East.",
+    "climate": {
+      "averageTempSummer": 36,
+      "averageTempWinter": 21,
+      "temperatureRange": "21-36\u00b0C",
+      "humidity": "High",
+      "annualRainfall": 1300
+    },
+    "aqi": 50,
+    "healthcare": {
+      "hospitalCount": 20,
+      "score": 8.2
+    },
+    "costOfLiving": "Medium",
+    "nearestAirport": {
+      "name": "Puducherry Airport",
+      "distance": 5,
+      "type": "Domestic"
+    }
+  },
+  {
+    "id": 16,
+    "name": "Jaipur",
+    "state": "Rajasthan",
+    "lat": 26.9124,
+    "lng": 75.7873,
+    "description": "Pink City.",
+    "climate": {
+      "averageTempSummer": 40,
+      "averageTempWinter": 9,
+      "temperatureRange": "9-40\u00b0C",
+      "humidity": "Low",
+      "annualRainfall": 600
+    },
+    "aqi": 130,
+    "healthcare": {
+      "hospitalCount": 65,
+      "score": 8.6
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Jaipur International",
+      "distance": 13,
+      "type": "International"
+    }
+  },
+  {
+    "id": 17,
+    "name": "Lucknow",
+    "state": "Uttar Pradesh",
+    "lat": 26.8467,
+    "lng": 80.9462,
+    "description": "City of Nawabs.",
+    "climate": {
+      "averageTempSummer": 41,
+      "averageTempWinter": 8,
+      "temperatureRange": "8-41\u00b0C",
+      "humidity": "Low",
+      "annualRainfall": 900
+    },
+    "aqi": 180,
+    "healthcare": {
+      "hospitalCount": 70,
+      "score": 8.5
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Chaudhary Charan Singh",
+      "distance": 15,
+      "type": "International"
+    }
+  },
+  {
+    "id": 18,
+    "name": "Indore",
+    "state": "Madhya Pradesh",
+    "lat": 22.7196,
+    "lng": 75.8577,
+    "description": "Cleanest city.",
+    "climate": {
+      "averageTempSummer": 40,
+      "averageTempWinter": 10,
+      "temperatureRange": "10-40\u00b0C",
+      "humidity": "Low",
+      "annualRainfall": 950
+    },
+    "aqi": 85,
+    "healthcare": {
+      "hospitalCount": 55,
+      "score": 8.7
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Devi Ahilya Bai Holkar",
+      "distance": 8,
+      "type": "International"
+    }
+  },
+  {
+    "id": 19,
+    "name": "Bhopal",
+    "state": "Madhya Pradesh",
+    "lat": 23.2599,
+    "lng": 77.4126,
+    "description": "City of Lakes.",
+    "climate": {
+      "averageTempSummer": 40,
+      "averageTempWinter": 10,
+      "temperatureRange": "10-40\u00b0C",
+      "humidity": "Low",
+      "annualRainfall": 1100
+    },
+    "aqi": 90,
+    "healthcare": {
+      "hospitalCount": 50,
+      "score": 8.3
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Raja Bhoj",
+      "distance": 15,
+      "type": "Domestic"
+    }
+  },
+  {
+    "id": 20,
+    "name": "Nagpur",
+    "state": "Maharashtra",
+    "lat": 21.1458,
+    "lng": 79.0882,
+    "description": "Orange City.",
+    "climate": {
+      "averageTempSummer": 43,
+      "averageTempWinter": 12,
+      "temperatureRange": "12-43\u00b0C",
+      "humidity": "Low",
+      "annualRainfall": 1100
+    },
+    "aqi": 95,
+    "healthcare": {
+      "hospitalCount": 60,
+      "score": 8.6
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Dr. Babasaheb Ambedkar",
+      "distance": 8,
+      "type": "International"
+    }
+  },
+  {
+    "id": 21,
+    "name": "Visakhapatnam",
+    "state": "Andhra Pradesh",
+    "lat": 17.6868,
+    "lng": 83.2185,
+    "description": "Port city.",
+    "climate": {
+      "averageTempSummer": 34,
+      "averageTempWinter": 20,
+      "temperatureRange": "20-34\u00b0C",
+      "humidity": "High",
+      "annualRainfall": 1100
+    },
+    "aqi": 75,
+    "healthcare": {
+      "hospitalCount": 45,
+      "score": 8.4
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Visakhapatnam International",
+      "distance": 12,
+      "type": "International"
+    }
+  },
+  {
+    "id": 22,
+    "name": "Surat",
+    "state": "Gujarat",
+    "lat": 21.1702,
+    "lng": 72.8311,
+    "description": "Diamond city.",
+    "climate": {
+      "averageTempSummer": 37,
+      "averageTempWinter": 15,
+      "temperatureRange": "15-37\u00b0C",
+      "humidity": "Moderate",
+      "annualRainfall": 1200
+    },
+    "aqi": 95,
+    "healthcare": {
+      "hospitalCount": 65,
+      "score": 8.5
+    },
+    "costOfLiving": "Medium",
+    "nearestAirport": {
+      "name": "Surat International",
+      "distance": 12,
+      "type": "International"
+    }
+  },
+  {
+    "id": 23,
+    "name": "Vadodara",
+    "state": "Gujarat",
+    "lat": 22.3072,
+    "lng": 73.1812,
+    "description": "Cultural city of Gujarat.",
+    "climate": {
+      "averageTempSummer": 40,
+      "averageTempWinter": 13,
+      "temperatureRange": "13-40\u00b0C",
+      "humidity": "Moderate",
+      "annualRainfall": 900
+    },
+    "aqi": 90,
+    "healthcare": {
+      "hospitalCount": 40,
+      "score": 8.2
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Vadodara",
+      "distance": 6,
+      "type": "Domestic"
+    }
+  },
+  {
+    "id": 24,
+    "name": "Nashik",
+    "state": "Maharashtra",
+    "lat": 19.9975,
+    "lng": 73.7898,
+    "description": "Wine capital.",
+    "climate": {
+      "averageTempSummer": 36,
+      "averageTempWinter": 10,
+      "temperatureRange": "10-36\u00b0C",
+      "humidity": "Low",
+      "annualRainfall": 700
+    },
+    "aqi": 70,
+    "healthcare": {
+      "hospitalCount": 35,
+      "score": 8.0
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Ozar",
+      "distance": 20,
+      "type": "Domestic"
+    }
+  },
+  {
+    "id": 25,
+    "name": "Thiruvananthapuram",
+    "state": "Kerala",
+    "lat": 8.5241,
+    "lng": 76.9366,
+    "description": "Evergreen city.",
+    "climate": {
+      "averageTempSummer": 34,
+      "averageTempWinter": 23,
+      "temperatureRange": "23-34\u00b0C",
+      "humidity": "High",
+      "annualRainfall": 1700
+    },
+    "aqi": 45,
+    "healthcare": {
+      "hospitalCount": 60,
+      "score": 9.3
+    },
+    "costOfLiving": "Medium",
+    "nearestAirport": {
+      "name": "Trivandrum International",
+      "distance": 6,
+      "type": "International"
+    }
+  },
+  {
+    "id": 26,
+    "name": "Mangalore",
+    "state": "Karnataka",
+    "lat": 12.9141,
+    "lng": 74.856,
+    "description": "Coastal education hub.",
+    "climate": {
+      "averageTempSummer": 34,
+      "averageTempWinter": 22,
+      "temperatureRange": "22-34\u00b0C",
+      "humidity": "High",
+      "annualRainfall": 3500
+    },
+    "aqi": 40,
+    "healthcare": {
+      "hospitalCount": 50,
+      "score": 8.9
+    },
+    "costOfLiving": "Medium",
+    "nearestAirport": {
+      "name": "Mangalore International",
+      "distance": 15,
+      "type": "International"
+    }
+  },
+  {
+    "id": 27,
+    "name": "Bhubaneswar",
+    "state": "Odisha",
+    "lat": 20.2961,
+    "lng": 85.8245,
+    "description": "Temple city.",
+    "climate": {
+      "averageTempSummer": 37,
+      "averageTempWinter": 16,
+      "temperatureRange": "16-37\u00b0C",
+      "humidity": "High",
+      "annualRainfall": 1500
+    },
+    "aqi": 80,
+    "healthcare": {
+      "hospitalCount": 50,
+      "score": 8.5
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Biju Patnaik",
+      "distance": 6,
+      "type": "International"
+    }
+  },
+  {
+    "id": 28,
+    "name": "Guwahati",
+    "state": "Assam",
+    "lat": 26.1445,
+    "lng": 91.7364,
+    "description": "Gateway to Northeast.",
+    "climate": {
+      "averageTempSummer": 32,
+      "averageTempWinter": 10,
+      "temperatureRange": "10-32\u00b0C",
+      "humidity": "High",
+      "annualRainfall": 1700
+    },
+    "aqi": 100,
+    "healthcare": {
+      "hospitalCount": 40,
+      "score": 8.0
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Lokpriya Gopinath Bordoloi",
+      "distance": 20,
+      "type": "International"
+    }
+  },
+  {
+    "id": 29,
+    "name": "Ranchi",
+    "state": "Jharkhand",
+    "lat": 23.3441,
+    "lng": 85.3096,
+    "description": "City of Waterfalls.",
+    "climate": {
+      "averageTempSummer": 37,
+      "averageTempWinter": 10,
+      "temperatureRange": "10-37\u00b0C",
+      "humidity": "Moderate",
+      "annualRainfall": 1400
+    },
+    "aqi": 90,
+    "healthcare": {
+      "hospitalCount": 30,
+      "score": 7.8
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Birsa Munda",
+      "distance": 7,
+      "type": "Domestic"
+    }
+  },
+  {
+    "id": 30,
+    "name": "Raipur",
+    "state": "Chhattisgarh",
+    "lat": 21.2514,
+    "lng": 81.6296,
+    "description": "Rice bowl of India.",
+    "climate": {
+      "averageTempSummer": 42,
+      "averageTempWinter": 13,
+      "temperatureRange": "13-42\u00b0C",
+      "humidity": "Low",
+      "annualRainfall": 1300
+    },
+    "aqi": 100,
+    "healthcare": {
+      "hospitalCount": 35,
+      "score": 7.9
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Swami Vivekananda",
+      "distance": 15,
+      "type": "Domestic"
+    }
+  },
+  {
+    "id": 31,
+    "name": "Patna",
+    "state": "Bihar",
+    "lat": 25.5941,
+    "lng": 85.1376,
+    "description": "Historical city.",
+    "climate": {
+      "averageTempSummer": 40,
+      "averageTempWinter": 9,
+      "temperatureRange": "9-40\u00b0C",
+      "humidity": "Variable",
+      "annualRainfall": 1100
+    },
+    "aqi": 180,
+    "healthcare": {
+      "hospitalCount": 50,
+      "score": 8.0
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Jay Prakash Narayan",
+      "distance": 8,
+      "type": "International"
+    }
+  },
+  {
+    "id": 32,
+    "name": "Udaipur",
+    "state": "Rajasthan",
+    "lat": 24.5854,
+    "lng": 73.7125,
+    "description": "City of Lakes.",
+    "climate": {
+      "averageTempSummer": 38,
+      "averageTempWinter": 10,
+      "temperatureRange": "10-38\u00b0C",
+      "humidity": "Low",
+      "annualRainfall": 650
+    },
+    "aqi": 70,
+    "healthcare": {
+      "hospitalCount": 25,
+      "score": 7.9
+    },
+    "costOfLiving": "Medium",
+    "nearestAirport": {
+      "name": "Maharana Pratap",
+      "distance": 22,
+      "type": "Domestic"
+    }
+  },
+  {
+    "id": 33,
+    "name": "Jodhpur",
+    "state": "Rajasthan",
+    "lat": 26.2389,
+    "lng": 73.0243,
+    "description": "Blue City.",
+    "climate": {
+      "averageTempSummer": 41,
+      "averageTempWinter": 10,
+      "temperatureRange": "10-41\u00b0C",
+      "humidity": "Low",
+      "annualRainfall": 400
+    },
+    "aqi": 100,
+    "healthcare": {
+      "hospitalCount": 30,
+      "score": 7.8
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Jodhpur Airport",
+      "distance": 5,
+      "type": "Domestic"
+    }
+  },
+  {
+    "id": 34,
+    "name": "Amritsar",
+    "state": "Punjab",
+    "lat": 31.634,
+    "lng": 74.8723,
+    "description": "Spiritual center.",
+    "climate": {
+      "averageTempSummer": 40,
+      "averageTempWinter": 5,
+      "temperatureRange": "5-40\u00b0C",
+      "humidity": "Moderate",
+      "annualRainfall": 700
+    },
+    "aqi": 150,
+    "healthcare": {
+      "hospitalCount": 40,
+      "score": 8.2
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Sri Guru Ram Dass Jee",
+      "distance": 11,
+      "type": "International"
+    }
+  },
+  {
+    "id": 35,
+    "name": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "description": "Industrial hub.",
+    "climate": {
+      "averageTempSummer": 40,
+      "averageTempWinter": 6,
+      "temperatureRange": "6-40\u00b0C",
+      "humidity": "Moderate",
+      "annualRainfall": 700
+    },
+    "aqi": 160,
+    "healthcare": {
+      "hospitalCount": 45,
+      "score": 8.3
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Sahnewal",
+      "distance": 12,
+      "type": "Domestic"
+    }
+  },
+  {
+    "id": 36,
+    "name": "Shimla",
+    "state": "Himachal Pradesh",
+    "lat": 31.1048,
+    "lng": 77.1734,
+    "description": "Queen of Hills.",
+    "climate": {
+      "averageTempSummer": 25,
+      "averageTempWinter": -2,
+      "temperatureRange": "-2-25\u00b0C",
+      "humidity": "Moderate",
+      "annualRainfall": 1500
+    },
+    "aqi": 30,
+    "healthcare": {
+      "hospitalCount": 15,
+      "score": 7.5
+    },
+    "costOfLiving": "Medium",
+    "nearestAirport": {
+      "name": "Shimla Airport",
+      "distance": 22,
+      "type": "Domestic"
+    }
+  },
+  {
+    "id": 37,
+    "name": "Manali",
+    "state": "Himachal Pradesh",
+    "lat": 32.2396,
+    "lng": 77.1887,
+    "description": "Mountain resort.",
+    "climate": {
+      "averageTempSummer": 25,
+      "averageTempWinter": -5,
+      "temperatureRange": "-5-25\u00b0C",
+      "humidity": "Moderate",
+      "annualRainfall": 1400
+    },
+    "aqi": 20,
+    "healthcare": {
+      "hospitalCount": 10,
+      "score": 6.5
+    },
+    "costOfLiving": "High",
+    "nearestAirport": {
+      "name": "Kullu Manali",
+      "distance": 50,
+      "type": "Domestic"
+    }
+  },
+  {
+    "id": 38,
+    "name": "Dharamshala",
+    "state": "Himachal Pradesh",
+    "lat": 32.219,
+    "lng": 76.3234,
+    "description": "Tibetan culture.",
+    "climate": {
+      "averageTempSummer": 30,
+      "averageTempWinter": 5,
+      "temperatureRange": "5-30\u00b0C",
+      "humidity": "Moderate",
+      "annualRainfall": 2500
+    },
+    "aqi": 25,
+    "healthcare": {
+      "hospitalCount": 15,
+      "score": 7.0
+    },
+    "costOfLiving": "Medium",
+    "nearestAirport": {
+      "name": "Gaggal",
+      "distance": 13,
+      "type": "Domestic"
+    }
+  },
+  {
+    "id": 39,
+    "name": "Gangtok",
+    "state": "Sikkim",
+    "lat": 27.3314,
+    "lng": 88.6138,
+    "description": "Clean and organic.",
+    "climate": {
+      "averageTempSummer": 25,
+      "averageTempWinter": 4,
+      "temperatureRange": "4-25\u00b0C",
+      "humidity": "High",
+      "annualRainfall": 3000
+    },
+    "aqi": 25,
+    "healthcare": {
+      "hospitalCount": 12,
+      "score": 7.5
+    },
+    "costOfLiving": "Medium",
+    "nearestAirport": {
+      "name": "Pakyong",
+      "distance": 30,
+      "type": "Domestic"
+    }
+  },
+  {
+    "id": 40,
+    "name": "Shillong",
+    "state": "Meghalaya",
+    "lat": 25.5788,
+    "lng": 91.8933,
+    "description": "Scotland of the East.",
+    "climate": {
+      "averageTempSummer": 25,
+      "averageTempWinter": 4,
+      "temperatureRange": "4-25\u00b0C",
+      "humidity": "High",
+      "annualRainfall": 2500
+    },
+    "aqi": 30,
+    "healthcare": {
+      "hospitalCount": 20,
+      "score": 7.8
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Shillong Airport",
+      "distance": 30,
+      "type": "Domestic"
+    }
+  },
+  {
+    "id": 41,
+    "name": "Aurangabad",
+    "state": "Maharashtra",
+    "lat": 19.8762,
+    "lng": 75.3433,
+    "description": "Tourism hub.",
+    "climate": {
+      "averageTempSummer": 39,
+      "averageTempWinter": 12,
+      "temperatureRange": "12-39\u00b0C",
+      "humidity": "Low",
+      "annualRainfall": 730
+    },
+    "aqi": 100,
+    "healthcare": {
+      "hospitalCount": 30,
+      "score": 8.0
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Aurangabad Airport",
+      "distance": 10,
+      "type": "Domestic"
+    }
+  },
+  {
+    "id": 42,
+    "name": "Madurai",
+    "state": "Tamil Nadu",
+    "lat": 9.9252,
+    "lng": 78.1198,
+    "description": "Cultural soul of TN.",
+    "climate": {
+      "averageTempSummer": 38,
+      "averageTempWinter": 22,
+      "temperatureRange": "22-38\u00b0C",
+      "humidity": "Moderate",
+      "annualRainfall": 850
+    },
+    "aqi": 70,
+    "healthcare": {
+      "hospitalCount": 40,
+      "score": 8.7
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Madurai Airport",
+      "distance": 12,
+      "type": "International"
+    }
+  },
+  {
+    "id": 43,
+    "name": "Trichy",
+    "state": "Tamil Nadu",
+    "lat": 10.7905,
+    "lng": 78.7047,
+    "description": "Education and industry.",
+    "climate": {
+      "averageTempSummer": 38,
+      "averageTempWinter": 21,
+      "temperatureRange": "21-38\u00b0C",
+      "humidity": "Moderate",
+      "annualRainfall": 800
+    },
+    "aqi": 65,
+    "healthcare": {
+      "hospitalCount": 35,
+      "score": 8.5
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Tiruchirappalli",
+      "distance": 5,
+      "type": "International"
+    }
+  },
+  {
+    "id": 44,
+    "name": "Salem",
+    "state": "Tamil Nadu",
+    "lat": 11.6643,
+    "lng": 78.146,
+    "description": "Steel city.",
+    "climate": {
+      "averageTempSummer": 37,
+      "averageTempWinter": 20,
+      "temperatureRange": "20-37\u00b0C",
+      "humidity": "Moderate",
+      "annualRainfall": 900
+    },
+    "aqi": 75,
+    "healthcare": {
+      "hospitalCount": 30,
+      "score": 8.2
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Salem Airport",
+      "distance": 15,
+      "type": "Domestic"
+    }
+  },
+  {
+    "id": 45,
+    "name": "Vellore",
+    "state": "Tamil Nadu",
+    "lat": 12.9165,
+    "lng": 79.1325,
+    "description": "Medical hub (CMC).",
+    "climate": {
+      "averageTempSummer": 38,
+      "averageTempWinter": 19,
+      "temperatureRange": "19-38\u00b0C",
+      "humidity": "Moderate",
+      "annualRainfall": 950
+    },
+    "aqi": 60,
+    "healthcare": {
+      "hospitalCount": 25,
+      "score": 9.0
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Chennai International",
+      "distance": 130,
+      "type": "International"
+    }
+  },
+  {
+    "id": 46,
+    "name": "Vijayawada",
+    "state": "Andhra Pradesh",
+    "lat": 16.5062,
+    "lng": 80.648,
+    "description": "Business capital of AP.",
+    "climate": {
+      "averageTempSummer": 40,
+      "averageTempWinter": 18,
+      "temperatureRange": "18-40\u00b0C",
+      "humidity": "High",
+      "annualRainfall": 950
+    },
+    "aqi": 90,
+    "healthcare": {
+      "hospitalCount": 45,
+      "score": 8.5
+    },
+    "costOfLiving": "Medium",
+    "nearestAirport": {
+      "name": "Vijayawada Airport",
+      "distance": 20,
+      "type": "International"
+    }
+  },
+  {
+    "id": 47,
+    "name": "Gwalior",
+    "state": "Madhya Pradesh",
+    "lat": 26.2183,
+    "lng": 78.1828,
+    "description": "Historic city.",
+    "climate": {
+      "averageTempSummer": 42,
+      "averageTempWinter": 7,
+      "temperatureRange": "7-42\u00b0C",
+      "humidity": "Low",
+      "annualRainfall": 750
+    },
+    "aqi": 160,
+    "healthcare": {
+      "hospitalCount": 30,
+      "score": 7.8
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Gwalior Airport",
+      "distance": 10,
+      "type": "Domestic"
+    }
+  },
+  {
+    "id": 48,
+    "name": "Jabalpur",
+    "state": "Madhya Pradesh",
+    "lat": 23.1815,
+    "lng": 79.9864,
+    "description": "Marble rocks.",
+    "climate": {
+      "averageTempSummer": 41,
+      "averageTempWinter": 10,
+      "temperatureRange": "10-41\u00b0C",
+      "humidity": "Moderate",
+      "annualRainfall": 1200
+    },
+    "aqi": 80,
+    "healthcare": {
+      "hospitalCount": 30,
+      "score": 8.0
+    },
+    "costOfLiving": "Low",
+    "nearestAirport": {
+      "name": "Jabalpur Airport",
+      "distance": 20,
+      "type": "Domestic"
+    }
+  },
+  {
+    "id": 49,
+    "name": "Noida",
+    "state": "Uttar Pradesh",
+    "lat": 28.5355,
+    "lng": 77.391,
+    "description": "Planned IT city.",
+    "climate": {
+      "averageTempSummer": 45,
+      "averageTempWinter": 6,
+      "temperatureRange": "6-45\u00b0C",
+      "humidity": "Low",
+      "annualRainfall": 700
+    },
+    "aqi": 240,
+    "healthcare": {
+      "hospitalCount": 80,
+      "score": 9.1
+    },
+    "costOfLiving": "High",
+    "nearestAirport": {
+      "name": "Indira Gandhi International",
+      "distance": 30,
+      "type": "International"
+    }
+  },
+  {
+    "id": 50,
+    "name": "Gurgaon",
+    "state": "Haryana",
+    "lat": 28.4595,
+    "lng": 77.0266,
+    "description": "Millennium city.",
+    "climate": {
+      "averageTempSummer": 44,
+      "averageTempWinter": 6,
+      "temperatureRange": "6-44\u00b0C",
+      "humidity": "Low",
+      "annualRainfall": 600
+    },
+    "aqi": 230,
+    "healthcare": {
+      "hospitalCount": 90,
+      "score": 9.4
+    },
+    "costOfLiving": "High",
+    "nearestAirport": {
+      "name": "Indira Gandhi International",
+      "distance": 15,
+      "type": "International"
+    }
+  }
 ]

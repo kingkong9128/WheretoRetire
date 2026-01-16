@@ -4,12 +4,18 @@ An interactive web application helping users find their ideal retirement locatio
 
 ## Features
 
-- **Interactive Map**: Visual exploration of top retirement destinations using Leaflet.js and OpenStreetMap.
+- **Interactive Map**: Visual exploration of 40+ top retirement destinations across India.
 - **Smart Filtering**: 
   - **Climate**: Filter cities by maximum summer temperature.
-  - **Healthcare**: Filter by a proprietary Healthcare Score (derived from hospital density and quality).
+  - **Air Quality**: New! Filter by Average Annual AQI.
+  - **Healthcare**: Filter by Healthcare Score.
+- **Comprehensive Data**: Each city includes details on:
+  - Temperature Range & Annual Rainfall
+  - Air Quality Index (AQI)
+  - Healthcare Quality & Hospital Access
+  - Nearest Airport (Name, Distance, Type)
+  - Cost of Living Estimates
 - **Responsive Design**: Works seamlessly on desktop and mobile.
-- **Real-ish Data**: Includes a curated dataset of ~15 top Indian cities with researched climate and healthcare metrics.
 
 ## Tech Stack
 

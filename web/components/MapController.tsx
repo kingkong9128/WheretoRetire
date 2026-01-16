@@ -15,7 +15,8 @@ const MapController = () => {
     const [loading, setLoading] = useState(true);
     const [filters, setFilters] = useState({
         maxTemp: 45,
-        minHospitalScore: 0
+        minHospitalScore: 0,
+        maxAqi: 300
     });
 
     const fetchPlaces = async () => {
@@ -24,6 +25,7 @@ const MapController = () => {
             const queryParams = new URLSearchParams();
             if (filters.maxTemp < 45) queryParams.append('maxTemp', filters.maxTemp.toString());
             if (filters.minHospitalScore > 0) queryParams.append('minHospitalScore', filters.minHospitalScore.toString());
+            if (filters.maxAqi < 300) queryParams.append('maxAqi', filters.maxAqi.toString());
 
             const res = await fetch(`/api/places?${queryParams.toString()}`);
             const data = await res.json();
@@ -47,6 +49,10 @@ const MapController = () => {
         setFilters(prev => ({ ...prev, minHospitalScore: parseInt(e.target.value) }));
     };
 
+    const handleAqiChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setFilters(prev => ({ ...prev, maxAqi: parseInt(e.target.value) }));
+    };
+
     return (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
 
@@ -62,7 +68,7 @@ const MapController = () => {
                         </label>
                         <input
                             type="range"
-                            min="25"
+                            min="20"
                             max="45"
                             step="1"
                             value={filters.maxTemp}
@@ -70,7 +76,7 @@ const MapController = () => {
                             style={{ width: '100%', accentColor: '#0070f3' }}
                         />
                         <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px', color: '#888' }}>
-                            <span>25°C</span>
+                            <span>20°C</span>
                             <span>45°C</span>
                         </div>
                     </div>
@@ -84,7 +90,7 @@ const MapController = () => {
                             type="range"
                             min="0"
                             max="10"
-                            step="1"
+                            step="0.5"
                             value={filters.minHospitalScore}
                             onChange={handleScoreChange}
                             style={{ width: '100%', accentColor: '#0070f3' }}
@@ -92,6 +98,26 @@ const MapController = () => {
                         <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px', color: '#888' }}>
                             <span>0</span>
                             <span>10</span>
+                        </div>
+                    </div>
+
+                    {/* AQI Filter */}
+                    <div style={{ flex: 1, minWidth: '250px' }}>
+                        <label style={{ display: 'block', marginBottom: '8px', fontWeight: 'bold' }}>
+                            Max Average AQI: <span style={{ color: filters.maxAqi < 100 ? '#10b981' : filters.maxAqi < 200 ? '#f59e0b' : '#ef4444' }}>{filters.maxAqi}</span>
+                        </label>
+                        <input
+                            type="range"
+                            min="0"
+                            max="300"
+                            step="10"
+                            value={filters.maxAqi}
+                            onChange={handleAqiChange}
+                            style={{ width: '100%', accentColor: '#0070f3' }}
+                        />
+                        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px', color: '#888' }}>
+                            <span>Clean (0)</span>
+                            <span>Hazardous (300+)</span>
                         </div>
                     </div>
 
