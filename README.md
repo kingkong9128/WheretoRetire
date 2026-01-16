@@ -1,3 +1,4 @@
+
 # WhereToRetire 🇮🇳
 
 An interactive web application helping users find their ideal retirement location in India based on key criteria like Climate and Healthcare.
