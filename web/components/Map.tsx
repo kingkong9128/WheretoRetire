@@ -3,6 +3,8 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
+import { City } from '@/types/City';
+import { useEffect } from 'react';
 
 // Icons fix for Leaflet in React/Next.js
 const iconUrl = 'https://unpkg.com/leaflet@1.9.3/dist/images/marker-icon.png';
@@ -19,18 +21,17 @@ const customIcon = new L.Icon({
     shadowSize: [41, 41]
 });
 
-// Sample data - Top Retirement Destinations in India
-const places = [
-    { id: 1, name: "Kochi, Kerala", lat: 9.9312, lng: 76.2673, description: "Coastal city, good healthcare, moderate climate." },
-    { id: 2, name: "Dehradun, Uttarakhand", lat: 30.3165, lng: 78.0322, description: "Hill station, pleasant weather, peaceful." },
-    { id: 3, name: "Pune, Maharashtra", lat: 18.5204, lng: 73.8567, description: "Cultural hub, moderate climate, excellent hospitals." },
-    { id: 4, name: "Coimbatore, Tamil Nadu", lat: 11.0168, lng: 76.9558, description: "Pleasant climate, good healthcare infrastructure." },
-    { id: 5, name: "Chandigarh", lat: 30.7333, lng: 76.7794, description: "Planned city, green, organized." },
-    { id: 6, name: "Mysore, Karnataka", lat: 12.2958, lng: 76.6394, description: "Cleanest city, heritage, relaxed pace." },
-    { id: 7, name: "Goa", lat: 15.2993, lng: 74.1240, description: "Beaches, relaxed lifestyle, good community." }
-];
+interface MapProps {
+    places: City[];
+}
 
-const Map = () => {
+const Map = ({ places }: MapProps) => {
+
+    // Fix for map not rendering correctly sometimes on load
+    useEffect(() => {
+        window.dispatchEvent(new Event('resize'));
+    }, [places]);
+
     return (
         <MapContainer center={[20.5937, 78.9629]} zoom={5} style={{ height: '100%', width: '100%', minHeight: '500px' }}>
             <TileLayer
@@ -40,9 +41,17 @@ const Map = () => {
             {places.map((place) => (
                 <Marker key={place.id} position={[place.lat, place.lng]} icon={customIcon}>
                     <Popup>
-                        <div style={{ fontFamily: 'sans-serif' }}>
-                            <h3 style={{ margin: '0 0 5px 0', fontSize: '16px' }}>{place.name}</h3>
-                            <p style={{ margin: 0, color: '#555' }}>{place.description}</p>
+                        <div style={{ fontFamily: 'sans-serif', minWidth: '200px' }}>
+                            <h3 style={{ margin: '0 0 5px 0', fontSize: '16px' }}>{place.name}, {place.state}</h3>
+                            <p style={{ margin: 0, color: '#555', fontSize: '14px' }}>{place.description}</p>
+                            <hr style={{ margin: '8px 0', border: 'none', borderTop: '1px solid #eee' }} />
+                            <div style={{ fontSize: '13px', lineHeight: '1.4' }}>
+                                <div><strong>Summer Temp:</strong> {place.climate.averageTempSummer}°C</div>
+                                <div><strong>Humidity:</strong> {place.climate.humidity}</div>
+                                <div><strong>Healthcare Score:</strong> {place.healthcare.score}/10</div>
+                                <div><strong>Ranked Hospitals:</strong> ~{place.healthcare.hospitalCount}</div>
+                                <div><strong>Cost of Living:</strong> {place.costOfLiving}</div>
+                            </div>
                         </div>
                     </Popup>
                 </Marker>

@@ -1,0 +1,272 @@
+[
+    {
+        "id": 1,
+        "name": "Coimbatore",
+        "state": "Tamil Nadu",
+        "lat": 11.0168,
+        "lng": 76.9558,
+        "description": "Known as the Manchester of South India, excellent healthcare and mild climate.",
+        "climate": {
+            "averageTempSummer": 35,
+            "averageTempWinter": 20,
+            "humidity": "Moderate"
+        },
+        "healthcare": {
+            "hospitalCount": 50,
+            "score": 9.5
+        },
+        "costOfLiving": "Medium"
+    },
+    {
+        "id": 2,
+        "name": "Pune",
+        "state": "Maharashtra",
+        "lat": 18.5204,
+        "lng": 73.8567,
+        "description": "Cultural capital of Maharashtra, vibrant lifestyle with moderate weather.",
+        "climate": {
+            "averageTempSummer": 37,
+            "averageTempWinter": 12,
+            "humidity": "Moderate"
+        },
+        "healthcare": {
+            "hospitalCount": 80,
+            "score": 9.0
+        },
+        "costOfLiving": "High"
+    },
+    {
+        "id": 3,
+        "name": "Chandigarh",
+        "state": "Chandigarh",
+        "lat": 30.7333,
+        "lng": 76.7794,
+        "description": "India's first planned city, known for architecture and urban design.",
+        "climate": {
+            "averageTempSummer": 39,
+            "averageTempWinter": 7,
+            "humidity": "Low"
+        },
+        "healthcare": {
+            "hospitalCount": 45,
+            "score": 8.8
+        },
+        "costOfLiving": "High"
+    },
+    {
+        "id": 4,
+        "name": "Dehradun",
+        "state": "Uttarakhand",
+        "lat": 30.3165,
+        "lng": 78.0322,
+        "description": "Nestled in the foothills of the Himalayas, scenic and peaceful.",
+        "climate": {
+            "averageTempSummer": 30,
+            "averageTempWinter": 5,
+            "humidity": "Moderate"
+        },
+        "healthcare": {
+            "hospitalCount": 30,
+            "score": 8.5
+        },
+        "costOfLiving": "Medium"
+    },
+    {
+        "id": 5,
+        "name": "Mysore",
+        "state": "Karnataka",
+        "lat": 12.2958,
+        "lng": 76.6394,
+        "description": "Heritage city with a slow pace of life and clean environment.",
+        "climate": {
+            "averageTempSummer": 34,
+            "averageTempWinter": 17,
+            "humidity": "Moderate"
+        },
+        "healthcare": {
+            "hospitalCount": 25,
+            "score": 8.0
+        },
+        "costOfLiving": "Low"
+    },
+    {
+        "id": 6,
+        "name": "Kochi",
+        "state": "Kerala",
+        "lat": 9.9312,
+        "lng": 76.2673,
+        "description": "Queen of the Arabian Sea, excellent healthcare and tropical vibes.",
+        "climate": {
+            "averageTempSummer": 33,
+            "averageTempWinter": 24,
+            "humidity": "High"
+        },
+        "healthcare": {
+            "hospitalCount": 60,
+            "score": 9.2
+        },
+        "costOfLiving": "Medium"
+    },
+    {
+        "id": 7,
+        "name": "Bangalore",
+        "state": "Karnataka",
+        "lat": 12.9716,
+        "lng": 77.5946,
+        "description": "IT Capital with cosmopolitan culture and pleasant year-round weather.",
+        "climate": {
+            "averageTempSummer": 34,
+            "averageTempWinter": 16,
+            "humidity": "Moderate"
+        },
+        "healthcare": {
+            "hospitalCount": 100,
+            "score": 9.8
+        },
+        "costOfLiving": "High"
+    },
+    {
+        "id": 8,
+        "name": "Goa",
+        "state": "Goa",
+        "lat": 15.2993,
+        "lng": 74.1240,
+        "description": "Relaxed beach lifestyle with good community for seniors.",
+        "climate": {
+            "averageTempSummer": 33,
+            "averageTempWinter": 20,
+            "humidity": "High"
+        },
+        "healthcare": {
+            "hospitalCount": 20,
+            "score": 8.0
+        },
+        "costOfLiving": "High"
+    },
+    {
+        "id": 9,
+        "name": "Jaipur",
+        "state": "Rajasthan",
+        "lat": 26.9124,
+        "lng": 75.7873,
+        "description": "The Pink City, rich in history and culture.",
+        "climate": {
+            "averageTempSummer": 40,
+            "averageTempWinter": 9,
+            "humidity": "Low"
+        },
+        "healthcare": {
+            "hospitalCount": 40,
+            "score": 8.5
+        },
+        "costOfLiving": "Low"
+    },
+    {
+        "id": 10,
+        "name": "Bhubaneswar",
+        "state": "Odisha",
+        "lat": 20.2961,
+        "lng": 85.8245,
+        "description": "Temple City of India, emerging as a smart city.",
+        "climate": {
+            "averageTempSummer": 37,
+            "averageTempWinter": 16,
+            "humidity": "High"
+        },
+        "healthcare": {
+            "hospitalCount": 35,
+            "score": 8.3
+        },
+        "costOfLiving": "Low"
+    },
+    {
+        "id": 11,
+        "name": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "lat": 17.6868,
+        "lng": 83.2185,
+        "description": "Coastal city with scenic hills and clean beaches.",
+        "climate": {
+            "averageTempSummer": 34,
+            "averageTempWinter": 20,
+            "humidity": "High"
+        },
+        "healthcare": {
+            "hospitalCount": 30,
+            "score": 8.2
+        },
+        "costOfLiving": "Low"
+    },
+    {
+        "id": 12,
+        "name": "Nashik",
+        "state": "Maharashtra",
+        "lat": 19.9975,
+        "lng": 73.7898,
+        "description": "Wine capital, pleasant climate, and spiritual significance.",
+        "climate": {
+            "averageTempSummer": 36,
+            "averageTempWinter": 10,
+            "humidity": "Low"
+        },
+        "healthcare": {
+            "hospitalCount": 25,
+            "score": 8.0
+        },
+        "costOfLiving": "Low"
+    },
+    {
+        "id": 13,
+        "name": "Trivandrum",
+        "state": "Kerala",
+        "lat": 8.5241,
+        "lng": 76.9366,
+        "description": "Capital of Kerala, peaceful with high social infrastructure.",
+        "climate": {
+            "averageTempSummer": 34,
+            "averageTempWinter": 23,
+            "humidity": "High"
+        },
+        "healthcare": {
+            "hospitalCount": 40,
+            "score": 9.3
+        },
+        "costOfLiving": "Medium"
+    },
+    {
+        "id": 14,
+        "name": "Lucknow",
+        "state": "Uttar Pradesh",
+        "lat": 26.8467,
+        "lng": 80.9462,
+        "description": "City of Nawabs, known for its culture and food.",
+        "climate": {
+            "averageTempSummer": 41,
+            "averageTempWinter": 8,
+            "humidity": "Low"
+        },
+        "healthcare": {
+            "hospitalCount": 45,
+            "score": 8.4
+        },
+        "costOfLiving": "Low"
+    },
+    {
+        "id": 15,
+        "name": "Pondicherry",
+        "state": "Puducherry",
+        "lat": 11.9416,
+        "lng": 79.8083,
+        "description": "Riviera of the East, French colonial influence.",
+        "climate": {
+            "averageTempSummer": 36,
+            "averageTempWinter": 21,
+            "humidity": "High"
+        },
+        "healthcare": {
+            "hospitalCount": 15,
+            "score": 8.1
+        },
+        "costOfLiving": "Medium"
+    }
+]
