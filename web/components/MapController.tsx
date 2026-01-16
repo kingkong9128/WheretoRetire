@@ -1,8 +1,9 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import dynamic from 'next/dynamic';
 import { City } from '@/types/City';
+import { calculateMatchScore, UserPreferences } from '../utils/scoring';
 
 // Dynamic import with no SSR
 const Map = dynamic(() => import('./Map'), {
@@ -11,125 +12,148 @@ const Map = dynamic(() => import('./Map'), {
 });
 
 const MapController = () => {
-    const [places, setPlaces] = useState<City[]>([]);
+    const [allPlaces, setAllPlaces] = useState<City[]>([]);
+    const [displayedPlaces, setDisplayedPlaces] = useState<City[]>([]);
     const [loading, setLoading] = useState(true);
-    const [filters, setFilters] = useState({
-        maxTemp: 45,
-        minHospitalScore: 0,
-        maxAqi: 300
+
+    // Scoring Preferences
+    const [prefs, setPrefs] = useState<UserPreferences>({
+        healthcareImportance: 5,
+        cleanAirImportance: 5,
+        warmthPreference: 5,
+        lowCostImportance: 5
     });
 
-    const fetchPlaces = async () => {
-        setLoading(true);
-        try {
-            const queryParams = new URLSearchParams();
-            if (filters.maxTemp < 45) queryParams.append('maxTemp', filters.maxTemp.toString());
-            if (filters.minHospitalScore > 0) queryParams.append('minHospitalScore', filters.minHospitalScore.toString());
-            if (filters.maxAqi < 300) queryParams.append('maxAqi', filters.maxAqi.toString());
-
-            const res = await fetch(`/api/places?${queryParams.toString()}`);
-            const data = await res.json();
-            setPlaces(data);
-        } catch (error) {
-            console.error('Failed to fetch places:', error);
-        } finally {
-            setLoading(false);
-        }
-    };
-
+    // Fetch all data once
     useEffect(() => {
-        fetchPlaces();
-    }, [filters]);
+        const initData = async () => {
+            try {
+                const res = await fetch('/api/places');
+                const data = await res.json();
+                setAllPlaces(data);
+            } catch (error) {
+                console.error("Failed to load cities", error);
+            } finally {
+                setLoading(false);
+            }
+        };
+        initData();
+    }, []);
 
-    const handleTempChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setFilters(prev => ({ ...prev, maxTemp: parseInt(e.target.value) }));
-    };
+    // Recalculate scores when prefs change
+    useEffect(() => {
+        if (allPlaces.length === 0) return;
 
-    const handleScoreChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setFilters(prev => ({ ...prev, minHospitalScore: parseInt(e.target.value) }));
-    };
+        const scored = allPlaces.map(city => ({
+            ...city,
+            matchScore: calculateMatchScore(city, prefs)
+        }));
 
-    const handleAqiChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setFilters(prev => ({ ...prev, maxAqi: parseInt(e.target.value) }));
+        // Sort by match score descending
+        scored.sort((a, b) => (b.matchScore || 0) - (a.matchScore || 0));
+
+        // Filter out low matches (e.g. below 40%) to keep map clean? 
+        // Or just show top 30?
+        // Let's show Top 50 to ensure coverage but not chaos.
+        setDisplayedPlaces(scored.slice(0, 50));
+
+    }, [prefs, allPlaces]);
+
+    const handlePrefChange = (key: keyof UserPreferences, value: number) => {
+        setPrefs(prev => ({ ...prev, [key]: value }));
     };
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
 
-            {/* Filters Section */}
-            <div style={{ padding: '20px', background: '#fff', borderRadius: '12px', boxShadow: '0 2px 4px rgba(0,0,0,0.05)', border: '1px solid #eee' }}>
-                <h3 style={{ marginTop: 0, marginBottom: '15px' }}>Filters</h3>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '30px' }}>
+            {/* Weighted Filters Section */}
+            <div style={{ padding: '25px', background: '#fff', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.08)', border: '1px solid #f0f0f0' }}>
+                <h3 style={{ marginTop: 0, marginBottom: '20px', fontSize: '1.2rem', color: '#111' }}>
+                    🎓 Personalize Your Retirement
+                    <span style={{ display: 'block', fontSize: '0.9rem', color: '#666', fontWeight: 'normal', marginTop: '5px' }}>
+                        Adjust sliders to tell us what matters most to you. We'll rank 85+ cities to find your perfect match.
+                    </span>
+                </h3>
 
-                    {/* Temperature Filter */}
-                    <div style={{ flex: 1, minWidth: '250px' }}>
-                        <label style={{ display: 'block', marginBottom: '8px', fontWeight: 'bold' }}>
-                            Max Summer Temperature: <span style={{ color: '#0070f3' }}>{filters.maxTemp}°C</span>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '30px' }}>
+
+                    {/* Healthcare Importance */}
+                    <div>
+                        <label style={{ display: 'block', marginBottom: '10px', fontWeight: '600', color: '#333' }}>
+                            🏥 Healthcare Quality
                         </label>
-                        <input
-                            type="range"
-                            min="20"
-                            max="45"
-                            step="1"
-                            value={filters.maxTemp}
-                            onChange={handleTempChange}
-                            style={{ width: '100%', accentColor: '#0070f3' }}
-                        />
-                        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px', color: '#888' }}>
-                            <span>20°C</span>
-                            <span>45°C</span>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                            <span style={{ fontSize: '0.8rem', color: '#888' }}>Neutral</span>
+                            <input
+                                type="range" min="0" max="10" step="1"
+                                value={prefs.healthcareImportance}
+                                onChange={(e) => handlePrefChange('healthcareImportance', parseInt(e.target.value))}
+                                style={{ flex: 1, accentColor: '#ef4444' }}
+                            />
+                            <span style={{ fontSize: '0.8rem', color: '#888' }}>Critical</span>
                         </div>
                     </div>
 
-                    {/* Hospital Score Filter */}
-                    <div style={{ flex: 1, minWidth: '250px' }}>
-                        <label style={{ display: 'block', marginBottom: '8px', fontWeight: 'bold' }}>
-                            Min Hospital Score: <span style={{ color: '#0070f3' }}>{filters.minHospitalScore}+</span>
+                    {/* Clean Air Importance */}
+                    <div>
+                        <label style={{ display: 'block', marginBottom: '10px', fontWeight: '600', color: '#333' }}>
+                            🍃 Clean Air (AQI)
                         </label>
-                        <input
-                            type="range"
-                            min="0"
-                            max="10"
-                            step="0.5"
-                            value={filters.minHospitalScore}
-                            onChange={handleScoreChange}
-                            style={{ width: '100%', accentColor: '#0070f3' }}
-                        />
-                        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px', color: '#888' }}>
-                            <span>0</span>
-                            <span>10</span>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                            <span style={{ fontSize: '0.8rem', color: '#888' }}>Neutral</span>
+                            <input
+                                type="range" min="0" max="10" step="1"
+                                value={prefs.cleanAirImportance}
+                                onChange={(e) => handlePrefChange('cleanAirImportance', parseInt(e.target.value))}
+                                style={{ flex: 1, accentColor: '#10b981' }}
+                            />
+                            <span style={{ fontSize: '0.8rem', color: '#888' }}>Critical</span>
                         </div>
                     </div>
 
-                    {/* AQI Filter */}
-                    <div style={{ flex: 1, minWidth: '250px' }}>
-                        <label style={{ display: 'block', marginBottom: '8px', fontWeight: 'bold' }}>
-                            Max Average AQI: <span style={{ color: filters.maxAqi < 100 ? '#10b981' : filters.maxAqi < 200 ? '#f59e0b' : '#ef4444' }}>{filters.maxAqi}</span>
+                    {/* Warmth Preference */}
+                    <div>
+                        <label style={{ display: 'block', marginBottom: '10px', fontWeight: '600', color: '#333' }}>
+                            ☀️ Climate Preference
                         </label>
-                        <input
-                            type="range"
-                            min="0"
-                            max="300"
-                            step="10"
-                            value={filters.maxAqi}
-                            onChange={handleAqiChange}
-                            style={{ width: '100%', accentColor: '#0070f3' }}
-                        />
-                        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px', color: '#888' }}>
-                            <span>Clean (0)</span>
-                            <span>Hazardous (300+)</span>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                            <span style={{ fontSize: '0.8rem', color: '#888' }}>❄️ Cool</span>
+                            <input
+                                type="range" min="0" max="10" step="1"
+                                value={prefs.warmthPreference}
+                                onChange={(e) => handlePrefChange('warmthPreference', parseInt(e.target.value))}
+                                style={{ flex: 1, accentColor: '#f59e0b' }}
+                            />
+                            <span style={{ fontSize: '0.8rem', color: '#888' }}>🔥 Warm</span>
+                        </div>
+                    </div>
+
+                    {/* Cost Importance */}
+                    <div>
+                        <label style={{ display: 'block', marginBottom: '10px', fontWeight: '600', color: '#333' }}>
+                            💰 Low Cost of Living
+                        </label>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                            <span style={{ fontSize: '0.8rem', color: '#888' }}>Whatever</span>
+                            <input
+                                type="range" min="0" max="10" step="1"
+                                value={prefs.lowCostImportance}
+                                onChange={(e) => handlePrefChange('lowCostImportance', parseInt(e.target.value))}
+                                style={{ flex: 1, accentColor: '#6366f1' }}
+                            />
+                            <span style={{ fontSize: '0.8rem', color: '#888' }}>Vital</span>
                         </div>
                     </div>
 
                 </div>
-                <div style={{ marginTop: '10px', fontSize: '14px', color: '#666' }}>
-                    Found <strong>{places.length}</strong> locations matching your criteria.
+                <div style={{ marginTop: '20px', fontSize: '14px', color: '#666', borderTop: '1px solid #f0f0f0', paddingTop: '15px' }}>
+                    Showing top <strong>{displayedPlaces.length}</strong> matches sorted by your unique score.
                 </div>
             </div>
 
             {/* Map Section */}
             <section style={{ height: '70vh', minHeight: '500px', border: '1px solid #ddd', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}>
-                <Map places={places} />
+                <Map places={displayedPlaces} />
             </section>
         </div>
     );

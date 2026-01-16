@@ -42,7 +42,17 @@ const Map = ({ places }: MapProps) => {
                 <Marker key={place.id} position={[place.lat, place.lng]} icon={customIcon}>
                     <Popup>
                         <div style={{ fontFamily: 'sans-serif', minWidth: '220px' }}>
-                            <h3 style={{ margin: '0 0 5px 0', fontSize: '18px', color: '#333' }}>{place.name}, {place.state}</h3>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
+                                <h3 style={{ margin: 0, fontSize: '18px', color: '#333' }}>{place.name}, {place.state}</h3>
+                                {place.matchScore !== undefined && (
+                                    <span style={{
+                                        background: place.matchScore > 80 ? '#10b981' : place.matchScore > 50 ? '#f59e0b' : '#9ca3af',
+                                        color: '#fff', padding: '2px 8px', borderRadius: '12px', fontSize: '12px', fontWeight: 'bold'
+                                    }}>
+                                        {place.matchScore}% Match
+                                    </span>
+                                )}
+                            </div>
                             <p style={{ margin: 0, color: '#666', fontSize: '13px', fontStyle: 'italic', marginBottom: '8px' }}>{place.description}</p>
 
                             <hr style={{ margin: '8px 0', border: 'none', borderTop: '1px solid #eee' }} />

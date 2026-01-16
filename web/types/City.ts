@@ -29,4 +29,5 @@ export interface City {
     healthcare: Healthcare;
     costOfLiving: 'Low' | 'Medium' | 'High';
     nearestAirport: NearestAirport;
+    matchScore?: number; // 0-100% based on user preferences
 }
