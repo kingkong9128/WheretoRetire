@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server';
-import path from 'path';
-import fs from 'fs';
 import { City } from '@/types/City';
+
+// Import the JSON directly instead of using fs
+import citiesData from '@/data/cities.json';
 
 export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
@@ -10,16 +11,7 @@ export async function GET(request: Request) {
     const maxAqi = searchParams.get('maxAqi');
 
     try {
-        // Read data from JSON file
-        const jsonDirectory = path.join(process.cwd(), 'data');
-        const filePath = path.join(jsonDirectory, 'cities.json');
-        
-        if (!fs.existsSync(filePath)) {
-            return NextResponse.json({ error: 'Cities data not found' }, { status: 404 });
-        }
-        
-        const fileContents = fs.readFileSync(filePath, 'utf8');
-        let cities: City[] = JSON.parse(fileContents);
+        let cities: City[] = citiesData as City[];
 
         // Apply filters
         if (maxTemp) {
@@ -39,7 +31,7 @@ export async function GET(request: Request) {
 
         return NextResponse.json(cities);
     } catch (error) {
-        console.error('Error reading cities data:', error);
+        console.error('Error loading cities data:', error);
         return NextResponse.json({ error: 'Failed to load cities data' }, { status: 500 });
     }
 }
