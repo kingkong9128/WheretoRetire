@@ -1,8 +1,8 @@
 import { NextResponse } from 'next/server';
 import { City } from '@/types/City';
 
-// Import the JSON directly instead of using fs
-import citiesData from '@/data/cities.json';
+// Direct import of the JSON file
+import citiesData from '../../../data/cities.json';
 
 export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
