@@ -6,16 +6,10 @@ const nextConfig: NextConfig = {
   // Critical for Vercel deployment
   output: 'standalone',
   
-  // Required for Leaflet to work in Next.js
-  webpack: (config) => {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      canvas: false,
-    };
-    return config;
-  },
+  // Enable Turbopack explicitly and add empty config to silence warning
+  turbopack: {},
   
-  // Ensure proper static file handling
+  // Ensure proper transpilation of Leaflet packages
   transpilePackages: ['leaflet', 'react-leaflet'],
 };
 
