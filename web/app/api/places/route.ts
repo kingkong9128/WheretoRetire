@@ -9,26 +9,37 @@ export async function GET(request: Request) {
     const minHospitalScore = searchParams.get('minHospitalScore');
     const maxAqi = searchParams.get('maxAqi');
 
-    // Read data from JSON file
-    const jsonDirectory = path.join(process.cwd(), 'data');
-    const fileContents = fs.readFileSync(jsonDirectory + '/cities.json', 'utf8');
-    let cities: City[] = JSON.parse(fileContents);
+    try {
+        // Read data from JSON file
+        const jsonDirectory = path.join(process.cwd(), 'data');
+        const filePath = path.join(jsonDirectory, 'cities.json');
+        
+        if (!fs.existsSync(filePath)) {
+            return NextResponse.json({ error: 'Cities data not found' }, { status: 404 });
+        }
+        
+        const fileContents = fs.readFileSync(filePath, 'utf8');
+        let cities: City[] = JSON.parse(fileContents);
 
-    // Apply filters
-    if (maxTemp) {
-        const tempLimit = parseFloat(maxTemp);
-        cities = cities.filter(city => city.climate.averageTempSummer <= tempLimit);
+        // Apply filters
+        if (maxTemp) {
+            const tempLimit = parseFloat(maxTemp);
+            cities = cities.filter(city => city.climate.averageTempSummer <= tempLimit);
+        }
+
+        if (minHospitalScore) {
+            const scoreLimit = parseFloat(minHospitalScore);
+            cities = cities.filter(city => city.healthcare.score >= scoreLimit);
+        }
+
+        if (maxAqi) {
+            const aqiLimit = parseFloat(maxAqi);
+            cities = cities.filter(city => city.aqi <= aqiLimit);
+        }
+
+        return NextResponse.json(cities);
+    } catch (error) {
+        console.error('Error reading cities data:', error);
+        return NextResponse.json({ error: 'Failed to load cities data' }, { status: 500 });
     }
-
-    if (minHospitalScore) {
-        const scoreLimit = parseFloat(minHospitalScore);
-        cities = cities.filter(city => city.healthcare.score >= scoreLimit);
-    }
-
-    if (maxAqi) {
-        const aqiLimit = parseFloat(maxAqi);
-        cities = cities.filter(city => city.aqi <= aqiLimit);
-    }
-
-    return NextResponse.json(cities);
 }
