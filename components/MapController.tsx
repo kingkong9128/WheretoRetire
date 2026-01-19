@@ -122,6 +122,8 @@ const MapController = () => {
 
     }, [prefs, allPlaces]);
 
+    const [showFilters, setShowFilters] = useState(false);
+
     const handlePrefChange = (key: keyof UserPreferences, value: number | boolean | string) => {
         setPrefs(prev => ({ ...prev, [key]: value }));
     };
@@ -131,17 +133,41 @@ const MapController = () => {
     };
 
     return (
-        <div className="flex flex-col lg:flex-row h-[calc(100vh-140px)] gap-4">
+        <div className="flex flex-col lg:flex-row h-[calc(100vh-140px)] gap-4 relative">
+
+            {/* MOBILE: FILTER TOGGLE BUTTON */}
+            <div className="lg:hidden mb-2">
+                <button
+                    onClick={() => setShowFilters(true)}
+                    className="w-full py-3 bg-blue-600 text-white rounded-lg font-semibold shadow-md flex items-center justify-center gap-2"
+                >
+                    <span>⚡ Filter & Search</span>
+                    <span className="text-xs bg-blue-800 px-2 py-0.5 rounded-full">{displayedPlaces.length} Cities</span>
+                </button>
+            </div>
 
             {/* LEFT SIDEBAR: FILTERS */}
             <motion.aside
-                initial={{ x: -20, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5 }}
-                className="w-full lg:w-80 bg-white p-6 rounded-xl shadow-sm border border-gray-100 overflow-y-auto shrink-0 flex flex-col"
+                initial={false}
+                animate={typeof window !== 'undefined' && window.innerWidth < 1024 ? (showFilters ? { x: 0, opacity: 1 } : { x: -100, opacity: 0 }) : { x: 0, opacity: 1 }}
+                className={`
+                    bg-white p-6 shadow-xl border border-gray-100 overflow-y-auto flex flex-col
+                    lg:w-80 lg:rounded-xl lg:static lg:border lg:shadow-sm
+                    fixed inset-0 z-50 w-full h-full lg:h-auto
+                    ${showFilters ? 'block' : 'hidden lg:flex'}
+                `}
             >
                 <div className="flex-1">
-                    <h2 className="text-xl font-bold mb-1 text-gray-800">Preferences</h2>
+                    <div className="flex justify-between items-center mb-4 lg:mb-1">
+                        <h2 className="text-xl font-bold text-gray-800">Preferences</h2>
+                        {/* MOBILE CLOSE */}
+                        <button
+                            onClick={() => setShowFilters(false)}
+                            className="lg:hidden p-2 bg-gray-100 rounded-full text-gray-600"
+                        >
+                            ✕
+                        </button>
+                    </div>
                     <p className="text-sm text-gray-500 mb-4">Tune your retirement criteria.</p>
 
                     {/* SEARCH BAR */}
@@ -317,6 +343,14 @@ const MapController = () => {
                     <p className="mt-3 text-[10px] text-gray-400 italic">
                         *Disclaimer: This tool is a retirement planning simulation. While data is based on real-world indices, specific values are estimates for the MVP. Please verify locally.
                     </p>
+
+                    {/* MOBILE: SHOW RESULTS BUTTON */}
+                    <button
+                        onClick={() => setShowFilters(false)}
+                        className="mt-6 w-full py-3 bg-green-600 text-white rounded-lg font-bold shadow-md lg:hidden"
+                    >
+                        Show {displayedPlaces.length} Cities
+                    </button>
                 </div>
             </motion.aside>
 
