@@ -2,13 +2,8 @@ export interface Climate {
     averageTempSummer: number;
     averageTempWinter: number;
     temperatureRange: string;
-    humidity: 'High' | 'Moderate' | 'Low';
+    humidity: string;
     annualRainfall: number;
-}
-
-export interface AirportInfo {
-    name: string;
-    distance: number;
 }
 
 export interface Healthcare {
@@ -26,16 +21,26 @@ export interface City {
     id: number;
     name: string;
     state: string;
-    lat: number;
-    lng: number;
     description: string;
     climate: Climate;
-    aqi: number;
     healthcare: Healthcare;
     realEstate: RealEstate;
-    costOfLiving: string; // Changed to string to allow cost helper return
-    landscape: 'Plain' | 'Hill' | 'Coastal';
-    nearestDomesticAirport: AirportInfo;
-    nearestInternationalAirport: AirportInfo;
+    costOfLiving: string;
+    aqi: number;
+    nearestDomesticAirport: {
+        name: string;
+        distance: number;
+        code: string;
+        driveTimeMinutes?: number;
+    };
+    nearestInternationalAirport: {
+        name: string;
+        distance: number;
+        code: string;
+        driveTimeMinutes?: number;
+    };
+    landscape: string;
     matchScore?: number;
+    lat: number;
+    lng: number;
 }

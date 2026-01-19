@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic';
 import { motion, AnimatePresence } from 'framer-motion';
 import { City } from '@/types/City';
 import { calculateMatchScore, UserPreferences } from '../utils/scoring';
+import { calculateDriveTime, formatTime } from '../utils/driveTime';
 
 const Map = dynamic(() => import('./Map'), {
     ssr: false,
@@ -25,11 +26,21 @@ const MapController = () => {
         enableAirport: false,
         enableIntlAirport: false,
         enableNature: false,
+
         healthcareImportance: 8,
+        minHospitalCount: 5, // Default constraint
+
         cleanAirImportance: 8,
+        maxAqi: 200, // Default constraint
+
         warmthPreference: 5,
+
         lowCostImportance: 5,
+        maxPriceSqFt: 15000, // Default constraint
+
         airportDistImportance: 5,
+        maxDriveTimeHours: 2, // Default constraint
+
         intlAirportDistImportance: 5,
         naturePreference: 'Any'
     });
@@ -54,18 +65,51 @@ const MapController = () => {
 
         let filtered = allPlaces;
 
-        // Hard Filter: Nature
+        // 1. HARD FILTER: Nature
         if (prefs.enableNature && prefs.naturePreference !== 'Any') {
             filtered = filtered.filter(city => city.landscape === prefs.naturePreference);
         }
 
-        const scored = filtered.map(city => ({
-            ...city,
-            matchScore: calculateMatchScore(city, prefs)
-        }));
+        // 2. HARD FILTER: Cost
+        if (prefs.enableLowCost) {
+            filtered = filtered.filter(city => city.realEstate.averagePricePerSqFt <= prefs.maxPriceSqFt);
+        }
 
-        scored.sort((a, b) => (b.matchScore || 0) - (a.matchScore || 0));
-        setDisplayedPlaces(scored.slice(0, 50));
+        // 3. HARD FILTER: AQI
+        if (prefs.enableCleanAir) {
+            filtered = filtered.filter(city => city.aqi <= prefs.maxAqi);
+        }
+
+        // 4. HARD FILTER: Healthcare
+        if (prefs.enableHealthcare) {
+            filtered = filtered.filter(city => city.healthcare.hospitalCount >= prefs.minHospitalCount);
+        }
+
+        const scored = filtered.map(city => {
+            // Pre-calculate drive times dynamically
+            city.nearestDomesticAirport.driveTimeMinutes = calculateDriveTime(
+                city.nearestDomesticAirport.distance,
+                city.landscape
+            );
+            city.nearestInternationalAirport.driveTimeMinutes = calculateDriveTime(
+                city.nearestInternationalAirport.distance,
+                city.landscape
+            );
+
+            return {
+                ...city,
+                matchScore: calculateMatchScore(city, prefs)
+            };
+        });
+
+        // 5. HARD FILTER: Drive Time (Post Calculation)
+        let finalDisplay = scored;
+        if (prefs.enableAirport) {
+            finalDisplay = finalDisplay.filter(c => (c.nearestDomesticAirport.driveTimeMinutes || 999) <= (prefs.maxDriveTimeHours * 60));
+        }
+
+        finalDisplay.sort((a, b) => (b.matchScore || 0) - (a.matchScore || 0));
+        setDisplayedPlaces(finalDisplay.slice(0, 50));
 
     }, [prefs, allPlaces]);
 
@@ -89,7 +133,24 @@ const MapController = () => {
             >
                 <div className="flex-1">
                     <h2 className="text-xl font-bold mb-1 text-gray-800">Preferences</h2>
-                    <p className="text-sm text-gray-500 mb-6">Select & Tune criteria.</p>
+                    <p className="text-sm text-gray-500 mb-4">Tune your retirement criteria.</p>
+
+                    {/* SEARCH BAR */}
+                    <div className="mb-6 relative">
+                        <input
+                            type="text"
+                            placeholder="Search for a city..."
+                            className="w-full pl-9 pr-4 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-blue-500 outline-none"
+                            onChange={(e) => {
+                                const term = e.target.value.toLowerCase();
+                                if (term.length > 2) {
+                                    const match = displayedPlaces.find(p => p.name.toLowerCase().includes(term));
+                                    if (match) handleCitySelect(match);
+                                }
+                            }}
+                        />
+                        <span className="absolute left-3 top-2.5 text-gray-400 text-sm">🔍</span>
+                    </div>
 
                     <div className="space-y-6">
                         {/* Healthcare */}
@@ -99,12 +160,12 @@ const MapController = () => {
                                     <input type="checkbox" checked={prefs.enableHealthcare}
                                         onChange={(e) => handlePrefChange('enableHealthcare', e.target.checked)}
                                         className="rounded text-blue-600 focus:ring-blue-500" />
-                                    Healthcare
+                                    Healthcare Stats
                                 </label>
-                                <span className="text-xs text-blue-600 font-medium">{prefs.healthcareImportance}/10</span>
+                                <span className="text-xs text-blue-600 font-medium">{prefs.minHospitalCount}+ hospitals</span>
                             </div>
-                            <input type="range" min="0" max="10" value={prefs.healthcareImportance} disabled={!prefs.enableHealthcare}
-                                onChange={(e) => handlePrefChange('healthcareImportance', parseInt(e.target.value))}
+                            <input type="range" min="5" max="50" step="5" value={prefs.minHospitalCount} disabled={!prefs.enableHealthcare}
+                                onChange={(e) => handlePrefChange('minHospitalCount', parseInt(e.target.value))}
                                 className="w-full accent-blue-500 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer" />
                         </div>
 
@@ -115,29 +176,36 @@ const MapController = () => {
                                     <input type="checkbox" checked={prefs.enableCleanAir}
                                         onChange={(e) => handlePrefChange('enableCleanAir', e.target.checked)}
                                         className="rounded text-green-600 focus:ring-green-500" />
-                                    Clean Air
+                                    Max AQI Limit
                                 </label>
-                                <span className="text-xs text-green-600 font-medium">{prefs.cleanAirImportance}/10</span>
                             </div>
-                            <input type="range" min="0" max="10" value={prefs.cleanAirImportance} disabled={!prefs.enableCleanAir}
-                                onChange={(e) => handlePrefChange('cleanAirImportance', parseInt(e.target.value))}
-                                className="w-full accent-green-500 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer" />
+                            <select
+                                value={prefs.maxAqi}
+                                disabled={!prefs.enableCleanAir}
+                                onChange={(e) => handlePrefChange('maxAqi', parseInt(e.target.value))}
+                                className="w-full p-2 border border-gray-200 rounded-lg text-sm bg-white outline-none"
+                            >
+                                <option value="50">Good ({'<'}50)</option>
+                                <option value="100">Satisfactory ({'<'}100)</option>
+                                <option value="150">Moderate ({'<'}150)</option>
+                                <option value="200">Poor ({'<'}200)</option>
+                                <option value="300">Any (Up to 300)</option>
+                            </select>
                         </div>
 
-                        {/* Warmth */}
+                        {/* Warmth (Keep as Ranking Weight) */}
                         <div className={!prefs.enableTemperature ? 'opacity-50' : ''}>
                             <div className="flex items-center justify-between mb-2">
                                 <label className="flex items-center gap-2 font-semibold text-gray-700 cursor-pointer">
                                     <input type="checkbox" checked={prefs.enableTemperature}
                                         onChange={(e) => handlePrefChange('enableTemperature', e.target.checked)}
                                         className="rounded text-orange-600 focus:ring-orange-500" />
-                                    Temperature
+                                    Temperature Pref
                                 </label>
-                                <span className="text-xs text-orange-600 font-medium">{prefs.warmthPreference}/10</span>
                             </div>
                             <div className="flex justify-between text-xs text-gray-400 mb-1">
-                                <span>Cold</span>
-                                <span>Hot</span>
+                                <span>Like Cold</span>
+                                <span>Like Hot</span>
                             </div>
                             <input type="range" min="0" max="10" value={prefs.warmthPreference} disabled={!prefs.enableTemperature}
                                 onChange={(e) => handlePrefChange('warmthPreference', parseInt(e.target.value))}
@@ -151,12 +219,12 @@ const MapController = () => {
                                     <input type="checkbox" checked={prefs.enableLowCost}
                                         onChange={(e) => handlePrefChange('enableLowCost', e.target.checked)}
                                         className="rounded text-indigo-600 focus:ring-indigo-500" />
-                                    Low Cost
+                                    Max Budget (₹/sqft)
                                 </label>
-                                <span className="text-xs text-indigo-600 font-medium">{prefs.lowCostImportance}/10</span>
+                                <span className="text-xs text-indigo-600 font-medium">₹{prefs.maxPriceSqFt}</span>
                             </div>
-                            <input type="range" min="0" max="10" value={prefs.lowCostImportance} disabled={!prefs.enableLowCost}
-                                onChange={(e) => handlePrefChange('lowCostImportance', parseInt(e.target.value))}
+                            <input type="range" min="3000" max="40000" step="1000" value={prefs.maxPriceSqFt} disabled={!prefs.enableLowCost}
+                                onChange={(e) => handlePrefChange('maxPriceSqFt', parseInt(e.target.value))}
                                 className="w-full accent-indigo-500 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer" />
                         </div>
 
@@ -167,29 +235,13 @@ const MapController = () => {
                                     <input type="checkbox" checked={prefs.enableAirport}
                                         onChange={(e) => handlePrefChange('enableAirport', e.target.checked)}
                                         className="rounded text-purple-600 focus:ring-purple-500" />
-                                    Near Airport (Dom)
+                                    Max Drive Time
                                 </label>
-                                <span className="text-xs text-purple-600 font-medium">{prefs.airportDistImportance}/10</span>
+                                <span className="text-xs text-purple-600 font-medium">{prefs.maxDriveTimeHours} hrs</span>
                             </div>
-                            <input type="range" min="0" max="10" value={prefs.airportDistImportance} disabled={!prefs.enableAirport}
-                                onChange={(e) => handlePrefChange('airportDistImportance', parseInt(e.target.value))}
+                            <input type="range" min="1" max="8" step="0.5" value={prefs.maxDriveTimeHours} disabled={!prefs.enableAirport}
+                                onChange={(e) => handlePrefChange('maxDriveTimeHours', parseFloat(e.target.value))}
                                 className="w-full accent-purple-500 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer" />
-                        </div>
-
-                        {/* Intl Airport */}
-                        <div className={!prefs.enableIntlAirport ? 'opacity-50' : ''}>
-                            <div className="flex items-center justify-between mb-2">
-                                <label className="flex items-center gap-2 font-semibold text-gray-700 cursor-pointer">
-                                    <input type="checkbox" checked={prefs.enableIntlAirport}
-                                        onChange={(e) => handlePrefChange('enableIntlAirport', e.target.checked)}
-                                        className="rounded text-pink-600 focus:ring-pink-500" />
-                                    Near Intl Airport
-                                </label>
-                                <span className="text-xs text-pink-600 font-medium">{prefs.intlAirportDistImportance}/10</span>
-                            </div>
-                            <input type="range" min="0" max="10" value={prefs.intlAirportDistImportance} disabled={!prefs.enableIntlAirport}
-                                onChange={(e) => handlePrefChange('intlAirportDistImportance', parseInt(e.target.value))}
-                                className="w-full accent-pink-500 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer" />
                         </div>
 
                         {/* Nature / Landscape */}

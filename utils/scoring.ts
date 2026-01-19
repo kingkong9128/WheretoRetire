@@ -10,13 +10,23 @@ export interface UserPreferences {
     enableIntlAirport: boolean;
     enableNature: boolean;
 
-    // Weights / Values
-    healthcareImportance: number; // 0-10
+    // Constraints & Weights
+    healthcareImportance: number; // 0-10 (Keep for ranking)
+    minHospitalCount: number;     // Hard Constraint (e.g. 10+)
+
     cleanAirImportance: number;   // 0-10
-    warmthPreference: number;     // 0-10 (0=Cold, 10=Hot)
+    maxAqi: number;               // Hard Constraint (e.g. 150)
+
+    warmthPreference: number;     // 0-10 (Keep for Asymmetric logic)
+
     lowCostImportance: number;    // 0-10
-    airportDistImportance: number; // 0-10 (High = wants < 50km)
-    intlAirportDistImportance: number; // 0-10
+    maxPriceSqFt: number;         // Hard Constraint
+
+    airportDistImportance: number; // 0-10
+    maxDriveTimeHours: number;     // Hard Constraint
+
+    intlAirportDistImportance: number;
+
     naturePreference: 'Any' | 'Hill' | 'Coastal';
 }
 

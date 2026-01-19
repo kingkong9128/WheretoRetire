@@ -83,15 +83,18 @@ const Map = ({ places, selectedCityId }: MapProps) => {
                                     <span className="text-gray-500">Summer/Winter:</span>
                                     <span className="font-medium">{city.climate.temperatureRange}</span>
                                 </div>
-                                <div className="flex justify-between">
-                                    <span className="text-gray-500">Healthcare:</span>
-                                    <span className="font-medium text-right">{city.healthcare.score}/10 ({city.healthcare.hospitalCount} hosps)</span>
-                                </div>
-                                {city.healthcare.chains.length > 0 && (
-                                    <div className="text-gray-400 italic">
-                                        Top Chains: {city.healthcare.chains.slice(0, 2).join(', ')}...
+                                <div className="mb-2">
+                                    <div className="font-semibold text-gray-700 mb-1 flex items-center justify-between">
+                                        <span>Healthcare ({city.healthcare.hospitalCount}+)</span>
+                                        <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full">Score: {city.healthcare.score}</span>
                                     </div>
-                                )}
+                                    <div className="text-xs text-gray-500 flex flex-wrap gap-1">
+                                        {city.healthcare.chains.slice(0, 4).map((chain, i) => (
+                                            <span key={i} className="bg-gray-100 border border-gray-200 px-1.5 py-0.5 rounded text-[10px]">{chain}</span>
+                                        ))}
+                                        {city.healthcare.chains.length > 4 && <span className="text-[10px] text-gray-400 self-center">+{city.healthcare.chains.length - 4} more</span>}
+                                    </div>
+                                </div>
                                 <div className="pt-2 mt-2 border-t">
                                     <div className="font-semibold text-gray-700 mb-1">Airports</div>
                                     <div className="mb-1 text-gray-600">
