@@ -133,7 +133,7 @@ const MapController = () => {
     };
 
     return (
-        <div className="flex flex-col lg:flex-row h-[calc(100vh-140px)] gap-4 relative">
+        <div className="flex flex-col lg:flex-row h-[calc(100dvh-140px)] gap-4 relative">
 
             {/* MOBILE: FILTER TOGGLE BUTTON */}
             <div className="lg:hidden mb-2">
@@ -375,7 +375,7 @@ const MapController = () => {
                     <h3 className="font-bold text-gray-700">Top Matches</h3>
                     <p className="text-xs text-gray-500">{displayedPlaces.length} cities found</p>
                 </div>
-                <div className="overflow-y-auto flex-1 p-2 space-y-2">
+                <div className="overflow-y-auto flex-1 p-2 space-y-2 pb-32">
                     <AnimatePresence mode='popLayout'>
                         {displayedPlaces.map((city, idx) => (
                             <motion.div
