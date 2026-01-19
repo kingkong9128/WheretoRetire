@@ -196,46 +196,52 @@ KNOWN_HOSPITAL_CHAINS = {
     "Bhilai": ["JLNH (Sector 9)"]
 }
 
-# Reference AQI (Severe for Industrial/Metros, Clean for Hills)
-# VALUES: Avg for 2024.
+# Reference AQI (Comprehensive Overhaul - 2024 Winter/Annual Avg)
+# Source Logic:
+# Tier 1 (Severe > 250): NCR, Industrial North, Bihar Plains
+# Tier 2 (Very Poor 200-250): UP Plains, West Bengal Heavy Industry
+# Tier 3 (Poor 150-200): Metro Mumbai, Punjab, North Cities
+# Tier 4 (Moderate 100-150): Hyderabad, Pune, Gujarat Cities, Central India
+# Tier 5 (Satisfactory 50-100): Bangalore, Chennai, Coastal Andhra
+# Tier 6 (Good < 50): Hills, Kerala, Goa, Islands
+
 REAL_AQI_DATA = {
-    # NCR (The worst)
-    "Delhi": 280, "Gurgaon": 260, "Noida": 270, "Ghaziabad": 300, "Faridabad": 260, 
-    "Bhiwadi": 320, "Meerut": 220, "Greater Noida": 260,
-    
-    # North Ind
-    "Chandigarh": 130, "Mohali": 130, "Panchkula": 120, "Ludhiana": 190, "Amritsar": 170, 
-    "Jalandhar": 180, "Patiala": 160,
-    "Jaipur": 150, "Jodhpur": 140, "Kota": 140, "Ajmer": 120, "Udaipur": 100,
-    "Lucknow": 210, "Kanpur": 220, "Varanasi": 190, "Agra": 180, "Allahabad": 180,
-    "Jammu": 110, "Srinagar": 60,
-    
-    # Hills (Cleanest)
-    "Shimla": 35, "Manali": 25, "Dharamshala": 30, "Dehradun": 90, "Rishikesh": 50, "Haridwar": 100,
-    "Mussoorie": 40, "Nainital": 35, 
-    "Gangtok": 30, "Shillong": 30, "Darjeeling": 40, "Kalimpong": 35,
-    "Ooty": 25, "Munnar": 20, "Kodaikanal": 20, "Coorg": 20, "Wayanad": 25, "Leh": 15,
-    
-    # West
-    "Mumbai": 140, "Navi Mumbai": 130, "Thane": 135, "Pune": 110, "Pimpri": 110,
-    "Nagpur": 120, "Nashik": 90, "Aurangabad": 100, "Solapur": 90, "Kolhapur": 70,
-    "Ahmedabad": 150, "Surat": 130, "Vadodara": 120, "Rajkot": 110, "Gandhinagar": 100,
-    "Goa": 45, "Lonavala": 50, "Mahabaleshwar": 35,
-    
-    # South
-    "Bangalore": 85, "Whitefield": 90, "Mysore": 45, "Hubli": 70, "Belgaum": 60, "Mangalore": 50,
-    "Chennai": 90, "Coimbatore": 60, "Madurai": 70, "Trichy": 60, "Salem": 70, "Vellore": 60,
-    "Hyderabad": 100, "Secunderabad": 100, "Visakhapatnam": 90, "Vijayawada": 90,
-    "Kochi": 50, "Trivandrum": 45, "Kozhikode": 50, "Thrissur": 45,
-    "Pondicherry": 50,
-    
-    # East/Central
-    "Kolkata": 190, "Howrah": 200, "Durgapur": 180, "Siliguri": 110,
-    "Bhubaneswar": 80, "Cuttack": 90, "Puri": 60, "Rourkela": 130,
-    "Patna": 230, "Gaya": 180, "Muzaffarpur": 200,
-    "Ranchi": 110, "Jamshedpur": 140,
-    "Guwahati": 150, "Agartala": 80, "Imphal": 70, "Aizawl": 40,
-    "Bhopal": 140, "Indore": 130, "Gwalior": 180, "Jabalpur": 100, "Raipur": 140, "Bilaspur": 130
+    # --- TIER 1: SEVERE (> 250) ---
+    "Delhi": 350, "Bhiwadi": 380, "Greater Noida": 340, "Ghaziabad": 360, "Noida": 320, 
+    "Gurgaon": 310, "Faridabad": 300, "Patna": 280, "Muzaffarpur": 270, 
+    "Howrah": 260, # Industrial belt
+
+    # --- TIER 2: VERY POOR (200-250) ---
+    "Lucknow": 240, "Kanpur": 250, "Agra": 230, "Meerut": 240, "Varanasi": 220, "Allahabad": 210, "Gwalior": 230,
+    "Ludhiana": 210, "Jalandhar": 200, "Amritsar": 200, "Rohtak": 220, "Panipat": 230,
+    "Durgapur": 220, "Asansol": 210, "Kolkata": 210, "Thane": 220, 
+
+    # --- TIER 3: POOR (150-200) ---
+    "Mumbai": 180, "Navi Mumbai": 190, "Kalyan": 180, 
+    "Ahmedabad": 180, "Surat": 160, "Vadodara": 150, "Rajkot": 150, "Ankleshwar": 190,
+    "Jaipur": 190, "Jodhpur": 170, "Kota": 180,
+    "Guwahati": 180, "Jamshedpur": 160, "Ranchi": 150, "Raipur": 160, "Bhilai": 170, "Korba": 180, 
+    "Chandigarh": 160, "Mohali": 150, "Ujjain": 160,
+
+    # --- TIER 4: MODERATE (100-150) ---
+    "Hyderabad": 130, "Secunderabad": 130, "Visakhapatnam": 120, "Vijayawada": 110, "Guntur": 110,
+    "Pune": 140, "Pimpri": 140, "Nagpur": 140, "Nashik": 120, "Aurangabad": 130,
+    "Bhopal": 140, "Indore": 140, "Jabalpur": 120,
+    "Bhubaneswar": 110, "Cuttack": 120, "Rourkela": 140, 
+    "Siliguri": 130, "Dehradun": 120, "Haridwar": 130,
+
+    # --- TIER 5: SATISFACTORY (50-100) ---
+    "Bangalore": 85, "Whitefield": 95, "Mysore": 60, "Hubli": 70, "Belgaum": 60, "Mangalore": 60,
+    "Chennai": 90, "Coimbatore": 70, "Madurai": 80, "Trichy": 70, "Salem": 70, "Vellore": 60,
+    "Solapur": 90, "Kolhapur": 80, "Tirupati": 70, 
+    "Pondicherry": 60, "Goa": 60, "Agartala": 70, "Imphal": 60,
+
+    # --- TIER 6: GOOD (< 50) ---
+    "Shimla": 35, "Manali": 25, "Dharamshala": 35, "Mussoorie": 40, "Nainital": 35, "Rishikesh": 45,
+    "Gangtok": 30, "Shillong": 30, "Darjeeling": 40, "Kalimpong": 35, "Aizawl": 25,
+    "Ooty": 25, "Munnar": 20, "Kodaikanal": 20, "Yercaud": 30, "Coorg": 25, "Wayanad": 25,
+    "Kochi": 45, "Trivandrum": 40, "Kozhikode": 45, "Thrissur": 40, "Alleppey": 35,
+    "Lonavala": 45, "Mahabaleshwar": 35, "Port Blair": 20, "Leh": 15
 }
 
 # Haversine Formula for Real Distances
