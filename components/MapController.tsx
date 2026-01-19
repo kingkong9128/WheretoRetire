@@ -153,7 +153,7 @@ const MapController = () => {
                 className={`
                     bg-white p-6 shadow-xl border border-gray-100 overflow-y-auto flex flex-col
                     lg:w-80 lg:rounded-xl lg:static lg:border lg:shadow-sm
-                    fixed inset-0 z-50 w-full h-full lg:h-auto
+                    fixed inset-0 z-[9999] w-full h-full lg:h-auto
                     ${showFilters ? 'block' : 'hidden lg:flex'}
                 `}
             >
