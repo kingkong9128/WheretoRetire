@@ -255,18 +255,64 @@ def calculate_distance(lat1, lon1, lat2, lon2):
     c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
     return round(R * c)
 
-def get_nearest_airport(lat, lng, type_filter=None, road_factor=1.0):
+# Hardcoded Real Road Distances (CityName -> AirportCode : Km)
+# Source: Google Maps (Jan 2026)
+REAL_ROAD_DISTANCES = {
+    # Himachal
+    ("Shimla", "IXC"): 115,      # To Chandigarh (Primary)
+    ("Shimla", "SLV"): 20,       # To Shimla (Limited)
+    ("Manali", "KUU"): 50,       # To Bhuntar
+    ("Dharamshala", "DHM"): 15,  # To Gaggal
+    ("Mussoorie", "DED"): 60,    # To Dehradun
+    
+    # North East
+    ("Gangtok", "IXB"): 125,     # To Bagdogra
+    ("Darjeeling", "IXB"): 70,   # To Bagdogra
+    ("Kalimpong", "IXB"): 75,    # To Bagdogra
+    ("Shillong", "GAU"): 115,    # To Guwahati
+    ("Shillong", "SHL"): 35,     # To Shillong (Umroi)
+    
+    # South Hills
+    ("Ooty", "CJB"): 88,         # To Coimbatore
+    ("Munnar", "COK"): 110,      # To Cochin
+    ("Kodaikanal", "IXM"): 135,  # To Madurai
+    ("Coorg", "CNN"): 112,       # To Kannur
+    ("Wayanad", "CCJ"): 85,      # To Calicut
+    ("Yercaud", "SXV"): 30,      # To Salem
+    
+    # West Hills
+    ("Mahabaleshwar", "PNQ"): 130, # To Pune
+    ("Lonavala", "PNQ"): 75,       # To Pune
+    ("Lonavala", "BOM"): 90,       # To Mumbai
+    ("Panchgani", "PNQ"): 110,     # To Pune
+    
+    # Others
+    ("Rishikesh", "DED"): 20,
+    ("Nainital", "PGH"): 70,       # To Pantnagar
+    ("Leh", "IXL"): 5
+}
+
+def get_nearest_airport(lat, lng, city_name, type_filter=None, road_factor=1.0):
     nearest = None
     min_dist = 99999
     
     for code, data in AIRPORTS.items():
         if type_filter and data['type'] != type_filter:
             continue
-            
-        dist = calculate_distance(lat, lng, data['lat'], data['lng'])
+        
+        # Check Hardcoded Real Data First
+        real_dist = REAL_ROAD_DISTANCES.get((city_name, code))
+        
+        if real_dist is not None:
+            dist = real_dist
+        else:
+            # Fallback to Haversine * RoadFactor
+            dist = calculate_distance(lat, lng, data['lat'], data['lng'])
+            dist = int(dist * road_factor)
+
         if dist < min_dist:
             min_dist = dist
-            nearest = {"name": data['name'], "distance": int(dist * road_factor), "code": code}
+            nearest = {"name": data['name'], "distance": dist, "code": code}
             
     return nearest
 
@@ -488,9 +534,9 @@ def estimate_city_data(city):
     if landscape == "Hill": road_factor = 1.6 # Winding roads
 
     # 4. AIRPORTS (REAL CALCULATION - ROAD DISTANCE)
-    nearest_any = get_nearest_airport(lat, lng, road_factor=road_factor)
+    nearest_any = get_nearest_airport(lat, lng, name, road_factor=road_factor)
     nearest_dom = nearest_any # Any airport can serve domestic
-    nearest_intl = get_nearest_airport(lat, lng, 'intl', road_factor=road_factor)
+    nearest_intl = get_nearest_airport(lat, lng, name, 'intl', road_factor=road_factor)
 
     # 5. REAL ESTATE (Avg price per sqft in INR)
     price_sqft = 4000
