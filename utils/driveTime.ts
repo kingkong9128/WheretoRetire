@@ -1,10 +1,10 @@
 
 // Estimates based on Indian Road Conditions (2025)
 const SPEEDS = {
-    "Hill": 30,      // Winding roads, slow (e.g., Shimla, Ooty)
-    "Coastal": 50,   // Often single lane highways
+    "Hill": 20,      // Steep/Winding (e.g., Darjeeling: 70km = ~3.5-4hrs)
+    "Coastal": 50,   // Single lane highways
     "Plain": 60,     // National Highways
-    "Metro": 65      // Connects to Expressways
+    "Metro": 65      // Expressways
 };
 
 /**
