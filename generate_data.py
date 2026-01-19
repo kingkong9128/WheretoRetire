@@ -42,11 +42,79 @@ AIRPORTS = {
     "RPR": {"name": "Swami Vivekananda (Raipur)", "lat": 21.1804, "lng": 81.7388, "type": "dom"},
     "IDR": {"name": "Devi Ahilya Bai Holkar (Indore)", "lat": 22.7217, "lng": 75.8011, "type": "dom"},
     "BHO": {"name": "Raja Bhoj (Bhopal)", "lat": 23.2875, "lng": 77.3378, "type": "dom"},
-    "GAU": {"name": "Lokpriya Gopinath Bordoloi (Guwahati)", "lat": 26.1061, "lng": 91.5859, "type": "dom"}, # Technically Intl but mainly regional gateway
+    "GAU": {"name": "Lokpriya Gopinath Bordoloi (Guwahati)", "lat": 26.1061, "lng": 91.5859, "type": "dom"}, 
     "VTZ": {"name": "Visakhapatnam", "lat": 17.7211, "lng": 83.2245, "type": "dom"},
     "VGA": {"name": "Vijayawada", "lat": 16.5304, "lng": 80.7968, "type": "dom"},
     "PNY": {"name": "Pondicherry", "lat": 11.9683, "lng": 79.8114, "type": "dom"},
     "MYQ": {"name": "Mysore", "lat": 12.2280, "lng": 76.6413, "type": "dom"}
+}
+
+# Real Hospital Chains (Reference Map)
+# Map partial city Name -> List of Chains known to be there.
+KNOWN_HOSPITAL_CHAINS = {
+    "Delhi": ["Apollo", "Max", "Fortis", "Medanta", "Manipal", "Sir Ganga Ram", "BLK"],
+    "Gurgaon": ["Medanta", "Fortis", "Max", "Artemis", "Paras"],
+    "Noida": ["Apollo", "Max", "Fortis", "Kailash", "Jaypee"],
+    "Bangalore": ["Manipal", "Apollo", "Fortis", "Aster", "Narayana Health", "Sakra", "Columbia Asia"],
+    "Whitefield": ["Manipal", "Cloudnine", "Columbia Asia", "Narayana Health"],
+    "Mumbai": ["Kokilaben", "Lilavati", "Breach Candy", "Fortis", "Apollo", "Hiranandani", "Nanavati"],
+    "Chennai": ["Apollo", "Fortis", "MIOT", "Kauvery", "SIMS", "Chettinad"],
+    "Hyderabad": ["Apollo", "KIMS", "Yashoda", "Aster", "Care Hospitals", "Rainbow"],
+    "Kolkata": ["Apollo", "Fortis", "Medica", "AMRI", "Peerless"],
+    "Pune": ["Ruby Hall", "Jehangir", "Aditya Birla", "Sahyadri", "Manipal"],
+    "Ahmedabad": ["Apollo", "Zydus", "Sterling", "HCG", "Sal", "KD"],
+    "Jaipur": ["Fortis", "Narayana Health", "Manipal", "Eternal", "SDMH"],
+    "Lucknow": ["Medanta", "Apollo", "Sahara", "Midland"],
+    "Kochi": ["Aster", "Amrita", "Lisie", "Lakeshore", "Rajagiri"],
+    "Coimbatore": ["Kovai Medical", "Ganga", "PSG", "Royal Care"],
+    "Mysore": ["Apollo", "Manipal", "Columbia Asia", "JSS"],
+    "Chandigarh": ["PGIMER", "Fortis", "Max", "Mukat"],
+    "Indore": ["Apollo", "Bombay Hospital", "Choithram", "Medanta"],
+    "Bhubaneswar": ["Apollo", "AMRI", "SUM", "Kalinga"],
+    "Visakhapatnam": ["Apollo", "Care", "KIMS", "SevenHills"],
+    "Trivandrum": ["KIMS", "Ananthapuri", "Cosmopolitan"],
+    "Goa": ["Manipal", "Healthway", "Victor", "Galaxy"],
+    "Nagpur": ["Kingsway", "Wockhardt", "Alexis", "Care"],
+    "Dehradun": ["Max", "Synergy", "Jolly Grant"],
+    "Bhopal": ["Bansal", "Chirayu", "Narmada"],
+    "Raipur": ["Ramkrishna", "NH MMI", "Balco"],
+    "Ranchi": ["Medica", "Orchid", "Rajendra"],
+    "Patna": ["Paras", "Ruban", "IGIMS"],
+    "Guwahati": ["Apollo", "GNRC", "Narayana Health", "Excelcare"],
+    "Ludhiana": ["DMC", "CMC", "Fortis", "SPS"],
+    "Surat": ["Sunshine", "Mahavir", "Kiran"],
+    "Vadodara": ["Sterling", "Bhailal Amin", "Sunshine"],
+    "Jodhpur": ["AIIMS", "Goyal", "Medipulse"],
+    "Udaipur": ["Geetanjali", "Paras", "GBH American"],
+    "Nashik": ["Wockhardt", "Sahyadri", "Apollo"],
+    "Trichy": ["Kauvery", "Apollo", "Maruti"],
+    "Madurai": ["Apollo", "Meenakshi", "Velammal"],
+    "Vellore": ["CMC", "Naruvi", "Apollo"],
+    "Mangalore": ["KMC", "AJ", "Father Muller"],
+    "Manali": ["Lady Willingdon"],
+    "Shimla": ["IGMC"],
+    "Ooty": ["Government HQ"],
+    "Gangtok": ["Manipal"],
+    "Shillong": ["Nazareth", "Woodland"],
+}
+
+# Reference AQI (2024 Estimates - Avg, Min, Max)
+# Source: General Knowledge / IQAir Indices for 2024
+REAL_AQI_DATA = {
+    # NCR = Bad
+    "Delhi": 220, "Gurgaon": 210, "Noida": 230, "Ghaziabad": 240, "Faridabad": 210, 
+    "Bhiwadi": 250, "Meerut": 180,
+    # North
+    "Chandigarh": 120, "Ludhiana": 160, "Amritsar": 140, "Jaipur": 130, "Lucknow": 170, "Kanpur": 160, "Varanasi": 150, "Agra": 160,
+    # Hills = Good
+    "Shimla": 40, "Manali": 30, "Dharamshala": 35, "Dehradun": 80, "Mussoorie": 45, "Nainital": 40, "Srinagar": 50,
+    "Gangtok": 30, "Shillong": 35, "Ooty": 25, "Munnar": 20, "Coorg": 25, "Kodaikanal": 20, "Mt Abu": 40,
+    # West
+    "Mumbai": 110, "Pune": 90, "Ahmedabad": 120, "Surat": 100, "Nagpur": 100, "Nashik": 80, "Goa": 45,
+    # South
+    "Bangalore": 70, "Mysore": 45, "Chennai": 80, "Hyderabad": 85, "Coimbatore": 50, "Kochi": 40, "Trivandrum": 35, "Vizag": 70, "Mangalore": 40,
+    # East
+    "Kolkata": 160, "Patna": 190, "Guwahati": 120, "Bhubaneswar": 80, "Ranchi": 90
 }
 
 # Haversine Formula for Real Distances
@@ -219,7 +287,6 @@ raw_cities = [
     ("Bhilai", "Chhattisgarh", 21.20, 81.38, 2, 297, "Plain"),
 ]
 
-HOSPITAL_CHAINS = ["Apollo", "Max", "Fortis", "Manipal", "Narayana Health", "Aster", "Medanta", "Columbia Asia", "Care Hospitals"]
 
 def estimate_city_data(city):
     name, state, lat, lng, tier, elev, landscape = city
@@ -252,55 +319,64 @@ def estimate_city_data(city):
     elif lat < 20 and lng > 80: rain = 1500 # East coast
     rain = round(rain + random.uniform(-100, 200))
 
-    # 2. AQI
-    # Tier 1 = Bad, Hill stations = Good
+    # 2. AQI (REAL REFERENCE)
+    # Check if city (or main city name) is in reference
     aqi = 100
-    if tier == 1: aqi = 180 + random.randint(-20, 50)
-    elif tier == 2: aqi = 110 + random.randint(-20, 40)
-    elif elev > 1000: aqi = 40 + random.randint(0, 20)
-    else: aqi = 90 + random.randint(-10, 30)
+    found_ref_aqi = False
     
-    # Overrides
-    if "Delhi" in name or "Noida" in name or "Gurgaon" in name or "Ghaziabad" in name: aqi = 260
-    if "Bhiwadi" in name: aqi = 300
-    if "Mysore" in name or "Indore" in name: aqi = 50
+    # Try direct match or simple substrings
+    for key, val in REAL_AQI_DATA.items():
+        if key in name:
+            aqi = val
+            found_ref_aqi = True
+            break
+            
+    if not found_ref_aqi:
+        # Fallback to estimation based on reference proximity or tier
+        if tier == 1: aqi = 150 + random.randint(-20, 50)
+        elif tier == 2: aqi = 110 + random.randint(-20, 40)
+        elif elev > 1000: aqi = 40 + random.randint(0, 20)
+        else: aqi = 90 + random.randint(-10, 30)
 
-    # 3. HEALTHCARE
-    # Tier 1: Many top chains. Tier 2: Some. Tier 3: Few/None.
+    # 3. HEALTHCARE (DETERMINISTIC CHAINS)
     h_count = 10
     h_chains = []
     
-    if tier == 1:
-        h_score = 9.2 + random.uniform(0, 0.6)
-        h_count = 100 + random.randint(0, 100)
-        h_chains = random.sample(HOSPITAL_CHAINS, k=random.randint(5, 8))
-    elif tier == 2:
-        h_score = 8.0 + random.uniform(0, 1.2)
-        h_count = 30 + random.randint(0, 30)
-        h_chains = random.sample(HOSPITAL_CHAINS, k=random.randint(2, 5))
+    # Get chains from Known Map
+    known_chains = []
+    for key, val in KNOWN_HOSPITAL_CHAINS.items():
+        if key in name:
+            known_chains = val
+            break
+            
+    if len(known_chains) > 0:
+        h_chains = known_chains
+        h_score = 9.0 # High base score for known chains
+        if len(h_chains) < 3: h_score = 7.5
+        h_count = len(h_chains) * 5 + random.randint(5, 20) # Rough multiplier for total hospitals
     else:
-        h_score = 6.0 + random.uniform(0, 2.0)
-        h_count = 10 + random.randint(0, 15)
-        h_chains = random.sample(HOSPITAL_CHAINS, k=random.randint(0, 2))
-        
-    h_score = round(min(h_score, 10), 1)
+        # Fallback
+        common_chains = ["Apollo", "Max", "Fortis", "Manipal"]
+        if tier == 1:
+            h_score = 8.0
+            h_count = 80 + random.randint(0, 50)
+            h_chains = random.sample(common_chains, k=2)
+        elif tier == 2:
+            h_score = 7.0
+            h_count = 30 + random.randint(0, 30)
+            h_chains = [] 
+        else:
+            h_score = 5.0
+            h_count = 10 + random.randint(0, 15)
+            h_chains = []
 
     # 4. AIRPORTS (REAL CALCULATION)
     nearest_dom_obj = get_nearest_airport(lat, lng, 'dom')
-    # If no domestic specific found or intl is closer, check all (since Intl also serves domestic)
     nearest_any = get_nearest_airport(lat, lng)
-    
-    # Logic: Nearest Domestic is usually the Nearest Airport (Intl airports also allow domestic)
-    # But usually we want the distinct nearest one.
-    # For sim: Nearest Domestic = Nearest Any Airport.
     nearest_dom = nearest_any
-    
-    # Nearest Intl
     nearest_intl = get_nearest_airport(lat, lng, 'intl')
 
     # 5. REAL ESTATE (Avg price per sqft in INR)
-    # Tier 1 > Tier 2 > Tier 3
-    # Suburbs of Tier 1 ~ Tier 2 prices
     price_sqft = 4000
     if tier == 1:
         price_sqft = random.randint(12000, 25000)
