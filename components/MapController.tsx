@@ -135,14 +135,15 @@ const MapController = () => {
     return (
         <div className="flex flex-col lg:flex-row h-full gap-4 relative">
 
-            {/* MOBILE: FILTER TOGGLE BUTTON */}
-            <div className="lg:hidden mb-2">
+            {/* MOBILE: FILTER TOGGLE BUTTON (Floating Overlay) */}
+            <div className="lg:hidden absolute top-4 right-4 z-[500]">
                 <button
                     onClick={() => setShowFilters(true)}
-                    className="w-full py-3 bg-blue-600 text-white rounded-lg font-semibold shadow-md flex items-center justify-center gap-2"
+                    className="bg-white text-blue-600 px-4 py-2 rounded-full font-bold shadow-lg border border-blue-100 flex items-center gap-2 text-sm"
                 >
-                    <span>⚡ Filter & Search</span>
-                    <span className="text-xs bg-blue-800 px-2 py-0.5 rounded-full">{displayedPlaces.length} Cities</span>
+                    <span className="text-lg">⚡</span>
+                    <span>Filters</span>
+                    <span className="bg-blue-100 text-blue-700 px-1.5 py-0.5 rounded-full text-xs">{displayedPlaces.length}</span>
                 </button>
             </div>
 
@@ -359,7 +360,7 @@ const MapController = () => {
                 initial={{ opacity: 0, scale: 0.98 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="lg:flex-1 h-[45vh] lg:h-auto shrink-0 bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden relative"
+                className="lg:flex-1 h-[35vh] lg:h-auto shrink-0 bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden relative"
             >
                 <Map places={displayedPlaces} selectedCityId={selectedCityId} />
             </motion.main>
@@ -371,11 +372,11 @@ const MapController = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="w-full lg:w-80 bg-white rounded-xl shadow-sm border border-gray-100 flex flex-col lg:shrink-0 flex-1 min-h-0"
             >
-                <div className="p-4 border-b border-gray-100 bg-gray-50">
+                <div className="p-4 border-b border-gray-100 bg-gray-50 hidden lg:block">
                     <h3 className="font-bold text-gray-700">Top Matches</h3>
                     <p className="text-xs text-gray-500">{displayedPlaces.length} cities found</p>
                 </div>
-                <div className="overflow-y-auto flex-1 p-2 space-y-2 pb-32">
+                <div className="overflow-y-auto flex-1 p-2 space-y-2 pb-32 lg:pb-2">
                     <AnimatePresence mode='popLayout'>
                         {displayedPlaces.map((city, idx) => (
                             <motion.div
