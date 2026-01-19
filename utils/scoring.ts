@@ -23,7 +23,8 @@ export interface UserPreferences {
     maxPriceSqFt: number;         // Hard Constraint
 
     airportDistImportance: number; // 0-10
-    maxDriveTimeHours: number;     // Hard Constraint
+    maxDriveTimeDomestic: number;  // Hard Constraint (Hours)
+    maxDriveTimeInternational: number; // Hard Constraint (Hours)
 
     intlAirportDistImportance: number;
 

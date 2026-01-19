@@ -35,11 +35,13 @@ const MapController = () => {
 
         warmthPreference: 5,
 
+
         lowCostImportance: 5,
         maxPriceSqFt: 15000, // Default constraint
 
         airportDistImportance: 5,
-        maxDriveTimeHours: 2, // Default constraint
+        maxDriveTimeDomestic: 2, // Default constraint (Domestic)
+        maxDriveTimeInternational: 4, // Default constraint (Intl)
 
         intlAirportDistImportance: 5,
         naturePreference: 'Any'
@@ -104,8 +106,15 @@ const MapController = () => {
 
         // 5. HARD FILTER: Drive Time (Post Calculation)
         let finalDisplay = scored;
+
+        // Filter Domestic
         if (prefs.enableAirport) {
-            finalDisplay = finalDisplay.filter(c => (c.nearestDomesticAirport.driveTimeMinutes || 999) <= (prefs.maxDriveTimeHours * 60));
+            finalDisplay = finalDisplay.filter(c => (c.nearestDomesticAirport.driveTimeMinutes || 999) <= (prefs.maxDriveTimeDomestic * 60));
+        }
+
+        // Filter International
+        if (prefs.enableIntlAirport) {
+            finalDisplay = finalDisplay.filter(c => (c.nearestInternationalAirport.driveTimeMinutes || 999) <= (prefs.maxDriveTimeInternational * 60));
         }
 
         finalDisplay.sort((a, b) => (b.matchScore || 0) - (a.matchScore || 0));
@@ -235,13 +244,29 @@ const MapController = () => {
                                     <input type="checkbox" checked={prefs.enableAirport}
                                         onChange={(e) => handlePrefChange('enableAirport', e.target.checked)}
                                         className="rounded text-purple-600 focus:ring-purple-500" />
-                                    Max Drive Time
+                                    Domestic Airport (Max Time)
                                 </label>
-                                <span className="text-xs text-purple-600 font-medium">{prefs.maxDriveTimeHours} hrs</span>
+                                <span className="text-xs text-purple-600 font-medium">{prefs.maxDriveTimeDomestic} hrs</span>
                             </div>
-                            <input type="range" min="1" max="8" step="0.5" value={prefs.maxDriveTimeHours} disabled={!prefs.enableAirport}
-                                onChange={(e) => handlePrefChange('maxDriveTimeHours', parseFloat(e.target.value))}
+                            <input type="range" min="1" max="8" step="0.5" value={prefs.maxDriveTimeDomestic} disabled={!prefs.enableAirport}
+                                onChange={(e) => handlePrefChange('maxDriveTimeDomestic', parseFloat(e.target.value))}
                                 className="w-full accent-purple-500 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer" />
+                        </div>
+
+                        {/* Intl Airport */}
+                        <div className={!prefs.enableIntlAirport ? 'opacity-50' : ''}>
+                            <div className="flex items-center justify-between mb-2">
+                                <label className="flex items-center gap-2 font-semibold text-gray-700 cursor-pointer">
+                                    <input type="checkbox" checked={prefs.enableIntlAirport}
+                                        onChange={(e) => handlePrefChange('enableIntlAirport', e.target.checked)}
+                                        className="rounded text-pink-600 focus:ring-pink-500" />
+                                    Intl Airport (Max Time)
+                                </label>
+                                <span className="text-xs text-pink-600 font-medium">{prefs.maxDriveTimeInternational} hrs</span>
+                            </div>
+                            <input type="range" min="1" max="8" step="0.5" value={prefs.maxDriveTimeInternational} disabled={!prefs.enableIntlAirport}
+                                onChange={(e) => handlePrefChange('maxDriveTimeInternational', parseFloat(e.target.value))}
+                                className="w-full accent-pink-500 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer" />
                         </div>
 
                         {/* Nature / Landscape */}
