@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import { City } from '@/types/City';
@@ -20,21 +20,28 @@ interface MapProps {
     selectedCityId?: number | null;
 }
 
-// Sub-component to handle map movement
-const MapUpdater = ({ selectedCity }: { selectedCity: City | undefined }) => {
+const MapUpdater = ({ selectedCity, markerRefs }: { selectedCity: City | undefined, markerRefs: React.MutableRefObject<any> }) => {
     const map = useMap();
     useEffect(() => {
         if (selectedCity) {
             map.flyTo([selectedCity.lat, selectedCity.lng], 10, {
                 duration: 1.5
             });
+            // Auto open popup
+            const marker = markerRefs.current[selectedCity.id];
+            if (marker) {
+                setTimeout(() => {
+                    marker.openPopup();
+                }, 1600);
+            }
         }
-    }, [selectedCity, map]);
+    }, [selectedCity, map, markerRefs]);
     return null;
 };
 
 const Map = ({ places, selectedCityId }: MapProps) => {
     const activeCity = places.find(p => p.id === selectedCityId);
+    const markerRefs = useRef<{ [key: number]: any }>({});
 
     return (
         <MapContainer center={[22.5, 79.5]} zoom={5} style={{ height: '100%', width: '100%' }}>
@@ -43,10 +50,14 @@ const Map = ({ places, selectedCityId }: MapProps) => {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
 
-            <MapUpdater selectedCity={activeCity} />
+            <MapUpdater selectedCity={activeCity} markerRefs={markerRefs} />
 
             {places.map((city) => (
-                <Marker key={city.id} position={[city.lat, city.lng]}>
+                <Marker
+                    key={city.id}
+                    position={[city.lat, city.lng]}
+                    ref={el => { if (el) markerRefs.current[city.id] = el; }}
+                >
                     <Popup className="custom-popup">
                         <div className="p-1 min-w-[200px]">
                             <h3 className="font-bold text-lg mb-1">{city.name}</h3>
@@ -83,11 +94,13 @@ const Map = ({ places, selectedCityId }: MapProps) => {
                                 )}
                                 <div className="pt-2 mt-2 border-t">
                                     <div className="font-semibold text-gray-700 mb-1">Airports</div>
-                                    <div className="flex justify-between text-gray-600">
-                                        <span>✈️ {city.nearestDomesticAirport.distance}km (Dom)</span>
+                                    <div className="mb-1 text-gray-600">
+                                        <div className="flex justify-between"><span>Domestic:</span> <span>{city.nearestDomesticAirport.distance}km</span></div>
+                                        <div className="text-[10px] text-gray-400">{city.nearestDomesticAirport.name}</div>
                                     </div>
-                                    <div className="flex justify-between text-gray-600">
-                                        <span>✈️ {city.nearestInternationalAirport.distance}km (Intl)</span>
+                                    <div className="text-gray-600">
+                                        <div className="flex justify-between"><span>International:</span> <span>{city.nearestInternationalAirport.distance}km</span></div>
+                                        <div className="text-[10px] text-gray-400">{city.nearestInternationalAirport.name}</div>
                                     </div>
                                 </div>
                             </div>

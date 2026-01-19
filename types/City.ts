@@ -33,7 +33,8 @@ export interface City {
     aqi: number;
     healthcare: Healthcare;
     realEstate: RealEstate;
-    costOfLiving: 'Low' | 'Medium' | 'High';
+    costOfLiving: string; // Changed to string to allow cost helper return
+    landscape: 'Plain' | 'Hill' | 'Coastal';
     nearestDomesticAirport: AirportInfo;
     nearestInternationalAirport: AirportInfo;
     matchScore?: number;

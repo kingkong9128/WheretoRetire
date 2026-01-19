@@ -1,5 +1,79 @@
 import json
 import random
+import math
+
+# --- Real Data Sources ---
+
+# Major Airports (Real Coordinates)
+AIRPORTS = {
+    # International
+    "DEL": {"name": "Indira Gandhi Intl (Delhi)", "lat": 28.5562, "lng": 77.1000, "type": "intl"},
+    "BOM": {"name": "Chhatrapati Shivaji Maharaj Intl (Mumbai)", "lat": 19.0896, "lng": 72.8656, "type": "intl"},
+    "BLR": {"name": "Kempegowda Intl (Bangalore)", "lat": 13.1986, "lng": 77.7066, "type": "intl"},
+    "MAA": {"name": "Chennai Intl", "lat": 12.9941, "lng": 80.1709, "type": "intl"},
+    "COK": {"name": "Cochin Intl", "lat": 10.1518, "lng": 76.3930, "type": "intl"},
+    "HYD": {"name": "Rajiv Gandhi Intl (Hyderabad)", "lat": 17.2403, "lng": 78.4294, "type": "intl"},
+    "CCU": {"name": "Netaji Subhash Chandra Bose Intl (Kolkata)", "lat": 22.6547, "lng": 88.4467, "type": "intl"},
+    "AMD": {"name": "Sardar Vallabhbhai Patel Intl (Ahmedabad)", "lat": 23.0732, "lng": 72.6347, "type": "intl"},
+    "GOI": {"name": "Dabolim (Goa)", "lat": 15.3800, "lng": 73.8314, "type": "intl"},
+    "TRV": {"name": "Thiruvananthapuram Intl", "lat": 8.4821, "lng": 76.9200, "type": "intl"},
+    "ATQ": {"name": "Sri Guru Ram Dass Jee Intl (Amritsar)", "lat": 31.7096, "lng": 74.7973, "type": "intl"},
+    "JAI": {"name": "Jaipur Intl", "lat": 26.8289, "lng": 75.8056, "type": "intl"},
+    "LKO": {"name": "Chaudhary Charan Singh Intl (Lucknow)", "lat": 26.7606, "lng": 80.8893, "type": "intl"},
+    "IXC": {"name": "Chandigarh Intl", "lat": 30.6735, "lng": 76.7885, "type": "intl"},
+    "IXB": {"name": "Bagdogra (Siliguri)", "lat": 26.6812, "lng": 88.3286, "type": "intl"}, # Limited intl
+    "BBI": {"name": "Biju Patnaik Intl (Bhubaneswar)", "lat": 20.2444, "lng": 85.8178, "type": "intl"},
+    "TRZ": {"name": "Tiruchirappalli Intl", "lat": 10.7654, "lng": 78.7097, "type": "intl"},
+    "CJB": {"name": "Coimbatore Intl", "lat": 11.0275, "lng": 77.0434, "type": "intl"},
+    "NAG": {"name": "Dr. Babasaheb Ambedkar Intl (Nagpur)", "lat": 21.0922, "lng": 79.0472, "type": "intl"},
+    "IXE": {"name": "Mangalore Intl", "lat": 12.9613, "lng": 74.8901, "type": "intl"},
+    "CCJ": {"name": "Calicut Intl (Kozhikode)", "lat": 11.1367, "lng": 75.9553, "type": "intl"},
+    "VNS": {"name": "Lal Bahadur Shastri Intl (Varanasi)", "lat": 25.4525, "lng": 82.8591, "type": "intl"},
+
+    # Domestic Only (Selected Major)
+    "DED": {"name": "Dehradun (Jolly Grant)", "lat": 30.1897, "lng": 78.1803, "type": "dom"},
+    "UDR": {"name": "Maharana Pratap (Udaipur)", "lat": 24.6172, "lng": 73.8961, "type": "dom"},
+    "JDH": {"name": "Jodhpur", "lat": 26.2515, "lng": 73.0489, "type": "dom"},
+    "BDQ": {"name": "Vadodara", "lat": 22.3361, "lng": 73.2264, "type": "dom"},
+    "STV": {"name": "Surat", "lat": 21.1139, "lng": 72.7419, "type": "dom"},
+    "IXZ": {"name": "Port Blair", "lat": 11.6410, "lng": 92.7297, "type": "dom"},
+    "IXR": {"name": "Birsa Munda (Ranchi)", "lat": 23.3143, "lng": 85.3217, "type": "dom"},
+    "PAT": {"name": "Jay Prakash Narayan (Patna)", "lat": 25.5913, "lng": 85.0880, "type": "dom"},
+    "RPR": {"name": "Swami Vivekananda (Raipur)", "lat": 21.1804, "lng": 81.7388, "type": "dom"},
+    "IDR": {"name": "Devi Ahilya Bai Holkar (Indore)", "lat": 22.7217, "lng": 75.8011, "type": "dom"},
+    "BHO": {"name": "Raja Bhoj (Bhopal)", "lat": 23.2875, "lng": 77.3378, "type": "dom"},
+    "GAU": {"name": "Lokpriya Gopinath Bordoloi (Guwahati)", "lat": 26.1061, "lng": 91.5859, "type": "dom"}, # Technically Intl but mainly regional gateway
+    "VTZ": {"name": "Visakhapatnam", "lat": 17.7211, "lng": 83.2245, "type": "dom"},
+    "VGA": {"name": "Vijayawada", "lat": 16.5304, "lng": 80.7968, "type": "dom"},
+    "PNY": {"name": "Pondicherry", "lat": 11.9683, "lng": 79.8114, "type": "dom"},
+    "MYQ": {"name": "Mysore", "lat": 12.2280, "lng": 76.6413, "type": "dom"}
+}
+
+# Haversine Formula for Real Distances
+def calculate_distance(lat1, lon1, lat2, lon2):
+    R = 6371 # Earth radius in km
+    dlat = math.radians(lat2 - lat1)
+    dlon = math.radians(lon2 - lon1)
+    a = math.sin(dlat/2) * math.sin(dlat/2) + \
+        math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * \
+        math.sin(dlon/2) * math.sin(dlon/2)
+    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
+    return round(R * c)
+
+def get_nearest_airport(lat, lng, type_filter=None):
+    nearest = None
+    min_dist = 99999
+    
+    for code, data in AIRPORTS.items():
+        if type_filter and data['type'] != type_filter:
+            continue
+            
+        dist = calculate_distance(lat, lng, data['lat'], data['lng'])
+        if dist < min_dist:
+            min_dist = dist
+            nearest = {"name": data['name'], "distance": dist, "code": code}
+            
+    return nearest
 
 # Helper to categorize cost of living
 def get_col(size_tier):
@@ -7,149 +81,148 @@ def get_col(size_tier):
     if size_tier == 2: return "Medium"
     return "Low"
 
-# Base City Data - Name, State, Lat, Lng, Tier, Elevation(m)
-# Tier 1=Metro, 2=City, 3=Town/Suburb. 
-# Suburbs are often Tier 3 but might have high Real Estate cost.
+# Base City Data - Name, State, Lat, Lng, Tier, Elevation(m), LANDSCAPE
+# Landscape: Plain, Hill, Coastal
 raw_cities = [
     # North
-    ("Delhi", "Delhi", 28.61, 77.20, 1, 216),
-    ("Gurgaon", "Haryana", 28.45, 77.02, 1, 217),
-    ("Noida", "Uttar Pradesh", 28.53, 77.39, 1, 200),
-    ("Greater Noida", "Uttar Pradesh", 28.47, 77.50, 2, 200),
-    ("Ghaziabad", "Uttar Pradesh", 28.66, 77.45, 2, 210),
-    ("Faridabad", "Haryana", 28.40, 77.31, 2, 198),
-    ("Chandigarh", "Chandigarh", 30.73, 76.77, 2, 321),
-    ("Mohali", "Punjab", 30.70, 76.71, 2, 316),
-    ("Panchkula", "Haryana", 30.69, 76.86, 2, 365),
-    ("Dehradun", "Uttarakhand", 30.31, 78.03, 2, 435),
-    ("Shimla", "Himachal Pradesh", 31.10, 77.17, 3, 2276),
-    ("Manali", "Himachal Pradesh", 32.23, 77.18, 3, 2050),
-    ("Dharamshala", "Himachal Pradesh", 32.21, 76.32, 3, 1457),
-    ("Jaipur", "Rajasthan", 26.91, 75.78, 2, 431),
-    ("Udaipur", "Rajasthan", 24.58, 73.71, 3, 598),
-    ("Jodhpur", "Rajasthan", 26.23, 73.02, 3, 231),
-    ("Ajmer", "Rajasthan", 26.44, 74.63, 3, 480),
-    ("Lucknow", "Uttar Pradesh", 26.84, 80.94, 2, 123),
-    ("Varanasi", "Uttar Pradesh", 25.31, 82.97, 3, 81),
-    ("Agra", "Uttar Pradesh", 27.17, 78.00, 3, 170),
-    ("Amritsar", "Punjab", 31.63, 74.87, 2, 234),
-    ("Ludhiana", "Punjab", 30.90, 75.85, 2, 244),
-    ("Jalandhar", "Punjab", 31.32, 75.57, 2, 229),
-    ("Patiala", "Punjab", 30.33, 76.39, 3, 250),
-    ("Srinagar", "Jammu & Kashmir", 34.08, 74.79, 2, 1585),
-    ("Jammu", "Jammu & Kashmir", 32.72, 74.85, 3, 327),
-    ("Allahabad (Prayagraj)", "Uttar Pradesh", 25.43, 81.84, 3, 98),
-    ("Kanpur", "Uttar Pradesh", 26.44, 80.33, 2, 126),
-    ("Kota", "Rajasthan", 25.21, 75.86, 3, 271),
-    ("Haridwar", "Uttarakhand", 29.94, 78.16, 3, 314),
-    ("Rishikesh", "Uttarakhand", 30.08, 78.26, 3, 372),
-    ("Mussoorie", "Uttarakhand", 30.45, 78.07, 3, 2005),
-    ("Nainital", "Uttarakhand", 29.39, 79.45, 3, 2084),
-    ("Meerut", "Uttar Pradesh", 28.98, 77.70, 2, 219),
+    ("Delhi", "Delhi", 28.61, 77.20, 1, 216, "Plain"),
+    ("Gurgaon", "Haryana", 28.45, 77.02, 1, 217, "Plain"),
+    ("Noida", "Uttar Pradesh", 28.53, 77.39, 1, 200, "Plain"),
+    ("Greater Noida", "Uttar Pradesh", 28.47, 77.50, 2, 200, "Plain"),
+    ("Ghaziabad", "Uttar Pradesh", 28.66, 77.45, 2, 210, "Plain"),
+    ("Faridabad", "Haryana", 28.40, 77.31, 2, 198, "Plain"),
+    ("Chandigarh", "Chandigarh", 30.73, 76.77, 2, 321, "Plain"),
+    ("Mohali", "Punjab", 30.70, 76.71, 2, 316, "Plain"),
+    ("Panchkula", "Haryana", 30.69, 76.86, 2, 365, "Plain"),
+    ("Dehradun", "Uttarakhand", 30.31, 78.03, 2, 435, "Hill"),
+    ("Shimla", "Himachal Pradesh", 31.10, 77.17, 3, 2276, "Hill"),
+    ("Manali", "Himachal Pradesh", 32.23, 77.18, 3, 2050, "Hill"),
+    ("Dharamshala", "Himachal Pradesh", 32.21, 76.32, 3, 1457, "Hill"),
+    ("Jaipur", "Rajasthan", 26.91, 75.78, 2, 431, "Plain"),
+    ("Udaipur", "Rajasthan", 24.58, 73.71, 3, 598, "Hill"), # Aravalli hills
+    ("Jodhpur", "Rajasthan", 26.23, 73.02, 3, 231, "Plain"),
+    ("Ajmer", "Rajasthan", 26.44, 74.63, 3, 480, "Plain"),
+    ("Lucknow", "Uttar Pradesh", 26.84, 80.94, 2, 123, "Plain"),
+    ("Varanasi", "Uttar Pradesh", 25.31, 82.97, 3, 81, "Plain"),
+    ("Agra", "Uttar Pradesh", 27.17, 78.00, 3, 170, "Plain"),
+    ("Amritsar", "Punjab", 31.63, 74.87, 2, 234, "Plain"),
+    ("Ludhiana", "Punjab", 30.90, 75.85, 2, 244, "Plain"),
+    ("Jalandhar", "Punjab", 31.32, 75.57, 2, 229, "Plain"),
+    ("Patiala", "Punjab", 30.33, 76.39, 3, 250, "Plain"),
+    ("Srinagar", "Jammu & Kashmir", 34.08, 74.79, 2, 1585, "Hill"),
+    ("Jammu", "Jammu & Kashmir", 32.72, 74.85, 3, 327, "Hill"),
+    ("Allahabad (Prayagraj)", "Uttar Pradesh", 25.43, 81.84, 3, 98, "Plain"),
+    ("Kanpur", "Uttar Pradesh", 26.44, 80.33, 2, 126, "Plain"),
+    ("Kota", "Rajasthan", 25.21, 75.86, 3, 271, "Plain"),
+    ("Haridwar", "Uttarakhand", 29.94, 78.16, 3, 314, "Hill"),
+    ("Rishikesh", "Uttarakhand", 30.08, 78.26, 3, 372, "Hill"),
+    ("Mussoorie", "Uttarakhand", 30.45, 78.07, 3, 2005, "Hill"),
+    ("Nainital", "Uttarakhand", 29.39, 79.45, 3, 2084, "Hill"),
+    ("Meerut", "Uttar Pradesh", 28.98, 77.70, 2, 219, "Plain"),
     
     # West
-    ("Mumbai", "Maharashtra", 19.07, 72.87, 1, 14),
-    ("Navi Mumbai", "Maharashtra", 19.03, 73.02, 1, 10),
-    ("Thane", "Maharashtra", 19.21, 72.97, 2, 8),
-    ("Kalyan-Dombivli", "Maharashtra", 19.24, 73.13, 3, 7),
-    ("Pune", "Maharashtra", 18.52, 73.85, 1, 560),
-    ("Pimpri-Chinchwad", "Maharashtra", 18.62, 73.79, 2, 530),
-    ("Nagpur", "Maharashtra", 21.14, 79.08, 2, 310),
-    ("Nashik", "Maharashtra", 19.99, 73.78, 2, 600),
-    ("Aurangabad", "Maharashtra", 19.87, 75.34, 3, 568),
-    ("Ahmedabad", "Gujarat", 23.02, 72.57, 1, 53),
-    ("Gandhinagar", "Gujarat", 23.21, 72.63, 3, 81),
-    ("Surat", "Gujarat", 21.17, 72.83, 2, 13),
-    ("Vadodara", "Gujarat", 22.30, 73.18, 2, 39),
-    ("Rajkot", "Gujarat", 22.30, 70.80, 2, 128),
-    ("Jamnagar", "Gujarat", 22.47, 70.05, 3, 20),
-    ("Bhavnagar", "Gujarat", 21.76, 72.15, 3, 24),
-    ("Goa (Panaji)", "Goa", 15.49, 73.82, 3, 7),
-    ("Vasco da Gama", "Goa", 15.39, 73.81, 3, 6),
-    ("Margao", "Goa", 15.27, 73.96, 3, 10),
-    ("Kolhapur", "Maharashtra", 16.70, 74.24, 3, 545),
-    ("Solapur", "Maharashtra", 17.65, 75.90, 3, 458),
-    ("Amravati", "Maharashtra", 20.93, 77.75, 3, 343),
-    ("Lonavala", "Maharashtra", 18.75, 73.40, 3, 624),
-    ("Mahabaleshwar", "Maharashtra", 17.93, 73.64, 3, 1353),
-    ("Alibag", "Maharashtra", 18.64, 72.87, 3, 0),
-    ("Daman", "Daman and Diu", 20.39, 72.83, 3, 5),
+    ("Mumbai", "Maharashtra", 19.07, 72.87, 1, 14, "Coastal"),
+    ("Navi Mumbai", "Maharashtra", 19.03, 73.02, 1, 10, "Coastal"),
+    ("Thane", "Maharashtra", 19.21, 72.97, 2, 8, "Coastal"),
+    ("Kalyan-Dombivli", "Maharashtra", 19.24, 73.13, 3, 7, "Coastal"),
+    ("Pune", "Maharashtra", 18.52, 73.85, 1, 560, "Hill"), # Plateau/Hill
+    ("Pimpri-Chinchwad", "Maharashtra", 18.62, 73.79, 2, 530, "Hill"),
+    ("Nagpur", "Maharashtra", 21.14, 79.08, 2, 310, "Plain"),
+    ("Nashik", "Maharashtra", 19.99, 73.78, 2, 600, "Hill"),
+    ("Aurangabad", "Maharashtra", 19.87, 75.34, 3, 568, "Hill"),
+    ("Ahmedabad", "Gujarat", 23.02, 72.57, 1, 53, "Plain"),
+    ("Gandhinagar", "Gujarat", 23.21, 72.63, 3, 81, "Plain"),
+    ("Surat", "Gujarat", 21.17, 72.83, 2, 13, "Coastal"),
+    ("Vadodara", "Gujarat", 22.30, 73.18, 2, 39, "Plain"),
+    ("Rajkot", "Gujarat", 22.30, 70.80, 2, 128, "Plain"),
+    ("Jamnagar", "Gujarat", 22.47, 70.05, 3, 20, "Coastal"),
+    ("Bhavnagar", "Gujarat", 21.76, 72.15, 3, 24, "Coastal"),
+    ("Goa (Panaji)", "Goa", 15.49, 73.82, 3, 7, "Coastal"),
+    ("Vasco da Gama", "Goa", 15.39, 73.81, 3, 6, "Coastal"),
+    ("Margao", "Goa", 15.27, 73.96, 3, 10, "Coastal"),
+    ("Kolhapur", "Maharashtra", 16.70, 74.24, 3, 545, "Hill"),
+    ("Solapur", "Maharashtra", 17.65, 75.90, 3, 458, "Plain"),
+    ("Amravati", "Maharashtra", 20.93, 77.75, 3, 343, "Plain"),
+    ("Lonavala", "Maharashtra", 18.75, 73.40, 3, 624, "Hill"),
+    ("Mahabaleshwar", "Maharashtra", 17.93, 73.64, 3, 1353, "Hill"),
+    ("Alibag", "Maharashtra", 18.64, 72.87, 3, 0, "Coastal"),
+    ("Daman", "Daman and Diu", 20.39, 72.83, 3, 5, "Coastal"),
 
     # South
-    ("Bangalore", "Karnataka", 12.97, 77.59, 1, 920),
-    ("Whitefield (Bangalore)", "Karnataka", 12.96, 77.75, 2, 900),
-    ("Mysore", "Karnataka", 12.29, 76.63, 2, 763),
-    ("Mangalore", "Karnataka", 12.91, 74.85, 2, 22),
-    ("Udupi", "Karnataka", 13.34, 74.74, 3, 27),
-    ("Hubli", "Karnataka", 15.36, 75.12, 3, 670),
-    ("Belgaum", "Karnataka", 15.84, 74.49, 3, 762),
-    ("Chennai", "Tamil Nadu", 13.08, 80.27, 1, 6),
-    ("Coimbatore", "Tamil Nadu", 11.01, 76.95, 2, 411),
-    ("Madurai", "Tamil Nadu", 9.92, 78.11, 2, 101),
-    ("Trichy", "Tamil Nadu", 10.79, 78.70, 2, 88),
-    ("Salem", "Tamil Nadu", 11.66, 78.14, 3, 278),
-    ("Vellore", "Tamil Nadu", 12.91, 79.13, 3, 216),
-    ("Tirunelveli", "Tamil Nadu", 8.71, 77.75, 3, 47),
-    ("Hosur", "Tamil Nadu", 12.74, 77.82, 3, 879),
-    ("Hyderabad", "Telangana", 17.38, 78.48, 1, 542),
-    ("Secunderabad", "Telangana", 17.43, 78.50, 1, 543),
-    ("Warangal", "Telangana", 17.96, 79.59, 3, 266),
-    ("Visakhapatnam", "Andhra Pradesh", 17.68, 83.21, 2, 45),
-    ("Vijayawada", "Andhra Pradesh", 16.50, 80.64, 2, 11),
-    ("Guntur", "Andhra Pradesh", 16.30, 80.43, 3, 30),
-    ("Rajahmundry", "Andhra Pradesh", 16.98, 81.78, 3, 14),
-    ("Tirupati", "Andhra Pradesh", 13.62, 79.41, 3, 162),
-    ("Kochi", "Kerala", 9.93, 76.26, 2, 1),
-    ("Thiruvananthapuram", "Kerala", 8.52, 76.93, 2, 10),
-    ("Kozhikode", "Kerala", 11.25, 75.78, 2, 1),
-    ("Thrissur", "Kerala", 10.52, 76.21, 3, 2),
-    ("Pondicherry", "Puducherry", 11.94, 79.80, 2, 3),
-    ("Ooty", "Tamil Nadu", 11.41, 76.69, 3, 2240),
-    ("Munnar", "Kerala", 10.08, 77.05, 3, 1532),
-    ("Kodaikanal", "Tamil Nadu", 10.23, 77.48, 3, 2133),
-    ("Coorg (Madikeri)", "Karnataka", 12.42, 75.73, 3, 1150),
-    ("Alleppey", "Kerala", 9.49, 76.33, 3, 1),
-    ("Wayanad", "Kerala", 11.68, 76.13, 3, 700),
-    ("Yercaud", "Tamil Nadu", 11.77, 78.20, 3, 1515),
+    ("Bangalore", "Karnataka", 12.97, 77.59, 1, 920, "Plain"), # Plateau
+    ("Whitefield (Bangalore)", "Karnataka", 12.96, 77.75, 2, 900, "Plain"),
+    ("Mysore", "Karnataka", 12.29, 76.63, 2, 763, "Plain"),
+    ("Mangalore", "Karnataka", 12.91, 74.85, 2, 22, "Coastal"),
+    ("Udupi", "Karnataka", 13.34, 74.74, 3, 27, "Coastal"),
+    ("Hubli", "Karnataka", 15.36, 75.12, 3, 670, "Plain"),
+    ("Belgaum", "Karnataka", 15.84, 74.49, 3, 762, "Hill"),
+    ("Chennai", "Tamil Nadu", 13.08, 80.27, 1, 6, "Coastal"),
+    ("Coimbatore", "Tamil Nadu", 11.01, 76.95, 2, 411, "Hill"), # Foothills
+    ("Madurai", "Tamil Nadu", 9.92, 78.11, 2, 101, "Plain"),
+    ("Trichy", "Tamil Nadu", 10.79, 78.70, 2, 88, "Plain"),
+    ("Salem", "Tamil Nadu", 11.66, 78.14, 3, 278, "Hill"),
+    ("Vellore", "Tamil Nadu", 12.91, 79.13, 3, 216, "Plain"),
+    ("Tirunelveli", "Tamil Nadu", 8.71, 77.75, 3, 47, "Plain"),
+    ("Hosur", "Tamil Nadu", 12.74, 77.82, 3, 879, "Plain"),
+    ("Hyderabad", "Telangana", 17.38, 78.48, 1, 542, "Plain"),
+    ("Secunderabad", "Telangana", 17.43, 78.50, 1, 543, "Plain"),
+    ("Warangal", "Telangana", 17.96, 79.59, 3, 266, "Plain"),
+    ("Visakhapatnam", "Andhra Pradesh", 17.68, 83.21, 2, 45, "Coastal"),
+    ("Vijayawada", "Andhra Pradesh", 16.50, 80.64, 2, 11, "Plain"),
+    ("Guntur", "Andhra Pradesh", 16.30, 80.43, 3, 30, "Plain"),
+    ("Rajahmundry", "Andhra Pradesh", 16.98, 81.78, 3, 14, "Plain"),
+    ("Tirupati", "Andhra Pradesh", 13.62, 79.41, 3, 162, "Hill"),
+    ("Kochi", "Kerala", 9.93, 76.26, 2, 1, "Coastal"),
+    ("Thiruvananthapuram", "Kerala", 8.52, 76.93, 2, 10, "Coastal"),
+    ("Kozhikode", "Kerala", 11.25, 75.78, 2, 1, "Coastal"),
+    ("Thrissur", "Kerala", 10.52, 76.21, 3, 2, "Coastal"),
+    ("Pondicherry", "Puducherry", 11.94, 79.80, 2, 3, "Coastal"),
+    ("Ooty", "Tamil Nadu", 11.41, 76.69, 3, 2240, "Hill"),
+    ("Munnar", "Kerala", 10.08, 77.05, 3, 1532, "Hill"),
+    ("Kodaikanal", "Tamil Nadu", 10.23, 77.48, 3, 2133, "Hill"),
+    ("Coorg (Madikeri)", "Karnataka", 12.42, 75.73, 3, 1150, "Hill"),
+    ("Alleppey", "Kerala", 9.49, 76.33, 3, 1, "Coastal"),
+    ("Wayanad", "Kerala", 11.68, 76.13, 3, 700, "Hill"),
+    ("Yercaud", "Tamil Nadu", 11.77, 78.20, 3, 1515, "Hill"),
 
     # East
-    ("Kolkata", "West Bengal", 22.57, 88.36, 1, 9),
-    ("Howrah", "West Bengal", 22.59, 88.31, 2, 12),
-    ("Salt Lake City", "West Bengal", 22.58, 88.41, 2, 11),
-    ("Durgapur", "West Bengal", 23.48, 87.32, 2, 65),
-    ("Siliguri", "West Bengal", 26.72, 88.39, 3, 122),
-    ("Darjeeling", "West Bengal", 27.04, 88.26, 3, 2042),
-    ("Kalimpong", "West Bengal", 27.06, 88.47, 3, 1250),
-    ("Bhubaneswar", "Odisha", 20.29, 85.82, 2, 45),
-    ("Cuttack", "Odisha", 20.46, 85.88, 3, 36),
-    ("Puri", "Odisha", 19.81, 85.83, 3, 0),
-    ("Rourkela", "Odisha", 22.26, 84.85, 3, 218),
-    ("Patna", "Bihar", 25.59, 85.13, 2, 53),
-    ("Gaya", "Bihar", 24.79, 85.00, 3, 111),
-    ("Ranchi", "Jharkhand", 23.34, 85.30, 2, 651),
-    ("Jamshedpur", "Jharkhand", 22.80, 86.20, 2, 135),
-    ("Guwahati", "Assam", 26.14, 91.73, 2, 51),
-    ("Shillong", "Meghalaya", 25.57, 91.88, 3, 1525),
-    ("Gangtok", "Sikkim", 27.33, 88.61, 3, 1650),
-    ("Imphal", "Manipur", 24.81, 93.93, 3, 786),
-    ("Agartala", "Tripura", 23.83, 91.28, 3, 12),
-    ("Aizawl", "Mizoram", 23.73, 92.71, 3, 1132),
+    ("Kolkata", "West Bengal", 22.57, 88.36, 1, 9, "Plain"),
+    ("Howrah", "West Bengal", 22.59, 88.31, 2, 12, "Plain"),
+    ("Salt Lake City", "West Bengal", 22.58, 88.41, 2, 11, "Plain"),
+    ("Durgapur", "West Bengal", 23.48, 87.32, 2, 65, "Plain"),
+    ("Siliguri", "West Bengal", 26.72, 88.39, 3, 122, "Plain"),
+    ("Darjeeling", "West Bengal", 27.04, 88.26, 3, 2042, "Hill"),
+    ("Kalimpong", "West Bengal", 27.06, 88.47, 3, 1250, "Hill"),
+    ("Bhubaneswar", "Odisha", 20.29, 85.82, 2, 45, "Plain"),
+    ("Cuttack", "Odisha", 20.46, 85.88, 3, 36, "Plain"),
+    ("Puri", "Odisha", 19.81, 85.83, 3, 0, "Coastal"),
+    ("Rourkela", "Odisha", 22.26, 84.85, 3, 218, "Plain"),
+    ("Patna", "Bihar", 25.59, 85.13, 2, 53, "Plain"),
+    ("Gaya", "Bihar", 24.79, 85.00, 3, 111, "Plain"),
+    ("Ranchi", "Jharkhand", 23.34, 85.30, 2, 651, "Hill"), # Plateau
+    ("Jamshedpur", "Jharkhand", 22.80, 86.20, 2, 135, "Plain"),
+    ("Guwahati", "Assam", 26.14, 91.73, 2, 51, "Plain"),
+    ("Shillong", "Meghalaya", 25.57, 91.88, 3, 1525, "Hill"),
+    ("Gangtok", "Sikkim", 27.33, 88.61, 3, 1650, "Hill"),
+    ("Imphal", "Manipur", 24.81, 93.93, 3, 786, "Hill"),
+    ("Agartala", "Tripura", 23.83, 91.28, 3, 12, "Plain"),
+    ("Aizawl", "Mizoram", 23.73, 92.71, 3, 1132, "Hill"),
 
     # Central
-    ("Bhopal", "Madhya Pradesh", 23.25, 77.41, 2, 527),
-    ("Indore", "Madhya Pradesh", 22.71, 75.85, 2, 553),
-    ("Gwalior", "Madhya Pradesh", 26.21, 78.18, 2, 212),
-    ("Jabalpur", "Madhya Pradesh", 23.18, 79.98, 2, 412),
-    ("Ujjain", "Madhya Pradesh", 23.17, 75.78, 3, 494),
-    ("Raipur", "Chhattisgarh", 21.25, 81.62, 2, 291),
-    ("Bilaspur", "Chhattisgarh", 22.07, 82.14, 3, 264),
-    ("Bhilai", "Chhattisgarh", 21.20, 81.38, 2, 297),
+    ("Bhopal", "Madhya Pradesh", 23.25, 77.41, 2, 527, "Plain"),
+    ("Indore", "Madhya Pradesh", 22.71, 75.85, 2, 553, "Plain"),
+    ("Gwalior", "Madhya Pradesh", 26.21, 78.18, 2, 212, "Plain"),
+    ("Jabalpur", "Madhya Pradesh", 23.18, 79.98, 2, 412, "Plain"),
+    ("Ujjain", "Madhya Pradesh", 23.17, 75.78, 3, 494, "Plain"),
+    ("Raipur", "Chhattisgarh", 21.25, 81.62, 2, 291, "Plain"),
+    ("Bilaspur", "Chhattisgarh", 22.07, 82.14, 3, 264, "Plain"),
+    ("Bhilai", "Chhattisgarh", 21.20, 81.38, 2, 297, "Plain"),
 ]
 
 HOSPITAL_CHAINS = ["Apollo", "Max", "Fortis", "Manipal", "Narayana Health", "Aster", "Medanta", "Columbia Asia", "Care Hospitals"]
 
 def estimate_city_data(city):
-    name, state, lat, lng, tier, elev = city
+    name, state, lat, lng, tier, elev, landscape = city
     
     # 1. TEMPERATE & CLIMATE
     # Higher elevation = cooler. Lower latitude = steady warm.
@@ -212,33 +285,18 @@ def estimate_city_data(city):
         
     h_score = round(min(h_score, 10), 1)
 
-    # 4. AIRPORTS
-    # Distance to nearest DOMESTIC and INTERNATIONAL
-    # Simplified logic: Tier 1 usually has both close.
-    # Distances are estimates in km.
+    # 4. AIRPORTS (REAL CALCULATION)
+    nearest_dom_obj = get_nearest_airport(lat, lng, 'dom')
+    # If no domestic specific found or intl is closer, check all (since Intl also serves domestic)
+    nearest_any = get_nearest_airport(lat, lng)
     
-    dist_dom = random.randint(10, 30)
-    dist_intl = random.randint(10, 40)
+    # Logic: Nearest Domestic is usually the Nearest Airport (Intl airports also allow domestic)
+    # But usually we want the distinct nearest one.
+    # For sim: Nearest Domestic = Nearest Any Airport.
+    nearest_dom = nearest_any
     
-    if tier == 1:
-        dist_dom = random.randint(5, 25)
-        dist_intl = random.randint(10, 35)
-    elif tier == 2:
-        dist_dom = random.randint(10, 35)
-        dist_intl = random.randint(100, 300) # Often have to fly via metro
-        # Some Tier 2 have Intl (e.g., Jaipur, Kochi, Amritsar, Trichy)
-        if "Jaipur" in name or "Kochi" in name or "Amritsar" in name or "Trichy" in name or "Lucknow" in name:
-             dist_intl = random.randint(15, 30)
-    else:
-        dist_dom = random.randint(40, 150)
-        dist_intl = random.randint(150, 400)
-        
-    # Specific overrides
-    if "Noida" in name: dist_intl = 40; dist_dom = 40 # Jewar coming but currently Delhi
-    if "Gurgaon" in name: dist_intl = 20; dist_dom = 20
-    
-    nearest_dom = {"name": f"{name} Domestic", "distance": dist_dom}
-    nearest_intl = {"name": f"International Airport", "distance": dist_intl}
+    # Nearest Intl
+    nearest_intl = get_nearest_airport(lat, lng, 'intl')
 
     # 5. REAL ESTATE (Avg price per sqft in INR)
     # Tier 1 > Tier 2 > Tier 3
@@ -254,8 +312,6 @@ def estimate_city_data(city):
         price_sqft = random.randint(2500, 5000)
         if elev > 1000: price_sqft += 1500 # Hill stations premium
         
-    # Format nicely
-    
     return {
         "name": name,
         "state": state,
@@ -281,7 +337,8 @@ def estimate_city_data(city):
         },
         "costOfLiving": get_col(tier),
         "nearestDomesticAirport": nearest_dom,
-        "nearestInternationalAirport": nearest_intl
+        "nearestInternationalAirport": nearest_intl,
+        "landscape": landscape
     }
 
 final_cities = []
