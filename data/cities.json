@@ -6,11 +6,11 @@
     "lng": 77.2,
     "description": "Major Metro in Delhi.",
     "climate": {
-      "averageTempSummer": 45,
+      "averageTempSummer": 44,
       "averageTempWinter": 6,
-      "temperatureRange": "6-45\u00b0C",
+      "temperatureRange": "6-44\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 634
+      "annualRainfall": 719
     },
     "aqi": 350,
     "healthcare": {
@@ -27,18 +27,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 23482,
+      "averagePricePerSqFt": 17232,
       "currency": "INR"
     },
     "costOfLiving": "High",
     "nearestDomesticAirport": {
       "name": "Indira Gandhi Intl (Delhi)",
-      "distance": 11,
+      "distance": 13,
       "code": "DEL"
     },
     "nearestInternationalAirport": {
       "name": "Indira Gandhi Intl (Delhi)",
-      "distance": 11,
+      "distance": 13,
       "code": "DEL"
     },
     "landscape": "Plain",
@@ -51,11 +51,11 @@
     "lng": 77.02,
     "description": "Major Metro in Haryana.",
     "climate": {
-      "averageTempSummer": 43,
-      "averageTempWinter": 8,
-      "temperatureRange": "8-43\u00b0C",
+      "averageTempSummer": 41,
+      "averageTempWinter": 5,
+      "temperatureRange": "5-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 628
+      "annualRainfall": 546
     },
     "aqi": 310,
     "healthcare": {
@@ -71,18 +71,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 21516,
+      "averagePricePerSqFt": 20400,
       "currency": "INR"
     },
     "costOfLiving": "High",
     "nearestDomesticAirport": {
       "name": "Indira Gandhi Intl (Delhi)",
-      "distance": 14,
+      "distance": 17,
       "code": "DEL"
     },
     "nearestInternationalAirport": {
       "name": "Indira Gandhi Intl (Delhi)",
-      "distance": 14,
+      "distance": 17,
       "code": "DEL"
     },
     "landscape": "Plain",
@@ -95,11 +95,11 @@
     "lng": 77.39,
     "description": "Major Metro in Uttar Pradesh.",
     "climate": {
-      "averageTempSummer": 43,
-      "averageTempWinter": 8,
-      "temperatureRange": "8-43\u00b0C",
+      "averageTempSummer": 44,
+      "averageTempWinter": 7,
+      "temperatureRange": "7-44\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 567
+      "annualRainfall": 663
     },
     "aqi": 320,
     "healthcare": {
@@ -115,18 +115,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 20491,
+      "averagePricePerSqFt": 22108,
       "currency": "INR"
     },
     "costOfLiving": "High",
     "nearestDomesticAirport": {
       "name": "Indira Gandhi Intl (Delhi)",
-      "distance": 28,
+      "distance": 35,
       "code": "DEL"
     },
     "nearestInternationalAirport": {
       "name": "Indira Gandhi Intl (Delhi)",
-      "distance": 28,
+      "distance": 35,
       "code": "DEL"
     },
     "landscape": "Plain",
@@ -140,10 +140,10 @@
     "description": "Growing City in Uttar Pradesh.",
     "climate": {
       "averageTempSummer": 42,
-      "averageTempWinter": 7,
-      "temperatureRange": "7-42\u00b0C",
+      "averageTempWinter": 4,
+      "temperatureRange": "4-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 732
+      "annualRainfall": 582
     },
     "aqi": 340,
     "healthcare": {
@@ -159,18 +159,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6622,
+      "averagePricePerSqFt": 6926,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Indira Gandhi Intl (Delhi)",
-      "distance": 40,
+      "distance": 50,
       "code": "DEL"
     },
     "nearestInternationalAirport": {
       "name": "Indira Gandhi Intl (Delhi)",
-      "distance": 40,
+      "distance": 50,
       "code": "DEL"
     },
     "landscape": "Plain",
@@ -183,11 +183,11 @@
     "lng": 77.45,
     "description": "Growing City in Uttar Pradesh.",
     "climate": {
-      "averageTempSummer": 44,
-      "averageTempWinter": 7,
-      "temperatureRange": "7-44\u00b0C",
+      "averageTempSummer": 41,
+      "averageTempWinter": 8,
+      "temperatureRange": "8-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 514
+      "annualRainfall": 604
     },
     "aqi": 360,
     "healthcare": {
@@ -201,18 +201,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5122,
+      "averagePricePerSqFt": 8303,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Indira Gandhi Intl (Delhi)",
-      "distance": 36,
+      "distance": 45,
       "code": "DEL"
     },
     "nearestInternationalAirport": {
       "name": "Indira Gandhi Intl (Delhi)",
-      "distance": 36,
+      "distance": 45,
       "code": "DEL"
     },
     "landscape": "Plain",
@@ -225,11 +225,11 @@
     "lng": 77.31,
     "description": "Growing City in Haryana.",
     "climate": {
-      "averageTempSummer": 43,
-      "averageTempWinter": 7,
-      "temperatureRange": "7-43\u00b0C",
+      "averageTempSummer": 44,
+      "averageTempWinter": 4,
+      "temperatureRange": "4-44\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 514
+      "annualRainfall": 586
     },
     "aqi": 300,
     "healthcare": {
@@ -244,18 +244,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6845,
+      "averagePricePerSqFt": 7579,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Indira Gandhi Intl (Delhi)",
-      "distance": 27,
+      "distance": 33,
       "code": "DEL"
     },
     "nearestInternationalAirport": {
       "name": "Indira Gandhi Intl (Delhi)",
-      "distance": 27,
+      "distance": 33,
       "code": "DEL"
     },
     "landscape": "Plain",
@@ -272,7 +272,7 @@
       "averageTempWinter": 8,
       "temperatureRange": "8-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 568
+      "annualRainfall": 722
     },
     "aqi": 160,
     "healthcare": {
@@ -287,18 +287,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8978,
+      "averagePricePerSqFt": 8425,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Chandigarh Intl",
-      "distance": 7,
+      "distance": 8,
       "code": "IXC"
     },
     "nearestInternationalAirport": {
       "name": "Chandigarh Intl",
-      "distance": 7,
+      "distance": 8,
       "code": "IXC"
     },
     "landscape": "Plain",
@@ -311,11 +311,11 @@
     "lng": 76.71,
     "description": "Growing City in Punjab.",
     "climate": {
-      "averageTempSummer": 44,
+      "averageTempSummer": 42,
       "averageTempWinter": 6,
-      "temperatureRange": "6-44\u00b0C",
+      "temperatureRange": "6-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 671
+      "annualRainfall": 601
     },
     "aqi": 150,
     "healthcare": {
@@ -328,18 +328,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7639,
+      "averagePricePerSqFt": 8630,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Chandigarh Intl",
-      "distance": 8,
+      "distance": 10,
       "code": "IXC"
     },
     "nearestInternationalAirport": {
       "name": "Chandigarh Intl",
-      "distance": 8,
+      "distance": 10,
       "code": "IXC"
     },
     "landscape": "Plain",
@@ -352,13 +352,13 @@
     "lng": 76.86,
     "description": "Growing City in Haryana.",
     "climate": {
-      "averageTempSummer": 44,
-      "averageTempWinter": 8,
-      "temperatureRange": "8-44\u00b0C",
+      "averageTempSummer": 45,
+      "averageTempWinter": 6,
+      "temperatureRange": "6-45\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 643
+      "annualRainfall": 637
     },
-    "aqi": 142,
+    "aqi": 175,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -368,18 +368,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5476,
+      "averagePricePerSqFt": 5039,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Chandigarh Intl",
-      "distance": 7,
+      "distance": 8,
       "code": "IXC"
     },
     "nearestInternationalAirport": {
       "name": "Chandigarh Intl",
-      "distance": 7,
+      "distance": 8,
       "code": "IXC"
     },
     "landscape": "Plain",
@@ -396,7 +396,7 @@
       "averageTempWinter": 7,
       "temperatureRange": "7-44\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 779
+      "annualRainfall": 632
     },
     "aqi": 120,
     "healthcare": {
@@ -410,18 +410,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5714,
+      "averagePricePerSqFt": 5878,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Dehradun (Jolly Grant)",
-      "distance": 20,
+      "distance": 32,
       "code": "DED"
     },
     "nearestInternationalAirport": {
       "name": "Chandigarh Intl",
-      "distance": 126,
+      "distance": 201,
       "code": "IXC"
     },
     "landscape": "Hill",
@@ -434,11 +434,11 @@
     "lng": 77.17,
     "description": "Scenic Town in Himachal Pradesh.",
     "climate": {
-      "averageTempSummer": 24,
-      "averageTempWinter": 2,
-      "temperatureRange": "2-24\u00b0C",
+      "averageTempSummer": 27,
+      "averageTempWinter": 3,
+      "temperatureRange": "3-27\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 916
+      "annualRainfall": 856
     },
     "aqi": 35,
     "healthcare": {
@@ -450,18 +450,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4895,
+      "averagePricePerSqFt": 4566,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Chandigarh Intl",
-      "distance": 60,
+      "distance": 96,
       "code": "IXC"
     },
     "nearestInternationalAirport": {
       "name": "Chandigarh Intl",
-      "distance": 60,
+      "distance": 96,
       "code": "IXC"
     },
     "landscape": "Hill",
@@ -474,11 +474,11 @@
     "lng": 77.18,
     "description": "Scenic Town in Himachal Pradesh.",
     "climate": {
-      "averageTempSummer": 27,
-      "averageTempWinter": 0,
-      "temperatureRange": "0-27\u00b0C",
+      "averageTempSummer": 23,
+      "averageTempWinter": 1,
+      "temperatureRange": "1-23\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 966
+      "annualRainfall": 758
     },
     "aqi": 25,
     "healthcare": {
@@ -490,18 +490,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6195,
+      "averagePricePerSqFt": 6437,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Chandigarh Intl",
-      "distance": 177,
+      "distance": 283,
       "code": "IXC"
     },
     "nearestInternationalAirport": {
       "name": "Chandigarh Intl",
-      "distance": 177,
+      "distance": 283,
       "code": "IXC"
     },
     "landscape": "Hill",
@@ -514,11 +514,11 @@
     "lng": 76.32,
     "description": "Scenic Town in Himachal Pradesh.",
     "climate": {
-      "averageTempSummer": 26,
-      "averageTempWinter": 4,
-      "temperatureRange": "4-26\u00b0C",
+      "averageTempSummer": 23,
+      "averageTempWinter": 0,
+      "temperatureRange": "0-23\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 787
+      "annualRainfall": 869
     },
     "aqi": 35,
     "healthcare": {
@@ -530,18 +530,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6216,
+      "averagePricePerSqFt": 4832,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Sri Guru Ram Dass Jee Intl (Amritsar)",
-      "distance": 154,
+      "distance": 246,
       "code": "ATQ"
     },
     "nearestInternationalAirport": {
       "name": "Sri Guru Ram Dass Jee Intl (Amritsar)",
-      "distance": 154,
+      "distance": 246,
       "code": "ATQ"
     },
     "landscape": "Hill",
@@ -554,11 +554,11 @@
     "lng": 75.78,
     "description": "Growing City in Rajasthan.",
     "climate": {
-      "averageTempSummer": 45,
-      "averageTempWinter": 7,
-      "temperatureRange": "7-45\u00b0C",
+      "averageTempSummer": 43,
+      "averageTempWinter": 5,
+      "temperatureRange": "5-43\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 785
+      "annualRainfall": 793
     },
     "aqi": 190,
     "healthcare": {
@@ -574,18 +574,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8352,
+      "averagePricePerSqFt": 6163,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Jaipur Intl",
-      "distance": 9,
+      "distance": 11,
       "code": "JAI"
     },
     "nearestInternationalAirport": {
       "name": "Jaipur Intl",
-      "distance": 9,
+      "distance": 11,
       "code": "JAI"
     },
     "landscape": "Plain",
@@ -598,13 +598,13 @@
     "lng": 73.71,
     "description": "Scenic Town in Rajasthan.",
     "climate": {
-      "averageTempSummer": 35,
-      "averageTempWinter": 15,
-      "temperatureRange": "15-35\u00b0C",
+      "averageTempSummer": 32,
+      "averageTempWinter": 13,
+      "temperatureRange": "13-32\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 891
+      "annualRainfall": 728
     },
-    "aqi": 134,
+    "aqi": 115,
     "healthcare": {
       "hospitalCount": 20,
       "score": 9.0,
@@ -615,18 +615,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2619,
+      "averagePricePerSqFt": 3169,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Maharana Pratap (Udaipur)",
-      "distance": 19,
+      "distance": 30,
       "code": "UDR"
     },
     "nearestInternationalAirport": {
       "name": "Sardar Vallabhbhai Patel Intl (Ahmedabad)",
-      "distance": 200,
+      "distance": 320,
       "code": "AMD"
     },
     "landscape": "Hill",
@@ -640,10 +640,10 @@
     "description": "Scenic Town in Rajasthan.",
     "climate": {
       "averageTempSummer": 43,
-      "averageTempWinter": 8,
-      "temperatureRange": "8-43\u00b0C",
+      "averageTempWinter": 7,
+      "temperatureRange": "7-43\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 745
+      "annualRainfall": 882
     },
     "aqi": 170,
     "healthcare": {
@@ -656,18 +656,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2928,
+      "averagePricePerSqFt": 4009,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Jodhpur",
-      "distance": 4,
+      "distance": 5,
       "code": "JDH"
     },
     "nearestInternationalAirport": {
       "name": "Jaipur Intl",
-      "distance": 285,
+      "distance": 356,
       "code": "JAI"
     },
     "landscape": "Plain",
@@ -680,13 +680,13 @@
     "lng": 74.63,
     "description": "Scenic Town in Rajasthan.",
     "climate": {
-      "averageTempSummer": 42,
-      "averageTempWinter": 7,
-      "temperatureRange": "7-42\u00b0C",
+      "averageTempSummer": 41,
+      "averageTempWinter": 6,
+      "temperatureRange": "6-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 752
+      "annualRainfall": 853
     },
-    "aqi": 128,
+    "aqi": 134,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -696,18 +696,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3265,
+      "averagePricePerSqFt": 4259,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Jaipur Intl",
-      "distance": 125,
+      "distance": 156,
       "code": "JAI"
     },
     "nearestInternationalAirport": {
       "name": "Jaipur Intl",
-      "distance": 125,
+      "distance": 156,
       "code": "JAI"
     },
     "landscape": "Plain",
@@ -720,11 +720,11 @@
     "lng": 80.94,
     "description": "Growing City in Uttar Pradesh.",
     "climate": {
-      "averageTempSummer": 42,
-      "averageTempWinter": 7,
-      "temperatureRange": "7-42\u00b0C",
+      "averageTempSummer": 45,
+      "averageTempWinter": 6,
+      "temperatureRange": "6-45\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 999
+      "annualRainfall": 864
     },
     "aqi": 240,
     "healthcare": {
@@ -739,18 +739,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6081,
+      "averagePricePerSqFt": 7783,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Chaudhary Charan Singh Intl (Lucknow)",
-      "distance": 10,
+      "distance": 12,
       "code": "LKO"
     },
     "nearestInternationalAirport": {
       "name": "Chaudhary Charan Singh Intl (Lucknow)",
-      "distance": 10,
+      "distance": 12,
       "code": "LKO"
     },
     "landscape": "Plain",
@@ -764,10 +764,10 @@
     "description": "Scenic Town in Uttar Pradesh.",
     "climate": {
       "averageTempSummer": 41,
-      "averageTempWinter": 14,
-      "temperatureRange": "14-41\u00b0C",
+      "averageTempWinter": 17,
+      "temperatureRange": "17-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 939
+      "annualRainfall": 893
     },
     "aqi": 220,
     "healthcare": {
@@ -780,18 +780,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4584,
+      "averagePricePerSqFt": 4549,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Lal Bahadur Shastri Intl (Varanasi)",
-      "distance": 19,
+      "distance": 23,
       "code": "VNS"
     },
     "nearestInternationalAirport": {
       "name": "Lal Bahadur Shastri Intl (Varanasi)",
-      "distance": 19,
+      "distance": 23,
       "code": "VNS"
     },
     "landscape": "Plain",
@@ -804,11 +804,11 @@
     "lng": 78.0,
     "description": "Scenic Town in Uttar Pradesh.",
     "climate": {
-      "averageTempSummer": 44,
-      "averageTempWinter": 7,
-      "temperatureRange": "7-44\u00b0C",
+      "averageTempSummer": 43,
+      "averageTempWinter": 6,
+      "temperatureRange": "6-43\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 877
+      "annualRainfall": 961
     },
     "aqi": 230,
     "healthcare": {
@@ -821,18 +821,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4593,
+      "averagePricePerSqFt": 4045,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Agra",
-      "distance": 4,
+      "distance": 5,
       "code": "AGR"
     },
     "nearestInternationalAirport": {
       "name": "Indira Gandhi Intl (Delhi)",
-      "distance": 178,
+      "distance": 222,
       "code": "DEL"
     },
     "landscape": "Plain",
@@ -845,11 +845,11 @@
     "lng": 74.87,
     "description": "Growing City in Punjab.",
     "climate": {
-      "averageTempSummer": 43,
-      "averageTempWinter": 4,
-      "temperatureRange": "4-43\u00b0C",
+      "averageTempSummer": 44,
+      "averageTempWinter": 5,
+      "temperatureRange": "5-44\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 530
+      "annualRainfall": 537
     },
     "aqi": 200,
     "healthcare": {
@@ -863,18 +863,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7184,
+      "averagePricePerSqFt": 6158,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Sri Guru Ram Dass Jee Intl (Amritsar)",
-      "distance": 11,
+      "distance": 13,
       "code": "ATQ"
     },
     "nearestInternationalAirport": {
       "name": "Sri Guru Ram Dass Jee Intl (Amritsar)",
-      "distance": 11,
+      "distance": 13,
       "code": "ATQ"
     },
     "landscape": "Plain",
@@ -888,10 +888,10 @@
     "description": "Growing City in Punjab.",
     "climate": {
       "averageTempSummer": 44,
-      "averageTempWinter": 8,
-      "temperatureRange": "8-44\u00b0C",
+      "averageTempWinter": 7,
+      "temperatureRange": "7-44\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 508
+      "annualRainfall": 740
     },
     "aqi": 210,
     "healthcare": {
@@ -906,18 +906,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7047,
+      "averagePricePerSqFt": 7059,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Chandigarh Intl",
-      "distance": 93,
+      "distance": 116,
       "code": "IXC"
     },
     "nearestInternationalAirport": {
       "name": "Chandigarh Intl",
-      "distance": 93,
+      "distance": 116,
       "code": "IXC"
     },
     "landscape": "Plain",
@@ -930,11 +930,11 @@
     "lng": 75.57,
     "description": "Growing City in Punjab.",
     "climate": {
-      "averageTempSummer": 45,
-      "averageTempWinter": 7,
-      "temperatureRange": "7-45\u00b0C",
+      "averageTempSummer": 41,
+      "averageTempWinter": 8,
+      "temperatureRange": "8-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 654
+      "annualRainfall": 657
     },
     "aqi": 200,
     "healthcare": {
@@ -947,18 +947,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6358,
+      "averagePricePerSqFt": 6270,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Sri Guru Ram Dass Jee Intl (Amritsar)",
-      "distance": 85,
+      "distance": 106,
       "code": "ATQ"
     },
     "nearestInternationalAirport": {
       "name": "Sri Guru Ram Dass Jee Intl (Amritsar)",
-      "distance": 85,
+      "distance": 106,
       "code": "ATQ"
     },
     "landscape": "Plain",
@@ -971,13 +971,13 @@
     "lng": 76.39,
     "description": "Scenic Town in Punjab.",
     "climate": {
-      "averageTempSummer": 44,
-      "averageTempWinter": 6,
-      "temperatureRange": "6-44\u00b0C",
+      "averageTempSummer": 42,
+      "averageTempWinter": 7,
+      "temperatureRange": "7-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 583
+      "annualRainfall": 507
     },
-    "aqi": 118,
+    "aqi": 120,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -987,18 +987,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4862,
+      "averagePricePerSqFt": 2730,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Chandigarh Intl",
-      "distance": 54,
+      "distance": 67,
       "code": "IXC"
     },
     "nearestInternationalAirport": {
       "name": "Chandigarh Intl",
-      "distance": 54,
+      "distance": 67,
       "code": "IXC"
     },
     "landscape": "Plain",
@@ -1012,10 +1012,10 @@
     "description": "Growing City in Jammu & Kashmir.",
     "climate": {
       "averageTempSummer": 25,
-      "averageTempWinter": 1,
-      "temperatureRange": "1-25\u00b0C",
+      "averageTempWinter": 4,
+      "temperatureRange": "4-25\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 843
+      "annualRainfall": 852
     },
     "aqi": 144,
     "healthcare": {
@@ -1027,18 +1027,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6203,
+      "averagePricePerSqFt": 6665,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Sri Guru Ram Dass Jee Intl (Amritsar)",
-      "distance": 264,
+      "distance": 422,
       "code": "ATQ"
     },
     "nearestInternationalAirport": {
       "name": "Sri Guru Ram Dass Jee Intl (Amritsar)",
-      "distance": 264,
+      "distance": 422,
       "code": "ATQ"
     },
     "landscape": "Hill",
@@ -1051,11 +1051,11 @@
     "lng": 74.85,
     "description": "Scenic Town in Jammu & Kashmir.",
     "climate": {
-      "averageTempSummer": 44,
+      "averageTempSummer": 42,
       "averageTempWinter": 7,
-      "temperatureRange": "7-44\u00b0C",
+      "temperatureRange": "7-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 730
+      "annualRainfall": 701
     },
     "aqi": 115,
     "healthcare": {
@@ -1067,18 +1067,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3863,
+      "averagePricePerSqFt": 3846,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Sri Guru Ram Dass Jee Intl (Amritsar)",
-      "distance": 112,
+      "distance": 179,
       "code": "ATQ"
     },
     "nearestInternationalAirport": {
       "name": "Sri Guru Ram Dass Jee Intl (Amritsar)",
-      "distance": 112,
+      "distance": 179,
       "code": "ATQ"
     },
     "landscape": "Hill",
@@ -1091,11 +1091,11 @@
     "lng": 81.84,
     "description": "Scenic Town in Uttar Pradesh.",
     "climate": {
-      "averageTempSummer": 38,
-      "averageTempWinter": 14,
-      "temperatureRange": "14-38\u00b0C",
+      "averageTempSummer": 41,
+      "averageTempWinter": 16,
+      "temperatureRange": "16-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 871
+      "annualRainfall": 759
     },
     "aqi": 230,
     "healthcare": {
@@ -1107,18 +1107,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4521,
+      "averagePricePerSqFt": 3693,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Lal Bahadur Shastri Intl (Varanasi)",
-      "distance": 102,
+      "distance": 127,
       "code": "VNS"
     },
     "nearestInternationalAirport": {
       "name": "Lal Bahadur Shastri Intl (Varanasi)",
-      "distance": 102,
+      "distance": 127,
       "code": "VNS"
     },
     "landscape": "Plain",
@@ -1131,11 +1131,11 @@
     "lng": 80.33,
     "description": "Growing City in Uttar Pradesh.",
     "climate": {
-      "averageTempSummer": 44,
-      "averageTempWinter": 8,
-      "temperatureRange": "8-44\u00b0C",
+      "averageTempSummer": 42,
+      "averageTempWinter": 6,
+      "temperatureRange": "6-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 726
+      "annualRainfall": 805
     },
     "aqi": 250,
     "healthcare": {
@@ -1148,18 +1148,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8498,
+      "averagePricePerSqFt": 7206,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Chaudhary Charan Singh Intl (Lucknow)",
-      "distance": 66,
+      "distance": 82,
       "code": "LKO"
     },
     "nearestInternationalAirport": {
       "name": "Chaudhary Charan Singh Intl (Lucknow)",
-      "distance": 66,
+      "distance": 82,
       "code": "LKO"
     },
     "landscape": "Plain",
@@ -1172,11 +1172,11 @@
     "lng": 75.86,
     "description": "Scenic Town in Rajasthan.",
     "climate": {
-      "averageTempSummer": 41,
-      "averageTempWinter": 15,
-      "temperatureRange": "15-41\u00b0C",
+      "averageTempSummer": 40,
+      "averageTempWinter": 13,
+      "temperatureRange": "13-40\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 903
+      "annualRainfall": 819
     },
     "aqi": 180,
     "healthcare": {
@@ -1188,18 +1188,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3863,
+      "averagePricePerSqFt": 3261,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Jaipur Intl",
-      "distance": 180,
+      "distance": 225,
       "code": "JAI"
     },
     "nearestInternationalAirport": {
       "name": "Jaipur Intl",
-      "distance": 180,
+      "distance": 225,
       "code": "JAI"
     },
     "landscape": "Plain",
@@ -1212,11 +1212,11 @@
     "lng": 78.16,
     "description": "Scenic Town in Uttarakhand.",
     "climate": {
-      "averageTempSummer": 44,
-      "averageTempWinter": 5,
-      "temperatureRange": "5-44\u00b0C",
+      "averageTempSummer": 42,
+      "averageTempWinter": 6,
+      "temperatureRange": "6-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 695
+      "annualRainfall": 512
     },
     "aqi": 130,
     "healthcare": {
@@ -1228,18 +1228,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3944,
+      "averagePricePerSqFt": 3388,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Dehradun (Jolly Grant)",
-      "distance": 28,
+      "distance": 44,
       "code": "DED"
     },
     "nearestInternationalAirport": {
       "name": "Chandigarh Intl",
-      "distance": 155,
+      "distance": 248,
       "code": "IXC"
     },
     "landscape": "Hill",
@@ -1252,11 +1252,11 @@
     "lng": 78.26,
     "description": "Scenic Town in Uttarakhand.",
     "climate": {
-      "averageTempSummer": 43,
-      "averageTempWinter": 5,
-      "temperatureRange": "5-43\u00b0C",
+      "averageTempSummer": 42,
+      "averageTempWinter": 4,
+      "temperatureRange": "4-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 610
+      "annualRainfall": 700
     },
     "aqi": 45,
     "healthcare": {
@@ -1268,18 +1268,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3635,
+      "averagePricePerSqFt": 2983,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Dehradun (Jolly Grant)",
-      "distance": 14,
+      "distance": 22,
       "code": "DED"
     },
     "nearestInternationalAirport": {
       "name": "Chandigarh Intl",
-      "distance": 156,
+      "distance": 249,
       "code": "IXC"
     },
     "landscape": "Hill",
@@ -1292,11 +1292,11 @@
     "lng": 78.07,
     "description": "Scenic Town in Uttarakhand.",
     "climate": {
-      "averageTempSummer": 24,
-      "averageTempWinter": 1,
-      "temperatureRange": "1-24\u00b0C",
+      "averageTempSummer": 26,
+      "averageTempWinter": 0,
+      "temperatureRange": "0-26\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 838
+      "annualRainfall": 837
     },
     "aqi": 40,
     "healthcare": {
@@ -1308,18 +1308,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5055,
+      "averagePricePerSqFt": 4330,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Dehradun (Jolly Grant)",
-      "distance": 31,
+      "distance": 49,
       "code": "DED"
     },
     "nearestInternationalAirport": {
       "name": "Chandigarh Intl",
-      "distance": 125,
+      "distance": 200,
       "code": "IXC"
     },
     "landscape": "Hill",
@@ -1333,10 +1333,10 @@
     "description": "Scenic Town in Uttarakhand.",
     "climate": {
       "averageTempSummer": 24,
-      "averageTempWinter": 4,
-      "temperatureRange": "4-24\u00b0C",
+      "averageTempWinter": 3,
+      "temperatureRange": "3-24\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 763
+      "annualRainfall": 858
     },
     "aqi": 35,
     "healthcare": {
@@ -1347,18 +1347,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4137,
+      "averagePricePerSqFt": 5046,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Pantnagar",
-      "distance": 40,
+      "distance": 64,
       "code": "PNT"
     },
     "nearestInternationalAirport": {
       "name": "Indira Gandhi Intl (Delhi)",
-      "distance": 247,
+      "distance": 395,
       "code": "DEL"
     },
     "landscape": "Hill",
@@ -1371,11 +1371,11 @@
     "lng": 77.7,
     "description": "Growing City in Uttar Pradesh.",
     "climate": {
-      "averageTempSummer": 43,
-      "averageTempWinter": 7,
-      "temperatureRange": "7-43\u00b0C",
+      "averageTempSummer": 41,
+      "averageTempWinter": 6,
+      "temperatureRange": "6-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 777
+      "annualRainfall": 744
     },
     "aqi": 240,
     "healthcare": {
@@ -1387,18 +1387,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8650,
+      "averagePricePerSqFt": 7414,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Indira Gandhi Intl (Delhi)",
-      "distance": 75,
+      "distance": 93,
       "code": "DEL"
     },
     "nearestInternationalAirport": {
       "name": "Indira Gandhi Intl (Delhi)",
-      "distance": 75,
+      "distance": 93,
       "code": "DEL"
     },
     "landscape": "Plain",
@@ -1412,10 +1412,10 @@
     "description": "Major Metro in Maharashtra.",
     "climate": {
       "averageTempSummer": 33,
-      "averageTempWinter": 23,
-      "temperatureRange": "23-33\u00b0C",
+      "averageTempWinter": 24,
+      "temperatureRange": "24-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 716
+      "annualRainfall": 897
     },
     "aqi": 180,
     "healthcare": {
@@ -1433,7 +1433,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 39903,
+      "averagePricePerSqFt": 44763,
       "currency": "INR"
     },
     "costOfLiving": "High",
@@ -1457,11 +1457,11 @@
     "lng": 73.02,
     "description": "Major Metro in Maharashtra.",
     "climate": {
-      "averageTempSummer": 36,
-      "averageTempWinter": 21,
-      "temperatureRange": "21-36\u00b0C",
+      "averageTempSummer": 35,
+      "averageTempWinter": 25,
+      "temperatureRange": "25-35\u00b0C",
       "humidity": "High",
-      "annualRainfall": 731
+      "annualRainfall": 926
     },
     "aqi": 180,
     "healthcare": {
@@ -1479,18 +1479,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 36857,
+      "averagePricePerSqFt": 43061,
       "currency": "INR"
     },
     "costOfLiving": "High",
     "nearestDomesticAirport": {
       "name": "Chhatrapati Shivaji Maharaj Intl (Mumbai)",
-      "distance": 18,
+      "distance": 22,
       "code": "BOM"
     },
     "nearestInternationalAirport": {
       "name": "Chhatrapati Shivaji Maharaj Intl (Mumbai)",
-      "distance": 18,
+      "distance": 22,
       "code": "BOM"
     },
     "landscape": "Coastal",
@@ -1507,7 +1507,7 @@
       "averageTempWinter": 21,
       "temperatureRange": "21-35\u00b0C",
       "humidity": "High",
-      "annualRainfall": 776
+      "annualRainfall": 856
     },
     "aqi": 220,
     "healthcare": {
@@ -1520,18 +1520,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7462,
+      "averagePricePerSqFt": 5917,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Chhatrapati Shivaji Maharaj Intl (Mumbai)",
-      "distance": 17,
+      "distance": 21,
       "code": "BOM"
     },
     "nearestInternationalAirport": {
       "name": "Chhatrapati Shivaji Maharaj Intl (Mumbai)",
-      "distance": 17,
+      "distance": 21,
       "code": "BOM"
     },
     "landscape": "Coastal",
@@ -1544,11 +1544,11 @@
     "lng": 73.13,
     "description": "Scenic Town in Maharashtra.",
     "climate": {
-      "averageTempSummer": 32,
-      "averageTempWinter": 25,
-      "temperatureRange": "25-32\u00b0C",
+      "averageTempSummer": 33,
+      "averageTempWinter": 24,
+      "temperatureRange": "24-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 740
+      "annualRainfall": 724
     },
     "aqi": 180,
     "healthcare": {
@@ -1560,18 +1560,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4952,
+      "averagePricePerSqFt": 4901,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Chhatrapati Shivaji Maharaj Intl (Mumbai)",
-      "distance": 32,
+      "distance": 40,
       "code": "BOM"
     },
     "nearestInternationalAirport": {
       "name": "Chhatrapati Shivaji Maharaj Intl (Mumbai)",
-      "distance": 32,
+      "distance": 40,
       "code": "BOM"
     },
     "landscape": "Coastal",
@@ -1584,11 +1584,11 @@
     "lng": 73.85,
     "description": "Major Metro in Maharashtra.",
     "climate": {
-      "averageTempSummer": 35,
-      "averageTempWinter": 17,
-      "temperatureRange": "17-35\u00b0C",
+      "averageTempSummer": 34,
+      "averageTempWinter": 15,
+      "temperatureRange": "15-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 744
+      "annualRainfall": 730
     },
     "aqi": 140,
     "healthcare": {
@@ -1604,18 +1604,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 23848,
+      "averagePricePerSqFt": 12952,
       "currency": "INR"
     },
     "costOfLiving": "High",
     "nearestDomesticAirport": {
       "name": "Chhatrapati Shivaji Maharaj Intl (Mumbai)",
-      "distance": 121,
+      "distance": 193,
       "code": "BOM"
     },
     "nearestInternationalAirport": {
       "name": "Chhatrapati Shivaji Maharaj Intl (Mumbai)",
-      "distance": 121,
+      "distance": 193,
       "code": "BOM"
     },
     "landscape": "Hill",
@@ -1629,10 +1629,10 @@
     "description": "Growing City in Maharashtra.",
     "climate": {
       "averageTempSummer": 33,
-      "averageTempWinter": 14,
-      "temperatureRange": "14-33\u00b0C",
+      "averageTempWinter": 15,
+      "temperatureRange": "15-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 806
+      "annualRainfall": 737
     },
     "aqi": 140,
     "healthcare": {
@@ -1644,18 +1644,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6333,
+      "averagePricePerSqFt": 6124,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Chhatrapati Shivaji Maharaj Intl (Mumbai)",
-      "distance": 110,
+      "distance": 176,
       "code": "BOM"
     },
     "nearestInternationalAirport": {
       "name": "Chhatrapati Shivaji Maharaj Intl (Mumbai)",
-      "distance": 110,
+      "distance": 176,
       "code": "BOM"
     },
     "landscape": "Hill",
@@ -1668,11 +1668,11 @@
     "lng": 79.08,
     "description": "Growing City in Maharashtra.",
     "climate": {
-      "averageTempSummer": 42,
-      "averageTempWinter": 15,
-      "temperatureRange": "15-42\u00b0C",
+      "averageTempSummer": 38,
+      "averageTempWinter": 13,
+      "temperatureRange": "13-38\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 807
+      "annualRainfall": 786
     },
     "aqi": 140,
     "healthcare": {
@@ -1687,18 +1687,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7098,
+      "averagePricePerSqFt": 6255,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Dr. Babasaheb Ambedkar Intl (Nagpur)",
-      "distance": 6,
+      "distance": 7,
       "code": "NAG"
     },
     "nearestInternationalAirport": {
       "name": "Dr. Babasaheb Ambedkar Intl (Nagpur)",
-      "distance": 6,
+      "distance": 7,
       "code": "NAG"
     },
     "landscape": "Plain",
@@ -1711,11 +1711,11 @@
     "lng": 73.78,
     "description": "Growing City in Maharashtra.",
     "climate": {
-      "averageTempSummer": 34,
-      "averageTempWinter": 13,
-      "temperatureRange": "13-34\u00b0C",
+      "averageTempSummer": 36,
+      "averageTempWinter": 14,
+      "temperatureRange": "14-36\u00b0C",
       "humidity": "High",
-      "annualRainfall": 950
+      "annualRainfall": 982
     },
     "aqi": 120,
     "healthcare": {
@@ -1729,18 +1729,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7446,
+      "averagePricePerSqFt": 5517,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Chhatrapati Shivaji Maharaj Intl (Mumbai)",
-      "distance": 139,
+      "distance": 222,
       "code": "BOM"
     },
     "nearestInternationalAirport": {
       "name": "Chhatrapati Shivaji Maharaj Intl (Mumbai)",
-      "distance": 139,
+      "distance": 222,
       "code": "BOM"
     },
     "landscape": "Hill",
@@ -1753,11 +1753,11 @@
     "lng": 75.34,
     "description": "Scenic Town in Maharashtra.",
     "climate": {
-      "averageTempSummer": 35,
+      "averageTempSummer": 33,
       "averageTempWinter": 14,
-      "temperatureRange": "14-35\u00b0C",
+      "temperatureRange": "14-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 992
+      "annualRainfall": 933
     },
     "aqi": 130,
     "healthcare": {
@@ -1770,18 +1770,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4755,
+      "averagePricePerSqFt": 4512,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Chhatrapati Shivaji Maharaj Intl (Mumbai)",
-      "distance": 274,
+      "distance": 438,
       "code": "BOM"
     },
     "nearestInternationalAirport": {
       "name": "Chhatrapati Shivaji Maharaj Intl (Mumbai)",
-      "distance": 274,
+      "distance": 438,
       "code": "BOM"
     },
     "landscape": "Hill",
@@ -1798,7 +1798,7 @@
       "averageTempWinter": 13,
       "temperatureRange": "13-38\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 882
+      "annualRainfall": 879
     },
     "aqi": 180,
     "healthcare": {
@@ -1815,18 +1815,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 15343,
+      "averagePricePerSqFt": 16148,
       "currency": "INR"
     },
     "costOfLiving": "High",
     "nearestDomesticAirport": {
       "name": "Sardar Vallabhbhai Patel Intl (Ahmedabad)",
-      "distance": 9,
+      "distance": 11,
       "code": "AMD"
     },
     "nearestInternationalAirport": {
       "name": "Sardar Vallabhbhai Patel Intl (Ahmedabad)",
-      "distance": 9,
+      "distance": 11,
       "code": "AMD"
     },
     "landscape": "Plain",
@@ -1839,13 +1839,13 @@
     "lng": 72.63,
     "description": "Scenic Town in Gujarat.",
     "climate": {
-      "averageTempSummer": 39,
-      "averageTempWinter": 16,
-      "temperatureRange": "16-39\u00b0C",
+      "averageTempSummer": 42,
+      "averageTempWinter": 15,
+      "temperatureRange": "15-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 836
+      "annualRainfall": 847
     },
-    "aqi": 118,
+    "aqi": 126,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -1855,18 +1855,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2548,
+      "averagePricePerSqFt": 4054,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Sardar Vallabhbhai Patel Intl (Ahmedabad)",
-      "distance": 15,
+      "distance": 18,
       "code": "AMD"
     },
     "nearestInternationalAirport": {
       "name": "Sardar Vallabhbhai Patel Intl (Ahmedabad)",
-      "distance": 15,
+      "distance": 18,
       "code": "AMD"
     },
     "landscape": "Plain",
@@ -1879,11 +1879,11 @@
     "lng": 72.83,
     "description": "Growing City in Gujarat.",
     "climate": {
-      "averageTempSummer": 40,
-      "averageTempWinter": 14,
-      "temperatureRange": "14-40\u00b0C",
+      "averageTempSummer": 39,
+      "averageTempWinter": 16,
+      "temperatureRange": "16-39\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 886
+      "annualRainfall": 979
     },
     "aqi": 160,
     "healthcare": {
@@ -1897,18 +1897,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7310,
+      "averagePricePerSqFt": 7702,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Surat",
-      "distance": 11,
+      "distance": 13,
       "code": "STV"
     },
     "nearestInternationalAirport": {
       "name": "Sardar Vallabhbhai Patel Intl (Ahmedabad)",
-      "distance": 213,
+      "distance": 266,
       "code": "AMD"
     },
     "landscape": "Coastal",
@@ -1921,11 +1921,11 @@
     "lng": 73.18,
     "description": "Growing City in Gujarat.",
     "climate": {
-      "averageTempSummer": 42,
-      "averageTempWinter": 16,
-      "temperatureRange": "16-42\u00b0C",
+      "averageTempSummer": 40,
+      "averageTempWinter": 15,
+      "temperatureRange": "15-40\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 783
+      "annualRainfall": 730
     },
     "aqi": 150,
     "healthcare": {
@@ -1939,18 +1939,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5480,
+      "averagePricePerSqFt": 7241,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Vadodara",
-      "distance": 6,
+      "distance": 7,
       "code": "BDQ"
     },
     "nearestInternationalAirport": {
       "name": "Sardar Vallabhbhai Patel Intl (Ahmedabad)",
-      "distance": 103,
+      "distance": 128,
       "code": "AMD"
     },
     "landscape": "Plain",
@@ -1967,7 +1967,7 @@
       "averageTempWinter": 14,
       "temperatureRange": "14-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 763
+      "annualRainfall": 926
     },
     "aqi": 150,
     "healthcare": {
@@ -1979,18 +1979,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8454,
+      "averagePricePerSqFt": 7051,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Jamnagar",
-      "distance": 83,
+      "distance": 103,
       "code": "JGA"
     },
     "nearestInternationalAirport": {
       "name": "Sardar Vallabhbhai Patel Intl (Ahmedabad)",
-      "distance": 207,
+      "distance": 258,
       "code": "AMD"
     },
     "landscape": "Plain",
@@ -2003,13 +2003,13 @@
     "lng": 70.05,
     "description": "Scenic Town in Gujarat.",
     "climate": {
-      "averageTempSummer": 40,
-      "averageTempWinter": 15,
-      "temperatureRange": "15-40\u00b0C",
+      "averageTempSummer": 41,
+      "averageTempWinter": 14,
+      "temperatureRange": "14-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 845
+      "annualRainfall": 998
     },
-    "aqi": 123,
+    "aqi": 112,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -2018,18 +2018,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4422,
+      "averagePricePerSqFt": 3565,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Jamnagar",
-      "distance": 4,
+      "distance": 5,
       "code": "JGA"
     },
     "nearestInternationalAirport": {
       "name": "Sardar Vallabhbhai Patel Intl (Ahmedabad)",
-      "distance": 273,
+      "distance": 341,
       "code": "AMD"
     },
     "landscape": "Coastal",
@@ -2042,11 +2042,11 @@
     "lng": 72.15,
     "description": "Scenic Town in Gujarat.",
     "climate": {
-      "averageTempSummer": 41,
+      "averageTempSummer": 40,
       "averageTempWinter": 15,
-      "temperatureRange": "15-41\u00b0C",
+      "temperatureRange": "15-40\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 752
+      "annualRainfall": 736
     },
     "aqi": 117,
     "healthcare": {
@@ -2057,18 +2057,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4031,
+      "averagePricePerSqFt": 3999,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Surat",
-      "distance": 94,
+      "distance": 117,
       "code": "STV"
     },
     "nearestInternationalAirport": {
       "name": "Sardar Vallabhbhai Patel Intl (Ahmedabad)",
-      "distance": 154,
+      "distance": 192,
       "code": "AMD"
     },
     "landscape": "Coastal",
@@ -2085,7 +2085,7 @@
       "averageTempWinter": 23,
       "temperatureRange": "23-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2486
+      "annualRainfall": 2591
     },
     "aqi": 60,
     "healthcare": {
@@ -2099,18 +2099,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2820,
+      "averagePricePerSqFt": 4940,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Dabolim (Goa)",
-      "distance": 12,
+      "distance": 15,
       "code": "GOI"
     },
     "nearestInternationalAirport": {
       "name": "Dabolim (Goa)",
-      "distance": 12,
+      "distance": 15,
       "code": "GOI"
     },
     "landscape": "Coastal",
@@ -2127,9 +2127,9 @@
       "averageTempWinter": 23,
       "temperatureRange": "23-35\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2658
+      "annualRainfall": 2508
     },
-    "aqi": 121,
+    "aqi": 119,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -2138,7 +2138,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2547,
+      "averagePricePerSqFt": 2820,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2162,13 +2162,13 @@
     "lng": 73.96,
     "description": "Scenic Town in Goa.",
     "climate": {
-      "averageTempSummer": 33,
-      "averageTempWinter": 25,
-      "temperatureRange": "25-33\u00b0C",
+      "averageTempSummer": 35,
+      "averageTempWinter": 21,
+      "temperatureRange": "21-35\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2423
+      "annualRainfall": 2689
     },
-    "aqi": 115,
+    "aqi": 119,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -2177,18 +2177,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4161,
+      "averagePricePerSqFt": 3133,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Dabolim (Goa)",
-      "distance": 18,
+      "distance": 22,
       "code": "GOI"
     },
     "nearestInternationalAirport": {
       "name": "Dabolim (Goa)",
-      "distance": 18,
+      "distance": 22,
       "code": "GOI"
     },
     "landscape": "Coastal",
@@ -2201,11 +2201,11 @@
     "lng": 74.24,
     "description": "Scenic Town in Maharashtra.",
     "climate": {
-      "averageTempSummer": 33,
+      "averageTempSummer": 34,
       "averageTempWinter": 15,
-      "temperatureRange": "15-33\u00b0C",
+      "temperatureRange": "15-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 782
+      "annualRainfall": 726
     },
     "aqi": 80,
     "healthcare": {
@@ -2217,18 +2217,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4153,
+      "averagePricePerSqFt": 3690,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Dabolim (Goa)",
-      "distance": 153,
+      "distance": 244,
       "code": "GOI"
     },
     "nearestInternationalAirport": {
       "name": "Dabolim (Goa)",
-      "distance": 153,
+      "distance": 244,
       "code": "GOI"
     },
     "landscape": "Hill",
@@ -2242,10 +2242,10 @@
     "description": "Scenic Town in Maharashtra.",
     "climate": {
       "averageTempSummer": 34,
-      "averageTempWinter": 25,
-      "temperatureRange": "25-34\u00b0C",
+      "averageTempWinter": 22,
+      "temperatureRange": "22-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 820
+      "annualRainfall": 760
     },
     "aqi": 90,
     "healthcare": {
@@ -2256,18 +2256,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3997,
+      "averagePricePerSqFt": 3901,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Rajiv Gandhi Intl (Hyderabad)",
-      "distance": 272,
+      "distance": 340,
       "code": "HYD"
     },
     "nearestInternationalAirport": {
       "name": "Rajiv Gandhi Intl (Hyderabad)",
-      "distance": 272,
+      "distance": 340,
       "code": "HYD"
     },
     "landscape": "Plain",
@@ -2280,13 +2280,13 @@
     "lng": 77.75,
     "description": "Scenic Town in Maharashtra.",
     "climate": {
-      "averageTempSummer": 39,
+      "averageTempSummer": 42,
       "averageTempWinter": 15,
-      "temperatureRange": "15-39\u00b0C",
+      "temperatureRange": "15-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 766
+      "annualRainfall": 908
     },
-    "aqi": 122,
+    "aqi": 135,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -2295,18 +2295,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2628,
+      "averagePricePerSqFt": 2835,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Dr. Babasaheb Ambedkar Intl (Nagpur)",
-      "distance": 136,
+      "distance": 170,
       "code": "NAG"
     },
     "nearestInternationalAirport": {
       "name": "Dr. Babasaheb Ambedkar Intl (Nagpur)",
-      "distance": 136,
+      "distance": 170,
       "code": "NAG"
     },
     "landscape": "Plain",
@@ -2319,11 +2319,11 @@
     "lng": 73.4,
     "description": "Scenic Town in Maharashtra.",
     "climate": {
-      "averageTempSummer": 36,
-      "averageTempWinter": 17,
-      "temperatureRange": "17-36\u00b0C",
+      "averageTempSummer": 35,
+      "averageTempWinter": 15,
+      "temperatureRange": "15-35\u00b0C",
       "humidity": "High",
-      "annualRainfall": 770
+      "annualRainfall": 922
     },
     "aqi": 45,
     "healthcare": {
@@ -2334,18 +2334,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4198,
+      "averagePricePerSqFt": 4905,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Chhatrapati Shivaji Maharaj Intl (Mumbai)",
-      "distance": 68,
+      "distance": 108,
       "code": "BOM"
     },
     "nearestInternationalAirport": {
       "name": "Chhatrapati Shivaji Maharaj Intl (Mumbai)",
-      "distance": 68,
+      "distance": 108,
       "code": "BOM"
     },
     "landscape": "Hill",
@@ -2358,11 +2358,11 @@
     "lng": 73.64,
     "description": "Scenic Town in Maharashtra.",
     "climate": {
-      "averageTempSummer": 25,
-      "averageTempWinter": 0,
-      "temperatureRange": "0-25\u00b0C",
+      "averageTempSummer": 24,
+      "averageTempWinter": 2,
+      "temperatureRange": "2-24\u00b0C",
       "humidity": "High",
-      "annualRainfall": 838
+      "annualRainfall": 997
     },
     "aqi": 35,
     "healthcare": {
@@ -2373,18 +2373,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6275,
+      "averagePricePerSqFt": 5533,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Chhatrapati Shivaji Maharaj Intl (Mumbai)",
-      "distance": 153,
+      "distance": 244,
       "code": "BOM"
     },
     "nearestInternationalAirport": {
       "name": "Chhatrapati Shivaji Maharaj Intl (Mumbai)",
-      "distance": 153,
+      "distance": 244,
       "code": "BOM"
     },
     "landscape": "Hill",
@@ -2401,9 +2401,9 @@
       "averageTempWinter": 22,
       "temperatureRange": "22-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 861
+      "annualRainfall": 870
     },
-    "aqi": 134,
+    "aqi": 123,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -2412,18 +2412,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4895,
+      "averagePricePerSqFt": 4442,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Chhatrapati Shivaji Maharaj Intl (Mumbai)",
-      "distance": 50,
+      "distance": 62,
       "code": "BOM"
     },
     "nearestInternationalAirport": {
       "name": "Chhatrapati Shivaji Maharaj Intl (Mumbai)",
-      "distance": 50,
+      "distance": 62,
       "code": "BOM"
     },
     "landscape": "Coastal",
@@ -2436,13 +2436,13 @@
     "lng": 72.83,
     "description": "Scenic Town in Daman and Diu.",
     "climate": {
-      "averageTempSummer": 41,
+      "averageTempSummer": 39,
       "averageTempWinter": 15,
-      "temperatureRange": "15-41\u00b0C",
+      "temperatureRange": "15-39\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 776
+      "annualRainfall": 736
     },
-    "aqi": 116,
+    "aqi": 133,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -2451,18 +2451,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4448,
+      "averagePricePerSqFt": 2710,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Surat",
-      "distance": 81,
+      "distance": 101,
       "code": "STV"
     },
     "nearestInternationalAirport": {
       "name": "Chhatrapati Shivaji Maharaj Intl (Mumbai)",
-      "distance": 145,
+      "distance": 181,
       "code": "BOM"
     },
     "landscape": "Coastal",
@@ -2476,10 +2476,10 @@
     "description": "Major Metro in Karnataka.",
     "climate": {
       "averageTempSummer": 34,
-      "averageTempWinter": 14,
-      "temperatureRange": "14-34\u00b0C",
+      "averageTempWinter": 13,
+      "temperatureRange": "13-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 715
+      "annualRainfall": 737
     },
     "aqi": 85,
     "healthcare": {
@@ -2497,18 +2497,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 18021,
+      "averagePricePerSqFt": 14801,
       "currency": "INR"
     },
     "costOfLiving": "High",
     "nearestDomesticAirport": {
       "name": "Kempegowda Intl (Bangalore)",
-      "distance": 28,
+      "distance": 35,
       "code": "BLR"
     },
     "nearestInternationalAirport": {
       "name": "Kempegowda Intl (Bangalore)",
-      "distance": 28,
+      "distance": 35,
       "code": "BLR"
     },
     "landscape": "Plain",
@@ -2521,11 +2521,11 @@
     "lng": 77.75,
     "description": "Growing City in Karnataka.",
     "climate": {
-      "averageTempSummer": 34,
-      "averageTempWinter": 16,
-      "temperatureRange": "16-34\u00b0C",
+      "averageTempSummer": 32,
+      "averageTempWinter": 15,
+      "temperatureRange": "15-32\u00b0C",
       "humidity": "High",
-      "annualRainfall": 759
+      "annualRainfall": 895
     },
     "aqi": 85,
     "healthcare": {
@@ -2543,18 +2543,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5953,
+      "averagePricePerSqFt": 7289,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Kempegowda Intl (Bangalore)",
-      "distance": 27,
+      "distance": 33,
       "code": "BLR"
     },
     "nearestInternationalAirport": {
       "name": "Kempegowda Intl (Bangalore)",
-      "distance": 27,
+      "distance": 33,
       "code": "BLR"
     },
     "landscape": "Plain",
@@ -2568,10 +2568,10 @@
     "description": "Growing City in Karnataka.",
     "climate": {
       "averageTempSummer": 34,
-      "averageTempWinter": 17,
-      "temperatureRange": "17-34\u00b0C",
+      "averageTempWinter": 13,
+      "temperatureRange": "13-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2616
+      "annualRainfall": 2677
     },
     "aqi": 60,
     "healthcare": {
@@ -2586,18 +2586,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6331,
+      "averagePricePerSqFt": 7779,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Mysore",
-      "distance": 7,
+      "distance": 8,
       "code": "MYQ"
     },
     "nearestInternationalAirport": {
       "name": "Coimbatore Intl",
-      "distance": 147,
+      "distance": 183,
       "code": "CJB"
     },
     "landscape": "Plain",
@@ -2610,11 +2610,11 @@
     "lng": 74.85,
     "description": "Growing City in Karnataka.",
     "climate": {
-      "averageTempSummer": 36,
-      "averageTempWinter": 23,
-      "temperatureRange": "23-36\u00b0C",
+      "averageTempSummer": 34,
+      "averageTempWinter": 21,
+      "temperatureRange": "21-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2517
+      "annualRainfall": 2425
     },
     "aqi": 60,
     "healthcare": {
@@ -2628,18 +2628,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7996,
+      "averagePricePerSqFt": 8783,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Mangalore Intl",
-      "distance": 7,
+      "distance": 8,
       "code": "IXE"
     },
     "nearestInternationalAirport": {
       "name": "Mangalore Intl",
-      "distance": 7,
+      "distance": 8,
       "code": "IXE"
     },
     "landscape": "Coastal",
@@ -2652,13 +2652,13 @@
     "lng": 74.74,
     "description": "Scenic Town in Karnataka.",
     "climate": {
-      "averageTempSummer": 36,
-      "averageTempWinter": 23,
-      "temperatureRange": "23-36\u00b0C",
+      "averageTempSummer": 35,
+      "averageTempWinter": 22,
+      "temperatureRange": "22-35\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2557
+      "annualRainfall": 2415
     },
-    "aqi": 135,
+    "aqi": 120,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -2667,18 +2667,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2897,
+      "averagePricePerSqFt": 4525,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Mangalore Intl",
-      "distance": 45,
+      "distance": 56,
       "code": "IXE"
     },
     "nearestInternationalAirport": {
       "name": "Mangalore Intl",
-      "distance": 45,
+      "distance": 56,
       "code": "IXE"
     },
     "landscape": "Coastal",
@@ -2691,11 +2691,11 @@
     "lng": 75.12,
     "description": "Scenic Town in Karnataka.",
     "climate": {
-      "averageTempSummer": 35,
+      "averageTempSummer": 33,
       "averageTempWinter": 17,
-      "temperatureRange": "17-35\u00b0C",
+      "temperatureRange": "17-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2458
+      "annualRainfall": 2660
     },
     "aqi": 70,
     "healthcare": {
@@ -2707,18 +2707,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4448,
+      "averagePricePerSqFt": 4852,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Dabolim (Goa)",
-      "distance": 138,
+      "distance": 172,
       "code": "GOI"
     },
     "nearestInternationalAirport": {
       "name": "Dabolim (Goa)",
-      "distance": 138,
+      "distance": 172,
       "code": "GOI"
     },
     "landscape": "Plain",
@@ -2731,11 +2731,11 @@
     "lng": 74.49,
     "description": "Scenic Town in Karnataka.",
     "climate": {
-      "averageTempSummer": 36,
-      "averageTempWinter": 14,
-      "temperatureRange": "14-36\u00b0C",
+      "averageTempSummer": 33,
+      "averageTempWinter": 15,
+      "temperatureRange": "15-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2600
+      "annualRainfall": 2517
     },
     "aqi": 60,
     "healthcare": {
@@ -2747,18 +2747,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4078,
+      "averagePricePerSqFt": 4228,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Dabolim (Goa)",
-      "distance": 87,
+      "distance": 139,
       "code": "GOI"
     },
     "nearestInternationalAirport": {
       "name": "Dabolim (Goa)",
-      "distance": 87,
+      "distance": 139,
       "code": "GOI"
     },
     "landscape": "Hill",
@@ -2771,11 +2771,11 @@
     "lng": 80.27,
     "description": "Major Metro in Tamil Nadu.",
     "climate": {
-      "averageTempSummer": 36,
-      "averageTempWinter": 22,
-      "temperatureRange": "22-36\u00b0C",
+      "averageTempSummer": 34,
+      "averageTempWinter": 23,
+      "temperatureRange": "23-34\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 1598
+      "annualRainfall": 1536
     },
     "aqi": 90,
     "healthcare": {
@@ -2792,18 +2792,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 21834,
+      "averagePricePerSqFt": 14754,
       "currency": "INR"
     },
     "costOfLiving": "High",
     "nearestDomesticAirport": {
       "name": "Chennai Intl",
-      "distance": 14,
+      "distance": 17,
       "code": "MAA"
     },
     "nearestInternationalAirport": {
       "name": "Chennai Intl",
-      "distance": 14,
+      "distance": 17,
       "code": "MAA"
     },
     "landscape": "Coastal",
@@ -2816,11 +2816,11 @@
     "lng": 76.95,
     "description": "Growing City in Tamil Nadu.",
     "climate": {
-      "averageTempSummer": 33,
-      "averageTempWinter": 24,
-      "temperatureRange": "24-33\u00b0C",
+      "averageTempSummer": 34,
+      "averageTempWinter": 25,
+      "temperatureRange": "25-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2630
+      "annualRainfall": 2565
     },
     "aqi": 70,
     "healthcare": {
@@ -2835,18 +2835,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8695,
+      "averagePricePerSqFt": 7798,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Coimbatore Intl",
-      "distance": 10,
+      "distance": 16,
       "code": "CJB"
     },
     "nearestInternationalAirport": {
       "name": "Coimbatore Intl",
-      "distance": 10,
+      "distance": 16,
       "code": "CJB"
     },
     "landscape": "Hill",
@@ -2859,11 +2859,11 @@
     "lng": 78.11,
     "description": "Growing City in Tamil Nadu.",
     "climate": {
-      "averageTempSummer": 36,
-      "averageTempWinter": 23,
-      "temperatureRange": "23-36\u00b0C",
+      "averageTempSummer": 35,
+      "averageTempWinter": 22,
+      "temperatureRange": "22-35\u00b0C",
       "humidity": "High",
-      "annualRainfall": 890
+      "annualRainfall": 734
     },
     "aqi": 80,
     "healthcare": {
@@ -2876,18 +2876,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6786,
+      "averagePricePerSqFt": 5468,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Tiruchirappalli Intl",
-      "distance": 115,
+      "distance": 143,
       "code": "TRZ"
     },
     "nearestInternationalAirport": {
       "name": "Tiruchirappalli Intl",
-      "distance": 115,
+      "distance": 143,
       "code": "TRZ"
     },
     "landscape": "Plain",
@@ -2900,11 +2900,11 @@
     "lng": 78.7,
     "description": "Growing City in Tamil Nadu.",
     "climate": {
-      "averageTempSummer": 34,
+      "averageTempSummer": 33,
       "averageTempWinter": 24,
-      "temperatureRange": "24-34\u00b0C",
+      "temperatureRange": "24-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 969
+      "annualRainfall": 706
     },
     "aqi": 70,
     "healthcare": {
@@ -2917,7 +2917,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7473,
+      "averagePricePerSqFt": 7550,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -2941,11 +2941,11 @@
     "lng": 78.14,
     "description": "Scenic Town in Tamil Nadu.",
     "climate": {
-      "averageTempSummer": 33,
-      "averageTempWinter": 24,
-      "temperatureRange": "24-33\u00b0C",
+      "averageTempSummer": 35,
+      "averageTempWinter": 23,
+      "temperatureRange": "23-35\u00b0C",
       "humidity": "High",
-      "annualRainfall": 951
+      "annualRainfall": 980
     },
     "aqi": 70,
     "healthcare": {
@@ -2957,18 +2957,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4408,
+      "averagePricePerSqFt": 3215,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Tiruchirappalli Intl",
-      "distance": 117,
+      "distance": 187,
       "code": "TRZ"
     },
     "nearestInternationalAirport": {
       "name": "Tiruchirappalli Intl",
-      "distance": 117,
+      "distance": 187,
       "code": "TRZ"
     },
     "landscape": "Hill",
@@ -2981,11 +2981,11 @@
     "lng": 79.13,
     "description": "Scenic Town in Tamil Nadu.",
     "climate": {
-      "averageTempSummer": 36,
-      "averageTempWinter": 24,
-      "temperatureRange": "24-36\u00b0C",
+      "averageTempSummer": 33,
+      "averageTempWinter": 25,
+      "temperatureRange": "25-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 776
+      "annualRainfall": 995
     },
     "aqi": 60,
     "healthcare": {
@@ -2998,18 +2998,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3269,
+      "averagePricePerSqFt": 4435,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Chennai Intl",
-      "distance": 113,
+      "distance": 141,
       "code": "MAA"
     },
     "nearestInternationalAirport": {
       "name": "Chennai Intl",
-      "distance": 113,
+      "distance": 141,
       "code": "MAA"
     },
     "landscape": "Plain",
@@ -3022,13 +3022,13 @@
     "lng": 77.75,
     "description": "Scenic Town in Tamil Nadu.",
     "climate": {
-      "averageTempSummer": 33,
-      "averageTempWinter": 22,
-      "temperatureRange": "22-33\u00b0C",
+      "averageTempSummer": 34,
+      "averageTempWinter": 23,
+      "temperatureRange": "23-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 823
+      "annualRainfall": 726
     },
-    "aqi": 113,
+    "aqi": 130,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -3038,18 +3038,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3079,
+      "averagePricePerSqFt": 4852,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Thiruvananthapuram Intl",
-      "distance": 95,
+      "distance": 118,
       "code": "TRV"
     },
     "nearestInternationalAirport": {
       "name": "Thiruvananthapuram Intl",
-      "distance": 95,
+      "distance": 118,
       "code": "TRV"
     },
     "landscape": "Plain",
@@ -3062,13 +3062,13 @@
     "lng": 77.82,
     "description": "Scenic Town in Tamil Nadu.",
     "climate": {
-      "averageTempSummer": 33,
-      "averageTempWinter": 14,
-      "temperatureRange": "14-33\u00b0C",
+      "averageTempSummer": 35,
+      "averageTempWinter": 17,
+      "temperatureRange": "17-35\u00b0C",
       "humidity": "High",
-      "annualRainfall": 774
+      "annualRainfall": 733
     },
-    "aqi": 118,
+    "aqi": 123,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -3078,18 +3078,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3398,
+      "averagePricePerSqFt": 4790,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Kempegowda Intl (Bangalore)",
-      "distance": 52,
+      "distance": 65,
       "code": "BLR"
     },
     "nearestInternationalAirport": {
       "name": "Kempegowda Intl (Bangalore)",
-      "distance": 52,
+      "distance": 65,
       "code": "BLR"
     },
     "landscape": "Plain",
@@ -3102,11 +3102,11 @@
     "lng": 78.48,
     "description": "Major Metro in Telangana.",
     "climate": {
-      "averageTempSummer": 32,
-      "averageTempWinter": 14,
-      "temperatureRange": "14-32\u00b0C",
+      "averageTempSummer": 33,
+      "averageTempWinter": 17,
+      "temperatureRange": "17-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 866
+      "annualRainfall": 996
     },
     "aqi": 130,
     "healthcare": {
@@ -3123,18 +3123,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 22939,
+      "averagePricePerSqFt": 16262,
       "currency": "INR"
     },
     "costOfLiving": "High",
     "nearestDomesticAirport": {
       "name": "Rajiv Gandhi Intl (Hyderabad)",
-      "distance": 16,
+      "distance": 20,
       "code": "HYD"
     },
     "nearestInternationalAirport": {
       "name": "Rajiv Gandhi Intl (Hyderabad)",
-      "distance": 16,
+      "distance": 20,
       "code": "HYD"
     },
     "landscape": "Plain",
@@ -3147,11 +3147,11 @@
     "lng": 78.5,
     "description": "Major Metro in Telangana.",
     "climate": {
-      "averageTempSummer": 36,
-      "averageTempWinter": 17,
-      "temperatureRange": "17-36\u00b0C",
+      "averageTempSummer": 35,
+      "averageTempWinter": 16,
+      "temperatureRange": "16-35\u00b0C",
       "humidity": "High",
-      "annualRainfall": 804
+      "annualRainfall": 807
     },
     "aqi": 130,
     "healthcare": {
@@ -3164,18 +3164,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 23887,
+      "averagePricePerSqFt": 21581,
       "currency": "INR"
     },
     "costOfLiving": "High",
     "nearestDomesticAirport": {
       "name": "Rajiv Gandhi Intl (Hyderabad)",
-      "distance": 22,
+      "distance": 27,
       "code": "HYD"
     },
     "nearestInternationalAirport": {
       "name": "Rajiv Gandhi Intl (Hyderabad)",
-      "distance": 22,
+      "distance": 27,
       "code": "HYD"
     },
     "landscape": "Plain",
@@ -3188,11 +3188,11 @@
     "lng": 79.59,
     "description": "Scenic Town in Telangana.",
     "climate": {
-      "averageTempSummer": 33,
+      "averageTempSummer": 35,
       "averageTempWinter": 23,
-      "temperatureRange": "23-33\u00b0C",
+      "temperatureRange": "23-35\u00b0C",
       "humidity": "High",
-      "annualRainfall": 848
+      "annualRainfall": 798
     },
     "aqi": 132,
     "healthcare": {
@@ -3204,18 +3204,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3433,
+      "averagePricePerSqFt": 4136,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Rajiv Gandhi Intl (Hyderabad)",
-      "distance": 147,
+      "distance": 183,
       "code": "HYD"
     },
     "nearestInternationalAirport": {
       "name": "Rajiv Gandhi Intl (Hyderabad)",
-      "distance": 147,
+      "distance": 183,
       "code": "HYD"
     },
     "landscape": "Plain",
@@ -3228,11 +3228,11 @@
     "lng": 83.21,
     "description": "Growing City in Andhra Pradesh.",
     "climate": {
-      "averageTempSummer": 34,
-      "averageTempWinter": 25,
-      "temperatureRange": "25-34\u00b0C",
+      "averageTempSummer": 35,
+      "averageTempWinter": 22,
+      "temperatureRange": "22-35\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 1466
+      "annualRainfall": 1402
     },
     "aqi": 280,
     "healthcare": {
@@ -3247,18 +3247,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8315,
+      "averagePricePerSqFt": 6688,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Visakhapatnam",
-      "distance": 5,
+      "distance": 6,
       "code": "VTZ"
     },
     "nearestInternationalAirport": {
       "name": "Biju Patnaik Intl (Bhubaneswar)",
-      "distance": 396,
+      "distance": 495,
       "code": "BBI"
     },
     "landscape": "Coastal",
@@ -3271,11 +3271,11 @@
     "lng": 80.64,
     "description": "Growing City in Andhra Pradesh.",
     "climate": {
-      "averageTempSummer": 34,
-      "averageTempWinter": 24,
-      "temperatureRange": "24-34\u00b0C",
+      "averageTempSummer": 33,
+      "averageTempWinter": 23,
+      "temperatureRange": "23-33\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 1689
+      "annualRainfall": 1623
     },
     "aqi": 110,
     "healthcare": {
@@ -3289,18 +3289,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6340,
+      "averagePricePerSqFt": 5657,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Vijayawada",
-      "distance": 17,
+      "distance": 21,
       "code": "VGA"
     },
     "nearestInternationalAirport": {
       "name": "Rajiv Gandhi Intl (Hyderabad)",
-      "distance": 249,
+      "distance": 311,
       "code": "HYD"
     },
     "landscape": "Plain",
@@ -3313,11 +3313,11 @@
     "lng": 80.43,
     "description": "Scenic Town in Andhra Pradesh.",
     "climate": {
-      "averageTempSummer": 33,
-      "averageTempWinter": 22,
-      "temperatureRange": "22-33\u00b0C",
+      "averageTempSummer": 32,
+      "averageTempWinter": 24,
+      "temperatureRange": "24-32\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 1538
+      "annualRainfall": 1461
     },
     "aqi": 110,
     "healthcare": {
@@ -3329,18 +3329,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4724,
+      "averagePricePerSqFt": 2844,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Vijayawada",
-      "distance": 47,
+      "distance": 58,
       "code": "VGA"
     },
     "nearestInternationalAirport": {
       "name": "Rajiv Gandhi Intl (Hyderabad)",
-      "distance": 237,
+      "distance": 296,
       "code": "HYD"
     },
     "landscape": "Plain",
@@ -3353,13 +3353,13 @@
     "lng": 81.78,
     "description": "Scenic Town in Andhra Pradesh.",
     "climate": {
-      "averageTempSummer": 33,
-      "averageTempWinter": 23,
-      "temperatureRange": "23-33\u00b0C",
+      "averageTempSummer": 35,
+      "averageTempWinter": 24,
+      "temperatureRange": "24-35\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 1440
+      "annualRainfall": 1599
     },
-    "aqi": 118,
+    "aqi": 116,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -3369,18 +3369,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2931,
+      "averagePricePerSqFt": 2872,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Vijayawada",
-      "distance": 116,
+      "distance": 145,
       "code": "VGA"
     },
     "nearestInternationalAirport": {
       "name": "Rajiv Gandhi Intl (Hyderabad)",
-      "distance": 357,
+      "distance": 446,
       "code": "HYD"
     },
     "landscape": "Plain",
@@ -3393,11 +3393,11 @@
     "lng": 79.41,
     "description": "Scenic Town in Andhra Pradesh.",
     "climate": {
-      "averageTempSummer": 35,
-      "averageTempWinter": 24,
-      "temperatureRange": "24-35\u00b0C",
+      "averageTempSummer": 33,
+      "averageTempWinter": 25,
+      "temperatureRange": "25-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 850
+      "annualRainfall": 702
     },
     "aqi": 70,
     "healthcare": {
@@ -3409,18 +3409,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4481,
+      "averagePricePerSqFt": 3509,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Chennai Intl",
-      "distance": 108,
+      "distance": 172,
       "code": "MAA"
     },
     "nearestInternationalAirport": {
       "name": "Chennai Intl",
-      "distance": 108,
+      "distance": 172,
       "code": "MAA"
     },
     "landscape": "Hill",
@@ -3437,7 +3437,7 @@
       "averageTempWinter": 23,
       "temperatureRange": "23-36\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2667
+      "annualRainfall": 2492
     },
     "aqi": 45,
     "healthcare": {
@@ -3452,18 +3452,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6926,
+      "averagePricePerSqFt": 5013,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Cochin Intl",
-      "distance": 29,
+      "distance": 36,
       "code": "COK"
     },
     "nearestInternationalAirport": {
       "name": "Cochin Intl",
-      "distance": 29,
+      "distance": 36,
       "code": "COK"
     },
     "landscape": "Coastal",
@@ -3476,13 +3476,13 @@
     "lng": 76.93,
     "description": "Growing City in Kerala.",
     "climate": {
-      "averageTempSummer": 33,
-      "averageTempWinter": 25,
-      "temperatureRange": "25-33\u00b0C",
+      "averageTempSummer": 36,
+      "averageTempWinter": 22,
+      "temperatureRange": "22-36\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2639
+      "annualRainfall": 2571
     },
-    "aqi": 151,
+    "aqi": 141,
     "healthcare": {
       "hospitalCount": 5,
       "score": 5.0,
@@ -3491,18 +3491,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8857,
+      "averagePricePerSqFt": 7646,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Thiruvananthapuram Intl",
-      "distance": 4,
+      "distance": 5,
       "code": "TRV"
     },
     "nearestInternationalAirport": {
       "name": "Thiruvananthapuram Intl",
-      "distance": 4,
+      "distance": 5,
       "code": "TRV"
     },
     "landscape": "Coastal",
@@ -3515,11 +3515,11 @@
     "lng": 75.78,
     "description": "Growing City in Kerala.",
     "climate": {
-      "averageTempSummer": 33,
+      "averageTempSummer": 34,
       "averageTempWinter": 21,
-      "temperatureRange": "21-33\u00b0C",
+      "temperatureRange": "21-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2591
+      "annualRainfall": 2601
     },
     "aqi": 45,
     "healthcare": {
@@ -3532,18 +3532,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6751,
+      "averagePricePerSqFt": 5536,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Calicut Intl (Kozhikode)",
-      "distance": 23,
+      "distance": 28,
       "code": "CCJ"
     },
     "nearestInternationalAirport": {
       "name": "Calicut Intl (Kozhikode)",
-      "distance": 23,
+      "distance": 28,
       "code": "CCJ"
     },
     "landscape": "Coastal",
@@ -3556,11 +3556,11 @@
     "lng": 76.21,
     "description": "Scenic Town in Kerala.",
     "climate": {
-      "averageTempSummer": 34,
+      "averageTempSummer": 33,
       "averageTempWinter": 23,
-      "temperatureRange": "23-34\u00b0C",
+      "temperatureRange": "23-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2635
+      "annualRainfall": 2576
     },
     "aqi": 40,
     "healthcare": {
@@ -3572,18 +3572,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2701,
+      "averagePricePerSqFt": 2953,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Cochin Intl",
-      "distance": 46,
+      "distance": 57,
       "code": "COK"
     },
     "nearestInternationalAirport": {
       "name": "Cochin Intl",
-      "distance": 46,
+      "distance": 57,
       "code": "COK"
     },
     "landscape": "Coastal",
@@ -3596,11 +3596,11 @@
     "lng": 79.8,
     "description": "Growing City in Puducherry.",
     "climate": {
-      "averageTempSummer": 36,
+      "averageTempSummer": 33,
       "averageTempWinter": 23,
-      "temperatureRange": "23-36\u00b0C",
+      "temperatureRange": "23-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 888
+      "annualRainfall": 732
     },
     "aqi": 60,
     "healthcare": {
@@ -3614,7 +3614,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6228,
+      "averagePricePerSqFt": 5218,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -3625,7 +3625,7 @@
     },
     "nearestInternationalAirport": {
       "name": "Chennai Intl",
-      "distance": 124,
+      "distance": 155,
       "code": "MAA"
     },
     "landscape": "Coastal",
@@ -3638,11 +3638,11 @@
     "lng": 76.69,
     "description": "Scenic Town in Tamil Nadu.",
     "climate": {
-      "averageTempSummer": 23,
-      "averageTempWinter": 3,
-      "temperatureRange": "3-23\u00b0C",
+      "averageTempSummer": 24,
+      "averageTempWinter": 4,
+      "temperatureRange": "4-24\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2416
+      "annualRainfall": 2603
     },
     "aqi": 25,
     "healthcare": {
@@ -3654,18 +3654,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4711,
+      "averagePricePerSqFt": 6306,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Coimbatore Intl",
-      "distance": 57,
+      "distance": 91,
       "code": "CJB"
     },
     "nearestInternationalAirport": {
       "name": "Coimbatore Intl",
-      "distance": 57,
+      "distance": 91,
       "code": "CJB"
     },
     "landscape": "Hill",
@@ -3678,11 +3678,11 @@
     "lng": 77.05,
     "description": "Scenic Town in Kerala.",
     "climate": {
-      "averageTempSummer": 24,
-      "averageTempWinter": 2,
-      "temperatureRange": "2-24\u00b0C",
+      "averageTempSummer": 23,
+      "averageTempWinter": 4,
+      "temperatureRange": "4-23\u00b0C",
       "humidity": "High",
-      "annualRainfall": 779
+      "annualRainfall": 817
     },
     "aqi": 20,
     "healthcare": {
@@ -3694,18 +3694,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5815,
+      "averagePricePerSqFt": 5271,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Cochin Intl",
-      "distance": 72,
+      "distance": 115,
       "code": "COK"
     },
     "nearestInternationalAirport": {
       "name": "Cochin Intl",
-      "distance": 72,
+      "distance": 115,
       "code": "COK"
     },
     "landscape": "Hill",
@@ -3719,10 +3719,10 @@
     "description": "Scenic Town in Tamil Nadu.",
     "climate": {
       "averageTempSummer": 23,
-      "averageTempWinter": 2,
-      "temperatureRange": "2-23\u00b0C",
+      "averageTempWinter": 4,
+      "temperatureRange": "4-23\u00b0C",
       "humidity": "High",
-      "annualRainfall": 741
+      "annualRainfall": 952
     },
     "aqi": 20,
     "healthcare": {
@@ -3734,18 +3734,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6058,
+      "averagePricePerSqFt": 4477,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Coimbatore Intl",
-      "distance": 101,
+      "distance": 161,
       "code": "CJB"
     },
     "nearestInternationalAirport": {
       "name": "Coimbatore Intl",
-      "distance": 101,
+      "distance": 161,
       "code": "CJB"
     },
     "landscape": "Hill",
@@ -3758,11 +3758,11 @@
     "lng": 75.73,
     "description": "Scenic Town in Karnataka.",
     "climate": {
-      "averageTempSummer": 26,
+      "averageTempSummer": 27,
       "averageTempWinter": 2,
-      "temperatureRange": "2-26\u00b0C",
+      "temperatureRange": "2-27\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2624
+      "annualRainfall": 2568
     },
     "aqi": 25,
     "healthcare": {
@@ -3774,18 +3774,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5460,
+      "averagePricePerSqFt": 5047,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Mysore",
-      "distance": 101,
+      "distance": 161,
       "code": "MYQ"
     },
     "nearestInternationalAirport": {
       "name": "Mangalore Intl",
-      "distance": 109,
+      "distance": 174,
       "code": "IXE"
     },
     "landscape": "Hill",
@@ -3798,11 +3798,11 @@
     "lng": 76.33,
     "description": "Scenic Town in Kerala.",
     "climate": {
-      "averageTempSummer": 34,
-      "averageTempWinter": 24,
-      "temperatureRange": "24-34\u00b0C",
+      "averageTempSummer": 35,
+      "averageTempWinter": 25,
+      "temperatureRange": "25-35\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2667
+      "annualRainfall": 2461
     },
     "aqi": 35,
     "healthcare": {
@@ -3813,18 +3813,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4887,
+      "averagePricePerSqFt": 2799,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Cochin Intl",
-      "distance": 74,
+      "distance": 92,
       "code": "COK"
     },
     "nearestInternationalAirport": {
       "name": "Cochin Intl",
-      "distance": 74,
+      "distance": 92,
       "code": "COK"
     },
     "landscape": "Coastal",
@@ -3837,11 +3837,11 @@
     "lng": 76.13,
     "description": "Scenic Town in Kerala.",
     "climate": {
-      "averageTempSummer": 32,
-      "averageTempWinter": 13,
-      "temperatureRange": "13-32\u00b0C",
+      "averageTempSummer": 36,
+      "averageTempWinter": 16,
+      "temperatureRange": "16-36\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2640
+      "annualRainfall": 2667
     },
     "aqi": 25,
     "healthcare": {
@@ -3853,18 +3853,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3860,
+      "averagePricePerSqFt": 4432,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Calicut Intl (Kozhikode)",
-      "distance": 63,
+      "distance": 100,
       "code": "CCJ"
     },
     "nearestInternationalAirport": {
       "name": "Calicut Intl (Kozhikode)",
-      "distance": 63,
+      "distance": 100,
       "code": "CCJ"
     },
     "landscape": "Hill",
@@ -3877,11 +3877,11 @@
     "lng": 78.2,
     "description": "Scenic Town in Tamil Nadu.",
     "climate": {
-      "averageTempSummer": 27,
-      "averageTempWinter": 1,
-      "temperatureRange": "1-27\u00b0C",
+      "averageTempSummer": 26,
+      "averageTempWinter": 3,
+      "temperatureRange": "3-26\u00b0C",
       "humidity": "High",
-      "annualRainfall": 747
+      "annualRainfall": 739
     },
     "aqi": 30,
     "healthcare": {
@@ -3892,18 +3892,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5204,
+      "averagePricePerSqFt": 6450,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Tiruchirappalli Intl",
-      "distance": 125,
+      "distance": 200,
       "code": "TRZ"
     },
     "nearestInternationalAirport": {
       "name": "Tiruchirappalli Intl",
-      "distance": 125,
+      "distance": 200,
       "code": "TRZ"
     },
     "landscape": "Hill",
@@ -3916,11 +3916,11 @@
     "lng": 88.36,
     "description": "Major Metro in West Bengal.",
     "climate": {
-      "averageTempSummer": 40,
-      "averageTempWinter": 14,
-      "temperatureRange": "14-40\u00b0C",
+      "averageTempSummer": 41,
+      "averageTempWinter": 16,
+      "temperatureRange": "16-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2524
+      "annualRainfall": 2613
     },
     "aqi": 210,
     "healthcare": {
@@ -3936,18 +3936,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 24816,
+      "averagePricePerSqFt": 13936,
       "currency": "INR"
     },
     "costOfLiving": "High",
     "nearestDomesticAirport": {
       "name": "Netaji Subhash Chandra Bose Intl (Kolkata)",
-      "distance": 13,
+      "distance": 16,
       "code": "CCU"
     },
     "nearestInternationalAirport": {
       "name": "Netaji Subhash Chandra Bose Intl (Kolkata)",
-      "distance": 13,
+      "distance": 16,
       "code": "CCU"
     },
     "landscape": "Plain",
@@ -3960,11 +3960,11 @@
     "lng": 88.31,
     "description": "Growing City in West Bengal.",
     "climate": {
-      "averageTempSummer": 39,
-      "averageTempWinter": 14,
-      "temperatureRange": "14-39\u00b0C",
+      "averageTempSummer": 40,
+      "averageTempWinter": 17,
+      "temperatureRange": "17-40\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2598
+      "annualRainfall": 2414
     },
     "aqi": 260,
     "healthcare": {
@@ -3976,18 +3976,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6277,
+      "averagePricePerSqFt": 6102,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Netaji Subhash Chandra Bose Intl (Kolkata)",
-      "distance": 16,
+      "distance": 20,
       "code": "CCU"
     },
     "nearestInternationalAirport": {
       "name": "Netaji Subhash Chandra Bose Intl (Kolkata)",
-      "distance": 16,
+      "distance": 20,
       "code": "CCU"
     },
     "landscape": "Plain",
@@ -4000,13 +4000,13 @@
     "lng": 88.41,
     "description": "Growing City in West Bengal.",
     "climate": {
-      "averageTempSummer": 39,
-      "averageTempWinter": 17,
-      "temperatureRange": "17-39\u00b0C",
+      "averageTempSummer": 40,
+      "averageTempWinter": 16,
+      "temperatureRange": "16-40\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2448
+      "annualRainfall": 2582
     },
-    "aqi": 147,
+    "aqi": 155,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -4016,18 +4016,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6311,
+      "averagePricePerSqFt": 8946,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Netaji Subhash Chandra Bose Intl (Kolkata)",
-      "distance": 9,
+      "distance": 11,
       "code": "CCU"
     },
     "nearestInternationalAirport": {
       "name": "Netaji Subhash Chandra Bose Intl (Kolkata)",
-      "distance": 9,
+      "distance": 11,
       "code": "CCU"
     },
     "landscape": "Plain",
@@ -4040,11 +4040,11 @@
     "lng": 87.32,
     "description": "Growing City in West Bengal.",
     "climate": {
-      "averageTempSummer": 40,
+      "averageTempSummer": 38,
       "averageTempWinter": 15,
-      "temperatureRange": "15-40\u00b0C",
+      "temperatureRange": "15-38\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 713
+      "annualRainfall": 819
     },
     "aqi": 220,
     "healthcare": {
@@ -4056,18 +4056,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5442,
+      "averagePricePerSqFt": 6895,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Netaji Subhash Chandra Bose Intl (Kolkata)",
-      "distance": 147,
+      "distance": 183,
       "code": "CCU"
     },
     "nearestInternationalAirport": {
       "name": "Netaji Subhash Chandra Bose Intl (Kolkata)",
-      "distance": 147,
+      "distance": 183,
       "code": "CCU"
     },
     "landscape": "Plain",
@@ -4080,11 +4080,11 @@
     "lng": 88.39,
     "description": "Scenic Town in West Bengal.",
     "climate": {
-      "averageTempSummer": 44,
-      "averageTempWinter": 5,
-      "temperatureRange": "5-44\u00b0C",
+      "averageTempSummer": 42,
+      "averageTempWinter": 4,
+      "temperatureRange": "4-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2590
+      "annualRainfall": 2525
     },
     "aqi": 130,
     "healthcare": {
@@ -4096,18 +4096,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4438,
+      "averagePricePerSqFt": 3435,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Bagdogra (Siliguri)",
-      "distance": 7,
+      "distance": 8,
       "code": "IXB"
     },
     "nearestInternationalAirport": {
       "name": "Bagdogra (Siliguri)",
-      "distance": 7,
+      "distance": 8,
       "code": "IXB"
     },
     "landscape": "Plain",
@@ -4120,11 +4120,11 @@
     "lng": 88.26,
     "description": "Scenic Town in West Bengal.",
     "climate": {
-      "averageTempSummer": 24,
-      "averageTempWinter": 4,
-      "temperatureRange": "4-24\u00b0C",
+      "averageTempSummer": 27,
+      "averageTempWinter": 1,
+      "temperatureRange": "1-27\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2513
+      "annualRainfall": 2567
     },
     "aqi": 40,
     "healthcare": {
@@ -4136,18 +4136,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5095,
+      "averagePricePerSqFt": 4857,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Bagdogra (Siliguri)",
-      "distance": 40,
+      "distance": 64,
       "code": "IXB"
     },
     "nearestInternationalAirport": {
       "name": "Bagdogra (Siliguri)",
-      "distance": 40,
+      "distance": 64,
       "code": "IXB"
     },
     "landscape": "Hill",
@@ -4160,11 +4160,11 @@
     "lng": 88.47,
     "description": "Scenic Town in West Bengal.",
     "climate": {
-      "averageTempSummer": 24,
-      "averageTempWinter": 3,
-      "temperatureRange": "3-24\u00b0C",
+      "averageTempSummer": 26,
+      "averageTempWinter": 0,
+      "temperatureRange": "0-26\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2638
+      "annualRainfall": 2563
     },
     "aqi": 35,
     "healthcare": {
@@ -4175,18 +4175,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5957,
+      "averagePricePerSqFt": 5944,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Bagdogra (Siliguri)",
-      "distance": 44,
+      "distance": 70,
       "code": "IXB"
     },
     "nearestInternationalAirport": {
       "name": "Bagdogra (Siliguri)",
-      "distance": 44,
+      "distance": 70,
       "code": "IXB"
     },
     "landscape": "Hill",
@@ -4199,11 +4199,11 @@
     "lng": 85.82,
     "description": "Growing City in Odisha.",
     "climate": {
-      "averageTempSummer": 41,
-      "averageTempWinter": 16,
-      "temperatureRange": "16-41\u00b0C",
+      "averageTempSummer": 40,
+      "averageTempWinter": 15,
+      "temperatureRange": "15-40\u00b0C",
       "humidity": "High",
-      "annualRainfall": 756
+      "annualRainfall": 897
     },
     "aqi": 110,
     "healthcare": {
@@ -4218,18 +4218,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6425,
+      "averagePricePerSqFt": 8181,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Biju Patnaik Intl (Bhubaneswar)",
-      "distance": 5,
+      "distance": 6,
       "code": "BBI"
     },
     "nearestInternationalAirport": {
       "name": "Biju Patnaik Intl (Bhubaneswar)",
-      "distance": 5,
+      "distance": 6,
       "code": "BBI"
     },
     "landscape": "Plain",
@@ -4242,11 +4242,11 @@
     "lng": 85.88,
     "description": "Scenic Town in Odisha.",
     "climate": {
-      "averageTempSummer": 38,
-      "averageTempWinter": 14,
-      "temperatureRange": "14-38\u00b0C",
+      "averageTempSummer": 39,
+      "averageTempWinter": 16,
+      "temperatureRange": "16-39\u00b0C",
       "humidity": "High",
-      "annualRainfall": 881
+      "annualRainfall": 867
     },
     "aqi": 120,
     "healthcare": {
@@ -4258,18 +4258,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3817,
+      "averagePricePerSqFt": 2703,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Biju Patnaik Intl (Bhubaneswar)",
-      "distance": 25,
+      "distance": 31,
       "code": "BBI"
     },
     "nearestInternationalAirport": {
       "name": "Biju Patnaik Intl (Bhubaneswar)",
-      "distance": 25,
+      "distance": 31,
       "code": "BBI"
     },
     "landscape": "Plain",
@@ -4282,13 +4282,13 @@
     "lng": 85.83,
     "description": "Scenic Town in Odisha.",
     "climate": {
-      "averageTempSummer": 35,
-      "averageTempWinter": 25,
-      "temperatureRange": "25-35\u00b0C",
+      "averageTempSummer": 33,
+      "averageTempWinter": 23,
+      "temperatureRange": "23-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 1639
+      "annualRainfall": 1581
     },
-    "aqi": 122,
+    "aqi": 128,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -4297,18 +4297,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2917,
+      "averagePricePerSqFt": 4175,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Biju Patnaik Intl (Bhubaneswar)",
-      "distance": 48,
+      "distance": 60,
       "code": "BBI"
     },
     "nearestInternationalAirport": {
       "name": "Biju Patnaik Intl (Bhubaneswar)",
-      "distance": 48,
+      "distance": 60,
       "code": "BBI"
     },
     "landscape": "Coastal",
@@ -4321,11 +4321,11 @@
     "lng": 84.85,
     "description": "Scenic Town in Odisha.",
     "climate": {
-      "averageTempSummer": 39,
-      "averageTempWinter": 13,
-      "temperatureRange": "13-39\u00b0C",
+      "averageTempSummer": 38,
+      "averageTempWinter": 16,
+      "temperatureRange": "16-38\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 813
+      "annualRainfall": 909
     },
     "aqi": 140,
     "healthcare": {
@@ -4337,18 +4337,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2831,
+      "averagePricePerSqFt": 3635,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Birsa Munda (Ranchi)",
-      "distance": 127,
+      "distance": 158,
       "code": "IXR"
     },
     "nearestInternationalAirport": {
       "name": "Biju Patnaik Intl (Bhubaneswar)",
-      "distance": 246,
+      "distance": 307,
       "code": "BBI"
     },
     "landscape": "Plain",
@@ -4362,10 +4362,10 @@
     "description": "Growing City in Bihar.",
     "climate": {
       "averageTempSummer": 40,
-      "averageTempWinter": 14,
-      "temperatureRange": "14-40\u00b0C",
+      "averageTempWinter": 16,
+      "temperatureRange": "16-40\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 966
+      "annualRainfall": 876
     },
     "aqi": 280,
     "healthcare": {
@@ -4379,18 +4379,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6959,
+      "averagePricePerSqFt": 6262,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Jay Prakash Narayan (Patna)",
-      "distance": 4,
+      "distance": 5,
       "code": "PAT"
     },
     "nearestInternationalAirport": {
       "name": "Lal Bahadur Shastri Intl (Varanasi)",
-      "distance": 228,
+      "distance": 285,
       "code": "VNS"
     },
     "landscape": "Plain",
@@ -4403,13 +4403,13 @@
     "lng": 85.0,
     "description": "Scenic Town in Bihar.",
     "climate": {
-      "averageTempSummer": 38,
-      "averageTempWinter": 16,
-      "temperatureRange": "16-38\u00b0C",
+      "averageTempSummer": 42,
+      "averageTempWinter": 13,
+      "temperatureRange": "13-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 743
+      "annualRainfall": 892
     },
-    "aqi": 135,
+    "aqi": 140,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -4418,18 +4418,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4447,
+      "averagePricePerSqFt": 2845,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Jay Prakash Narayan (Patna)",
-      "distance": 90,
+      "distance": 112,
       "code": "PAT"
     },
     "nearestInternationalAirport": {
       "name": "Lal Bahadur Shastri Intl (Varanasi)",
-      "distance": 228,
+      "distance": 285,
       "code": "VNS"
     },
     "landscape": "Plain",
@@ -4442,11 +4442,11 @@
     "lng": 85.3,
     "description": "Growing City in Jharkhand.",
     "climate": {
-      "averageTempSummer": 35,
-      "averageTempWinter": 15,
-      "temperatureRange": "15-35\u00b0C",
+      "averageTempSummer": 34,
+      "averageTempWinter": 16,
+      "temperatureRange": "16-34\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 789
+      "annualRainfall": 785
     },
     "aqi": 150,
     "healthcare": {
@@ -4460,18 +4460,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7743,
+      "averagePricePerSqFt": 5681,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Birsa Munda (Ranchi)",
-      "distance": 4,
+      "distance": 6,
       "code": "IXR"
     },
     "nearestInternationalAirport": {
       "name": "Netaji Subhash Chandra Bose Intl (Kolkata)",
-      "distance": 331,
+      "distance": 529,
       "code": "CCU"
     },
     "landscape": "Hill",
@@ -4485,10 +4485,10 @@
     "description": "Growing City in Jharkhand.",
     "climate": {
       "averageTempSummer": 39,
-      "averageTempWinter": 15,
-      "temperatureRange": "15-39\u00b0C",
+      "averageTempWinter": 16,
+      "temperatureRange": "16-39\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 751
+      "annualRainfall": 798
     },
     "aqi": 160,
     "healthcare": {
@@ -4500,18 +4500,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5378,
+      "averagePricePerSqFt": 7742,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Birsa Munda (Ranchi)",
-      "distance": 107,
+      "distance": 133,
       "code": "IXR"
     },
     "nearestInternationalAirport": {
       "name": "Netaji Subhash Chandra Bose Intl (Kolkata)",
-      "distance": 231,
+      "distance": 288,
       "code": "CCU"
     },
     "landscape": "Plain",
@@ -4524,11 +4524,11 @@
     "lng": 91.73,
     "description": "Growing City in Assam.",
     "climate": {
-      "averageTempSummer": 43,
-      "averageTempWinter": 6,
-      "temperatureRange": "6-43\u00b0C",
+      "averageTempSummer": 44,
+      "averageTempWinter": 8,
+      "temperatureRange": "8-44\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2643
+      "annualRainfall": 2553
     },
     "aqi": 180,
     "healthcare": {
@@ -4543,18 +4543,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6679,
+      "averagePricePerSqFt": 6123,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Lokpriya Gopinath Bordoloi (Guwahati)",
-      "distance": 15,
+      "distance": 18,
       "code": "GAU"
     },
     "nearestInternationalAirport": {
       "name": "Bagdogra (Siliguri)",
-      "distance": 344,
+      "distance": 430,
       "code": "IXB"
     },
     "landscape": "Plain",
@@ -4568,10 +4568,10 @@
     "description": "Scenic Town in Meghalaya.",
     "climate": {
       "averageTempSummer": 24,
-      "averageTempWinter": 1,
-      "temperatureRange": "1-24\u00b0C",
+      "averageTempWinter": 0,
+      "temperatureRange": "0-24\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2640
+      "annualRainfall": 2611
     },
     "aqi": 30,
     "healthcare": {
@@ -4584,18 +4584,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6020,
+      "averagePricePerSqFt": 5124,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Lokpriya Gopinath Bordoloi (Guwahati)",
-      "distance": 66,
+      "distance": 105,
       "code": "GAU"
     },
     "nearestInternationalAirport": {
       "name": "Bagdogra (Siliguri)",
-      "distance": 375,
+      "distance": 600,
       "code": "IXB"
     },
     "landscape": "Hill",
@@ -4609,10 +4609,10 @@
     "description": "Scenic Town in Sikkim.",
     "climate": {
       "averageTempSummer": 26,
-      "averageTempWinter": 1,
-      "temperatureRange": "1-26\u00b0C",
+      "averageTempWinter": 0,
+      "temperatureRange": "0-26\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2605
+      "annualRainfall": 2650
     },
     "aqi": 30,
     "healthcare": {
@@ -4624,18 +4624,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4299,
+      "averagePricePerSqFt": 4430,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Bagdogra (Siliguri)",
-      "distance": 77,
+      "distance": 123,
       "code": "IXB"
     },
     "nearestInternationalAirport": {
       "name": "Bagdogra (Siliguri)",
-      "distance": 77,
+      "distance": 123,
       "code": "IXB"
     },
     "landscape": "Hill",
@@ -4648,11 +4648,11 @@
     "lng": 93.93,
     "description": "Scenic Town in Manipur.",
     "climate": {
-      "averageTempSummer": 32,
-      "averageTempWinter": 14,
-      "temperatureRange": "14-32\u00b0C",
+      "averageTempSummer": 34,
+      "averageTempWinter": 15,
+      "temperatureRange": "15-34\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2590
+      "annualRainfall": 2601
     },
     "aqi": 60,
     "healthcare": {
@@ -4664,18 +4664,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4934,
+      "averagePricePerSqFt": 4039,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Imphal",
-      "distance": 6,
+      "distance": 9,
       "code": "IMF"
     },
     "nearestInternationalAirport": {
       "name": "Bagdogra (Siliguri)",
-      "distance": 598,
+      "distance": 956,
       "code": "IXB"
     },
     "landscape": "Hill",
@@ -4688,11 +4688,11 @@
     "lng": 91.28,
     "description": "Scenic Town in Tripura.",
     "climate": {
-      "averageTempSummer": 40,
-      "averageTempWinter": 16,
-      "temperatureRange": "16-40\u00b0C",
+      "averageTempSummer": 39,
+      "averageTempWinter": 14,
+      "temperatureRange": "14-39\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2523
+      "annualRainfall": 2434
     },
     "aqi": 70,
     "healthcare": {
@@ -4704,18 +4704,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4524,
+      "averagePricePerSqFt": 2829,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Agartala",
-      "distance": 7,
+      "distance": 8,
       "code": "IXA"
     },
     "nearestInternationalAirport": {
       "name": "Netaji Subhash Chandra Bose Intl (Kolkata)",
-      "distance": 318,
+      "distance": 397,
       "code": "CCU"
     },
     "landscape": "Plain",
@@ -4728,11 +4728,11 @@
     "lng": 92.71,
     "description": "Scenic Town in Mizoram.",
     "climate": {
-      "averageTempSummer": 27,
-      "averageTempWinter": 1,
-      "temperatureRange": "1-27\u00b0C",
+      "averageTempSummer": 24,
+      "averageTempWinter": 2,
+      "temperatureRange": "2-24\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2455
+      "annualRainfall": 2676
     },
     "aqi": 25,
     "healthcare": {
@@ -4744,18 +4744,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4553,
+      "averagePricePerSqFt": 5750,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Aizawl",
-      "distance": 15,
+      "distance": 24,
       "code": "AJL"
     },
     "nearestInternationalAirport": {
       "name": "Netaji Subhash Chandra Bose Intl (Kolkata)",
-      "distance": 452,
+      "distance": 723,
       "code": "CCU"
     },
     "landscape": "Hill",
@@ -4768,11 +4768,11 @@
     "lng": 77.41,
     "description": "Growing City in Madhya Pradesh.",
     "climate": {
-      "averageTempSummer": 35,
-      "averageTempWinter": 16,
-      "temperatureRange": "16-35\u00b0C",
+      "averageTempSummer": 32,
+      "averageTempWinter": 14,
+      "temperatureRange": "14-32\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 765
+      "annualRainfall": 926
     },
     "aqi": 140,
     "healthcare": {
@@ -4786,18 +4786,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5948,
+      "averagePricePerSqFt": 8932,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Raja Bhoj (Bhopal)",
-      "distance": 8,
+      "distance": 10,
       "code": "BHO"
     },
     "nearestInternationalAirport": {
       "name": "Dr. Babasaheb Ambedkar Intl (Nagpur)",
-      "distance": 293,
+      "distance": 366,
       "code": "NAG"
     },
     "landscape": "Plain",
@@ -4810,11 +4810,11 @@
     "lng": 75.85,
     "description": "Growing City in Madhya Pradesh.",
     "climate": {
-      "averageTempSummer": 35,
-      "averageTempWinter": 13,
-      "temperatureRange": "13-35\u00b0C",
+      "averageTempSummer": 36,
+      "averageTempWinter": 15,
+      "temperatureRange": "15-36\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 943
+      "annualRainfall": 798
     },
     "aqi": 140,
     "healthcare": {
@@ -4829,18 +4829,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5128,
+      "averagePricePerSqFt": 6399,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Devi Ahilya Bai Holkar (Indore)",
-      "distance": 5,
+      "distance": 6,
       "code": "IDR"
     },
     "nearestInternationalAirport": {
       "name": "Sardar Vallabhbhai Patel Intl (Ahmedabad)",
-      "distance": 332,
+      "distance": 415,
       "code": "AMD"
     },
     "landscape": "Plain",
@@ -4853,11 +4853,11 @@
     "lng": 78.18,
     "description": "Growing City in Madhya Pradesh.",
     "climate": {
-      "averageTempSummer": 44,
-      "averageTempWinter": 7,
-      "temperatureRange": "7-44\u00b0C",
+      "averageTempSummer": 42,
+      "averageTempWinter": 4,
+      "temperatureRange": "4-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 836
+      "annualRainfall": 801
     },
     "aqi": 230,
     "healthcare": {
@@ -4869,18 +4869,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7753,
+      "averagePricePerSqFt": 6351,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Gwalior",
-      "distance": 10,
+      "distance": 12,
       "code": "GWL"
     },
     "nearestInternationalAirport": {
       "name": "Jaipur Intl",
-      "distance": 246,
+      "distance": 307,
       "code": "JAI"
     },
     "landscape": "Plain",
@@ -4894,10 +4894,10 @@
     "description": "Growing City in Madhya Pradesh.",
     "climate": {
       "averageTempSummer": 41,
-      "averageTempWinter": 16,
-      "temperatureRange": "16-41\u00b0C",
+      "averageTempWinter": 14,
+      "temperatureRange": "14-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 892
+      "annualRainfall": 787
     },
     "aqi": 120,
     "healthcare": {
@@ -4909,18 +4909,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6655,
+      "averagePricePerSqFt": 5083,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Dr. Babasaheb Ambedkar Intl (Nagpur)",
-      "distance": 251,
+      "distance": 313,
       "code": "NAG"
     },
     "nearestInternationalAirport": {
       "name": "Dr. Babasaheb Ambedkar Intl (Nagpur)",
-      "distance": 251,
+      "distance": 313,
       "code": "NAG"
     },
     "landscape": "Plain",
@@ -4933,11 +4933,11 @@
     "lng": 75.78,
     "description": "Scenic Town in Madhya Pradesh.",
     "climate": {
-      "averageTempSummer": 38,
+      "averageTempSummer": 41,
       "averageTempWinter": 17,
-      "temperatureRange": "17-38\u00b0C",
+      "temperatureRange": "17-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 888
+      "annualRainfall": 802
     },
     "aqi": 160,
     "healthcare": {
@@ -4949,18 +4949,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3022,
+      "averagePricePerSqFt": 4161,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Devi Ahilya Bai Holkar (Indore)",
-      "distance": 50,
+      "distance": 62,
       "code": "IDR"
     },
     "nearestInternationalAirport": {
       "name": "Sardar Vallabhbhai Patel Intl (Ahmedabad)",
-      "distance": 322,
+      "distance": 402,
       "code": "AMD"
     },
     "landscape": "Plain",
@@ -4973,11 +4973,11 @@
     "lng": 81.62,
     "description": "Growing City in Chhattisgarh.",
     "climate": {
-      "averageTempSummer": 39,
-      "averageTempWinter": 15,
-      "temperatureRange": "15-39\u00b0C",
+      "averageTempSummer": 41,
+      "averageTempWinter": 16,
+      "temperatureRange": "16-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 827
+      "annualRainfall": 798
     },
     "aqi": 160,
     "healthcare": {
@@ -4991,18 +4991,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7284,
+      "averagePricePerSqFt": 7067,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Swami Vivekananda (Raipur)",
-      "distance": 15,
+      "distance": 18,
       "code": "RPR"
     },
     "nearestInternationalAirport": {
       "name": "Dr. Babasaheb Ambedkar Intl (Nagpur)",
-      "distance": 267,
+      "distance": 333,
       "code": "NAG"
     },
     "landscape": "Plain",
@@ -5015,13 +5015,13 @@
     "lng": 82.14,
     "description": "Scenic Town in Chhattisgarh.",
     "climate": {
-      "averageTempSummer": 42,
-      "averageTempWinter": 16,
-      "temperatureRange": "16-42\u00b0C",
+      "averageTempSummer": 40,
+      "averageTempWinter": 17,
+      "temperatureRange": "17-40\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 897
+      "annualRainfall": 953
     },
-    "aqi": 130,
+    "aqi": 132,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -5031,18 +5031,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4638,
+      "averagePricePerSqFt": 2708,
       "currency": "INR"
     },
     "costOfLiving": "Low",
     "nearestDomesticAirport": {
       "name": "Swami Vivekananda (Raipur)",
-      "distance": 107,
+      "distance": 133,
       "code": "RPR"
     },
     "nearestInternationalAirport": {
       "name": "Dr. Babasaheb Ambedkar Intl (Nagpur)",
-      "distance": 338,
+      "distance": 422,
       "code": "NAG"
     },
     "landscape": "Plain",
@@ -5055,11 +5055,11 @@
     "lng": 81.38,
     "description": "Growing City in Chhattisgarh.",
     "climate": {
-      "averageTempSummer": 39,
-      "averageTempWinter": 14,
-      "temperatureRange": "14-39\u00b0C",
+      "averageTempSummer": 38,
+      "averageTempWinter": 17,
+      "temperatureRange": "17-38\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 971
+      "annualRainfall": 843
     },
     "aqi": 170,
     "healthcare": {
@@ -5070,18 +5070,18 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5771,
+      "averagePricePerSqFt": 5921,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
     "nearestDomesticAirport": {
       "name": "Swami Vivekananda (Raipur)",
-      "distance": 37,
+      "distance": 46,
       "code": "RPR"
     },
     "nearestInternationalAirport": {
       "name": "Dr. Babasaheb Ambedkar Intl (Nagpur)",
-      "distance": 242,
+      "distance": 302,
       "code": "NAG"
     },
     "landscape": "Plain",

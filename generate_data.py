@@ -255,7 +255,7 @@ def calculate_distance(lat1, lon1, lat2, lon2):
     c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
     return round(R * c)
 
-def get_nearest_airport(lat, lng, type_filter=None):
+def get_nearest_airport(lat, lng, type_filter=None, road_factor=1.0):
     nearest = None
     min_dist = 99999
     
@@ -266,7 +266,7 @@ def get_nearest_airport(lat, lng, type_filter=None):
         dist = calculate_distance(lat, lng, data['lat'], data['lng'])
         if dist < min_dist:
             min_dist = dist
-            nearest = {"name": data['name'], "distance": dist, "code": code}
+            nearest = {"name": data['name'], "distance": int(dist * road_factor), "code": code}
             
     return nearest
 
@@ -483,10 +483,14 @@ def estimate_city_data(city):
         h_chains = ["District Hospital"] 
 
     # 4. AIRPORTS (REAL CALCULATION)
-    nearest_dom_obj = get_nearest_airport(lat, lng, 'dom')
-    nearest_any = get_nearest_airport(lat, lng)
-    nearest_dom = nearest_any
-    nearest_intl = get_nearest_airport(lat, lng, 'intl')
+    # Determine Road Factor based on Terrain
+    road_factor = 1.25 # Standard India Road Deviation (Plains/Coastal)
+    if landscape == "Hill": road_factor = 1.6 # Winding roads
+
+    # 4. AIRPORTS (REAL CALCULATION - ROAD DISTANCE)
+    nearest_any = get_nearest_airport(lat, lng, road_factor=road_factor)
+    nearest_dom = nearest_any # Any airport can serve domestic
+    nearest_intl = get_nearest_airport(lat, lng, 'intl', road_factor=road_factor)
 
     # 5. REAL ESTATE (Avg price per sqft in INR)
     price_sqft = 4000
