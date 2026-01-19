@@ -1,93 +1,94 @@
 'use client';
 
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import React, { useEffect } from 'react';
+import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import L from 'leaflet';
 import { City } from '@/types/City';
-import { useEffect } from 'react';
+import L from 'leaflet';
 
-// Icons fix for Leaflet in React/Next.js
-const iconUrl = 'https://unpkg.com/leaflet@1.9.3/dist/images/marker-icon.png';
-const iconRetinaUrl = 'https://unpkg.com/leaflet@1.9.3/dist/images/marker-icon-2x.png';
-const shadowUrl = 'https://unpkg.com/leaflet@1.9.3/dist/images/marker-shadow.png';
-
-const customIcon = new L.Icon({
-    iconUrl,
-    iconRetinaUrl,
-    shadowUrl,
+// Fix Leaflet Icon
+const DefaultIcon = L.icon({
+    iconUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png',
+    shadowUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png',
     iconSize: [25, 41],
-    iconAnchor: [12, 41],
-    popupAnchor: [1, -34],
-    shadowSize: [41, 41]
+    iconAnchor: [12, 41]
 });
+L.Marker.prototype.options.icon = DefaultIcon;
 
 interface MapProps {
     places: City[];
+    selectedCityId?: number | null;
 }
 
-const Map = ({ places }: MapProps) => {
-
-    // Fix for map not rendering correctly sometimes on load
+// Sub-component to handle map movement
+const MapUpdater = ({ selectedCity }: { selectedCity: City | undefined }) => {
+    const map = useMap();
     useEffect(() => {
-        window.dispatchEvent(new Event('resize'));
-    }, [places]);
+        if (selectedCity) {
+            map.flyTo([selectedCity.lat, selectedCity.lng], 10, {
+                duration: 1.5
+            });
+        }
+    }, [selectedCity, map]);
+    return null;
+};
+
+const Map = ({ places, selectedCityId }: MapProps) => {
+    const activeCity = places.find(p => p.id === selectedCityId);
 
     return (
-        <MapContainer center={[20.5937, 78.9629]} zoom={5} style={{ height: '100%', width: '100%', minHeight: '500px' }}>
+        <MapContainer center={[22.5, 79.5]} zoom={5} style={{ height: '100%', width: '100%' }}>
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            {places.map((place) => (
-                <Marker key={place.id} position={[place.lat, place.lng]} icon={customIcon}>
-                    <Popup>
-                        <div style={{ fontFamily: 'sans-serif', minWidth: '220px' }}>
-                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
-                                <h3 style={{ margin: 0, fontSize: '18px', color: '#333' }}>{place.name}, {place.state}</h3>
-                                {place.matchScore !== undefined && (
-                                    <span style={{
-                                        background: place.matchScore > 80 ? '#10b981' : place.matchScore > 50 ? '#f59e0b' : '#9ca3af',
-                                        color: '#fff', padding: '2px 8px', borderRadius: '12px', fontSize: '12px', fontWeight: 'bold'
-                                    }}>
-                                        {place.matchScore}% Match
-                                    </span>
-                                )}
+
+            <MapUpdater selectedCity={activeCity} />
+
+            {places.map((city) => (
+                <Marker key={city.id} position={[city.lat, city.lng]}>
+                    <Popup className="custom-popup">
+                        <div className="p-1 min-w-[200px]">
+                            <h3 className="font-bold text-lg mb-1">{city.name}</h3>
+                            <p className="text-xs text-gray-500 mb-2">{city.state}</p>
+
+                            <div className="grid grid-cols-2 gap-2 text-sm mb-3">
+                                <div className="bg-blue-50 p-2 rounded">
+                                    <div className="text-xs text-gray-500">Match</div>
+                                    <div className="font-bold text-blue-600">{city.matchScore}%</div>
+                                </div>
+                                <div className="bg-green-50 p-2 rounded">
+                                    <div className="text-xs text-gray-500">AQI</div>
+                                    <div className={`font-bold ${city.aqi > 150 ? 'text-red-600' : 'text-green-600'}`}>{city.aqi}</div>
+                                </div>
                             </div>
-                            <p style={{ margin: 0, color: '#666', fontSize: '13px', fontStyle: 'italic', marginBottom: '8px' }}>{place.description}</p>
 
-                            <hr style={{ margin: '8px 0', border: 'none', borderTop: '1px solid #eee' }} />
-
-                            <div style={{ fontSize: '13px', lineHeight: '1.5', display: 'grid', gridTemplateColumns: '1fr', gap: '4px' }}>
-                                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                    <strong>Temp Range:</strong>
-                                    <span>{place.climate.temperatureRange}</span>
+                            <div className="space-y-2 text-xs border-t pt-2">
+                                <div className="flex justify-between">
+                                    <span className="text-gray-500">Real Estate:</span>
+                                    <span className="font-medium">₹{city.realEstate.averagePricePerSqFt}/sqft</span>
                                 </div>
-                                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                    <strong>Rainfall:</strong>
-                                    <span>{place.climate.annualRainfall} mm</span>
+                                <div className="flex justify-between">
+                                    <span className="text-gray-500">Summer/Winter:</span>
+                                    <span className="font-medium">{city.climate.temperatureRange}</span>
                                 </div>
-                                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                    <strong>AQI (Avg):</strong>
-                                    <span style={{
-                                        color: place.aqi <= 50 ? '#10b981' : place.aqi <= 100 ? '#f59e0b' : '#ef4444',
-                                        fontWeight: 'bold'
-                                    }}>{place.aqi}</span>
+                                <div className="flex justify-between">
+                                    <span className="text-gray-500">Healthcare:</span>
+                                    <span className="font-medium text-right">{city.healthcare.score}/10 ({city.healthcare.hospitalCount} hosps)</span>
                                 </div>
-                                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                    <strong>Health Score:</strong>
-                                    <span style={{ color: '#2563eb', fontWeight: 'bold' }}>{place.healthcare.score}/10</span>
-                                </div>
-                                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                    <strong>Cost of Living:</strong>
-                                    <span>{place.costOfLiving}</span>
-                                </div>
-
-                                <hr style={{ margin: '6px 0', border: 'none', borderTop: '1px dashed #eee' }} />
-
-                                <div style={{ fontSize: '12px' }}>
-                                    <strong>✈️ Nearest Airport:</strong><br />
-                                    {place.nearestAirport.name} ({place.nearestAirport.distance} km)
-                                    <span style={{ display: 'block', color: '#888', fontSize: '11px' }}>{place.nearestAirport.type}</span>
+                                {city.healthcare.chains.length > 0 && (
+                                    <div className="text-gray-400 italic">
+                                        Top Chains: {city.healthcare.chains.slice(0, 2).join(', ')}...
+                                    </div>
+                                )}
+                                <div className="pt-2 mt-2 border-t">
+                                    <div className="font-semibold text-gray-700 mb-1">Airports</div>
+                                    <div className="flex justify-between text-gray-600">
+                                        <span>✈️ {city.nearestDomesticAirport.distance}km (Dom)</span>
+                                    </div>
+                                    <div className="flex justify-between text-gray-600">
+                                        <span>✈️ {city.nearestInternationalAirport.distance}km (Intl)</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>

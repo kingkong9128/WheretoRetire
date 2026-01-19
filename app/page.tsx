@@ -3,21 +3,19 @@ import MapController from '../components/MapController';
 
 export default function Home() {
     return (
-        <main style={{ padding: '20px', maxWidth: '1200px', margin: '0 auto', fontFamily: 'system-ui, sans-serif' }}>
-            <header style={{ marginBottom: '30px' }}>
-                <h1 style={{ fontSize: '2.5rem', marginBottom: '10px' }}>Where to Retire? 🇮🇳</h1>
-                <p style={{ fontSize: '1.2rem', color: '#666', lineHeight: '1.5' }}>
-                    Interactive map to help you find the perfect retirement location in India.
-                    <br />
-                    <small>Use the filters below to find your ideal destination based on climate and healthcare.</small>
-                </p>
+        <main className="min-h-screen bg-gray-50 flex flex-col">
+            <header className="bg-white border-b border-gray-200 px-6 py-4 shadow-sm z-10">
+                <div className="max-w-[1600px] mx-auto flex items-center justify-between">
+                    <div>
+                        <h1 className="text-2xl font-bold text-gray-900 tracking-tight">Where to Retire? 🇮🇳</h1>
+                        <p className="text-sm text-gray-500">Find your perfect city based on climate, healthcare, and cost.</p>
+                    </div>
+                </div>
             </header>
 
-            <MapController />
-
-            <footer style={{ marginTop: '50px', textAlign: 'center', color: '#9ca3af', fontSize: '0.9rem' }}>
-                <p>Project: WheretoRetire | All data is estimated for demonstration purposes.</p>
-            </footer>
+            <div className="flex-1 p-4 lg:p-6 overflow-hidden max-w-[1600px] mx-auto w-full">
+                <MapController />
+            </div>
         </main>
     );
 }

@@ -1,22 +1,23 @@
 'use client';
 
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import dynamic from 'next/dynamic';
 import { City } from '@/types/City';
 import { calculateMatchScore, UserPreferences } from '../utils/scoring';
 
-// Dynamic import with no SSR
+// Dynamic import for Map
 const Map = dynamic(() => import('./Map'), {
     ssr: false,
-    loading: () => <div style={{ height: '100%', background: '#f0f0f0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Loading Map...</div>
+    loading: () => <div className="flex items-center justify-center h-full bg-gray-100 text-gray-500">Loading Map...</div>
 });
 
 const MapController = () => {
     const [allPlaces, setAllPlaces] = useState<City[]>([]);
     const [displayedPlaces, setDisplayedPlaces] = useState<City[]>([]);
     const [loading, setLoading] = useState(true);
+    const [selectedCityId, setSelectedCityId] = useState<number | null>(null);
 
-    // Scoring Preferences
+    // Initial Prefs
     const [prefs, setPrefs] = useState<UserPreferences>({
         healthcareImportance: 5,
         cleanAirImportance: 5,
@@ -24,7 +25,7 @@ const MapController = () => {
         lowCostImportance: 5
     });
 
-    // Fetch all data once
+    // Fetch Data
     useEffect(() => {
         const initData = async () => {
             try {
@@ -40,7 +41,7 @@ const MapController = () => {
         initData();
     }, []);
 
-    // Recalculate scores when prefs change
+    // Scoring & Filtering
     useEffect(() => {
         if (allPlaces.length === 0) return;
 
@@ -49,13 +50,8 @@ const MapController = () => {
             matchScore: calculateMatchScore(city, prefs)
         }));
 
-        // Sort by match score descending
         scored.sort((a, b) => (b.matchScore || 0) - (a.matchScore || 0));
-
-        // Filter out low matches (e.g. below 40%) to keep map clean? 
-        // Or just show top 30?
-        // Let's show Top 50 to ensure coverage but not chaos.
-        setDisplayedPlaces(scored.slice(0, 50));
+        setDisplayedPlaces(scored.slice(0, 50)); // Top 50
 
     }, [prefs, allPlaces]);
 
@@ -63,98 +59,108 @@ const MapController = () => {
         setPrefs(prev => ({ ...prev, [key]: value }));
     };
 
+    const handleCitySelect = (city: City) => {
+        setSelectedCityId(city.id);
+    };
+
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+        <div className="flex flex-col lg:flex-row h-[calc(100vh-140px)] gap-4">
 
-            {/* Weighted Filters Section */}
-            <div style={{ padding: '25px', background: '#fff', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.08)', border: '1px solid #f0f0f0' }}>
-                <h3 style={{ marginTop: 0, marginBottom: '20px', fontSize: '1.2rem', color: '#111' }}>
-                    🎓 Personalize Your Retirement
-                    <span style={{ display: 'block', fontSize: '0.9rem', color: '#666', fontWeight: 'normal', marginTop: '5px' }}>
-                        Adjust sliders to tell us what matters most to you. We'll rank 85+ cities to find your perfect match.
-                    </span>
-                </h3>
+            {/* LEFT SIDEBAR: FILTERS */}
+            <aside className="w-full lg:w-80 bg-white p-6 rounded-xl shadow-sm border border-gray-100 overflow-y-auto shrink-0">
+                <h2 className="text-xl font-bold mb-1 text-gray-800">Preferences</h2>
+                <p className="text-sm text-gray-500 mb-6">Tune your perfect retirement.</p>
 
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '30px' }}>
-
-                    {/* Healthcare Importance */}
+                <div className="space-y-8">
+                    {/* Healthcare */}
                     <div>
-                        <label style={{ display: 'block', marginBottom: '10px', fontWeight: '600', color: '#333' }}>
-                            🏥 Healthcare Quality
-                        </label>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                            <span style={{ fontSize: '0.8rem', color: '#888' }}>Neutral</span>
-                            <input
-                                type="range" min="0" max="10" step="1"
-                                value={prefs.healthcareImportance}
-                                onChange={(e) => handlePrefChange('healthcareImportance', parseInt(e.target.value))}
-                                style={{ flex: 1, accentColor: '#ef4444' }}
-                            />
-                            <span style={{ fontSize: '0.8rem', color: '#888' }}>Critical</span>
+                        <div className="flex justify-between mb-2">
+                            <label className="font-semibold text-gray-700">Healthcare</label>
+                            <span className="text-xs text-blue-600 font-medium">{prefs.healthcareImportance}/10</span>
                         </div>
+                        <input type="range" min="0" max="10" value={prefs.healthcareImportance}
+                            onChange={(e) => handlePrefChange('healthcareImportance', parseInt(e.target.value))}
+                            className="w-full accent-blue-500 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer" />
+                        <p className="text-xs text-gray-400 mt-1">Weight given to top hospitals.</p>
                     </div>
 
-                    {/* Clean Air Importance */}
+                    {/* Air Quality */}
                     <div>
-                        <label style={{ display: 'block', marginBottom: '10px', fontWeight: '600', color: '#333' }}>
-                            🍃 Clean Air (AQI)
-                        </label>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                            <span style={{ fontSize: '0.8rem', color: '#888' }}>Neutral</span>
-                            <input
-                                type="range" min="0" max="10" step="1"
-                                value={prefs.cleanAirImportance}
-                                onChange={(e) => handlePrefChange('cleanAirImportance', parseInt(e.target.value))}
-                                style={{ flex: 1, accentColor: '#10b981' }}
-                            />
-                            <span style={{ fontSize: '0.8rem', color: '#888' }}>Critical</span>
+                        <div className="flex justify-between mb-2">
+                            <label className="font-semibold text-gray-700">Clean Air</label>
+                            <span className="text-xs text-green-600 font-medium">{prefs.cleanAirImportance}/10</span>
                         </div>
+                        <input type="range" min="0" max="10" value={prefs.cleanAirImportance}
+                            onChange={(e) => handlePrefChange('cleanAirImportance', parseInt(e.target.value))}
+                            className="w-full accent-green-500 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer" />
+                        <p className="text-xs text-gray-400 mt-1">Weight given to low AQI.</p>
                     </div>
 
-                    {/* Warmth Preference */}
+                    {/* Warmth */}
                     <div>
-                        <label style={{ display: 'block', marginBottom: '10px', fontWeight: '600', color: '#333' }}>
-                            ☀️ Climate Preference
-                        </label>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                            <span style={{ fontSize: '0.8rem', color: '#888' }}>❄️ Cool</span>
-                            <input
-                                type="range" min="0" max="10" step="1"
-                                value={prefs.warmthPreference}
-                                onChange={(e) => handlePrefChange('warmthPreference', parseInt(e.target.value))}
-                                style={{ flex: 1, accentColor: '#f59e0b' }}
-                            />
-                            <span style={{ fontSize: '0.8rem', color: '#888' }}>🔥 Warm</span>
+                        <div className="flex justify-between mb-2">
+                            <label className="font-semibold text-gray-700">Temperature</label>
+                            <span className="text-xs text-orange-600 font-medium">{prefs.warmthPreference}/10</span>
                         </div>
+                        <div className="flex justify-between text-xs text-gray-400 mb-1">
+                            <span>Cool</span>
+                            <span>Hot</span>
+                        </div>
+                        <input type="range" min="0" max="10" value={prefs.warmthPreference}
+                            onChange={(e) => handlePrefChange('warmthPreference', parseInt(e.target.value))}
+                            className="w-full accent-orange-500 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer" />
                     </div>
 
-                    {/* Cost Importance */}
+                    {/* Cost */}
                     <div>
-                        <label style={{ display: 'block', marginBottom: '10px', fontWeight: '600', color: '#333' }}>
-                            💰 Low Cost of Living
-                        </label>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                            <span style={{ fontSize: '0.8rem', color: '#888' }}>Whatever</span>
-                            <input
-                                type="range" min="0" max="10" step="1"
-                                value={prefs.lowCostImportance}
-                                onChange={(e) => handlePrefChange('lowCostImportance', parseInt(e.target.value))}
-                                style={{ flex: 1, accentColor: '#6366f1' }}
-                            />
-                            <span style={{ fontSize: '0.8rem', color: '#888' }}>Vital</span>
+                        <div className="flex justify-between mb-2">
+                            <label className="font-semibold text-gray-700">Low Cost</label>
+                            <span className="text-xs text-indigo-600 font-medium">{prefs.lowCostImportance}/10</span>
                         </div>
+                        <input type="range" min="0" max="10" value={prefs.lowCostImportance}
+                            onChange={(e) => handlePrefChange('lowCostImportance', parseInt(e.target.value))}
+                            className="w-full accent-indigo-500 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer" />
+                        <p className="text-xs text-gray-400 mt-1">Favor cheaper real estate.</p>
                     </div>
-
                 </div>
-                <div style={{ marginTop: '20px', fontSize: '14px', color: '#666', borderTop: '1px solid #f0f0f0', paddingTop: '15px' }}>
-                    Showing top <strong>{displayedPlaces.length}</strong> matches sorted by your unique score.
-                </div>
-            </div>
+            </aside>
 
-            {/* Map Section */}
-            <section style={{ height: '70vh', minHeight: '500px', border: '1px solid #ddd', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}>
-                <Map places={displayedPlaces} />
-            </section>
+            {/* CENTER: MAP */}
+            <main className="flex-1 bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden relative min-h-[400px]">
+                <Map places={displayedPlaces} selectedCityId={selectedCityId} />
+            </main>
+
+            {/* RIGHT SIDEBAR: RANKED LIST */}
+            <aside className="w-full lg:w-80 bg-white rounded-xl shadow-sm border border-gray-100 flex flex-col shrink-0">
+                <div className="p-4 border-b border-gray-100 bg-gray-50">
+                    <h3 className="font-bold text-gray-700">Top Matches</h3>
+                    <p className="text-xs text-gray-500">{displayedPlaces.length} cities found</p>
+                </div>
+                <div className="overflow-y-auto flex-1 p-2 space-y-2">
+                    {displayedPlaces.map((city, idx) => (
+                        <div key={city.id}
+                            onClick={() => handleCitySelect(city)}
+                            className={`p-3 rounded-lg border transition-all cursor-pointer hover:shadow-md ${selectedCityId === city.id ? 'border-blue-500 bg-blue-50' : 'border-gray-100 hover:border-gray-300'}`}>
+                            <div className="flex justify-between items-start">
+                                <div>
+                                    <h4 className="font-bold text-gray-800 text-sm">{idx + 1}. {city.name}</h4>
+                                    <span className="text-xs text-gray-500">{city.state}</span>
+                                </div>
+                                <div className="bg-green-100 text-green-700 text-xs font-bold px-2 py-1 rounded-full">
+                                    {city.matchScore}%
+                                </div>
+                            </div>
+                            <div className="mt-2 flex items-center gap-2 text-xs text-gray-500">
+                                <span>🏠 ₹{city.realEstate.averagePricePerSqFt}/sqft</span>
+                                <span>🏥 {city.healthcare.score}/10</span>
+                            </div>
+                        </div>
+                    ))}
+                    {displayedPlaces.length === 0 && !loading && (
+                        <div className="p-4 text-center text-gray-400 text-sm">No matches found. Try adjusting filters.</div>
+                    )}
+                </div>
+            </aside>
         </div>
     );
 };

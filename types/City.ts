@@ -1,20 +1,25 @@
 export interface Climate {
     averageTempSummer: number;
     averageTempWinter: number;
-    temperatureRange: string; // e.g. "15-35°C"
+    temperatureRange: string;
     humidity: 'High' | 'Moderate' | 'Low';
-    annualRainfall: number; // in mm
+    annualRainfall: number;
 }
 
-export interface NearestAirport {
+export interface AirportInfo {
     name: string;
-    distance: number; // in km
-    type: 'International' | 'Domestic';
+    distance: number;
 }
 
 export interface Healthcare {
     hospitalCount: number;
     score: number;
+    chains: string[];
+}
+
+export interface RealEstate {
+    averagePricePerSqFt: number;
+    currency: string;
 }
 
 export interface City {
@@ -25,9 +30,11 @@ export interface City {
     lng: number;
     description: string;
     climate: Climate;
-    aqi: number; // Average annual AQI
+    aqi: number;
     healthcare: Healthcare;
+    realEstate: RealEstate;
     costOfLiving: 'Low' | 'Medium' | 'High';
-    nearestAirport: NearestAirport;
-    matchScore?: number; // 0-100% based on user preferences
+    nearestDomesticAirport: AirportInfo;
+    nearestInternationalAirport: AirportInfo;
+    matchScore?: number;
 }
