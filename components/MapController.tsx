@@ -359,7 +359,7 @@ const MapController = () => {
                 initial={{ opacity: 0, scale: 0.98 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="flex-1 bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden relative min-h-[400px]"
+                className="lg:flex-1 h-[45vh] lg:h-auto shrink-0 bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden relative"
             >
                 <Map places={displayedPlaces} selectedCityId={selectedCityId} />
             </motion.main>
@@ -369,7 +369,7 @@ const MapController = () => {
                 initial={{ x: 20, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="w-full lg:w-80 bg-white rounded-xl shadow-sm border border-gray-100 flex flex-col shrink-0"
+                className="w-full lg:w-80 bg-white rounded-xl shadow-sm border border-gray-100 flex flex-col lg:shrink-0 flex-1 min-h-0"
             >
                 <div className="p-4 border-b border-gray-100 bg-gray-50">
                     <h3 className="font-bold text-gray-700">Top Matches</h3>
