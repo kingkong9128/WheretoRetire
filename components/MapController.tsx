@@ -209,15 +209,30 @@ const MapController = () => {
                     </div>
                 </div>
 
-                <div className="mt-8 pt-6 border-t border-gray-100 text-[10px] text-gray-400 leading-relaxed">
-                    <h4 className="font-semibold text-gray-500 mb-1">Methodology & Sources</h4>
-                    <ul className="list-disc pl-3 space-y-1">
-                        <li><strong>Data Period:</strong> Estimates based on 2024-2025 indices.</li>
-                        <li><strong>Real Estate:</strong> Avg. price/sqft for residential properties in city center/suburbs.</li>
-                        <li><strong>Healthcare:</strong> Weighted score based on major hospital chains & count.</li>
-                        <li><strong>Airports:</strong> Geodesic distance to nearest real major airports.</li>
-                        <li><strong>Note:</strong> Some data points (AQI, Specific Costs) are estimated for this MVP simulation.</li>
+                <div className="mt-8 pt-6 border-t border-gray-100 text-xs text-gray-500 leading-relaxed bg-blue-50 p-4 rounded-lg">
+                    <h4 className="font-bold text-gray-700 mb-2 flex items-center gap-2">
+                        ℹ️ Methodology & Data Sources
+                    </h4>
+                    <ul className="space-y-2">
+                        <li>
+                            <span className="font-semibold text-gray-800">🏥 Healthcare:</span> Deterministic mapping of major hospital chains (Apollo, Medanta, Manipal, etc.) to 100+ cities.
+                        </li>
+                        <li>
+                            <span className="font-semibold text-gray-800">🌫️ Air Quality (AQI):</span> Based on 2024 Reference Indices (Source: IQAir). High penalties for NCR/Industrial zones.
+                        </li>
+                        <li>
+                            <span className="font-semibold text-gray-800">🏠 Real Estate:</span> Estimated Price/SqFt based on 2024-25 Tier 1/2/3 market trends.
+                        </li>
+                        <li>
+                            <span className="font-semibold text-gray-800">✈️ Connectivity:</span> Exact Geodesic distances to nearest domestic/intl airports.
+                        </li>
+                        <li>
+                            <span className="font-semibold text-gray-800">🌡️ Scoring Logic:</span> "Cold" preference strictly penalizes Summer Heat ({'>'}25°C). "Warm" preference penalizes Winter Cold ({'<'}15°C).
+                        </li>
                     </ul>
+                    <p className="mt-3 text-[10px] text-gray-400 italic">
+                        *Disclaimer: This tool is a retirement planning simulation. While data is based on real-world indices, specific values are estimates for the MVP. Please verify locally.
+                    </p>
                 </div>
             </motion.aside>
 

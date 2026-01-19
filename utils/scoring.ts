@@ -49,23 +49,52 @@ export function calculateMatchScore(city: City, prefs: UserPreferences): number 
 
     // 2. Air Quality
     if (prefs.enableCleanAir && prefs.cleanAirImportance > 0) {
-        const cappedAqi = Math.min(city.aqi, 300);
-        const normalizedAqi = ((300 - cappedAqi) / 300) * 100;
+        let maxAqi = 300;
+        const cappedAqi = Math.min(city.aqi, maxAqi);
+        // Normalized: 0 AQI = 100 score, 300 AQI = 0 score.
+        const normalizedAqi = ((maxAqi - cappedAqi) / maxAqi) * 100;
         score += normalizedAqi * prefs.cleanAirImportance;
         totalWeight += prefs.cleanAirImportance;
     }
 
-    // 3. Climate (Stricter Logic)
-    if (prefs.enableTemperature && prefs.warmthPreference > 0) {
-        const idealTemp = 10 + (prefs.warmthPreference * 2.5);
-        const avgCityTemp = (city.climate.averageTempSummer + city.climate.averageTempWinter) / 2;
+    // 3. Climate (Asymmetric Scoring)
+    if (prefs.enableTemperature) {
+        let tempScore = 0;
 
-        const diff = Math.abs(avgCityTemp - idealTemp);
-        let tempScore = 100 - (Math.pow(diff, 1.8) * 2);
-        tempScore = Math.max(0, tempScore);
+        if (prefs.warmthPreference < 5) {
+            // WANTS COLD. Penalize Heat.
+            // Ideal Summer Max: < 25°C.
+            // Penalize heavily as it goes above 30°C.
+            const summerTemp = city.climate.averageTempSummer;
+            if (summerTemp <= 25) {
+                tempScore = 100;
+            } else {
+                // e.g. 30C -> diff 5 -> score 100 - 25 = 75
+                // e.g. 35C -> diff 10 -> score 100 - 100 = 0
+                // e.g. 40C -> diff 15 -> score 0
+                const diff = summerTemp - 25;
+                tempScore = Math.max(0, 100 - (Math.pow(diff, 2)));
+            }
+        } else {
+            // WANTS WARM. Penalize Cold.
+            // Ideal Winter Min: > 15°C.
+            // Penalize if it drops below 10°C.
+            const winterTemp = city.climate.averageTempWinter;
+            if (winterTemp >= 15) {
+                tempScore = 100;
+            } else {
+                // e.g. 10C -> diff 5 -> score 75
+                // e.g. 5C -> diff 10 -> score 0
+                const diff = 15 - winterTemp;
+                tempScore = Math.max(0, 100 - (Math.pow(diff, 2)));
+            }
+        }
 
-        score += tempScore * 5;
-        totalWeight += 5;
+        // Increase weight for Temperature as it's a primary comfort factor
+        // If preference is very strong (0 or 10), apply higher weight.
+        const weight = 15;
+        score += tempScore * weight;
+        totalWeight += weight;
     }
 
     // 4. Low Cost
