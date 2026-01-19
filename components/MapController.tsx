@@ -52,7 +52,14 @@ const MapController = () => {
     useEffect(() => {
         if (allPlaces.length === 0) return;
 
-        const scored = allPlaces.map(city => ({
+        let filtered = allPlaces;
+
+        // Hard Filter: Nature
+        if (prefs.enableNature && prefs.naturePreference !== 'Any') {
+            filtered = filtered.filter(city => city.landscape === prefs.naturePreference);
+        }
+
+        const scored = filtered.map(city => ({
             ...city,
             matchScore: calculateMatchScore(city, prefs)
         }));
@@ -281,7 +288,6 @@ const MapController = () => {
                                 </div>
                                 <div className="mt-2 flex items-center gap-2 text-xs text-gray-500">
                                     <span>🏠 ₹{city.realEstate.averagePricePerSqFt}/sqft</span>
-                                    <span>🏥 {city.healthcare.score}/10</span>
                                 </div>
                             </motion.div>
                         ))}
