@@ -133,7 +133,7 @@ const MapController = () => {
     };
 
     return (
-        <div className="flex flex-col lg:flex-row h-[calc(100dvh-140px)] gap-4 relative">
+        <div className="flex flex-col lg:flex-row h-full gap-4 relative">
 
             {/* MOBILE: FILTER TOGGLE BUTTON */}
             <div className="lg:hidden mb-2">

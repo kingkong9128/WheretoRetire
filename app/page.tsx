@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 export default function Home() {
     return (
-        <main className="min-h-screen bg-gray-50 flex flex-col">
+        <main className="h-[100dvh] bg-gray-50 flex flex-col overflow-hidden">
             <motion.header
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
