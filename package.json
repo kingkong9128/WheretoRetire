@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "generate-data": "python3 generate_data.py > data/cities.json"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

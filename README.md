@@ -36,7 +36,7 @@ An interactive web application helping users find their ideal retirement locatio
 1. Clone the repository:
    ```bash
    git clone https://github.com/kingkong9128/WheretoRetire.git
-   cd WheretoRetire/web
+   cd WheretoRetire
    ```
 
 2. Install dependencies:
@@ -56,15 +56,15 @@ An interactive web application helping users find their ideal retirement locatio
 1. Push this repository to your GitHub.
 2. Go to [Vercel](https://vercel.com) and "Add New Project".
 3. Import the `WheretoRetire` repository.
-4. **Important**: Set the **Root Directory** to `web` (since the Next.js app lives in the `web` subfolder).
+4. **Important**: The **Root Directory** should be the project root (`./`), which is the default.
 5. Click **Deploy**.
 
 ## Project Structure
 
-- `web/app/api`: API Routes for serving and filtering data.
-- `web/components`: React components (`Map`, `MapController`).
-- `web/data`: JSON datasets (`cities.json`).
-- `web/types`: TypeScript definitions.
+- `app/api`: API Routes for serving and filtering data.
+- `components`: React components (`Map`, `MapController`).
+- `data`: JSON datasets (`cities.json`).
+- `types`: TypeScript definitions.
 
 ## Future Roadmap
 
