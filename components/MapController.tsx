@@ -19,9 +19,9 @@ const MapController = () => {
     const [selectedCityId, setSelectedCityId] = useState<number | null>(null);
 
     const [prefs, setPrefs] = useState<UserPreferences>({
-        enableHealthcare: true,
-        enableCleanAir: true,
-        enableTemperature: true,
+        enableHealthcare: false,
+        enableCleanAir: false,
+        enableTemperature: false,
         enableLowCost: false,
         enableAirport: false,
         enableIntlAirport: false,
@@ -118,7 +118,7 @@ const MapController = () => {
         }
 
         finalDisplay.sort((a, b) => (b.matchScore || 0) - (a.matchScore || 0));
-        setDisplayedPlaces(finalDisplay.slice(0, 50));
+        setDisplayedPlaces(finalDisplay.slice(0, 200));
 
     }, [prefs, allPlaces]);
 
