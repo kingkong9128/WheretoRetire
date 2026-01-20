@@ -452,31 +452,66 @@ raw_cities = [
     ("Bhilai", "Chhattisgarh", 21.20, 81.38, 2, 297, "Plain"),
 ]
 
+# Real Climate Data (Summer Max / Winter Min - 2024 Avg)
+REAL_TEMP_DATA = {
+    # NORTH - EXTREME
+    "Delhi": (44, 6), "Gurgaon": (45, 6), "Noida": (44, 7), "Greater Noida": (44, 6), "Ghaziabad": (43, 7), 
+    "Faridabad": (45, 7), "Bhiwadi": (46, 5), "Chandigarh": (40, 5), "Mohali": (40, 5), "Panchkula": (39, 5),
+    "Ludhiana": (42, 4), "Amritsar": (43, 3), "Jalandhar": (42, 4), "Patiala": (41, 5),
+    "Jaipur": (43, 8), "Jodhpur": (44, 9), "Ajmer": (42, 10), "Kota": (45, 11),
+    "Lucknow": (43, 7), "Kanpur": (44, 7), "Agra": (45, 6), "Varanasi": (44, 8), "Allahabad (Prayagraj)": (45, 8),
+    "Meerut": (41, 6), "Gwalior": (46, 5),
+
+    # HILL STATIONS (COOL)
+    "Shimla": (26, -1), "Manali": (25, -4), "Dharamshala": (30, 3), "Dehradun": (36, 6), "Mussoorie": (24, 1), 
+    "Nainital": (25, 2), "Srinagar": (30, -3), "Jammu": (40, 5), "Leh": (22, -15),
+    "Gangtok": (22, 5), "Shillong": (24, 4), "Darjeeling": (20, 2), "Kalimpong": (25, 6), 
+    "Ooty": (22, 5), "Munnar": (24, 10), "Kodaikanal": (21, 9), "Coorg (Madikeri)": (28, 14), 
+    "Wayanad": (29, 15), "Yercaud": (30, 15), "Mahabaleshwar": (28, 13), "Lonavala": (33, 14),
+
+    # WEST (HOT/HUMID or DRY)
+    "Mumbai": (34, 19), "Navi Mumbai": (35, 20), "Thane": (36, 20), "Kalyan-Dombivli": (38, 18),
+    "Pune": (37, 11), "Pimpri-Chinchwad": (37, 12), "Nagpur": (44, 10), "Nashik": (34, 9), 
+    "Aurangabad": (40, 10), "Solapur": (41, 14), "Kolhapur": (36, 15),
+    "Ahmedabad": (43, 13), "Gandhinagar": (42, 12), "Surat": (36, 18), "Vadodara": (40, 15), 
+    "Rajkot": (41, 13), "Jamnagar": (37, 16), "Bhavnagar": (38, 17),
+    "Goa (Panaji)": (33, 22), "Vasco da Gama": (33, 23), "Margao": (34, 21), "Daman": (34, 18),
+
+    # SOUTH (TROPICAL/MODERATE)
+    "Bangalore": (34, 15), "Whitefield (Bangalore)": (34, 16), "Mysore": (33, 17), 
+    "Hubli": (37, 16), "Belgaum": (35, 14), "Mangalore": (34, 23), "Udupi": (34, 24),
+    "Chennai": (38, 22), "Coimbatore": (36, 20), "Madurai": (39, 22), "Trichy": (40, 23), 
+    "Salem": (38, 20), "Vellore": (40, 19), "Tirunelveli": (38, 23), "Hosur": (33, 16),
+    "Hyderabad": (40, 15), "Secunderabad": (40, 15), "Warangal": (42, 16),
+    "Visakhapatnam": (35, 21), "Vijayawada": (42, 19), "Guntur": (43, 18), "Rajahmundry": (41, 19), "Tirupati": (40, 18),
+    "Kochi": (33, 23), "Thiruvananthapuram": (34, 23), "Kozhikode": (34, 23), "Thrissur": (35, 23), "Alleppey": (33, 24),
+    "Pondicherry": (36, 22), "Port Blair": (32, 22),
+
+    # EAST & CENTRAL
+    "Kolkata": (37, 13), "Howrah": (38, 13), "Durgapur": (41, 10), "Siliguri": (34, 8),
+    "Bhubaneswar": (40, 15), "Cuttack": (40, 15), "Rourkela": (42, 11), "Puri": (34, 17),
+    "Patna": (41, 9), "Gaya": (43, 8), "Ranchi": (38, 10), "Jamshedpur": (41, 12),
+    "Guwahati": (35, 11), "Imphal": (30, 4), "Agartala": (34, 10), "Aizawl": (28, 8),
+    "Bhopal": (42, 9), "Indore": (41, 10), "Jabalpur": (42, 8), "Ujjain": (42, 9),
+    "Raipur": (43, 13), "Bhilai": (43, 14), "Bilaspur": (44, 12)
+}
+
 def estimate_city_data(city):
     name, state, lat, lng, tier, elev, landscape = city
     
-    # 1. TEMPERATE & CLIMATE
-    base_summer = 40
-    base_winter = 15
-    
-    # Refine Temperature by Region
-    if elev > 1000: # Hill station
-        base_summer = 25
-        base_winter = 2
-    elif elev > 500: # Plateau (Pune, Bangalore)
-        base_summer = 34
-        base_winter = 15
-    elif lat > 26: # North India Plains (Delhi, Punjab)
-        base_summer = 43
-        base_winter = 6
-    elif lat < 20: # South/Coastal
-        base_summer = 34
-        base_winter = 23
-        
-    temp_s = round(base_summer + random.uniform(-2, 2))
-    temp_w = round(base_winter + random.uniform(-2, 2))
+    # 1. TEMPERATURE (REAL DATA LOOKUP)
+    # Default fallback (Heuristic)
+    temp_s = 35
+    temp_w = 15
+    if elev > 1000: temp_s, temp_w = 25, 5
+    elif lat > 26: temp_s, temp_w = 42, 7
+    elif lat < 20: temp_s, temp_w = 34, 22
 
-    # Rainfall
+    # Override with Real Data
+    if name in REAL_TEMP_DATA:
+        temp_s, temp_w = REAL_TEMP_DATA[name]
+    
+    # Rainfall (Simple Heuristic remains for now)
     rain = 800
     if lng > 88 or (lat < 16 and lng < 77): rain = 2500 
     elif lat > 28 and elev < 1000: rain = 600
