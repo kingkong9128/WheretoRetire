@@ -7,12 +7,12 @@
     "description": "Major Metro in Delhi.",
     "climate": {
       "averageTempSummer": 42,
-      "averageTempWinter": 6,
-      "temperatureRange": "6-42\u00b0C",
+      "averageTempWinter": 7,
+      "temperatureRange": "7-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 707
+      "annualRainfall": 790
     },
-    "aqi": 350,
+    "aqi": 255,
     "healthcare": {
       "hospitalCount": 40,
       "score": 9.0,
@@ -27,7 +27,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 20972,
+      "averagePricePerSqFt": 17709,
       "currency": "INR"
     },
     "costOfLiving": "High",
@@ -51,13 +51,13 @@
     "lng": 77.02,
     "description": "Major Metro in Haryana.",
     "climate": {
-      "averageTempSummer": 44,
-      "averageTempWinter": 8,
-      "temperatureRange": "8-44\u00b0C",
+      "averageTempSummer": 42,
+      "averageTempWinter": 4,
+      "temperatureRange": "4-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 757
+      "annualRainfall": 683
     },
-    "aqi": 310,
+    "aqi": 240,
     "healthcare": {
       "hospitalCount": 35,
       "score": 9.0,
@@ -71,7 +71,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 14952,
+      "averagePricePerSqFt": 17270,
       "currency": "INR"
     },
     "costOfLiving": "High",
@@ -95,13 +95,13 @@
     "lng": 77.39,
     "description": "Major Metro in Uttar Pradesh.",
     "climate": {
-      "averageTempSummer": 44,
-      "averageTempWinter": 7,
-      "temperatureRange": "7-44\u00b0C",
+      "averageTempSummer": 45,
+      "averageTempWinter": 6,
+      "temperatureRange": "6-45\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 532
+      "annualRainfall": 571
     },
-    "aqi": 320,
+    "aqi": 250,
     "healthcare": {
       "hospitalCount": 35,
       "score": 9.0,
@@ -115,7 +115,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 21365,
+      "averagePricePerSqFt": 19632,
       "currency": "INR"
     },
     "costOfLiving": "High",
@@ -140,12 +140,12 @@
     "description": "Growing City in Uttar Pradesh.",
     "climate": {
       "averageTempSummer": 41,
-      "averageTempWinter": 6,
-      "temperatureRange": "6-41\u00b0C",
+      "averageTempWinter": 4,
+      "temperatureRange": "4-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 590
+      "annualRainfall": 682
     },
-    "aqi": 340,
+    "aqi": 250,
     "healthcare": {
       "hospitalCount": 35,
       "score": 9.0,
@@ -159,7 +159,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6045,
+      "averagePricePerSqFt": 8023,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -183,13 +183,13 @@
     "lng": 77.45,
     "description": "Growing City in Uttar Pradesh.",
     "climate": {
-      "averageTempSummer": 41,
-      "averageTempWinter": 8,
-      "temperatureRange": "8-41\u00b0C",
+      "averageTempSummer": 43,
+      "averageTempWinter": 5,
+      "temperatureRange": "5-43\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 678
+      "annualRainfall": 546
     },
-    "aqi": 360,
+    "aqi": 265,
     "healthcare": {
       "hospitalCount": 25,
       "score": 9.0,
@@ -201,7 +201,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6211,
+      "averagePricePerSqFt": 8097,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -225,13 +225,13 @@
     "lng": 77.31,
     "description": "Growing City in Haryana.",
     "climate": {
-      "averageTempSummer": 41,
-      "averageTempWinter": 7,
-      "temperatureRange": "7-41\u00b0C",
+      "averageTempSummer": 42,
+      "averageTempWinter": 8,
+      "temperatureRange": "8-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 569
+      "annualRainfall": 639
     },
-    "aqi": 300,
+    "aqi": 245,
     "healthcare": {
       "hospitalCount": 30,
       "score": 9.0,
@@ -244,7 +244,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8468,
+      "averagePricePerSqFt": 6891,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -268,13 +268,13 @@
     "lng": 76.77,
     "description": "Growing City in Chandigarh.",
     "climate": {
-      "averageTempSummer": 43,
-      "averageTempWinter": 4,
-      "temperatureRange": "4-43\u00b0C",
+      "averageTempSummer": 42,
+      "averageTempWinter": 8,
+      "temperatureRange": "8-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 693
+      "annualRainfall": 602
     },
-    "aqi": 160,
+    "aqi": 141,
     "healthcare": {
       "hospitalCount": 30,
       "score": 9.0,
@@ -287,7 +287,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5496,
+      "averagePricePerSqFt": 5098,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -311,13 +311,13 @@
     "lng": 76.71,
     "description": "Growing City in Punjab.",
     "climate": {
-      "averageTempSummer": 41,
+      "averageTempSummer": 45,
       "averageTempWinter": 8,
-      "temperatureRange": "8-41\u00b0C",
+      "temperatureRange": "8-45\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 773
+      "annualRainfall": 794
     },
-    "aqi": 150,
+    "aqi": 146,
     "healthcare": {
       "hospitalCount": 20,
       "score": 9.0,
@@ -328,7 +328,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7583,
+      "averagePricePerSqFt": 8799,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -352,13 +352,13 @@
     "lng": 76.86,
     "description": "Growing City in Haryana.",
     "climate": {
-      "averageTempSummer": 45,
+      "averageTempSummer": 42,
       "averageTempWinter": 4,
-      "temperatureRange": "4-45\u00b0C",
+      "temperatureRange": "4-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 622
+      "annualRainfall": 720
     },
-    "aqi": 144,
+    "aqi": 153,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -368,7 +368,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7413,
+      "averagePricePerSqFt": 7001,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -392,11 +392,11 @@
     "lng": 78.03,
     "description": "Growing City in Uttarakhand.",
     "climate": {
-      "averageTempSummer": 43,
-      "averageTempWinter": 4,
-      "temperatureRange": "4-43\u00b0C",
+      "averageTempSummer": 45,
+      "averageTempWinter": 7,
+      "temperatureRange": "7-45\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 767
+      "annualRainfall": 733
     },
     "aqi": 120,
     "healthcare": {
@@ -410,7 +410,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8809,
+      "averagePricePerSqFt": 7210,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -438,7 +438,7 @@
       "averageTempWinter": 3,
       "temperatureRange": "3-23\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 884
+      "annualRainfall": 943
     },
     "aqi": 35,
     "healthcare": {
@@ -450,7 +450,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4261,
+      "averagePricePerSqFt": 5210,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -475,12 +475,12 @@
     "description": "Scenic Town in Himachal Pradesh.",
     "climate": {
       "averageTempSummer": 27,
-      "averageTempWinter": 1,
-      "temperatureRange": "1-27\u00b0C",
+      "averageTempWinter": 3,
+      "temperatureRange": "3-27\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 939
+      "annualRainfall": 998
     },
-    "aqi": 25,
+    "aqi": 30,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -490,7 +490,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5383,
+      "averagePricePerSqFt": 5215,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -514,11 +514,11 @@
     "lng": 76.32,
     "description": "Scenic Town in Himachal Pradesh.",
     "climate": {
-      "averageTempSummer": 25,
+      "averageTempSummer": 24,
       "averageTempWinter": 1,
-      "temperatureRange": "1-25\u00b0C",
+      "temperatureRange": "1-24\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 862
+      "annualRainfall": 739
     },
     "aqi": 35,
     "healthcare": {
@@ -530,7 +530,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4290,
+      "averagePricePerSqFt": 5132,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -554,13 +554,13 @@
     "lng": 75.78,
     "description": "Growing City in Rajasthan.",
     "climate": {
-      "averageTempSummer": 45,
-      "averageTempWinter": 8,
-      "temperatureRange": "8-45\u00b0C",
+      "averageTempSummer": 42,
+      "averageTempWinter": 7,
+      "temperatureRange": "7-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 994
+      "annualRainfall": 782
     },
-    "aqi": 190,
+    "aqi": 160,
     "healthcare": {
       "hospitalCount": 35,
       "score": 9.0,
@@ -574,7 +574,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8970,
+      "averagePricePerSqFt": 6109,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -598,11 +598,11 @@
     "lng": 73.71,
     "description": "Scenic Town in Rajasthan.",
     "climate": {
-      "averageTempSummer": 33,
+      "averageTempSummer": 36,
       "averageTempWinter": 14,
-      "temperatureRange": "14-33\u00b0C",
+      "temperatureRange": "14-36\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 762
+      "annualRainfall": 813
     },
     "aqi": 133,
     "healthcare": {
@@ -615,7 +615,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2651,
+      "averagePricePerSqFt": 2814,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -640,12 +640,12 @@
     "description": "Scenic Town in Rajasthan.",
     "climate": {
       "averageTempSummer": 45,
-      "averageTempWinter": 8,
-      "temperatureRange": "8-45\u00b0C",
+      "averageTempWinter": 7,
+      "temperatureRange": "7-45\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 890
+      "annualRainfall": 805
     },
-    "aqi": 170,
+    "aqi": 155,
     "healthcare": {
       "hospitalCount": 20,
       "score": 9.0,
@@ -656,7 +656,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3915,
+      "averagePricePerSqFt": 4480,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -680,13 +680,13 @@
     "lng": 74.63,
     "description": "Scenic Town in Rajasthan.",
     "climate": {
-      "averageTempSummer": 43,
+      "averageTempSummer": 41,
       "averageTempWinter": 4,
-      "temperatureRange": "4-43\u00b0C",
+      "temperatureRange": "4-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 940
+      "annualRainfall": 999
     },
-    "aqi": 116,
+    "aqi": 140,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -696,7 +696,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2797,
+      "averagePricePerSqFt": 3831,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -721,12 +721,12 @@
     "description": "Growing City in Uttar Pradesh.",
     "climate": {
       "averageTempSummer": 43,
-      "averageTempWinter": 5,
-      "temperatureRange": "5-43\u00b0C",
+      "averageTempWinter": 6,
+      "temperatureRange": "6-43\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 846
+      "annualRainfall": 708
     },
-    "aqi": 240,
+    "aqi": 190,
     "healthcare": {
       "hospitalCount": 30,
       "score": 9.0,
@@ -739,7 +739,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5054,
+      "averagePricePerSqFt": 6221,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -763,13 +763,13 @@
     "lng": 82.97,
     "description": "Scenic Town in Uttar Pradesh.",
     "climate": {
-      "averageTempSummer": 41,
-      "averageTempWinter": 14,
-      "temperatureRange": "14-41\u00b0C",
+      "averageTempSummer": 39,
+      "averageTempWinter": 15,
+      "temperatureRange": "15-39\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 714
+      "annualRainfall": 718
     },
-    "aqi": 220,
+    "aqi": 170,
     "healthcare": {
       "hospitalCount": 20,
       "score": 9.0,
@@ -780,7 +780,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4747,
+      "averagePricePerSqFt": 4723,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -804,13 +804,13 @@
     "lng": 78.0,
     "description": "Scenic Town in Uttar Pradesh.",
     "climate": {
-      "averageTempSummer": 42,
-      "averageTempWinter": 7,
-      "temperatureRange": "7-42\u00b0C",
+      "averageTempSummer": 44,
+      "averageTempWinter": 8,
+      "temperatureRange": "8-44\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 925
+      "annualRainfall": 742
     },
-    "aqi": 230,
+    "aqi": 185,
     "healthcare": {
       "hospitalCount": 20,
       "score": 9.0,
@@ -821,7 +821,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4133,
+      "averagePricePerSqFt": 2562,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -845,13 +845,13 @@
     "lng": 74.87,
     "description": "Growing City in Punjab.",
     "climate": {
-      "averageTempSummer": 44,
-      "averageTempWinter": 5,
-      "temperatureRange": "5-44\u00b0C",
+      "averageTempSummer": 42,
+      "averageTempWinter": 4,
+      "temperatureRange": "4-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 796
+      "annualRainfall": 714
     },
-    "aqi": 200,
+    "aqi": 170,
     "healthcare": {
       "hospitalCount": 25,
       "score": 9.0,
@@ -863,7 +863,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7049,
+      "averagePricePerSqFt": 7638,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -887,13 +887,13 @@
     "lng": 75.85,
     "description": "Growing City in Punjab.",
     "climate": {
-      "averageTempSummer": 45,
-      "averageTempWinter": 6,
-      "temperatureRange": "6-45\u00b0C",
+      "averageTempSummer": 41,
+      "averageTempWinter": 8,
+      "temperatureRange": "8-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 675
+      "annualRainfall": 707
     },
-    "aqi": 210,
+    "aqi": 175,
     "healthcare": {
       "hospitalCount": 30,
       "score": 9.0,
@@ -906,7 +906,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7010,
+      "averagePricePerSqFt": 5054,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -930,13 +930,13 @@
     "lng": 75.57,
     "description": "Growing City in Punjab.",
     "climate": {
-      "averageTempSummer": 43,
-      "averageTempWinter": 4,
-      "temperatureRange": "4-43\u00b0C",
+      "averageTempSummer": 44,
+      "averageTempWinter": 5,
+      "temperatureRange": "5-44\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 551
+      "annualRainfall": 583
     },
-    "aqi": 200,
+    "aqi": 175,
     "healthcare": {
       "hospitalCount": 20,
       "score": 9.0,
@@ -947,7 +947,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6259,
+      "averagePricePerSqFt": 6997,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -971,13 +971,13 @@
     "lng": 76.39,
     "description": "Scenic Town in Punjab.",
     "climate": {
-      "averageTempSummer": 44,
-      "averageTempWinter": 7,
-      "temperatureRange": "7-44\u00b0C",
+      "averageTempSummer": 41,
+      "averageTempWinter": 5,
+      "temperatureRange": "5-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 780
+      "annualRainfall": 504
     },
-    "aqi": 117,
+    "aqi": 165,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -987,7 +987,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4667,
+      "averagePricePerSqFt": 4255,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -1011,13 +1011,13 @@
     "lng": 74.79,
     "description": "Growing City in Jammu & Kashmir.",
     "climate": {
-      "averageTempSummer": 26,
+      "averageTempSummer": 24,
       "averageTempWinter": 3,
-      "temperatureRange": "3-26\u00b0C",
+      "temperatureRange": "3-24\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 755
+      "annualRainfall": 830
     },
-    "aqi": 163,
+    "aqi": 55,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -1027,7 +1027,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5707,
+      "averagePricePerSqFt": 8252,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -1051,13 +1051,13 @@
     "lng": 74.85,
     "description": "Scenic Town in Jammu & Kashmir.",
     "climate": {
-      "averageTempSummer": 41,
-      "averageTempWinter": 4,
-      "temperatureRange": "4-41\u00b0C",
+      "averageTempSummer": 44,
+      "averageTempWinter": 8,
+      "temperatureRange": "8-44\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 771
+      "annualRainfall": 695
     },
-    "aqi": 125,
+    "aqi": 110,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -1067,7 +1067,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3088,
+      "averagePricePerSqFt": 3498,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -1091,13 +1091,13 @@
     "lng": 81.84,
     "description": "Scenic Town in Uttar Pradesh.",
     "climate": {
-      "averageTempSummer": 42,
-      "averageTempWinter": 13,
-      "temperatureRange": "13-42\u00b0C",
+      "averageTempSummer": 39,
+      "averageTempWinter": 16,
+      "temperatureRange": "16-39\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 792
+      "annualRainfall": 788
     },
-    "aqi": 230,
+    "aqi": 185,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -1107,7 +1107,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3169,
+      "averagePricePerSqFt": 2985,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -1131,13 +1131,13 @@
     "lng": 80.33,
     "description": "Growing City in Uttar Pradesh.",
     "climate": {
-      "averageTempSummer": 43,
-      "averageTempWinter": 6,
-      "temperatureRange": "6-43\u00b0C",
+      "averageTempSummer": 44,
+      "averageTempWinter": 4,
+      "temperatureRange": "4-44\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 899
+      "annualRainfall": 867
     },
-    "aqi": 250,
+    "aqi": 195,
     "healthcare": {
       "hospitalCount": 20,
       "score": 9.0,
@@ -1148,7 +1148,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6135,
+      "averagePricePerSqFt": 5861,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -1172,13 +1172,13 @@
     "lng": 75.86,
     "description": "Scenic Town in Rajasthan.",
     "climate": {
-      "averageTempSummer": 40,
-      "averageTempWinter": 16,
-      "temperatureRange": "16-40\u00b0C",
+      "averageTempSummer": 39,
+      "averageTempWinter": 17,
+      "temperatureRange": "17-39\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 713
+      "annualRainfall": 853
     },
-    "aqi": 180,
+    "aqi": 150,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -1188,7 +1188,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3562,
+      "averagePricePerSqFt": 2667,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -1213,12 +1213,12 @@
     "description": "Scenic Town in Uttarakhand.",
     "climate": {
       "averageTempSummer": 44,
-      "averageTempWinter": 5,
-      "temperatureRange": "5-44\u00b0C",
+      "averageTempWinter": 6,
+      "temperatureRange": "6-44\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 787
+      "annualRainfall": 635
     },
-    "aqi": 130,
+    "aqi": 110,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -1228,7 +1228,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2714,
+      "averagePricePerSqFt": 2551,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -1252,13 +1252,13 @@
     "lng": 78.26,
     "description": "Scenic Town in Uttarakhand.",
     "climate": {
-      "averageTempSummer": 45,
-      "averageTempWinter": 8,
-      "temperatureRange": "8-45\u00b0C",
+      "averageTempSummer": 41,
+      "averageTempWinter": 5,
+      "temperatureRange": "5-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 602
+      "annualRainfall": 654
     },
-    "aqi": 45,
+    "aqi": 55,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -1268,7 +1268,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3353,
+      "averagePricePerSqFt": 3947,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -1293,12 +1293,12 @@
     "description": "Scenic Town in Uttarakhand.",
     "climate": {
       "averageTempSummer": 24,
-      "averageTempWinter": 4,
-      "temperatureRange": "4-24\u00b0C",
+      "averageTempWinter": 2,
+      "temperatureRange": "2-24\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 979
+      "annualRainfall": 744
     },
-    "aqi": 40,
+    "aqi": 45,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -1308,7 +1308,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4164,
+      "averagePricePerSqFt": 6024,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -1332,13 +1332,13 @@
     "lng": 79.45,
     "description": "Scenic Town in Uttarakhand.",
     "climate": {
-      "averageTempSummer": 25,
-      "averageTempWinter": 2,
-      "temperatureRange": "2-25\u00b0C",
+      "averageTempSummer": 24,
+      "averageTempWinter": 4,
+      "temperatureRange": "4-24\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 849
+      "annualRainfall": 862
     },
-    "aqi": 35,
+    "aqi": 40,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -1347,7 +1347,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4952,
+      "averagePricePerSqFt": 4854,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -1372,12 +1372,12 @@
     "description": "Growing City in Uttar Pradesh.",
     "climate": {
       "averageTempSummer": 44,
-      "averageTempWinter": 5,
-      "temperatureRange": "5-44\u00b0C",
+      "averageTempWinter": 8,
+      "temperatureRange": "8-44\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 667
+      "annualRainfall": 749
     },
-    "aqi": 240,
+    "aqi": 200,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -1387,7 +1387,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8585,
+      "averagePricePerSqFt": 7964,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -1411,13 +1411,13 @@
     "lng": 72.87,
     "description": "Major Metro in Maharashtra.",
     "climate": {
-      "averageTempSummer": 32,
-      "averageTempWinter": 24,
-      "temperatureRange": "24-32\u00b0C",
+      "averageTempSummer": 35,
+      "averageTempWinter": 25,
+      "temperatureRange": "25-35\u00b0C",
       "humidity": "High",
-      "annualRainfall": 862
+      "annualRainfall": 755
     },
-    "aqi": 180,
+    "aqi": 145,
     "healthcare": {
       "hospitalCount": 45,
       "score": 9.0,
@@ -1433,7 +1433,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 26406,
+      "averagePricePerSqFt": 37373,
       "currency": "INR"
     },
     "costOfLiving": "High",
@@ -1458,12 +1458,12 @@
     "description": "Major Metro in Maharashtra.",
     "climate": {
       "averageTempSummer": 35,
-      "averageTempWinter": 25,
-      "temperatureRange": "25-35\u00b0C",
+      "averageTempWinter": 22,
+      "temperatureRange": "22-35\u00b0C",
       "humidity": "High",
-      "annualRainfall": 825
+      "annualRainfall": 913
     },
-    "aqi": 180,
+    "aqi": 145,
     "healthcare": {
       "hospitalCount": 45,
       "score": 9.0,
@@ -1479,7 +1479,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 36366,
+      "averagePricePerSqFt": 42434,
       "currency": "INR"
     },
     "costOfLiving": "High",
@@ -1503,13 +1503,13 @@
     "lng": 72.97,
     "description": "Growing City in Maharashtra.",
     "climate": {
-      "averageTempSummer": 36,
-      "averageTempWinter": 23,
-      "temperatureRange": "23-36\u00b0C",
+      "averageTempSummer": 35,
+      "averageTempWinter": 22,
+      "temperatureRange": "22-35\u00b0C",
       "humidity": "High",
-      "annualRainfall": 811
+      "annualRainfall": 883
     },
-    "aqi": 220,
+    "aqi": 135,
     "healthcare": {
       "hospitalCount": 20,
       "score": 9.0,
@@ -1520,7 +1520,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8039,
+      "averagePricePerSqFt": 7882,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -1544,13 +1544,13 @@
     "lng": 73.13,
     "description": "Scenic Town in Maharashtra.",
     "climate": {
-      "averageTempSummer": 35,
+      "averageTempSummer": 34,
       "averageTempWinter": 23,
-      "temperatureRange": "23-35\u00b0C",
+      "temperatureRange": "23-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 847
+      "annualRainfall": 774
     },
-    "aqi": 180,
+    "aqi": 135,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -1560,7 +1560,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2838,
+      "averagePricePerSqFt": 4202,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -1584,13 +1584,13 @@
     "lng": 73.85,
     "description": "Major Metro in Maharashtra.",
     "climate": {
-      "averageTempSummer": 34,
-      "averageTempWinter": 15,
-      "temperatureRange": "15-34\u00b0C",
+      "averageTempSummer": 33,
+      "averageTempWinter": 14,
+      "temperatureRange": "14-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 838
+      "annualRainfall": 795
     },
-    "aqi": 140,
+    "aqi": 115,
     "healthcare": {
       "hospitalCount": 35,
       "score": 9.0,
@@ -1604,7 +1604,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 15712,
+      "averagePricePerSqFt": 20841,
       "currency": "INR"
     },
     "costOfLiving": "High",
@@ -1628,13 +1628,13 @@
     "lng": 73.79,
     "description": "Growing City in Maharashtra.",
     "climate": {
-      "averageTempSummer": 34,
+      "averageTempSummer": 32,
       "averageTempWinter": 14,
-      "temperatureRange": "14-34\u00b0C",
+      "temperatureRange": "14-32\u00b0C",
       "humidity": "High",
-      "annualRainfall": 968
+      "annualRainfall": 705
     },
-    "aqi": 140,
+    "aqi": 120,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -1644,7 +1644,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7683,
+      "averagePricePerSqFt": 7023,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -1668,13 +1668,13 @@
     "lng": 79.08,
     "description": "Growing City in Maharashtra.",
     "climate": {
-      "averageTempSummer": 41,
-      "averageTempWinter": 15,
-      "temperatureRange": "15-41\u00b0C",
+      "averageTempSummer": 39,
+      "averageTempWinter": 16,
+      "temperatureRange": "16-39\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 888
+      "annualRainfall": 814
     },
-    "aqi": 140,
+    "aqi": 130,
     "healthcare": {
       "hospitalCount": 30,
       "score": 9.0,
@@ -1687,7 +1687,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7429,
+      "averagePricePerSqFt": 8519,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -1711,13 +1711,13 @@
     "lng": 73.78,
     "description": "Growing City in Maharashtra.",
     "climate": {
-      "averageTempSummer": 33,
-      "averageTempWinter": 17,
-      "temperatureRange": "17-33\u00b0C",
+      "averageTempSummer": 32,
+      "averageTempWinter": 13,
+      "temperatureRange": "13-32\u00b0C",
       "humidity": "High",
-      "annualRainfall": 823
+      "annualRainfall": 750
     },
-    "aqi": 120,
+    "aqi": 95,
     "healthcare": {
       "hospitalCount": 25,
       "score": 9.0,
@@ -1729,7 +1729,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6928,
+      "averagePricePerSqFt": 8006,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -1753,13 +1753,13 @@
     "lng": 75.34,
     "description": "Scenic Town in Maharashtra.",
     "climate": {
-      "averageTempSummer": 36,
-      "averageTempWinter": 13,
-      "temperatureRange": "13-36\u00b0C",
+      "averageTempSummer": 33,
+      "averageTempWinter": 16,
+      "temperatureRange": "16-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 702
+      "annualRainfall": 918
     },
-    "aqi": 130,
+    "aqi": 120,
     "healthcare": {
       "hospitalCount": 20,
       "score": 9.0,
@@ -1770,7 +1770,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3390,
+      "averagePricePerSqFt": 3882,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -1795,12 +1795,12 @@
     "description": "Major Metro in Gujarat.",
     "climate": {
       "averageTempSummer": 41,
-      "averageTempWinter": 16,
-      "temperatureRange": "16-41\u00b0C",
+      "averageTempWinter": 14,
+      "temperatureRange": "14-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 900
+      "annualRainfall": 840
     },
-    "aqi": 180,
+    "aqi": 150,
     "healthcare": {
       "hospitalCount": 40,
       "score": 9.0,
@@ -1815,7 +1815,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 22400,
+      "averagePricePerSqFt": 23366,
       "currency": "INR"
     },
     "costOfLiving": "High",
@@ -1839,13 +1839,13 @@
     "lng": 72.63,
     "description": "Scenic Town in Gujarat.",
     "climate": {
-      "averageTempSummer": 39,
-      "averageTempWinter": 16,
-      "temperatureRange": "16-39\u00b0C",
+      "averageTempSummer": 40,
+      "averageTempWinter": 15,
+      "temperatureRange": "15-40\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 868
+      "annualRainfall": 821
     },
-    "aqi": 126,
+    "aqi": 110,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -1855,7 +1855,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4164,
+      "averagePricePerSqFt": 3314,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -1879,13 +1879,13 @@
     "lng": 72.83,
     "description": "Growing City in Gujarat.",
     "climate": {
-      "averageTempSummer": 40,
+      "averageTempSummer": 38,
       "averageTempWinter": 15,
-      "temperatureRange": "15-40\u00b0C",
+      "temperatureRange": "15-38\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 741
+      "annualRainfall": 969
     },
-    "aqi": 160,
+    "aqi": 130,
     "healthcare": {
       "hospitalCount": 25,
       "score": 9.0,
@@ -1897,7 +1897,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5712,
+      "averagePricePerSqFt": 5372,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -1921,13 +1921,13 @@
     "lng": 73.18,
     "description": "Growing City in Gujarat.",
     "climate": {
-      "averageTempSummer": 40,
-      "averageTempWinter": 14,
-      "temperatureRange": "14-40\u00b0C",
+      "averageTempSummer": 39,
+      "averageTempWinter": 17,
+      "temperatureRange": "17-39\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 969
+      "annualRainfall": 932
     },
-    "aqi": 150,
+    "aqi": 125,
     "healthcare": {
       "hospitalCount": 25,
       "score": 9.0,
@@ -1939,7 +1939,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8051,
+      "averagePricePerSqFt": 8682,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -1963,13 +1963,13 @@
     "lng": 70.8,
     "description": "Growing City in Gujarat.",
     "climate": {
-      "averageTempSummer": 40,
-      "averageTempWinter": 14,
-      "temperatureRange": "14-40\u00b0C",
+      "averageTempSummer": 41,
+      "averageTempWinter": 16,
+      "temperatureRange": "16-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 827
+      "annualRainfall": 924
     },
-    "aqi": 150,
+    "aqi": 115,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -1979,7 +1979,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8406,
+      "averagePricePerSqFt": 8020,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -2003,13 +2003,13 @@
     "lng": 70.05,
     "description": "Scenic Town in Gujarat.",
     "climate": {
-      "averageTempSummer": 39,
-      "averageTempWinter": 14,
-      "temperatureRange": "14-39\u00b0C",
+      "averageTempSummer": 41,
+      "averageTempWinter": 15,
+      "temperatureRange": "15-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 921
+      "annualRainfall": 786
     },
-    "aqi": 123,
+    "aqi": 100,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -2018,7 +2018,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4808,
+      "averagePricePerSqFt": 4827,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2042,13 +2042,13 @@
     "lng": 72.15,
     "description": "Scenic Town in Gujarat.",
     "climate": {
-      "averageTempSummer": 42,
-      "averageTempWinter": 14,
-      "temperatureRange": "14-42\u00b0C",
+      "averageTempSummer": 41,
+      "averageTempWinter": 15,
+      "temperatureRange": "15-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 799
+      "annualRainfall": 997
     },
-    "aqi": 133,
+    "aqi": 95,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -2057,7 +2057,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3781,
+      "averagePricePerSqFt": 4157,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2081,13 +2081,13 @@
     "lng": 73.82,
     "description": "Scenic Town in Goa.",
     "climate": {
-      "averageTempSummer": 32,
-      "averageTempWinter": 21,
-      "temperatureRange": "21-32\u00b0C",
+      "averageTempSummer": 33,
+      "averageTempWinter": 23,
+      "temperatureRange": "23-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2665
+      "annualRainfall": 2616
     },
-    "aqi": 60,
+    "aqi": 55,
     "healthcare": {
       "hospitalCount": 25,
       "score": 9.0,
@@ -2099,7 +2099,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4235,
+      "averagePricePerSqFt": 3349,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2123,13 +2123,13 @@
     "lng": 73.81,
     "description": "Scenic Town in Goa.",
     "climate": {
-      "averageTempSummer": 36,
-      "averageTempWinter": 23,
-      "temperatureRange": "23-36\u00b0C",
+      "averageTempSummer": 32,
+      "averageTempWinter": 25,
+      "temperatureRange": "25-32\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2517
+      "annualRainfall": 2472
     },
-    "aqi": 127,
+    "aqi": 60,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -2138,7 +2138,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3213,
+      "averagePricePerSqFt": 4165,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2162,13 +2162,13 @@
     "lng": 73.96,
     "description": "Scenic Town in Goa.",
     "climate": {
-      "averageTempSummer": 36,
-      "averageTempWinter": 23,
-      "temperatureRange": "23-36\u00b0C",
+      "averageTempSummer": 33,
+      "averageTempWinter": 24,
+      "temperatureRange": "24-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2437
+      "annualRainfall": 2419
     },
-    "aqi": 110,
+    "aqi": 55,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -2177,7 +2177,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3368,
+      "averagePricePerSqFt": 4906,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2201,13 +2201,13 @@
     "lng": 74.24,
     "description": "Scenic Town in Maharashtra.",
     "climate": {
-      "averageTempSummer": 34,
-      "averageTempWinter": 16,
-      "temperatureRange": "16-34\u00b0C",
+      "averageTempSummer": 35,
+      "averageTempWinter": 17,
+      "temperatureRange": "17-35\u00b0C",
       "humidity": "High",
-      "annualRainfall": 968
+      "annualRainfall": 914
     },
-    "aqi": 80,
+    "aqi": 85,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -2217,7 +2217,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4176,
+      "averagePricePerSqFt": 4316,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2241,13 +2241,13 @@
     "lng": 75.9,
     "description": "Scenic Town in Maharashtra.",
     "climate": {
-      "averageTempSummer": 34,
-      "averageTempWinter": 23,
-      "temperatureRange": "23-34\u00b0C",
+      "averageTempSummer": 35,
+      "averageTempWinter": 25,
+      "temperatureRange": "25-35\u00b0C",
       "humidity": "High",
-      "annualRainfall": 815
+      "annualRainfall": 898
     },
-    "aqi": 90,
+    "aqi": 100,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -2256,7 +2256,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4803,
+      "averagePricePerSqFt": 3631,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2284,9 +2284,9 @@
       "averageTempWinter": 17,
       "temperatureRange": "17-40\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 710
+      "annualRainfall": 806
     },
-    "aqi": 129,
+    "aqi": 139,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -2295,7 +2295,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3297,
+      "averagePricePerSqFt": 3630,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2319,13 +2319,13 @@
     "lng": 73.4,
     "description": "Scenic Town in Maharashtra.",
     "climate": {
-      "averageTempSummer": 36,
+      "averageTempSummer": 32,
       "averageTempWinter": 15,
-      "temperatureRange": "15-36\u00b0C",
+      "temperatureRange": "15-32\u00b0C",
       "humidity": "High",
-      "annualRainfall": 968
+      "annualRainfall": 921
     },
-    "aqi": 45,
+    "aqi": 65,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -2334,7 +2334,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4199,
+      "averagePricePerSqFt": 4976,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2358,13 +2358,13 @@
     "lng": 73.64,
     "description": "Scenic Town in Maharashtra.",
     "climate": {
-      "averageTempSummer": 25,
-      "averageTempWinter": 4,
-      "temperatureRange": "4-25\u00b0C",
+      "averageTempSummer": 26,
+      "averageTempWinter": 2,
+      "temperatureRange": "2-26\u00b0C",
       "humidity": "High",
-      "annualRainfall": 959
+      "annualRainfall": 781
     },
-    "aqi": 35,
+    "aqi": 40,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -2373,7 +2373,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5126,
+      "averagePricePerSqFt": 5993,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2397,13 +2397,13 @@
     "lng": 72.87,
     "description": "Scenic Town in Maharashtra.",
     "climate": {
-      "averageTempSummer": 34,
-      "averageTempWinter": 24,
-      "temperatureRange": "24-34\u00b0C",
+      "averageTempSummer": 35,
+      "averageTempWinter": 22,
+      "temperatureRange": "22-35\u00b0C",
       "humidity": "High",
-      "annualRainfall": 889
+      "annualRainfall": 828
     },
-    "aqi": 110,
+    "aqi": 65,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -2412,7 +2412,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4060,
+      "averagePricePerSqFt": 3199,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2436,13 +2436,13 @@
     "lng": 72.83,
     "description": "Scenic Town in Daman and Diu.",
     "climate": {
-      "averageTempSummer": 42,
-      "averageTempWinter": 13,
-      "temperatureRange": "13-42\u00b0C",
+      "averageTempSummer": 39,
+      "averageTempWinter": 15,
+      "temperatureRange": "15-39\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 943
+      "annualRainfall": 885
     },
-    "aqi": 119,
+    "aqi": 95,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -2451,7 +2451,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4685,
+      "averagePricePerSqFt": 4915,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2475,13 +2475,13 @@
     "lng": 77.59,
     "description": "Major Metro in Karnataka.",
     "climate": {
-      "averageTempSummer": 33,
-      "averageTempWinter": 13,
-      "temperatureRange": "13-33\u00b0C",
+      "averageTempSummer": 34,
+      "averageTempWinter": 14,
+      "temperatureRange": "14-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 819
+      "annualRainfall": 999
     },
-    "aqi": 85,
+    "aqi": 90,
     "healthcare": {
       "hospitalCount": 45,
       "score": 9.0,
@@ -2497,7 +2497,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 16648,
+      "averagePricePerSqFt": 13622,
       "currency": "INR"
     },
     "costOfLiving": "High",
@@ -2521,13 +2521,13 @@
     "lng": 77.75,
     "description": "Growing City in Karnataka.",
     "climate": {
-      "averageTempSummer": 35,
-      "averageTempWinter": 14,
-      "temperatureRange": "14-35\u00b0C",
+      "averageTempSummer": 33,
+      "averageTempWinter": 16,
+      "temperatureRange": "16-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 915
+      "annualRainfall": 723
     },
-    "aqi": 85,
+    "aqi": 90,
     "healthcare": {
       "hospitalCount": 45,
       "score": 9.0,
@@ -2543,7 +2543,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5409,
+      "averagePricePerSqFt": 8299,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -2567,13 +2567,13 @@
     "lng": 76.63,
     "description": "Growing City in Karnataka.",
     "climate": {
-      "averageTempSummer": 33,
-      "averageTempWinter": 16,
-      "temperatureRange": "16-33\u00b0C",
+      "averageTempSummer": 35,
+      "averageTempWinter": 14,
+      "temperatureRange": "14-35\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2493
+      "annualRainfall": 2648
     },
-    "aqi": 60,
+    "aqi": 65,
     "healthcare": {
       "hospitalCount": 30,
       "score": 9.0,
@@ -2586,7 +2586,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7126,
+      "averagePricePerSqFt": 8101,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -2611,10 +2611,10 @@
     "description": "Growing City in Karnataka.",
     "climate": {
       "averageTempSummer": 34,
-      "averageTempWinter": 21,
-      "temperatureRange": "21-34\u00b0C",
+      "averageTempWinter": 22,
+      "temperatureRange": "22-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2489
+      "annualRainfall": 2433
     },
     "aqi": 60,
     "healthcare": {
@@ -2628,7 +2628,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5642,
+      "averagePricePerSqFt": 7639,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -2652,13 +2652,13 @@
     "lng": 74.74,
     "description": "Scenic Town in Karnataka.",
     "climate": {
-      "averageTempSummer": 32,
-      "averageTempWinter": 23,
-      "temperatureRange": "23-32\u00b0C",
+      "averageTempSummer": 36,
+      "averageTempWinter": 25,
+      "temperatureRange": "25-36\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2686
+      "annualRainfall": 2673
     },
-    "aqi": 116,
+    "aqi": 55,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -2667,7 +2667,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4922,
+      "averagePricePerSqFt": 2554,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2691,13 +2691,13 @@
     "lng": 75.12,
     "description": "Scenic Town in Karnataka.",
     "climate": {
-      "averageTempSummer": 36,
+      "averageTempSummer": 32,
       "averageTempWinter": 16,
-      "temperatureRange": "16-36\u00b0C",
+      "temperatureRange": "16-32\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2501
+      "annualRainfall": 2463
     },
-    "aqi": 70,
+    "aqi": 75,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -2707,7 +2707,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4806,
+      "averagePricePerSqFt": 4693,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2731,13 +2731,13 @@
     "lng": 74.49,
     "description": "Scenic Town in Karnataka.",
     "climate": {
-      "averageTempSummer": 33,
+      "averageTempSummer": 32,
       "averageTempWinter": 14,
-      "temperatureRange": "14-33\u00b0C",
+      "temperatureRange": "14-32\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2534
+      "annualRainfall": 2681
     },
-    "aqi": 60,
+    "aqi": 70,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -2747,7 +2747,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3612,
+      "averagePricePerSqFt": 2575,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2772,12 +2772,12 @@
     "description": "Major Metro in Tamil Nadu.",
     "climate": {
       "averageTempSummer": 35,
-      "averageTempWinter": 22,
-      "temperatureRange": "22-35\u00b0C",
+      "averageTempWinter": 24,
+      "temperatureRange": "24-35\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 1519
+      "annualRainfall": 1547
     },
-    "aqi": 90,
+    "aqi": 95,
     "healthcare": {
       "hospitalCount": 40,
       "score": 9.0,
@@ -2792,7 +2792,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 12375,
+      "averagePricePerSqFt": 14809,
       "currency": "INR"
     },
     "costOfLiving": "High",
@@ -2816,13 +2816,13 @@
     "lng": 76.95,
     "description": "Growing City in Tamil Nadu.",
     "climate": {
-      "averageTempSummer": 34,
-      "averageTempWinter": 23,
-      "temperatureRange": "23-34\u00b0C",
+      "averageTempSummer": 33,
+      "averageTempWinter": 25,
+      "temperatureRange": "25-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2556
+      "annualRainfall": 2562
     },
-    "aqi": 70,
+    "aqi": 75,
     "healthcare": {
       "hospitalCount": 30,
       "score": 9.0,
@@ -2835,7 +2835,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5358,
+      "averagePricePerSqFt": 6482,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -2859,11 +2859,11 @@
     "lng": 78.11,
     "description": "Growing City in Tamil Nadu.",
     "climate": {
-      "averageTempSummer": 33,
+      "averageTempSummer": 34,
       "averageTempWinter": 24,
-      "temperatureRange": "24-33\u00b0C",
+      "temperatureRange": "24-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 955
+      "annualRainfall": 961
     },
     "aqi": 80,
     "healthcare": {
@@ -2876,7 +2876,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5155,
+      "averagePricePerSqFt": 7973,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -2900,11 +2900,11 @@
     "lng": 78.7,
     "description": "Growing City in Tamil Nadu.",
     "climate": {
-      "averageTempSummer": 35,
-      "averageTempWinter": 23,
-      "temperatureRange": "23-35\u00b0C",
+      "averageTempSummer": 34,
+      "averageTempWinter": 22,
+      "temperatureRange": "22-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 982
+      "annualRainfall": 922
     },
     "aqi": 70,
     "healthcare": {
@@ -2917,7 +2917,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8497,
+      "averagePricePerSqFt": 8173,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -2942,12 +2942,12 @@
     "description": "Scenic Town in Tamil Nadu.",
     "climate": {
       "averageTempSummer": 35,
-      "averageTempWinter": 22,
-      "temperatureRange": "22-35\u00b0C",
+      "averageTempWinter": 23,
+      "temperatureRange": "23-35\u00b0C",
       "humidity": "High",
-      "annualRainfall": 736
+      "annualRainfall": 887
     },
-    "aqi": 70,
+    "aqi": 85,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -2957,7 +2957,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2653,
+      "averagePricePerSqFt": 3610,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2981,13 +2981,13 @@
     "lng": 79.13,
     "description": "Scenic Town in Tamil Nadu.",
     "climate": {
-      "averageTempSummer": 35,
-      "averageTempWinter": 25,
-      "temperatureRange": "25-35\u00b0C",
+      "averageTempSummer": 33,
+      "averageTempWinter": 24,
+      "temperatureRange": "24-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 843
+      "annualRainfall": 869
     },
-    "aqi": 60,
+    "aqi": 80,
     "healthcare": {
       "hospitalCount": 20,
       "score": 9.0,
@@ -2998,7 +2998,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3431,
+      "averagePricePerSqFt": 3280,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3022,13 +3022,13 @@
     "lng": 77.75,
     "description": "Scenic Town in Tamil Nadu.",
     "climate": {
-      "averageTempSummer": 34,
-      "averageTempWinter": 23,
-      "temperatureRange": "23-34\u00b0C",
+      "averageTempSummer": 32,
+      "averageTempWinter": 21,
+      "temperatureRange": "21-32\u00b0C",
       "humidity": "High",
-      "annualRainfall": 906
+      "annualRainfall": 751
     },
-    "aqi": 135,
+    "aqi": 65,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -3038,7 +3038,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3145,
+      "averagePricePerSqFt": 4022,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3062,13 +3062,13 @@
     "lng": 77.82,
     "description": "Scenic Town in Tamil Nadu.",
     "climate": {
-      "averageTempSummer": 36,
-      "averageTempWinter": 15,
-      "temperatureRange": "15-36\u00b0C",
+      "averageTempSummer": 33,
+      "averageTempWinter": 13,
+      "temperatureRange": "13-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 957
+      "annualRainfall": 742
     },
-    "aqi": 129,
+    "aqi": 85,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -3078,7 +3078,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4509,
+      "averagePricePerSqFt": 3586,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3102,13 +3102,13 @@
     "lng": 78.48,
     "description": "Major Metro in Telangana.",
     "climate": {
-      "averageTempSummer": 32,
+      "averageTempSummer": 33,
       "averageTempWinter": 17,
-      "temperatureRange": "17-32\u00b0C",
+      "temperatureRange": "17-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 752
+      "annualRainfall": 739
     },
-    "aqi": 130,
+    "aqi": 110,
     "healthcare": {
       "hospitalCount": 40,
       "score": 9.0,
@@ -3123,7 +3123,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 17918,
+      "averagePricePerSqFt": 13256,
       "currency": "INR"
     },
     "costOfLiving": "High",
@@ -3147,13 +3147,13 @@
     "lng": 78.5,
     "description": "Major Metro in Telangana.",
     "climate": {
-      "averageTempSummer": 35,
-      "averageTempWinter": 15,
-      "temperatureRange": "15-35\u00b0C",
+      "averageTempSummer": 33,
+      "averageTempWinter": 17,
+      "temperatureRange": "17-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 882
+      "annualRainfall": 761
     },
-    "aqi": 130,
+    "aqi": 110,
     "healthcare": {
       "hospitalCount": 20,
       "score": 9.0,
@@ -3164,7 +3164,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 19812,
+      "averagePricePerSqFt": 14494,
       "currency": "INR"
     },
     "costOfLiving": "High",
@@ -3188,13 +3188,13 @@
     "lng": 79.59,
     "description": "Scenic Town in Telangana.",
     "climate": {
-      "averageTempSummer": 34,
-      "averageTempWinter": 23,
-      "temperatureRange": "23-34\u00b0C",
+      "averageTempSummer": 35,
+      "averageTempWinter": 25,
+      "temperatureRange": "25-35\u00b0C",
       "humidity": "High",
-      "annualRainfall": 891
+      "annualRainfall": 719
     },
-    "aqi": 130,
+    "aqi": 95,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -3204,7 +3204,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4762,
+      "averagePricePerSqFt": 3865,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3228,13 +3228,13 @@
     "lng": 83.21,
     "description": "Growing City in Andhra Pradesh.",
     "climate": {
-      "averageTempSummer": 32,
-      "averageTempWinter": 22,
-      "temperatureRange": "22-32\u00b0C",
+      "averageTempSummer": 36,
+      "averageTempWinter": 24,
+      "temperatureRange": "24-36\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 1655
+      "annualRainfall": 1580
     },
-    "aqi": 280,
+    "aqi": 220,
     "healthcare": {
       "hospitalCount": 30,
       "score": 9.0,
@@ -3247,7 +3247,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5595,
+      "averagePricePerSqFt": 5920,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -3272,12 +3272,12 @@
     "description": "Growing City in Andhra Pradesh.",
     "climate": {
       "averageTempSummer": 35,
-      "averageTempWinter": 24,
-      "temperatureRange": "24-35\u00b0C",
+      "averageTempWinter": 22,
+      "temperatureRange": "22-35\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 1494
+      "annualRainfall": 1633
     },
-    "aqi": 110,
+    "aqi": 105,
     "healthcare": {
       "hospitalCount": 25,
       "score": 9.0,
@@ -3289,7 +3289,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5867,
+      "averagePricePerSqFt": 7971,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -3314,12 +3314,12 @@
     "description": "Scenic Town in Andhra Pradesh.",
     "climate": {
       "averageTempSummer": 35,
-      "averageTempWinter": 21,
-      "temperatureRange": "21-35\u00b0C",
+      "averageTempWinter": 24,
+      "temperatureRange": "24-35\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 1624
+      "annualRainfall": 1424
     },
-    "aqi": 110,
+    "aqi": 100,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -3329,7 +3329,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4605,
+      "averagePricePerSqFt": 4944,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3353,13 +3353,13 @@
     "lng": 81.78,
     "description": "Scenic Town in Andhra Pradesh.",
     "climate": {
-      "averageTempSummer": 34,
-      "averageTempWinter": 23,
-      "temperatureRange": "23-34\u00b0C",
+      "averageTempSummer": 35,
+      "averageTempWinter": 24,
+      "temperatureRange": "24-35\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 1590
+      "annualRainfall": 1407
     },
-    "aqi": 134,
+    "aqi": 95,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -3369,7 +3369,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4930,
+      "averagePricePerSqFt": 3733,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3397,9 +3397,9 @@
       "averageTempWinter": 22,
       "temperatureRange": "22-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 781
+      "annualRainfall": 891
     },
-    "aqi": 70,
+    "aqi": 80,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -3409,7 +3409,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4147,
+      "averagePricePerSqFt": 3254,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3437,9 +3437,9 @@
       "averageTempWinter": 23,
       "temperatureRange": "23-32\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2523
+      "annualRainfall": 2463
     },
-    "aqi": 45,
+    "aqi": 55,
     "healthcare": {
       "hospitalCount": 30,
       "score": 9.0,
@@ -3452,7 +3452,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6207,
+      "averagePricePerSqFt": 5020,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -3476,13 +3476,13 @@
     "lng": 76.93,
     "description": "Growing City in Kerala.",
     "climate": {
-      "averageTempSummer": 32,
-      "averageTempWinter": 23,
-      "temperatureRange": "23-32\u00b0C",
+      "averageTempSummer": 34,
+      "averageTempWinter": 22,
+      "temperatureRange": "22-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2422
+      "annualRainfall": 2602
     },
-    "aqi": 142,
+    "aqi": 50,
     "healthcare": {
       "hospitalCount": 5,
       "score": 5.0,
@@ -3491,7 +3491,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7658,
+      "averagePricePerSqFt": 6865,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -3515,13 +3515,13 @@
     "lng": 75.78,
     "description": "Growing City in Kerala.",
     "climate": {
-      "averageTempSummer": 33,
-      "averageTempWinter": 25,
-      "temperatureRange": "25-33\u00b0C",
+      "averageTempSummer": 35,
+      "averageTempWinter": 22,
+      "temperatureRange": "22-35\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2642
+      "annualRainfall": 2536
     },
-    "aqi": 45,
+    "aqi": 55,
     "healthcare": {
       "hospitalCount": 20,
       "score": 9.0,
@@ -3532,7 +3532,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5333,
+      "averagePricePerSqFt": 5845,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -3556,13 +3556,13 @@
     "lng": 76.21,
     "description": "Scenic Town in Kerala.",
     "climate": {
-      "averageTempSummer": 32,
-      "averageTempWinter": 23,
-      "temperatureRange": "23-32\u00b0C",
+      "averageTempSummer": 33,
+      "averageTempWinter": 21,
+      "temperatureRange": "21-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2439
+      "annualRainfall": 2667
     },
-    "aqi": 40,
+    "aqi": 50,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -3572,7 +3572,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4272,
+      "averagePricePerSqFt": 3365,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3596,13 +3596,13 @@
     "lng": 79.8,
     "description": "Growing City in Puducherry.",
     "climate": {
-      "averageTempSummer": 35,
-      "averageTempWinter": 25,
-      "temperatureRange": "25-35\u00b0C",
+      "averageTempSummer": 36,
+      "averageTempWinter": 24,
+      "temperatureRange": "24-36\u00b0C",
       "humidity": "High",
-      "annualRainfall": 778
+      "annualRainfall": 967
     },
-    "aqi": 60,
+    "aqi": 50,
     "healthcare": {
       "hospitalCount": 25,
       "score": 9.0,
@@ -3614,7 +3614,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5137,
+      "averagePricePerSqFt": 8148,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -3642,9 +3642,9 @@
       "averageTempWinter": 2,
       "temperatureRange": "2-24\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2551
+      "annualRainfall": 2578
     },
-    "aqi": 25,
+    "aqi": 30,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -3654,7 +3654,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4625,
+      "averagePricePerSqFt": 4854,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3678,13 +3678,13 @@
     "lng": 77.05,
     "description": "Scenic Town in Kerala.",
     "climate": {
-      "averageTempSummer": 26,
-      "averageTempWinter": 4,
-      "temperatureRange": "4-26\u00b0C",
+      "averageTempSummer": 25,
+      "averageTempWinter": 1,
+      "temperatureRange": "1-25\u00b0C",
       "humidity": "High",
-      "annualRainfall": 779
+      "annualRainfall": 952
     },
-    "aqi": 20,
+    "aqi": 25,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -3694,7 +3694,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4190,
+      "averagePricePerSqFt": 5714,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3719,12 +3719,12 @@
     "description": "Scenic Town in Tamil Nadu.",
     "climate": {
       "averageTempSummer": 26,
-      "averageTempWinter": 3,
-      "temperatureRange": "3-26\u00b0C",
+      "averageTempWinter": 1,
+      "temperatureRange": "1-26\u00b0C",
       "humidity": "High",
-      "annualRainfall": 731
+      "annualRainfall": 886
     },
-    "aqi": 20,
+    "aqi": 25,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -3734,7 +3734,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4194,
+      "averagePricePerSqFt": 5612,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3758,13 +3758,13 @@
     "lng": 75.73,
     "description": "Scenic Town in Karnataka.",
     "climate": {
-      "averageTempSummer": 24,
-      "averageTempWinter": 2,
-      "temperatureRange": "2-24\u00b0C",
+      "averageTempSummer": 25,
+      "averageTempWinter": 0,
+      "temperatureRange": "0-25\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2592
+      "annualRainfall": 2462
     },
-    "aqi": 25,
+    "aqi": 30,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -3774,7 +3774,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6229,
+      "averagePricePerSqFt": 5270,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3799,12 +3799,12 @@
     "description": "Scenic Town in Kerala.",
     "climate": {
       "averageTempSummer": 34,
-      "averageTempWinter": 23,
-      "temperatureRange": "23-34\u00b0C",
+      "averageTempWinter": 22,
+      "temperatureRange": "22-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2654
+      "annualRainfall": 2489
     },
-    "aqi": 35,
+    "aqi": 45,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -3813,7 +3813,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4900,
+      "averagePricePerSqFt": 4349,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3841,9 +3841,9 @@
       "averageTempWinter": 16,
       "temperatureRange": "16-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2412
+      "annualRainfall": 2492
     },
-    "aqi": 25,
+    "aqi": 30,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -3853,7 +3853,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3298,
+      "averagePricePerSqFt": 4420,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3877,13 +3877,13 @@
     "lng": 78.2,
     "description": "Scenic Town in Tamil Nadu.",
     "climate": {
-      "averageTempSummer": 25,
-      "averageTempWinter": 1,
-      "temperatureRange": "1-25\u00b0C",
+      "averageTempSummer": 23,
+      "averageTempWinter": 4,
+      "temperatureRange": "4-23\u00b0C",
       "humidity": "High",
-      "annualRainfall": 838
+      "annualRainfall": 744
     },
-    "aqi": 30,
+    "aqi": 35,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -3892,7 +3892,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5776,
+      "averagePricePerSqFt": 4659,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3916,13 +3916,13 @@
     "lng": 88.36,
     "description": "Major Metro in West Bengal.",
     "climate": {
-      "averageTempSummer": 40,
-      "averageTempWinter": 17,
-      "temperatureRange": "17-40\u00b0C",
+      "averageTempSummer": 41,
+      "averageTempWinter": 15,
+      "temperatureRange": "15-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2535
+      "annualRainfall": 2672
     },
-    "aqi": 210,
+    "aqi": 160,
     "healthcare": {
       "hospitalCount": 35,
       "score": 9.0,
@@ -3936,7 +3936,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 12967,
+      "averagePricePerSqFt": 18555,
       "currency": "INR"
     },
     "costOfLiving": "High",
@@ -3964,9 +3964,9 @@
       "averageTempWinter": 15,
       "temperatureRange": "15-40\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2618
+      "annualRainfall": 2496
     },
-    "aqi": 260,
+    "aqi": 170,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -3976,7 +3976,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8379,
+      "averagePricePerSqFt": 8184,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -4000,13 +4000,13 @@
     "lng": 88.41,
     "description": "Growing City in West Bengal.",
     "climate": {
-      "averageTempSummer": 39,
-      "averageTempWinter": 17,
-      "temperatureRange": "17-39\u00b0C",
+      "averageTempSummer": 40,
+      "averageTempWinter": 15,
+      "temperatureRange": "15-40\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2411
+      "annualRainfall": 2457
     },
-    "aqi": 156,
+    "aqi": 155,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -4016,7 +4016,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7484,
+      "averagePricePerSqFt": 7407,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -4040,13 +4040,13 @@
     "lng": 87.32,
     "description": "Growing City in West Bengal.",
     "climate": {
-      "averageTempSummer": 39,
+      "averageTempSummer": 40,
       "averageTempWinter": 17,
-      "temperatureRange": "17-39\u00b0C",
+      "temperatureRange": "17-40\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 761
+      "annualRainfall": 870
     },
-    "aqi": 220,
+    "aqi": 165,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -4056,7 +4056,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7870,
+      "averagePricePerSqFt": 5544,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -4080,13 +4080,13 @@
     "lng": 88.39,
     "description": "Scenic Town in West Bengal.",
     "climate": {
-      "averageTempSummer": 41,
+      "averageTempSummer": 42,
       "averageTempWinter": 8,
-      "temperatureRange": "8-41\u00b0C",
+      "temperatureRange": "8-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2514
+      "annualRainfall": 2545
     },
-    "aqi": 130,
+    "aqi": 120,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -4096,7 +4096,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3652,
+      "averagePricePerSqFt": 3007,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4120,13 +4120,13 @@
     "lng": 88.26,
     "description": "Scenic Town in West Bengal.",
     "climate": {
-      "averageTempSummer": 24,
-      "averageTempWinter": 2,
-      "temperatureRange": "2-24\u00b0C",
+      "averageTempSummer": 27,
+      "averageTempWinter": 1,
+      "temperatureRange": "1-27\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2546
+      "annualRainfall": 2592
     },
-    "aqi": 40,
+    "aqi": 45,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -4136,7 +4136,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4589,
+      "averagePricePerSqFt": 5524,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4160,13 +4160,13 @@
     "lng": 88.47,
     "description": "Scenic Town in West Bengal.",
     "climate": {
-      "averageTempSummer": 23,
-      "averageTempWinter": 1,
-      "temperatureRange": "1-23\u00b0C",
+      "averageTempSummer": 24,
+      "averageTempWinter": 3,
+      "temperatureRange": "3-24\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2542
+      "annualRainfall": 2672
     },
-    "aqi": 35,
+    "aqi": 40,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -4175,7 +4175,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5293,
+      "averagePricePerSqFt": 6217,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4199,13 +4199,13 @@
     "lng": 85.82,
     "description": "Growing City in Odisha.",
     "climate": {
-      "averageTempSummer": 40,
-      "averageTempWinter": 14,
-      "temperatureRange": "14-40\u00b0C",
+      "averageTempSummer": 39,
+      "averageTempWinter": 15,
+      "temperatureRange": "15-39\u00b0C",
       "humidity": "High",
-      "annualRainfall": 954
+      "annualRainfall": 768
     },
-    "aqi": 110,
+    "aqi": 105,
     "healthcare": {
       "hospitalCount": 30,
       "score": 9.0,
@@ -4218,7 +4218,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5933,
+      "averagePricePerSqFt": 6532,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -4242,13 +4242,13 @@
     "lng": 85.88,
     "description": "Scenic Town in Odisha.",
     "climate": {
-      "averageTempSummer": 42,
-      "averageTempWinter": 16,
-      "temperatureRange": "16-42\u00b0C",
+      "averageTempSummer": 41,
+      "averageTempWinter": 13,
+      "temperatureRange": "13-41\u00b0C",
       "humidity": "High",
-      "annualRainfall": 725
+      "annualRainfall": 749
     },
-    "aqi": 120,
+    "aqi": 110,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -4258,7 +4258,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4563,
+      "averagePricePerSqFt": 3982,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4283,12 +4283,12 @@
     "description": "Scenic Town in Odisha.",
     "climate": {
       "averageTempSummer": 33,
-      "averageTempWinter": 24,
-      "temperatureRange": "24-33\u00b0C",
+      "averageTempWinter": 22,
+      "temperatureRange": "22-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 1626
+      "annualRainfall": 1597
     },
-    "aqi": 132,
+    "aqi": 85,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -4297,7 +4297,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3458,
+      "averagePricePerSqFt": 3939,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4321,13 +4321,13 @@
     "lng": 84.85,
     "description": "Scenic Town in Odisha.",
     "climate": {
-      "averageTempSummer": 41,
-      "averageTempWinter": 14,
-      "temperatureRange": "14-41\u00b0C",
+      "averageTempSummer": 40,
+      "averageTempWinter": 16,
+      "temperatureRange": "16-40\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 750
+      "annualRainfall": 868
     },
-    "aqi": 140,
+    "aqi": 130,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -4337,7 +4337,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4512,
+      "averagePricePerSqFt": 3744,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4362,12 +4362,12 @@
     "description": "Growing City in Bihar.",
     "climate": {
       "averageTempSummer": 41,
-      "averageTempWinter": 15,
-      "temperatureRange": "15-41\u00b0C",
+      "averageTempWinter": 14,
+      "temperatureRange": "14-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 739
+      "annualRainfall": 844
     },
-    "aqi": 280,
+    "aqi": 220,
     "healthcare": {
       "hospitalCount": 25,
       "score": 9.0,
@@ -4379,7 +4379,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8850,
+      "averagePricePerSqFt": 8559,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -4403,13 +4403,13 @@
     "lng": 85.0,
     "description": "Scenic Town in Bihar.",
     "climate": {
-      "averageTempSummer": 39,
-      "averageTempWinter": 15,
-      "temperatureRange": "15-39\u00b0C",
+      "averageTempSummer": 40,
+      "averageTempWinter": 14,
+      "temperatureRange": "14-40\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 794
+      "annualRainfall": 789
     },
-    "aqi": 124,
+    "aqi": 180,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -4418,7 +4418,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4023,
+      "averagePricePerSqFt": 4955,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4442,13 +4442,13 @@
     "lng": 85.3,
     "description": "Growing City in Jharkhand.",
     "climate": {
-      "averageTempSummer": 33,
-      "averageTempWinter": 15,
-      "temperatureRange": "15-33\u00b0C",
+      "averageTempSummer": 34,
+      "averageTempWinter": 17,
+      "temperatureRange": "17-34\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 824
+      "annualRainfall": 731
     },
-    "aqi": 150,
+    "aqi": 140,
     "healthcare": {
       "hospitalCount": 25,
       "score": 9.0,
@@ -4460,7 +4460,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7817,
+      "averagePricePerSqFt": 7527,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -4484,13 +4484,13 @@
     "lng": 86.2,
     "description": "Growing City in Jharkhand.",
     "climate": {
-      "averageTempSummer": 38,
+      "averageTempSummer": 41,
       "averageTempWinter": 14,
-      "temperatureRange": "14-38\u00b0C",
+      "temperatureRange": "14-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 727
+      "annualRainfall": 912
     },
-    "aqi": 160,
+    "aqi": 145,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -4500,7 +4500,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7357,
+      "averagePricePerSqFt": 5790,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -4528,9 +4528,9 @@
       "averageTempWinter": 7,
       "temperatureRange": "7-43\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2610
+      "annualRainfall": 2657
     },
-    "aqi": 180,
+    "aqi": 165,
     "healthcare": {
       "hospitalCount": 30,
       "score": 9.0,
@@ -4543,7 +4543,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8098,
+      "averagePricePerSqFt": 5599,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -4571,9 +4571,9 @@
       "averageTempWinter": 3,
       "temperatureRange": "3-25\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2678
+      "annualRainfall": 2473
     },
-    "aqi": 30,
+    "aqi": 25,
     "healthcare": {
       "hospitalCount": 20,
       "score": 9.0,
@@ -4584,7 +4584,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6213,
+      "averagePricePerSqFt": 4120,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4608,11 +4608,11 @@
     "lng": 88.61,
     "description": "Scenic Town in Sikkim.",
     "climate": {
-      "averageTempSummer": 25,
-      "averageTempWinter": 3,
-      "temperatureRange": "3-25\u00b0C",
+      "averageTempSummer": 24,
+      "averageTempWinter": 2,
+      "temperatureRange": "2-24\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2560
+      "annualRainfall": 2442
     },
     "aqi": 30,
     "healthcare": {
@@ -4624,7 +4624,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6102,
+      "averagePricePerSqFt": 4926,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4648,13 +4648,13 @@
     "lng": 93.93,
     "description": "Scenic Town in Manipur.",
     "climate": {
-      "averageTempSummer": 33,
-      "averageTempWinter": 14,
-      "temperatureRange": "14-33\u00b0C",
+      "averageTempSummer": 34,
+      "averageTempWinter": 17,
+      "temperatureRange": "17-34\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2460
+      "annualRainfall": 2597
     },
-    "aqi": 60,
+    "aqi": 45,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -4664,7 +4664,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2671,
+      "averagePricePerSqFt": 3369,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4689,12 +4689,12 @@
     "description": "Scenic Town in Tripura.",
     "climate": {
       "averageTempSummer": 40,
-      "averageTempWinter": 16,
-      "temperatureRange": "16-40\u00b0C",
+      "averageTempWinter": 17,
+      "temperatureRange": "17-40\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2500
+      "annualRainfall": 2578
     },
-    "aqi": 70,
+    "aqi": 80,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -4704,7 +4704,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3076,
+      "averagePricePerSqFt": 3057,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4728,11 +4728,11 @@
     "lng": 92.71,
     "description": "Scenic Town in Mizoram.",
     "climate": {
-      "averageTempSummer": 24,
-      "averageTempWinter": 0,
-      "temperatureRange": "0-24\u00b0C",
+      "averageTempSummer": 26,
+      "averageTempWinter": 2,
+      "temperatureRange": "2-26\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2439
+      "annualRainfall": 2464
     },
     "aqi": 25,
     "healthcare": {
@@ -4744,7 +4744,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5656,
+      "averagePricePerSqFt": 4966,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4768,13 +4768,13 @@
     "lng": 77.41,
     "description": "Growing City in Madhya Pradesh.",
     "climate": {
-      "averageTempSummer": 32,
+      "averageTempSummer": 35,
       "averageTempWinter": 13,
-      "temperatureRange": "13-32\u00b0C",
+      "temperatureRange": "13-35\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 991
+      "annualRainfall": 932
     },
-    "aqi": 140,
+    "aqi": 130,
     "healthcare": {
       "hospitalCount": 25,
       "score": 9.0,
@@ -4786,7 +4786,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8397,
+      "averagePricePerSqFt": 8064,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -4810,13 +4810,13 @@
     "lng": 75.85,
     "description": "Growing City in Madhya Pradesh.",
     "climate": {
-      "averageTempSummer": 32,
-      "averageTempWinter": 17,
-      "temperatureRange": "17-32\u00b0C",
+      "averageTempSummer": 33,
+      "averageTempWinter": 14,
+      "temperatureRange": "14-33\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 899
+      "annualRainfall": 961
     },
-    "aqi": 140,
+    "aqi": 135,
     "healthcare": {
       "hospitalCount": 30,
       "score": 9.0,
@@ -4829,7 +4829,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8534,
+      "averagePricePerSqFt": 6288,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -4853,13 +4853,13 @@
     "lng": 78.18,
     "description": "Growing City in Madhya Pradesh.",
     "climate": {
-      "averageTempSummer": 42,
-      "averageTempWinter": 5,
-      "temperatureRange": "5-42\u00b0C",
+      "averageTempSummer": 43,
+      "averageTempWinter": 4,
+      "temperatureRange": "4-43\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 843
+      "annualRainfall": 900
     },
-    "aqi": 230,
+    "aqi": 170,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -4869,7 +4869,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8967,
+      "averagePricePerSqFt": 7584,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -4893,13 +4893,13 @@
     "lng": 79.98,
     "description": "Growing City in Madhya Pradesh.",
     "climate": {
-      "averageTempSummer": 38,
-      "averageTempWinter": 16,
-      "temperatureRange": "16-38\u00b0C",
+      "averageTempSummer": 39,
+      "averageTempWinter": 17,
+      "temperatureRange": "17-39\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 910
+      "annualRainfall": 760
     },
-    "aqi": 120,
+    "aqi": 110,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -4909,7 +4909,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6078,
+      "averagePricePerSqFt": 7759,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -4933,13 +4933,13 @@
     "lng": 75.78,
     "description": "Scenic Town in Madhya Pradesh.",
     "climate": {
-      "averageTempSummer": 40,
-      "averageTempWinter": 16,
-      "temperatureRange": "16-40\u00b0C",
+      "averageTempSummer": 39,
+      "averageTempWinter": 15,
+      "temperatureRange": "15-39\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 804
+      "annualRainfall": 821
     },
-    "aqi": 160,
+    "aqi": 125,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -4949,7 +4949,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3717,
+      "averagePricePerSqFt": 4450,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4973,13 +4973,13 @@
     "lng": 81.62,
     "description": "Growing City in Chhattisgarh.",
     "climate": {
-      "averageTempSummer": 42,
-      "averageTempWinter": 14,
-      "temperatureRange": "14-42\u00b0C",
+      "averageTempSummer": 40,
+      "averageTempWinter": 13,
+      "temperatureRange": "13-40\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 797
+      "annualRainfall": 971
     },
-    "aqi": 160,
+    "aqi": 140,
     "healthcare": {
       "hospitalCount": 25,
       "score": 9.0,
@@ -4991,7 +4991,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5745,
+      "averagePricePerSqFt": 5916,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -5015,13 +5015,13 @@
     "lng": 82.14,
     "description": "Scenic Town in Chhattisgarh.",
     "climate": {
-      "averageTempSummer": 41,
+      "averageTempSummer": 39,
       "averageTempWinter": 17,
-      "temperatureRange": "17-41\u00b0C",
+      "temperatureRange": "17-39\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 719
+      "annualRainfall": 779
     },
-    "aqi": 133,
+    "aqi": 130,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -5031,7 +5031,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2549,
+      "averagePricePerSqFt": 2620,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -5055,13 +5055,13 @@
     "lng": 81.38,
     "description": "Growing City in Chhattisgarh.",
     "climate": {
-      "averageTempSummer": 38,
+      "averageTempSummer": 41,
       "averageTempWinter": 16,
-      "temperatureRange": "16-38\u00b0C",
+      "temperatureRange": "16-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 779
+      "annualRainfall": 987
     },
-    "aqi": 170,
+    "aqi": 150,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -5070,7 +5070,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8977,
+      "averagePricePerSqFt": 5777,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
