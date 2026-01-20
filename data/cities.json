@@ -10,7 +10,7 @@
       "averageTempWinter": 6,
       "temperatureRange": "6-44\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 573
+      "annualRainfall": 548
     },
     "aqi": 255,
     "healthcare": {
@@ -27,7 +27,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 18977,
+      "averagePricePerSqFt": 15254,
       "currency": "INR"
     },
     "costOfLiving": "High",
@@ -55,7 +55,7 @@
       "averageTempWinter": 6,
       "temperatureRange": "6-45\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 559
+      "annualRainfall": 781
     },
     "aqi": 240,
     "healthcare": {
@@ -71,7 +71,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 17237,
+      "averagePricePerSqFt": 21495,
       "currency": "INR"
     },
     "costOfLiving": "High",
@@ -99,7 +99,7 @@
       "averageTempWinter": 7,
       "temperatureRange": "7-44\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 585
+      "annualRainfall": 679
     },
     "aqi": 250,
     "healthcare": {
@@ -115,7 +115,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 22282,
+      "averagePricePerSqFt": 13915,
       "currency": "INR"
     },
     "costOfLiving": "High",
@@ -143,7 +143,7 @@
       "averageTempWinter": 6,
       "temperatureRange": "6-44\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 787
+      "annualRainfall": 735
     },
     "aqi": 250,
     "healthcare": {
@@ -159,7 +159,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7267,
+      "averagePricePerSqFt": 6773,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -187,7 +187,7 @@
       "averageTempWinter": 7,
       "temperatureRange": "7-43\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 585
+      "annualRainfall": 612
     },
     "aqi": 265,
     "healthcare": {
@@ -201,7 +201,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8165,
+      "averagePricePerSqFt": 7275,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -229,7 +229,7 @@
       "averageTempWinter": 7,
       "temperatureRange": "7-45\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 792
+      "annualRainfall": 600
     },
     "aqi": 245,
     "healthcare": {
@@ -244,7 +244,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7902,
+      "averagePricePerSqFt": 6074,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -272,9 +272,9 @@
       "averageTempWinter": 5,
       "temperatureRange": "5-40\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 511
+      "annualRainfall": 720
     },
-    "aqi": 142,
+    "aqi": 140,
     "healthcare": {
       "hospitalCount": 30,
       "score": 9.0,
@@ -287,7 +287,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5643,
+      "averagePricePerSqFt": 5520,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -315,9 +315,9 @@
       "averageTempWinter": 5,
       "temperatureRange": "5-40\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 524
+      "annualRainfall": 597
     },
-    "aqi": 167,
+    "aqi": 177,
     "healthcare": {
       "hospitalCount": 20,
       "score": 9.0,
@@ -328,7 +328,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8974,
+      "averagePricePerSqFt": 5791,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -356,9 +356,9 @@
       "averageTempWinter": 5,
       "temperatureRange": "5-39\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 644
+      "annualRainfall": 726
     },
-    "aqi": 150,
+    "aqi": 151,
     "healthcare": {
       "hospitalCount": 15,
       "score": 7.5,
@@ -368,7 +368,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5477,
+      "averagePricePerSqFt": 5068,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -396,7 +396,7 @@
       "averageTempWinter": 6,
       "temperatureRange": "6-36\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 690
+      "annualRainfall": 720
     },
     "aqi": 120,
     "healthcare": {
@@ -410,7 +410,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5201,
+      "averagePricePerSqFt": 6622,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -438,7 +438,7 @@
       "averageTempWinter": -1,
       "temperatureRange": "-1-26\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 843
+      "annualRainfall": 717
     },
     "aqi": 35,
     "healthcare": {
@@ -450,7 +450,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5986,
+      "averagePricePerSqFt": 6035,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -478,7 +478,7 @@
       "averageTempWinter": -4,
       "temperatureRange": "-4-25\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 993
+      "annualRainfall": 964
     },
     "aqi": 30,
     "healthcare": {
@@ -490,7 +490,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4623,
+      "averagePricePerSqFt": 4431,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -518,7 +518,7 @@
       "averageTempWinter": 3,
       "temperatureRange": "3-30\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 865
+      "annualRainfall": 932
     },
     "aqi": 35,
     "healthcare": {
@@ -530,7 +530,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4645,
+      "averagePricePerSqFt": 5201,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -558,7 +558,7 @@
       "averageTempWinter": 8,
       "temperatureRange": "8-43\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 867
+      "annualRainfall": 984
     },
     "aqi": 160,
     "healthcare": {
@@ -574,7 +574,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6360,
+      "averagePricePerSqFt": 6839,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -602,9 +602,9 @@
       "averageTempWinter": 15,
       "temperatureRange": "15-35\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 964
+      "annualRainfall": 946
     },
-    "aqi": 115,
+    "aqi": 129,
     "healthcare": {
       "hospitalCount": 20,
       "score": 9.0,
@@ -615,7 +615,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4751,
+      "averagePricePerSqFt": 4463,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -643,7 +643,7 @@
       "averageTempWinter": 9,
       "temperatureRange": "9-44\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 963
+      "annualRainfall": 796
     },
     "aqi": 155,
     "healthcare": {
@@ -656,7 +656,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4355,
+      "averagePricePerSqFt": 4153,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -684,7 +684,7 @@
       "averageTempWinter": 10,
       "temperatureRange": "10-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 958
+      "annualRainfall": 893
     },
     "aqi": 140,
     "healthcare": {
@@ -696,7 +696,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3811,
+      "averagePricePerSqFt": 3117,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -724,7 +724,7 @@
       "averageTempWinter": 7,
       "temperatureRange": "7-43\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 960
+      "annualRainfall": 913
     },
     "aqi": 190,
     "healthcare": {
@@ -739,7 +739,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7726,
+      "averagePricePerSqFt": 8976,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -767,7 +767,7 @@
       "averageTempWinter": 8,
       "temperatureRange": "8-44\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 925
+      "annualRainfall": 870
     },
     "aqi": 170,
     "healthcare": {
@@ -780,7 +780,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4831,
+      "averagePricePerSqFt": 4006,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -808,7 +808,7 @@
       "averageTempWinter": 6,
       "temperatureRange": "6-45\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 871
+      "annualRainfall": 719
     },
     "aqi": 185,
     "healthcare": {
@@ -821,7 +821,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2936,
+      "averagePricePerSqFt": 4454,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -849,7 +849,7 @@
       "averageTempWinter": 3,
       "temperatureRange": "3-43\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 716
+      "annualRainfall": 754
     },
     "aqi": 170,
     "healthcare": {
@@ -863,7 +863,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8261,
+      "averagePricePerSqFt": 7130,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -891,7 +891,7 @@
       "averageTempWinter": 4,
       "temperatureRange": "4-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 633
+      "annualRainfall": 576
     },
     "aqi": 175,
     "healthcare": {
@@ -906,7 +906,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6895,
+      "averagePricePerSqFt": 5308,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -934,7 +934,7 @@
       "averageTempWinter": 4,
       "temperatureRange": "4-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 761
+      "annualRainfall": 720
     },
     "aqi": 175,
     "healthcare": {
@@ -947,7 +947,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8970,
+      "averagePricePerSqFt": 8918,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -975,7 +975,7 @@
       "averageTempWinter": 5,
       "temperatureRange": "5-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 666
+      "annualRainfall": 508
     },
     "aqi": 165,
     "healthcare": {
@@ -987,7 +987,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3467,
+      "averagePricePerSqFt": 4800,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -1015,7 +1015,7 @@
       "averageTempWinter": -3,
       "temperatureRange": "-3-30\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 974
+      "annualRainfall": 776
     },
     "aqi": 55,
     "healthcare": {
@@ -1027,7 +1027,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7986,
+      "averagePricePerSqFt": 8379,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -1055,7 +1055,7 @@
       "averageTempWinter": 5,
       "temperatureRange": "5-40\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 635
+      "annualRainfall": 567
     },
     "aqi": 110,
     "healthcare": {
@@ -1067,7 +1067,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3202,
+      "averagePricePerSqFt": 4015,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -1095,7 +1095,7 @@
       "averageTempWinter": 8,
       "temperatureRange": "8-45\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 939
+      "annualRainfall": 745
     },
     "aqi": 185,
     "healthcare": {
@@ -1107,7 +1107,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2669,
+      "averagePricePerSqFt": 2802,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -1135,7 +1135,7 @@
       "averageTempWinter": 7,
       "temperatureRange": "7-44\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 885
+      "annualRainfall": 813
     },
     "aqi": 195,
     "healthcare": {
@@ -1148,7 +1148,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5533,
+      "averagePricePerSqFt": 6098,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -1176,7 +1176,7 @@
       "averageTempWinter": 11,
       "temperatureRange": "11-45\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 731
+      "annualRainfall": 841
     },
     "aqi": 150,
     "healthcare": {
@@ -1188,7 +1188,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4962,
+      "averagePricePerSqFt": 2850,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -1216,7 +1216,7 @@
       "averageTempWinter": 7,
       "temperatureRange": "7-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 554
+      "annualRainfall": 642
     },
     "aqi": 110,
     "healthcare": {
@@ -1228,7 +1228,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4247,
+      "averagePricePerSqFt": 3728,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -1256,7 +1256,7 @@
       "averageTempWinter": 7,
       "temperatureRange": "7-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 712
+      "annualRainfall": 687
     },
     "aqi": 55,
     "healthcare": {
@@ -1268,7 +1268,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4472,
+      "averagePricePerSqFt": 4480,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -1296,7 +1296,7 @@
       "averageTempWinter": 1,
       "temperatureRange": "1-24\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 777
+      "annualRainfall": 867
     },
     "aqi": 45,
     "healthcare": {
@@ -1308,7 +1308,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5697,
+      "averagePricePerSqFt": 5821,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -1336,7 +1336,7 @@
       "averageTempWinter": 2,
       "temperatureRange": "2-25\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 995
+      "annualRainfall": 929
     },
     "aqi": 40,
     "healthcare": {
@@ -1347,7 +1347,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6001,
+      "averagePricePerSqFt": 6011,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -1375,7 +1375,7 @@
       "averageTempWinter": 6,
       "temperatureRange": "6-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 750
+      "annualRainfall": 777
     },
     "aqi": 200,
     "healthcare": {
@@ -1387,7 +1387,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7918,
+      "averagePricePerSqFt": 7119,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -1415,7 +1415,7 @@
       "averageTempWinter": 19,
       "temperatureRange": "19-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 934
+      "annualRainfall": 787
     },
     "aqi": 145,
     "healthcare": {
@@ -1433,7 +1433,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 41919,
+      "averagePricePerSqFt": 34981,
       "currency": "INR"
     },
     "costOfLiving": "High",
@@ -1461,7 +1461,7 @@
       "averageTempWinter": 20,
       "temperatureRange": "20-35\u00b0C",
       "humidity": "High",
-      "annualRainfall": 896
+      "annualRainfall": 898
     },
     "aqi": 145,
     "healthcare": {
@@ -1479,7 +1479,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 33931,
+      "averagePricePerSqFt": 32729,
       "currency": "INR"
     },
     "costOfLiving": "High",
@@ -1507,7 +1507,7 @@
       "averageTempWinter": 20,
       "temperatureRange": "20-36\u00b0C",
       "humidity": "High",
-      "annualRainfall": 802
+      "annualRainfall": 761
     },
     "aqi": 135,
     "healthcare": {
@@ -1520,7 +1520,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6258,
+      "averagePricePerSqFt": 5123,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -1548,7 +1548,7 @@
       "averageTempWinter": 18,
       "temperatureRange": "18-38\u00b0C",
       "humidity": "High",
-      "annualRainfall": 787
+      "annualRainfall": 989
     },
     "aqi": 135,
     "healthcare": {
@@ -1560,7 +1560,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4901,
+      "averagePricePerSqFt": 3632,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -1588,7 +1588,7 @@
       "averageTempWinter": 11,
       "temperatureRange": "11-37\u00b0C",
       "humidity": "High",
-      "annualRainfall": 811
+      "annualRainfall": 991
     },
     "aqi": 115,
     "healthcare": {
@@ -1604,7 +1604,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 20272,
+      "averagePricePerSqFt": 17057,
       "currency": "INR"
     },
     "costOfLiving": "High",
@@ -1632,7 +1632,7 @@
       "averageTempWinter": 12,
       "temperatureRange": "12-37\u00b0C",
       "humidity": "High",
-      "annualRainfall": 857
+      "annualRainfall": 926
     },
     "aqi": 120,
     "healthcare": {
@@ -1644,7 +1644,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5704,
+      "averagePricePerSqFt": 6262,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -1672,7 +1672,7 @@
       "averageTempWinter": 10,
       "temperatureRange": "10-44\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 916
+      "annualRainfall": 937
     },
     "aqi": 130,
     "healthcare": {
@@ -1687,7 +1687,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7669,
+      "averagePricePerSqFt": 7688,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -1715,7 +1715,7 @@
       "averageTempWinter": 9,
       "temperatureRange": "9-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 974
+      "annualRainfall": 730
     },
     "aqi": 95,
     "healthcare": {
@@ -1729,7 +1729,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8075,
+      "averagePricePerSqFt": 8351,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -1757,7 +1757,7 @@
       "averageTempWinter": 10,
       "temperatureRange": "10-40\u00b0C",
       "humidity": "High",
-      "annualRainfall": 987
+      "annualRainfall": 744
     },
     "aqi": 120,
     "healthcare": {
@@ -1770,7 +1770,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3502,
+      "averagePricePerSqFt": 4462,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -1798,7 +1798,7 @@
       "averageTempWinter": 13,
       "temperatureRange": "13-43\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 888
+      "annualRainfall": 719
     },
     "aqi": 150,
     "healthcare": {
@@ -1815,7 +1815,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 15656,
+      "averagePricePerSqFt": 19837,
       "currency": "INR"
     },
     "costOfLiving": "High",
@@ -1843,7 +1843,7 @@
       "averageTempWinter": 12,
       "temperatureRange": "12-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 770
+      "annualRainfall": 948
     },
     "aqi": 110,
     "healthcare": {
@@ -1855,7 +1855,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4296,
+      "averagePricePerSqFt": 3199,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -1883,7 +1883,7 @@
       "averageTempWinter": 18,
       "temperatureRange": "18-36\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 891
+      "annualRainfall": 800
     },
     "aqi": 130,
     "healthcare": {
@@ -1897,7 +1897,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8828,
+      "averagePricePerSqFt": 6573,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -1925,7 +1925,7 @@
       "averageTempWinter": 15,
       "temperatureRange": "15-40\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 955
+      "annualRainfall": 844
     },
     "aqi": 125,
     "healthcare": {
@@ -1939,7 +1939,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7915,
+      "averagePricePerSqFt": 8743,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -1967,7 +1967,7 @@
       "averageTempWinter": 13,
       "temperatureRange": "13-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 791
+      "annualRainfall": 957
     },
     "aqi": 115,
     "healthcare": {
@@ -1979,7 +1979,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8677,
+      "averagePricePerSqFt": 7581,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -2007,7 +2007,7 @@
       "averageTempWinter": 16,
       "temperatureRange": "16-37\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 760
+      "annualRainfall": 739
     },
     "aqi": 100,
     "healthcare": {
@@ -2018,7 +2018,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3417,
+      "averagePricePerSqFt": 4186,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2046,7 +2046,7 @@
       "averageTempWinter": 17,
       "temperatureRange": "17-38\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 948
+      "annualRainfall": 969
     },
     "aqi": 95,
     "healthcare": {
@@ -2057,7 +2057,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2980,
+      "averagePricePerSqFt": 2525,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2085,7 +2085,7 @@
       "averageTempWinter": 22,
       "temperatureRange": "22-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2672
+      "annualRainfall": 2404
     },
     "aqi": 55,
     "healthcare": {
@@ -2099,7 +2099,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4334,
+      "averagePricePerSqFt": 2994,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2127,7 +2127,7 @@
       "averageTempWinter": 23,
       "temperatureRange": "23-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2401
+      "annualRainfall": 2564
     },
     "aqi": 60,
     "healthcare": {
@@ -2138,7 +2138,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3200,
+      "averagePricePerSqFt": 3721,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2166,7 +2166,7 @@
       "averageTempWinter": 21,
       "temperatureRange": "21-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2420
+      "annualRainfall": 2544
     },
     "aqi": 55,
     "healthcare": {
@@ -2177,7 +2177,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2661,
+      "averagePricePerSqFt": 4088,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2205,7 +2205,7 @@
       "averageTempWinter": 15,
       "temperatureRange": "15-36\u00b0C",
       "humidity": "High",
-      "annualRainfall": 968
+      "annualRainfall": 797
     },
     "aqi": 85,
     "healthcare": {
@@ -2217,7 +2217,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4384,
+      "averagePricePerSqFt": 2998,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2245,7 +2245,7 @@
       "averageTempWinter": 14,
       "temperatureRange": "14-41\u00b0C",
       "humidity": "High",
-      "annualRainfall": 751
+      "annualRainfall": 935
     },
     "aqi": 100,
     "healthcare": {
@@ -2256,7 +2256,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3962,
+      "averagePricePerSqFt": 2945,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2284,9 +2284,9 @@
       "averageTempWinter": 15,
       "temperatureRange": "15-35\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 888
+      "annualRainfall": 727
     },
-    "aqi": 128,
+    "aqi": 129,
     "healthcare": {
       "hospitalCount": 10,
       "score": 7.5,
@@ -2295,7 +2295,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4644,
+      "averagePricePerSqFt": 4788,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2323,7 +2323,7 @@
       "averageTempWinter": 14,
       "temperatureRange": "14-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 977
+      "annualRainfall": 716
     },
     "aqi": 65,
     "healthcare": {
@@ -2334,7 +2334,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4755,
+      "averagePricePerSqFt": 4777,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2362,7 +2362,7 @@
       "averageTempWinter": 13,
       "temperatureRange": "13-28\u00b0C",
       "humidity": "High",
-      "annualRainfall": 752
+      "annualRainfall": 728
     },
     "aqi": 40,
     "healthcare": {
@@ -2373,7 +2373,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5275,
+      "averagePricePerSqFt": 6299,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2401,7 +2401,7 @@
       "averageTempWinter": 22,
       "temperatureRange": "22-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 778
+      "annualRainfall": 916
     },
     "aqi": 65,
     "healthcare": {
@@ -2412,7 +2412,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3248,
+      "averagePricePerSqFt": 3378,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2440,7 +2440,7 @@
       "averageTempWinter": 18,
       "temperatureRange": "18-34\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 765
+      "annualRainfall": 917
     },
     "aqi": 95,
     "healthcare": {
@@ -2451,7 +2451,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4174,
+      "averagePricePerSqFt": 3625,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2479,7 +2479,7 @@
       "averageTempWinter": 15,
       "temperatureRange": "15-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 863
+      "annualRainfall": 986
     },
     "aqi": 90,
     "healthcare": {
@@ -2497,7 +2497,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 16948,
+      "averagePricePerSqFt": 21395,
       "currency": "INR"
     },
     "costOfLiving": "High",
@@ -2525,7 +2525,7 @@
       "averageTempWinter": 16,
       "temperatureRange": "16-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 746
+      "annualRainfall": 997
     },
     "aqi": 90,
     "healthcare": {
@@ -2543,7 +2543,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6839,
+      "averagePricePerSqFt": 6150,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -2571,7 +2571,7 @@
       "averageTempWinter": 17,
       "temperatureRange": "17-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2602
+      "annualRainfall": 2415
     },
     "aqi": 65,
     "healthcare": {
@@ -2586,7 +2586,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6761,
+      "averagePricePerSqFt": 8387,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -2614,7 +2614,7 @@
       "averageTempWinter": 23,
       "temperatureRange": "23-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2558
+      "annualRainfall": 2462
     },
     "aqi": 60,
     "healthcare": {
@@ -2628,7 +2628,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8609,
+      "averagePricePerSqFt": 5924,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -2656,7 +2656,7 @@
       "averageTempWinter": 24,
       "temperatureRange": "24-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2429
+      "annualRainfall": 2689
     },
     "aqi": 55,
     "healthcare": {
@@ -2667,7 +2667,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4581,
+      "averagePricePerSqFt": 2854,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2695,7 +2695,7 @@
       "averageTempWinter": 16,
       "temperatureRange": "16-37\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2587
+      "annualRainfall": 2420
     },
     "aqi": 75,
     "healthcare": {
@@ -2707,7 +2707,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3433,
+      "averagePricePerSqFt": 4034,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2735,7 +2735,7 @@
       "averageTempWinter": 14,
       "temperatureRange": "14-35\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2670
+      "annualRainfall": 2664
     },
     "aqi": 70,
     "healthcare": {
@@ -2747,7 +2747,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4090,
+      "averagePricePerSqFt": 2721,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2775,7 +2775,7 @@
       "averageTempWinter": 22,
       "temperatureRange": "22-38\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 1600
+      "annualRainfall": 1508
     },
     "aqi": 95,
     "healthcare": {
@@ -2792,7 +2792,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 13045,
+      "averagePricePerSqFt": 17233,
       "currency": "INR"
     },
     "costOfLiving": "High",
@@ -2820,7 +2820,7 @@
       "averageTempWinter": 20,
       "temperatureRange": "20-36\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2478
+      "annualRainfall": 2488
     },
     "aqi": 75,
     "healthcare": {
@@ -2835,7 +2835,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6671,
+      "averagePricePerSqFt": 7050,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -2863,7 +2863,7 @@
       "averageTempWinter": 22,
       "temperatureRange": "22-39\u00b0C",
       "humidity": "High",
-      "annualRainfall": 822
+      "annualRainfall": 759
     },
     "aqi": 80,
     "healthcare": {
@@ -2876,7 +2876,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8089,
+      "averagePricePerSqFt": 8210,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -2904,7 +2904,7 @@
       "averageTempWinter": 23,
       "temperatureRange": "23-40\u00b0C",
       "humidity": "High",
-      "annualRainfall": 911
+      "annualRainfall": 779
     },
     "aqi": 70,
     "healthcare": {
@@ -2917,7 +2917,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6254,
+      "averagePricePerSqFt": 8860,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -2945,7 +2945,7 @@
       "averageTempWinter": 20,
       "temperatureRange": "20-38\u00b0C",
       "humidity": "High",
-      "annualRainfall": 864
+      "annualRainfall": 866
     },
     "aqi": 85,
     "healthcare": {
@@ -2957,7 +2957,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4340,
+      "averagePricePerSqFt": 3383,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -2985,7 +2985,7 @@
       "averageTempWinter": 19,
       "temperatureRange": "19-40\u00b0C",
       "humidity": "High",
-      "annualRainfall": 974
+      "annualRainfall": 960
     },
     "aqi": 80,
     "healthcare": {
@@ -2998,7 +2998,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3629,
+      "averagePricePerSqFt": 3977,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3026,7 +3026,7 @@
       "averageTempWinter": 23,
       "temperatureRange": "23-38\u00b0C",
       "humidity": "High",
-      "annualRainfall": 894
+      "annualRainfall": 821
     },
     "aqi": 65,
     "healthcare": {
@@ -3038,7 +3038,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4609,
+      "averagePricePerSqFt": 2917,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3066,7 +3066,7 @@
       "averageTempWinter": 16,
       "temperatureRange": "16-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 714
+      "annualRainfall": 720
     },
     "aqi": 85,
     "healthcare": {
@@ -3078,7 +3078,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4500,
+      "averagePricePerSqFt": 4085,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3106,7 +3106,7 @@
       "averageTempWinter": 15,
       "temperatureRange": "15-40\u00b0C",
       "humidity": "High",
-      "annualRainfall": 902
+      "annualRainfall": 748
     },
     "aqi": 110,
     "healthcare": {
@@ -3123,7 +3123,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 13583,
+      "averagePricePerSqFt": 20117,
       "currency": "INR"
     },
     "costOfLiving": "High",
@@ -3151,7 +3151,7 @@
       "averageTempWinter": 15,
       "temperatureRange": "15-40\u00b0C",
       "humidity": "High",
-      "annualRainfall": 734
+      "annualRainfall": 944
     },
     "aqi": 110,
     "healthcare": {
@@ -3164,7 +3164,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 19663,
+      "averagePricePerSqFt": 20134,
       "currency": "INR"
     },
     "costOfLiving": "High",
@@ -3192,7 +3192,7 @@
       "averageTempWinter": 16,
       "temperatureRange": "16-42\u00b0C",
       "humidity": "High",
-      "annualRainfall": 751
+      "annualRainfall": 994
     },
     "aqi": 95,
     "healthcare": {
@@ -3204,7 +3204,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2795,
+      "averagePricePerSqFt": 3292,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3232,7 +3232,7 @@
       "averageTempWinter": 21,
       "temperatureRange": "21-35\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 1577
+      "annualRainfall": 1460
     },
     "aqi": 220,
     "healthcare": {
@@ -3247,7 +3247,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6073,
+      "averagePricePerSqFt": 6026,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -3275,7 +3275,7 @@
       "averageTempWinter": 19,
       "temperatureRange": "19-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 1472
+      "annualRainfall": 1632
     },
     "aqi": 105,
     "healthcare": {
@@ -3289,7 +3289,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5984,
+      "averagePricePerSqFt": 6391,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -3317,7 +3317,7 @@
       "averageTempWinter": 18,
       "temperatureRange": "18-43\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 1680
+      "annualRainfall": 1453
     },
     "aqi": 100,
     "healthcare": {
@@ -3329,7 +3329,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3157,
+      "averagePricePerSqFt": 3639,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3357,7 +3357,7 @@
       "averageTempWinter": 19,
       "temperatureRange": "19-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 1403
+      "annualRainfall": 1548
     },
     "aqi": 95,
     "healthcare": {
@@ -3369,7 +3369,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4229,
+      "averagePricePerSqFt": 2903,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3397,7 +3397,7 @@
       "averageTempWinter": 18,
       "temperatureRange": "18-40\u00b0C",
       "humidity": "High",
-      "annualRainfall": 937
+      "annualRainfall": 802
     },
     "aqi": 80,
     "healthcare": {
@@ -3409,7 +3409,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2624,
+      "averagePricePerSqFt": 4644,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3437,7 +3437,7 @@
       "averageTempWinter": 23,
       "temperatureRange": "23-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2445
+      "annualRainfall": 2657
     },
     "aqi": 55,
     "healthcare": {
@@ -3452,7 +3452,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6414,
+      "averagePricePerSqFt": 7168,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -3480,7 +3480,7 @@
       "averageTempWinter": 23,
       "temperatureRange": "23-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2647
+      "annualRainfall": 2567
     },
     "aqi": 50,
     "healthcare": {
@@ -3491,7 +3491,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5221,
+      "averagePricePerSqFt": 8449,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -3519,7 +3519,7 @@
       "averageTempWinter": 23,
       "temperatureRange": "23-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2634
+      "annualRainfall": 2484
     },
     "aqi": 55,
     "healthcare": {
@@ -3532,7 +3532,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8147,
+      "averagePricePerSqFt": 7494,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -3560,7 +3560,7 @@
       "averageTempWinter": 23,
       "temperatureRange": "23-35\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2679
+      "annualRainfall": 2530
     },
     "aqi": 50,
     "healthcare": {
@@ -3572,7 +3572,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2663,
+      "averagePricePerSqFt": 4557,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3600,7 +3600,7 @@
       "averageTempWinter": 22,
       "temperatureRange": "22-36\u00b0C",
       "humidity": "High",
-      "annualRainfall": 892
+      "annualRainfall": 922
     },
     "aqi": 50,
     "healthcare": {
@@ -3614,7 +3614,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7398,
+      "averagePricePerSqFt": 8840,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -3642,7 +3642,7 @@
       "averageTempWinter": 5,
       "temperatureRange": "5-22\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2601
+      "annualRainfall": 2670
     },
     "aqi": 30,
     "healthcare": {
@@ -3654,7 +3654,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5496,
+      "averagePricePerSqFt": 5094,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3682,7 +3682,7 @@
       "averageTempWinter": 10,
       "temperatureRange": "10-24\u00b0C",
       "humidity": "High",
-      "annualRainfall": 956
+      "annualRainfall": 990
     },
     "aqi": 25,
     "healthcare": {
@@ -3694,7 +3694,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4118,
+      "averagePricePerSqFt": 6319,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3722,7 +3722,7 @@
       "averageTempWinter": 9,
       "temperatureRange": "9-21\u00b0C",
       "humidity": "High",
-      "annualRainfall": 791
+      "annualRainfall": 905
     },
     "aqi": 25,
     "healthcare": {
@@ -3734,7 +3734,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6178,
+      "averagePricePerSqFt": 5859,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3762,7 +3762,7 @@
       "averageTempWinter": 14,
       "temperatureRange": "14-28\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2439
+      "annualRainfall": 2514
     },
     "aqi": 30,
     "healthcare": {
@@ -3774,7 +3774,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5648,
+      "averagePricePerSqFt": 5087,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3802,7 +3802,7 @@
       "averageTempWinter": 24,
       "temperatureRange": "24-33\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2501
+      "annualRainfall": 2691
     },
     "aqi": 45,
     "healthcare": {
@@ -3813,7 +3813,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2662,
+      "averagePricePerSqFt": 4926,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3841,7 +3841,7 @@
       "averageTempWinter": 15,
       "temperatureRange": "15-29\u00b0C",
       "humidity": "High",
-      "annualRainfall": 2558
+      "annualRainfall": 2561
     },
     "aqi": 30,
     "healthcare": {
@@ -3853,7 +3853,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4755,
+      "averagePricePerSqFt": 3146,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3881,7 +3881,7 @@
       "averageTempWinter": 15,
       "temperatureRange": "15-30\u00b0C",
       "humidity": "High",
-      "annualRainfall": 912
+      "annualRainfall": 722
     },
     "aqi": 35,
     "healthcare": {
@@ -3892,7 +3892,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4584,
+      "averagePricePerSqFt": 6463,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -3920,7 +3920,7 @@
       "averageTempWinter": 13,
       "temperatureRange": "13-37\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2453
+      "annualRainfall": 2558
     },
     "aqi": 160,
     "healthcare": {
@@ -3936,7 +3936,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 24220,
+      "averagePricePerSqFt": 19023,
       "currency": "INR"
     },
     "costOfLiving": "High",
@@ -3964,7 +3964,7 @@
       "averageTempWinter": 13,
       "temperatureRange": "13-38\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2551
+      "annualRainfall": 2614
     },
     "aqi": 170,
     "healthcare": {
@@ -3976,7 +3976,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7254,
+      "averagePricePerSqFt": 5413,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -4004,7 +4004,7 @@
       "averageTempWinter": 15,
       "temperatureRange": "15-35\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2432
+      "annualRainfall": 2651
     },
     "aqi": 155,
     "healthcare": {
@@ -4016,7 +4016,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5542,
+      "averagePricePerSqFt": 7445,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -4044,7 +4044,7 @@
       "averageTempWinter": 10,
       "temperatureRange": "10-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 775
+      "annualRainfall": 823
     },
     "aqi": 165,
     "healthcare": {
@@ -4056,7 +4056,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6578,
+      "averagePricePerSqFt": 8892,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -4084,7 +4084,7 @@
       "averageTempWinter": 8,
       "temperatureRange": "8-34\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2578
+      "annualRainfall": 2650
     },
     "aqi": 120,
     "healthcare": {
@@ -4096,7 +4096,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3145,
+      "averagePricePerSqFt": 2835,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4124,7 +4124,7 @@
       "averageTempWinter": 2,
       "temperatureRange": "2-20\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2526
+      "annualRainfall": 2586
     },
     "aqi": 45,
     "healthcare": {
@@ -4136,7 +4136,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4537,
+      "averagePricePerSqFt": 4592,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4164,7 +4164,7 @@
       "averageTempWinter": 6,
       "temperatureRange": "6-25\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2576
+      "annualRainfall": 2683
     },
     "aqi": 40,
     "healthcare": {
@@ -4175,7 +4175,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4738,
+      "averagePricePerSqFt": 6309,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4203,7 +4203,7 @@
       "averageTempWinter": 15,
       "temperatureRange": "15-40\u00b0C",
       "humidity": "High",
-      "annualRainfall": 823
+      "annualRainfall": 842
     },
     "aqi": 105,
     "healthcare": {
@@ -4218,7 +4218,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5127,
+      "averagePricePerSqFt": 8692,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -4246,7 +4246,7 @@
       "averageTempWinter": 15,
       "temperatureRange": "15-40\u00b0C",
       "humidity": "High",
-      "annualRainfall": 756
+      "annualRainfall": 942
     },
     "aqi": 110,
     "healthcare": {
@@ -4258,7 +4258,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3497,
+      "averagePricePerSqFt": 4927,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4286,7 +4286,7 @@
       "averageTempWinter": 17,
       "temperatureRange": "17-34\u00b0C",
       "humidity": "High",
-      "annualRainfall": 1499
+      "annualRainfall": 1683
     },
     "aqi": 85,
     "healthcare": {
@@ -4297,7 +4297,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 2514,
+      "averagePricePerSqFt": 3516,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4325,7 +4325,7 @@
       "averageTempWinter": 11,
       "temperatureRange": "11-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 766
+      "annualRainfall": 812
     },
     "aqi": 130,
     "healthcare": {
@@ -4337,7 +4337,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4044,
+      "averagePricePerSqFt": 2565,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4365,7 +4365,7 @@
       "averageTempWinter": 9,
       "temperatureRange": "9-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 921
+      "annualRainfall": 803
     },
     "aqi": 220,
     "healthcare": {
@@ -4379,7 +4379,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5176,
+      "averagePricePerSqFt": 5853,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -4407,7 +4407,7 @@
       "averageTempWinter": 8,
       "temperatureRange": "8-43\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 790
+      "annualRainfall": 821
     },
     "aqi": 180,
     "healthcare": {
@@ -4418,7 +4418,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3653,
+      "averagePricePerSqFt": 4716,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4446,7 +4446,7 @@
       "averageTempWinter": 10,
       "temperatureRange": "10-38\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 887
+      "annualRainfall": 769
     },
     "aqi": 140,
     "healthcare": {
@@ -4460,7 +4460,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7283,
+      "averagePricePerSqFt": 5919,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -4488,7 +4488,7 @@
       "averageTempWinter": 12,
       "temperatureRange": "12-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 925
+      "annualRainfall": 742
     },
     "aqi": 145,
     "healthcare": {
@@ -4500,7 +4500,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8119,
+      "averagePricePerSqFt": 5084,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -4528,7 +4528,7 @@
       "averageTempWinter": 11,
       "temperatureRange": "11-35\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2437
+      "annualRainfall": 2522
     },
     "aqi": 165,
     "healthcare": {
@@ -4543,7 +4543,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 7574,
+      "averagePricePerSqFt": 6881,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -4571,7 +4571,7 @@
       "averageTempWinter": 4,
       "temperatureRange": "4-24\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2417
+      "annualRainfall": 2607
     },
     "aqi": 25,
     "healthcare": {
@@ -4584,7 +4584,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5862,
+      "averagePricePerSqFt": 5410,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4612,7 +4612,7 @@
       "averageTempWinter": 5,
       "temperatureRange": "5-22\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2674
+      "annualRainfall": 2511
     },
     "aqi": 30,
     "healthcare": {
@@ -4624,7 +4624,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6129,
+      "averagePricePerSqFt": 6089,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4652,7 +4652,7 @@
       "averageTempWinter": 4,
       "temperatureRange": "4-30\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2591
+      "annualRainfall": 2579
     },
     "aqi": 45,
     "healthcare": {
@@ -4664,7 +4664,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4389,
+      "averagePricePerSqFt": 4775,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4692,7 +4692,7 @@
       "averageTempWinter": 10,
       "temperatureRange": "10-34\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2659
+      "annualRainfall": 2661
     },
     "aqi": 80,
     "healthcare": {
@@ -4704,7 +4704,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4856,
+      "averagePricePerSqFt": 4735,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4732,7 +4732,7 @@
       "averageTempWinter": 8,
       "temperatureRange": "8-28\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 2644
+      "annualRainfall": 2481
     },
     "aqi": 25,
     "healthcare": {
@@ -4744,7 +4744,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4310,
+      "averagePricePerSqFt": 4681,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4772,7 +4772,7 @@
       "averageTempWinter": 9,
       "temperatureRange": "9-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 725
+      "annualRainfall": 700
     },
     "aqi": 130,
     "healthcare": {
@@ -4786,7 +4786,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 8186,
+      "averagePricePerSqFt": 6482,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -4814,7 +4814,7 @@
       "averageTempWinter": 10,
       "temperatureRange": "10-41\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 844
+      "annualRainfall": 816
     },
     "aqi": 135,
     "healthcare": {
@@ -4829,7 +4829,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5546,
+      "averagePricePerSqFt": 5745,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -4857,7 +4857,7 @@
       "averageTempWinter": 5,
       "temperatureRange": "5-46\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 946
+      "annualRainfall": 894
     },
     "aqi": 170,
     "healthcare": {
@@ -4869,7 +4869,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6430,
+      "averagePricePerSqFt": 5004,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -4897,7 +4897,7 @@
       "averageTempWinter": 8,
       "temperatureRange": "8-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 977
+      "annualRainfall": 991
     },
     "aqi": 110,
     "healthcare": {
@@ -4909,7 +4909,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6230,
+      "averagePricePerSqFt": 6261,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -4937,7 +4937,7 @@
       "averageTempWinter": 9,
       "temperatureRange": "9-42\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 724
+      "annualRainfall": 972
     },
     "aqi": 125,
     "healthcare": {
@@ -4949,7 +4949,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 3169,
+      "averagePricePerSqFt": 4372,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -4977,7 +4977,7 @@
       "averageTempWinter": 13,
       "temperatureRange": "13-43\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 749
+      "annualRainfall": 893
     },
     "aqi": 140,
     "healthcare": {
@@ -4991,7 +4991,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 5269,
+      "averagePricePerSqFt": 5836,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -5019,7 +5019,7 @@
       "averageTempWinter": 12,
       "temperatureRange": "12-44\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 777
+      "annualRainfall": 799
     },
     "aqi": 130,
     "healthcare": {
@@ -5031,7 +5031,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 4560,
+      "averagePricePerSqFt": 4270,
       "currency": "INR"
     },
     "costOfLiving": "Low",
@@ -5049,6 +5049,88 @@
     "id": 123
   },
   {
+    "name": "Raipur",
+    "state": "Chhattisgarh",
+    "lat": 21.25,
+    "lng": 81.62,
+    "description": "Growing City in Chhattisgarh.",
+    "climate": {
+      "averageTempSummer": 43,
+      "averageTempWinter": 13,
+      "temperatureRange": "13-43\u00b0C",
+      "humidity": "Moderate",
+      "annualRainfall": 892
+    },
+    "aqi": 140,
+    "healthcare": {
+      "hospitalCount": 25,
+      "score": 9.0,
+      "chains": [
+        "Ramkrishna",
+        "NH MMI",
+        "Balco",
+        "AIIMS"
+      ]
+    },
+    "realEstate": {
+      "averagePricePerSqFt": 7402,
+      "currency": "INR"
+    },
+    "costOfLiving": "Medium",
+    "nearestDomesticAirport": {
+      "name": "Swami Vivekananda (Raipur)",
+      "distance": 18,
+      "code": "RPR"
+    },
+    "nearestInternationalAirport": {
+      "name": "Dr. Babasaheb Ambedkar Intl (Nagpur)",
+      "distance": 333,
+      "code": "NAG"
+    },
+    "landscape": "Plain",
+    "id": 124
+  },
+  {
+    "name": "Bilaspur",
+    "state": "Chhattisgarh",
+    "lat": 22.07,
+    "lng": 82.14,
+    "description": "Scenic Town in Chhattisgarh.",
+    "climate": {
+      "averageTempSummer": 44,
+      "averageTempWinter": 12,
+      "temperatureRange": "12-44\u00b0C",
+      "humidity": "Moderate",
+      "annualRainfall": 912
+    },
+    "aqi": 130,
+    "healthcare": {
+      "hospitalCount": 15,
+      "score": 7.5,
+      "chains": [
+        "Apollo",
+        "CIMS"
+      ]
+    },
+    "realEstate": {
+      "averagePricePerSqFt": 4638,
+      "currency": "INR"
+    },
+    "costOfLiving": "Low",
+    "nearestDomesticAirport": {
+      "name": "Swami Vivekananda (Raipur)",
+      "distance": 133,
+      "code": "RPR"
+    },
+    "nearestInternationalAirport": {
+      "name": "Dr. Babasaheb Ambedkar Intl (Nagpur)",
+      "distance": 422,
+      "code": "NAG"
+    },
+    "landscape": "Plain",
+    "id": 125
+  },
+  {
     "name": "Bhilai",
     "state": "Chhattisgarh",
     "lat": 21.2,
@@ -5059,7 +5141,7 @@
       "averageTempWinter": 14,
       "temperatureRange": "14-43\u00b0C",
       "humidity": "Moderate",
-      "annualRainfall": 873
+      "annualRainfall": 888
     },
     "aqi": 150,
     "healthcare": {
@@ -5070,7 +5152,7 @@
       ]
     },
     "realEstate": {
-      "averagePricePerSqFt": 6866,
+      "averagePricePerSqFt": 8021,
       "currency": "INR"
     },
     "costOfLiving": "Medium",
@@ -5085,6 +5167,47 @@
       "code": "NAG"
     },
     "landscape": "Plain",
-    "id": 124
+    "id": 126
+  },
+  {
+    "name": "Chikkaballapur",
+    "state": "Karnataka",
+    "lat": 13.43,
+    "lng": 77.72,
+    "description": "Scenic Town in Karnataka.",
+    "climate": {
+      "averageTempSummer": 34,
+      "averageTempWinter": 15,
+      "temperatureRange": "15-34\u00b0C",
+      "humidity": "High",
+      "annualRainfall": 855
+    },
+    "aqi": 95,
+    "healthcare": {
+      "hospitalCount": 20,
+      "score": 9.0,
+      "chains": [
+        "Manipal Hospital",
+        "CSI Hospital",
+        "District Hospital"
+      ]
+    },
+    "realEstate": {
+      "averagePricePerSqFt": 3595,
+      "currency": "INR"
+    },
+    "costOfLiving": "Low",
+    "nearestDomesticAirport": {
+      "name": "Kempegowda Intl (Bangalore)",
+      "distance": 32,
+      "code": "BLR"
+    },
+    "nearestInternationalAirport": {
+      "name": "Kempegowda Intl (Bangalore)",
+      "distance": 32,
+      "code": "BLR"
+    },
+    "landscape": "Plain",
+    "id": 127
   }
 ]

@@ -166,6 +166,7 @@ KNOWN_HOSPITAL_CHAINS = {
     "Munnar": ["Tata Global", "General Hospital"],
     "Pondicherry": ["JIPMER", "PIMS", "Apollo", "Womens & Child"],
     "Coorg": ["District Hospital", "Ashwini"],
+    "Chikkaballapur": ["Manipal Hospital", "CSI Hospital", "District Hospital"],
 
     # EAST & CENTRAL
     "Bhubaneswar": ["Apollo", "AMRI", "SUM", "Kalinga", "Care"],
@@ -227,7 +228,7 @@ REAL_AQI_DATA = {
     "Hyderabad": 110, "Secunderabad": 110, "Warangal": 95,
     "Bangalore": 90, "Whitefield (Bangalore)": 100, "Mysore": 65, "Hubli": 75, "Belgaum": 70, "Mangalore": 60, "Udupi": 55,
     "Chennai": 95, "Coimbatore": 75, "Madurai": 80, "Trichy": 70, "Salem": 85, "Vellore": 80, "Tirunelveli": 65, "Hosur": 85,
-    "Visakhapatnam": 115, "Vijayawada": 105, "Guntur": 100, "Rajahmundry": 95, "Tirupati": 80,
+    "Visakhapatnam": 115, "Vijayawada": 105, "Guntur": 100, "Rajahmundry": 95, "Tirupati": 80, "Chikkaballapur": 95,
 
     # --- COASTAL & CLEANER CITIES - SATISFACTORY ---
     "Kochi": 55, "Thiruvananthapuram": 50, "Kozhikode": 55, "Thrissur": 50, "Alleppey": 45,
@@ -449,7 +450,10 @@ raw_cities = [
     ("Ujjain", "Madhya Pradesh", 23.17, 75.78, 3, 494, "Plain"),
     ("Raipur", "Chhattisgarh", 21.25, 81.62, 2, 291, "Plain"),
     ("Bilaspur", "Chhattisgarh", 22.07, 82.14, 3, 264, "Plain"),
+    ("Raipur", "Chhattisgarh", 21.25, 81.62, 2, 291, "Plain"),
+    ("Bilaspur", "Chhattisgarh", 22.07, 82.14, 3, 264, "Plain"),
     ("Bhilai", "Chhattisgarh", 21.20, 81.38, 2, 297, "Plain"),
+    ("Chikkaballapur", "Karnataka", 13.43, 77.72, 3, 915, "Plain"),
 ]
 
 # Real Climate Data (Summer Max / Winter Min - 2024 Avg)
@@ -485,7 +489,7 @@ REAL_TEMP_DATA = {
     "Hyderabad": (40, 15), "Secunderabad": (40, 15), "Warangal": (42, 16),
     "Visakhapatnam": (35, 21), "Vijayawada": (42, 19), "Guntur": (43, 18), "Rajahmundry": (41, 19), "Tirupati": (40, 18),
     "Kochi": (33, 23), "Thiruvananthapuram": (34, 23), "Kozhikode": (34, 23), "Thrissur": (35, 23), "Alleppey": (33, 24),
-    "Pondicherry": (36, 22), "Port Blair": (32, 22),
+    "Pondicherry": (36, 22), "Port Blair": (32, 22), "Chikkaballapur": (34, 15),
 
     # EAST & CENTRAL
     "Kolkata": (37, 13), "Howrah": (38, 13), "Durgapur": (41, 10), "Siliguri": (34, 8),
